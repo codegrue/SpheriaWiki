@@ -252,8 +252,13 @@ function renderChapters(chapters) {
 }
 
 function renderBookSection(book, placeholderMsg) {
-  const synopsis = book.synopsis
-    ? `<div class="book-synopsis">${escapeHtml(book.synopsis)}</div>`
+  const synopsisBody = Array.isArray(book.synopsis)
+    ? book.synopsis.map(p => `<p>${escapeHtml(p)}</p>`).join("")
+    : book.synopsis
+      ? `<p>${escapeHtml(book.synopsis)}</p>`
+      : null;
+  const synopsis = synopsisBody
+    ? `<div class="book-synopsis">${synopsisBody}</div>`
     : '<div class="status-msg">Synopsis coming soon...</div>';
   const chapters = book.chapters.length
     ? renderChapters(book.chapters)
@@ -352,44 +357,47 @@ function renderWorld(world) {
   return renderWorldGeography(world) + renderWorldPhysics(world) + renderWorldSourceColors(world);
 }
 
-function renderPolyans(polyans) {
-  if (!polyans)
-    return `<div class="status-msg error">Polyan data is missing.</div>`;
-
-  const casteSystem = (polyans.caste_system || [])
-    .map(
-      (item) => `
-    <div class="info-card" style="border-top-color:#7c3aed">
-      <div class="info-title icon-title"><span class="icon">🔷</span>${escapeHtml(item.caste_name)} (${escapeHtml(item.legs)} legs) ${renderLegDots(item.legs)}</div>
-      <div class="info-body">${escapeHtml(item.role)}</div>
-      <div class="pill-row">
-        <span class="pill">Rank: ${escapeHtml(item.social_rank)}</span>
-        <span class="pill">Behavior: ${escapeHtml(item.behaviors)}</span>
-      </div>
-    </div>
-  `,
-    )
-    .join("");
-
-  const energy = polyans.energy || {};
-  const sensors = polyans.sensors || {};
-
+function renderPolyanOverview(polyans) {
   return `
-    <div class="polyans-hero">
-      <div class="plot-box"><strong>🧬 Biology:</strong> ${escapeHtml(polyans.biology)}</div>
-      <div class="plot-box"><strong>⚥ Gender:</strong> ${escapeHtml(polyans.gender)}</div>
-      <div class="plot-box"><strong>🏷 Naming Convention:</strong> ${escapeHtml(polyans.naming_convention)}</div>
+    <div class="info-grid">
+      <div class="info-card" style="border-top-color:#a78bfa"><div class="info-title icon-title"><span class="icon">🧬</span>Biology</div><div class="info-body">${escapeHtml(polyans.biology)}</div></div>
+      <div class="info-card" style="border-top-color:#a78bfa"><div class="info-title icon-title"><span class="icon">⚥</span>Gender</div><div class="info-body">${escapeHtml(polyans.gender)}</div></div>
+      <div class="info-card" style="border-top-color:#a78bfa"><div class="info-title icon-title"><span class="icon">🏷</span>Naming Convention</div><div class="info-body">${escapeHtml(polyans.naming_convention)}</div></div>
     </div>
-    <h3 style="color:#a78bfa">🔢 Caste System</h3>
-    <div class="info-grid">${casteSystem}</div>
-    <h3 style="color:#34d399">⚡ Energy</h3>
+  `;
+}
+
+function renderPolyanCasteSystem(polyans) {
+  const cards = (polyans.caste_system || [])
+    .map((item) => `
+      <div class="info-card" style="border-top-color:#7c3aed">
+        <div class="info-title icon-title"><span class="icon">🔷</span>${escapeHtml(item.caste_name)} (${escapeHtml(String(item.legs))} legs) ${renderLegDots(item.legs)}</div>
+        <div class="info-body">${escapeHtml(item.role)}</div>
+        <div class="pill-row">
+          <span class="pill">Rank: ${escapeHtml(item.social_rank)}</span>
+          <span class="pill">Behavior: ${escapeHtml(item.behaviors)}</span>
+        </div>
+      </div>
+    `)
+    .join("");
+  return `<div class="info-grid">${cards}</div>`;
+}
+
+function renderPolyanEnergy(polyans) {
+  const energy = polyans.energy || {};
+  return `
     <div class="info-grid">
       <div class="info-card" style="border-top-color:#34d399"><div class="info-title icon-title"><span class="icon">🍽</span>How They Feed</div><div class="info-body">${escapeHtml(energy.how_they_feed)}</div></div>
       <div class="info-card" style="border-top-color:#34d399"><div class="info-title icon-title"><span class="icon">💠</span>Crystal Colors</div><div class="info-body">${escapeHtml(energy.crystal_colors)}</div></div>
       <div class="info-card" style="border-top-color:#34d399"><div class="info-title icon-title"><span class="icon">📊</span>Feeding Hierarchy</div><div class="info-body">${escapeHtml(energy.hierarchy_of_feeding)}</div></div>
       <div class="info-card" style="border-top-color:#34d399"><div class="info-title icon-title"><span class="icon">🕯</span>Death State</div><div class="info-body">${escapeHtml(energy.death_state)}</div></div>
     </div>
-    <h3 style="color:#60a5fa">🛰 Sensors</h3>
+  `;
+}
+
+function renderPolyanSensors(polyans) {
+  const sensors = polyans.sensors || {};
+  return `
     <div class="info-grid">
       <div class="info-card" style="border-top-color:#60a5fa"><div class="info-title icon-title"><span class="icon">📡</span>Description</div><div class="info-body">${escapeHtml(sensors.description)}</div></div>
       <div class="info-card" style="border-top-color:#60a5fa"><div class="info-title icon-title"><span class="icon">🧭</span>Types</div><div class="info-body">${escapeHtml(sensors.types)}</div></div>
@@ -874,6 +882,46 @@ async function initMythosTabs() {
   }
 }
 
+async function initPolyanTabs() {
+  try {
+    const response = await fetch("/Spheria_Wiki.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+
+    const tabs = {
+      "overview-content": renderPolyanOverview,
+      "caste-content": renderPolyanCasteSystem,
+      "energy-content": renderPolyanEnergy,
+      "sensors-content": renderPolyanSensors,
+    };
+
+    Object.entries(tabs).forEach(([id, fn]) => {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = fn(data.polyans);
+    });
+
+    const tabButtons = document.querySelectorAll(".sub-menu-btn");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    tabButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const tabName = btn.getAttribute("data-tab");
+        tabButtons.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        tabContents.forEach((content) => content.classList.remove("active"));
+        document.getElementById(`${tabName}-content`).classList.add("active");
+      });
+    });
+  } catch (err) {
+    const el = document.getElementById("overview-content");
+    if (el) {
+      el.classList.add("error");
+      el.innerHTML = "Could not load Spheria_Wiki.json. Run a local web server (npm run dev) and refresh.";
+    }
+    console.error(err);
+  }
+}
+
 window.SpheriaWiki = {
   loadNav,
   initPage,
@@ -885,4 +933,5 @@ window.SpheriaWiki = {
   initObjectTabs,
   initWorldTabs,
   initMythosTabs,
+  initPolyanTabs,
 };

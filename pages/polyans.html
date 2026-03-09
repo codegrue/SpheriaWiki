@@ -10,12 +10,21 @@
     <div id="nav-container"></div>
     <section>
       <h2 style="color: #a78bfa">🔷 Polyans</h2>
-      <div id="page-content" class="status-msg">Loading Polyan data...</div>
+      <div class="sub-menu">
+        <button class="sub-menu-btn active" data-tab="overview">🔷 Overview</button>
+        <button class="sub-menu-btn" data-tab="caste">🔢 Caste System</button>
+        <button class="sub-menu-btn" data-tab="energy">⚡ Energy</button>
+        <button class="sub-menu-btn" data-tab="sensors">🛰 Sensors</button>
+      </div>
+      <div id="overview-content" class="tab-content active"></div>
+      <div id="caste-content" class="tab-content"></div>
+      <div id="energy-content" class="tab-content"></div>
+      <div id="sensors-content" class="tab-content"></div>
     </section>
     <script src="../wiki-render.js"></script>
     <script>
       SpheriaWiki.loadNav();
-      SpheriaWiki.initPage("polyans", "page-content");
+      SpheriaWiki.initPolyanTabs();
     </script>
   </body>
 </html>
