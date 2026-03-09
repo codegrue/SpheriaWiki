@@ -10,12 +10,19 @@
     <div id="nav-container"></div>
     <section>
       <h2 style="color: #22c55e">🌿 Flora/Fauna</h2>
-      <div id="page-content" class="status-msg">Loading flora/fauna...</div>
+      <div class="sub-menu">
+        <button class="sub-menu-btn active" data-tab="fauna">🦖 Fauna</button>
+        <button class="sub-menu-btn" data-tab="flora">🌱 Flora</button>
+        <button class="sub-menu-btn" data-tab="crystals">💎 Crystals</button>
+      </div>
+      <div id="fauna-content" class="tab-content active"></div>
+      <div id="flora-content" class="tab-content"></div>
+      <div id="crystals-content" class="tab-content"></div>
     </section>
     <script src="../wiki-render.js"></script>
     <script>
       SpheriaWiki.loadNav();
-      SpheriaWiki.initPage("flora-fauna", "page-content");
+      SpheriaWiki.initFloraFaunaTabs();
     </script>
   </body>
 </html>

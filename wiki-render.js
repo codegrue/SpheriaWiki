@@ -463,60 +463,49 @@ function renderMythos(mythos) {
   `;
 }
 
-function renderFloraFauna(data) {
-  if (!data)
-    return `<div class="status-msg error">Flora/Fauna data is missing.</div>`;
-
-  const fauna = (data.fauna || [])
-    .map(
-      (item) => `
-    <div class="info-card" style="border-top-color:#ef4444">
-      <div class="info-title icon-title"><span class="icon">🦴</span>${escapeHtml(item.name)}</div>
-      <div class="info-body">${escapeHtml(item.description)}</div>
-      <div class="pill-row">
-        <span class="pill">Behavior: ${escapeHtml(item.behavior)}</span>
-        <span class="pill">Danger: ${escapeHtml(item.danger_level)}</span>
-        <span class="pill">Energy Role: ${escapeHtml(item.energy_role)}</span>
+function renderFauna(data) {
+  const cards = (data.fauna || [])
+    .map((item) => `
+      <div class="info-card" style="border-top-color:#ef4444">
+        <div class="info-title icon-title"><span class="icon">🦴</span>${escapeHtml(item.name)}</div>
+        <div class="info-body">${escapeHtml(item.description)}</div>
+        <div class="pill-row">
+          <span class="pill">Behavior: ${escapeHtml(item.behavior)}</span>
+          <span class="pill">Danger: ${escapeHtml(item.danger_level)}</span>
+          <span class="pill">Energy Role: ${escapeHtml(item.energy_role)}</span>
+        </div>
       </div>
-    </div>
-  `,
-    )
+    `)
     .join("");
+  return `<div class="info-grid">${cards}</div>`;
+}
 
-  const flora = (data.flora || [])
-    .map(
-      (item) => `
-    <div class="info-card" style="border-top-color:#22c55e">
-      <div class="info-title icon-title"><span class="icon">🌿</span>${escapeHtml(item.name)}</div>
-      <div class="info-body">${escapeHtml(item.description)}</div>
-      <div class="source-color-trigger">Properties: ${escapeHtml(item.properties)}</div>
-      <div class="source-color-trigger">Uses: ${escapeHtml(item.uses)}</div>
-    </div>
-  `,
-    )
+function renderFlora(data) {
+  const cards = (data.flora || [])
+    .map((item) => `
+      <div class="info-card" style="border-top-color:#22c55e">
+        <div class="info-title icon-title"><span class="icon">🌿</span>${escapeHtml(item.name)}</div>
+        <div class="info-body">${escapeHtml(item.description)}</div>
+        <div class="source-color-trigger">Properties: ${escapeHtml(item.properties)}</div>
+        <div class="source-color-trigger">Uses: ${escapeHtml(item.uses)}</div>
+      </div>
+    `)
     .join("");
+  return `<div class="info-grid">${cards}</div>`;
+}
 
-  const crystals = (data.crystals || [])
-    .map(
-      (item) => `
-    <div class="source-color-card" style="border-left-color:#a78bfa">
-      <div class="source-color-name">💎 ${escapeHtml(item.color)} Crystal</div>
-      <div class="source-color-effect">${escapeHtml(item.properties)}</div>
-      <div class="source-color-trigger">Found In: ${escapeHtml(item.found_in)}</div>
-      <div class="source-color-trigger">Significance: ${escapeHtml(item.significance)}</div>
-    </div>
-  `,
-    )
+function renderCrystals(data) {
+  const cards = (data.crystals || [])
+    .map((item) => `
+      <div class="source-color-card" style="border-left-color:#a78bfa">
+        <div class="source-color-name">💎 ${escapeHtml(item.color)} Crystal</div>
+        <div class="source-color-effect">${escapeHtml(item.properties)}</div>
+        <div class="source-color-trigger">Found In: ${escapeHtml(item.found_in)}</div>
+        <div class="source-color-trigger">Significance: ${escapeHtml(item.significance)}</div>
+      </div>
+    `)
     .join("");
-
-  return `
-    <h3 style="color:#ef4444">🦖 Fauna</h3>
-    <div class="info-grid">${fauna}</div>
-    <h3 style="color:#22c55e">🌱 Flora</h3>
-    <div class="info-grid">${flora}</div>
-    <h3 style="color:#a78bfa">💠 Crystals</h3>
-    <div class="source-color-grid">${crystals}</div>
-  `;
+  return `<div class="source-color-grid">${cards}</div>`;
 }
 
 function showLoadError(containerId, message) {
@@ -882,6 +871,45 @@ async function initMythosTabs() {
   }
 }
 
+async function initFloraFaunaTabs() {
+  try {
+    const response = await fetch("/Spheria_Wiki.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+
+    const tabs = {
+      "fauna-content": renderFauna,
+      "flora-content": renderFlora,
+      "crystals-content": renderCrystals,
+    };
+
+    Object.entries(tabs).forEach(([id, fn]) => {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = fn(data.flora_fauna);
+    });
+
+    const tabButtons = document.querySelectorAll(".sub-menu-btn");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    tabButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const tabName = btn.getAttribute("data-tab");
+        tabButtons.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        tabContents.forEach((content) => content.classList.remove("active"));
+        document.getElementById(`${tabName}-content`).classList.add("active");
+      });
+    });
+  } catch (err) {
+    const el = document.getElementById("fauna-content");
+    if (el) {
+      el.classList.add("error");
+      el.innerHTML = "Could not load Spheria_Wiki.json. Run a local web server (npm run dev) and refresh.";
+    }
+    console.error(err);
+  }
+}
+
 async function initPolyanTabs() {
   try {
     const response = await fetch("/Spheria_Wiki.json", { cache: "no-store" });
@@ -934,4 +962,5 @@ window.SpheriaWiki = {
   initWorldTabs,
   initMythosTabs,
   initPolyanTabs,
+  initFloraFaunaTabs,
 };
