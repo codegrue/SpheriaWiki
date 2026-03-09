@@ -267,7 +267,13 @@ function renderBookSection(book, placeholderMsg) {
 }
 
 
-function renderTimeline(items) {
+function renderTimeline(items, books) {
+  function bookLabel(item) {
+    if (item.chapter == null) return "";
+    const shortTitle = books?.[item.book]?.short_title ?? item.book ?? "";
+    const label = shortTitle ? `${shortTitle} - Ch. ${item.chapter}` : `Ch. ${item.chapter}`;
+    return ` <span class="tl-chapter">${escapeHtml(label)}</span>`;
+  }
   return `<div class="timeline">${items
     .map(
       (item, idx) => `
@@ -276,7 +282,9 @@ function renderTimeline(items) {
         <div class="tl-circle">${idx + 1}</div>
         ${idx < items.length - 1 ? '<div class="tl-line"></div>' : ""}
       </div>
-      <div class="tl-text">${escapeHtml(item)}</div>
+      <div class="tl-text">
+        ${escapeHtml(item.text ?? item)}${bookLabel(item)}
+      </div>
     </div>
   `,
     )
@@ -569,7 +577,7 @@ async function initPage(pageKey, containerId) {
     else if (pageKey === "chapters")
       container.innerHTML = renderChapters(data.books.book1.chapters);
     else if (pageKey === "timeline")
-      container.innerHTML = renderTimeline(data.timeline);
+      container.innerHTML = renderTimeline(data.timeline, data.books);
     else if (pageKey === "world") container.innerHTML = renderWorld(data.world);
     else if (pageKey === "polyans")
       container.innerHTML = renderPolyans(data.polyans);

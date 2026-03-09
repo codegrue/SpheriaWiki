@@ -338,6 +338,17 @@ section h3 {
   min-height: 16px;
   margin-top: 4px;
 }
+.tl-chapter {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #a78bfa;
+  background: #a78bfa22;
+  border-radius: 4px;
+  padding: 1px 6px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
 .tl-text {
   color: #d1d5db;
   font-size: 14px;

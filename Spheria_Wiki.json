@@ -16,40 +16,176 @@
     "Greed versus idealism (Dana versus Graham)"
   ],
   "timeline": [
-    "Max presents research at prestigious 25th Solvay Conference on Physics in Brussels (Ch 2)",
-    "Jill commits suicide at UConn Health Center library entrance, traumatizing Tim (Ch 4)",
-    "Min interviews for internship to replace deceased Jill, films interview with spy glasses (Ch 7)",
-    "Young Sa·ma discovers Lumen Grotto and is tested by old Lumen Master (Ch 10 flashback)",
-    "Le·ma selected as Sa·ma's apprentice and taken on Lumen Walk journey through Uplift Pass (Ch 3)",
-    "Le·ma and Sa·ma reach the Rift at world's edge; Le·ma drops yellow shard into bottomless chasm (Ch 8)",
-    "Sa·ma abandons Le·ma at Rift camp for solo return journey as final test (Ch 12)",
-    "Sa·ma discovers legendary Fertile Field and receives artifact sensor with three triangles from the gods (Ch 14)",
-    "Sa·ma uses artifact sensor to command attacking Zalisk to spare Le·ma's life (Ch 14)",
-    "Le·ma faces final test: must find way over vertical blue mountains with no passage on return side (Ch 16)",
-    "Min begins work at Spheria Project, assigned to reception desk with data analysis duties (Ch 9)",
-    "Jean observes Polyan Colony construction in VR, watches Drones and Builders making new hive (Ch 17)",
-    "Dana reviews logs showing Polyan anthropology activity exceeding engineering for first time; unusual behaviors increasing (Ch 18)",
-    "Graham's airship 'Buruwa Gunya' arrives moored to UConn Health Center roof (Ch 19)",
-    "Gizmodo publishes article 'Scientists Play God In This Virtual Experiment' bringing public attention to Spheria project (Ch 25)",
-    "Four consecutive red bubbles rise toward Source, threatening Colony with flooding; Council debates relocation (Ch 22)",
-    "Sa·ma discovers golden cave with glowing plants and portal to Qubessence, encounters cave god (Ch 28)",
-    "Fa·ro forces Sa·ma to lead expedition back to golden cave with Ga·zo and Za·zo to reach portal (Ch 30)",
-    "Sa·ma imprisoned in repurposed Council building - Polyans' first use of incarceration (Ch 32)",
-    "Min's computer crashes with system failure before critical Graham meeting (Ch 33)",
-    "Ga·zo convinces Council to create second seven-legged god; preparation ritual begins as violet bubble approaches (Ch 34)",
-    "Mysterious figure meets at Electric Boat submarine facility during storm, suggesting external threats or espionage (Ch 21)",
-    "Min discovers secret red server room beneath Qube floor with Tor network and unauthorized military equipment (Ch 35)",
-    "Fa·ro reveals he eliminated the Council and declares himself sole dictator of the Colony (Ch 36)",
-    "Min hacks secret room computer using Olivia's password 6EQUJ5 and discovers evidence of weapons project (Ch 37)",
-    "Max confronts and fights Min in the secret server room, chasing her through damaged equipment (Ch 39)",
-    "Ga·zo reports all Workers have vanished overnight; Fa·ro locates them gathered near the tower using his artifact (Ch 40)",
-    "Sa·ma's beam cannon fires and destroys tower support columns, causing massive structure to fall across the Rift creating a bridge (Ch 44)",
-    "Max traps Min and Dana in hospital incinerator which activates; they escape through chimney with help from volunteer Walter (Ch 45-47)",
-    "Le·ma is launched from Sa·ma's cannon, crashes into Fa·ro during battle, and steals his artifact (Ch 46)",
-    "Le·ma uses stolen artifact to control Zalisk herd which attacks Soldiers while protecting Workers, enabling mass escape across bridge (Ch 48)",
-    "At board meeting, video confession plays showing Dana admitting to Olivia's murder and DARPA deal; Captain Brennan arrives to arrest her (Ch 50)",
-    "Dana draws gun on Captain Brennan when confronted about her crimes (Ch 50)",
-    "Spheria team reviews recordings of tower bridge creation and Worker liberation battle as Max commands playback (Ch 51)"
+    {
+      "book": "book1",
+      "chapter": 2,
+      "text": "Max presents research at prestigious 25th Solvay Conference on Physics in Brussels"
+    },
+    {
+      "book": "book1",
+      "chapter": 4,
+      "text": "Jill commits suicide at UConn Health Center library entrance, traumatizing Tim"
+    },
+    {
+      "book": "book1",
+      "chapter": 7,
+      "text": "Min interviews for internship to replace deceased Jill, films interview with spy glasses"
+    },
+    {
+      "book": "book1",
+      "chapter": 10,
+      "text": "Young Sa·ma discovers Lumen Grotto and is tested by old Lumen Master"
+    },
+    {
+      "book": "book1",
+      "chapter": 3,
+      "text": "Le·ma selected as Sa·ma's apprentice and taken on Lumen Walk journey through Uplift Pass"
+    },
+    {
+      "book": "book1",
+      "chapter": 8,
+      "text": "Le·ma and Sa·ma reach the Rift at world's edge; Le·ma drops yellow shard into bottomless chasm"
+    },
+    {
+      "book": "book1",
+      "chapter": 12,
+      "text": "Sa·ma abandons Le·ma at Rift camp for solo return journey as final test"
+    },
+    {
+      "book": "book1",
+      "chapter": 14,
+      "text": "Sa·ma discovers legendary Fertile Field and receives artifact sensor with three triangles from the gods"
+    },
+    {
+      "book": "book1",
+      "chapter": 14,
+      "text": "Sa·ma uses artifact sensor to command attacking Zalisk to spare Le·ma's life"
+    },
+    {
+      "book": "book1",
+      "chapter": 16,
+      "text": "Le·ma faces final test: must find way over vertical blue mountains with no passage on return side"
+    },
+    {
+      "book": "book1",
+      "chapter": 9,
+      "text": "Min begins work at Spheria Project, assigned to reception desk with data analysis duties"
+    },
+    {
+      "book": "book1",
+      "chapter": 17,
+      "text": "Jean observes Polyan Colony construction in VR, watches Drones and Builders making new hive"
+    },
+    {
+      "book": "book1",
+      "chapter": 18,
+      "text": "Dana reviews logs showing Polyan anthropology activity exceeding engineering for first time; unusual behaviors increasing"
+    },
+    {
+      "book": "book1",
+      "chapter": 19,
+      "text": "Graham's airship 'Buruwa Gunya' arrives moored to UConn Health Center roof"
+    },
+    {
+      "book": "book1",
+      "chapter": 25,
+      "text": "Gizmodo publishes article 'Scientists Play God In This Virtual Experiment' bringing public attention to Spheria project"
+    },
+    {
+      "book": "book1",
+      "chapter": 22,
+      "text": "Four consecutive red bubbles rise toward Source, threatening Colony with flooding; Council debates relocation"
+    },
+    {
+      "book": "book1",
+      "chapter": 28,
+      "text": "Sa·ma discovers golden cave with glowing plants and portal to Qubessence, encounters cave god"
+    },
+    {
+      "book": "book1",
+      "chapter": 30,
+      "text": "Fa·ro forces Sa·ma to lead expedition back to golden cave with Ga·zo and Za·zo to reach portal"
+    },
+    {
+      "book": "book1",
+      "chapter": 32,
+      "text": "Sa·ma imprisoned in repurposed Council building - Polyans' first use of incarceration"
+    },
+    {
+      "book": "book1",
+      "chapter": 33,
+      "text": "Min's computer crashes with system failure before critical Graham meeting"
+    },
+    {
+      "book": "book1",
+      "chapter": 34,
+      "text": "Ga·zo convinces Council to create second seven-legged god; preparation ritual begins as violet bubble approaches"
+    },
+    {
+      "book": "book1",
+      "chapter": 21,
+      "text": "Mysterious figure meets at Electric Boat submarine facility during storm, suggesting external threats or espionage"
+    },
+    {
+      "book": "book1",
+      "chapter": 35,
+      "text": "Min discovers secret red server room beneath Qube floor with Tor network and unauthorized military equipment"
+    },
+    {
+      "book": "book1",
+      "chapter": 36,
+      "text": "Fa·ro reveals he eliminated the Council and declares himself sole dictator of the Colony"
+    },
+    {
+      "book": "book1",
+      "chapter": 37,
+      "text": "Min hacks secret room computer using Olivia's password 6EQUJ5 and discovers evidence of weapons project"
+    },
+    {
+      "book": "book1",
+      "chapter": 39,
+      "text": "Max confronts and fights Min in the secret server room, chasing her through damaged equipment"
+    },
+    {
+      "book": "book1",
+      "chapter": 40,
+      "text": "Ga·zo reports all Workers have vanished overnight; Fa·ro locates them gathered near the tower using his artifact"
+    },
+    {
+      "book": "book1",
+      "chapter": 44,
+      "text": "Sa·ma's beam cannon fires and destroys tower support columns, causing massive structure to fall across the Rift creating a bridge"
+    },
+    {
+      "book": "book1",
+      "chapter": null,
+      "text": "Max traps Min and Dana in hospital incinerator which activates; they escape through chimney with help from volunteer Walter (Ch 45-47)"
+    },
+    {
+      "book": "book1",
+      "chapter": 46,
+      "text": "Le·ma is launched from Sa·ma's cannon, crashes into Fa·ro during battle, and steals his artifact"
+    },
+    {
+      "book": "book1",
+      "chapter": 48,
+      "text": "Le·ma uses stolen artifact to control Zalisk herd which attacks Soldiers while protecting Workers, enabling mass escape across bridge"
+    },
+    {
+      "book": "book1",
+      "chapter": 50,
+      "text": "At board meeting, video confession plays showing Dana admitting to Olivia's murder and DARPA deal; Captain Brennan arrives to arrest her"
+    },
+    {
+      "book": "book1",
+      "chapter": 50,
+      "text": "Dana draws gun on Captain Brennan when confronted about her crimes"
+    },
+    {
+      "book": "book1",
+      "chapter": 51,
+      "text": "Spheria team reviews recordings of tower bridge creation and Worker liberation battle as Max commands playback"
+    }
   ],
   "characters": {
     "human": [
@@ -1001,6 +1137,8 @@
   "books": {
     "book1": {
       "title": "Spheria 1: Eversion",
+      "short_title": "Spheria 1",
+      "subtitle": "Eversion",
       "synopsis": "Spheria follows parallel narratives on Earth and within a revolutionary virtual ecosystem simulation. Physicist Max recruits intern Min to join the Spheria Project after a previous intern's suspicious suicide, working alongside a team that observes crystalline beings called Polyans living inside their digital creation. Inside the simulation, young Le·ma apprentices under the wise Lumen Master Sa·ma, who leads her on a perilous journey through Uplift Pass to discover the legendary Fertile Field beyond the blue crystal mountains. During their quest, Sa·ma acquires a mysterious triangular artifact that grants him power to control creatures, saving Le·ma from a deadly Zalisk beast. As their final test, Le·ma must find an impossible route back over the mountains. The Earth scientists observe these developments through VR equipment, grappling with their role as creators watching their simulated world evolve. Tensions escalate when Polyan society enters upheaval with unusual behaviors emerging alongside four threatening red bubbles near their Colony. Sa·ma discovers a golden cave containing a portal to the Qubessence, the realm of gods, but power-hungry Fa·ro forces him to reveal this secret location, resulting in Sa·ma becoming the first imprisoned Polyan. The Council increasingly defers to Fa·ro's authority, eventually deciding to create a second seven-legged god. Meanwhile, the Spheria Project gains media attention through a Gizmodo article as Max and Min's relationship deepens. Project leader Graham arrives for a critical funding review, but Min's computer mysteriously crashes before essential calculations are complete. Covert activities at a submarine pier hint at external threats to the project's integrity. The narrative reaches its climax when Min discovers that team member Dana is the true villain who murdered previous intern Olivia and orchestrated attacks on Min and Max to conceal her secret DARPA weapons deal exploiting Spheria technology. Dana traps Min and Max in a hospital incinerator, but volunteer Walter helps them escape. Simultaneously, Fa·ro establishes absolute dictatorship in Spheria after eliminating the Council. Sa·ma leads a brilliant Worker rebellion, using a beam cannon to topple a tower across the Rift, creating a bridge to freedom. Le·ma steals Fa·ro's artifact and weaponizes it to control Zalisk creatures who massacre Fa·ro's Soldiers. Dana's video confession exposes her crimes to Graham and the team, and Max saves Captain Brennan from Dana's gun. The Workers successfully cross the Rift to achieve liberation while the human scientists restore integrity to their groundbreaking project, resolving both parallel stories of tyranny, rebellion, and ultimate freedom.",
       "chapters": [
         {
@@ -1313,11 +1451,15 @@
     },
     "novella1": {
       "title": "Spheria: Olivia's Log",
+      "short_title": "Olivia's Log",
+      "subtitle": "",
       "synopsis": "Coming SOON",
       "chapters": []
     },
     "book2": {
       "title": "Spheria 2: Annulus",
+      "short_title": "Spheria 2",
+      "subtitle": "Annulus",
       "synopsis": "Coming SOON",
       "chapters": []
     }
