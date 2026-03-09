@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Spheria - Characters</title>
-    <link rel="stylesheet" href="./wiki.css" />
+    <title>Spheria - Chapters</title>
+    <link rel="stylesheet" href="../wiki.css" />
   </head>
   <body>
     <nav>
@@ -31,18 +31,23 @@
         >
       </div>
     </nav>
-    <header>
-      <h1>SPHERIA</h1>
-      <p id="header-subtitle">Novel Wiki - Loading data...</p>
-    </header>
     <section>
-      <h2 style="color: #60a5fa">Characters</h2>
-      <div id="page-content" class="status-msg">Loading characters...</div>
+      <h2 style="color: #e0e0f0">Chapter Synopses</h2>
+      <div class="sub-menu">
+        <button class="sub-menu-btn active" data-tab="book1">📖 Book 1</button>
+        <button class="sub-menu-btn" data-tab="olivias-log">
+          📝 Olivia's Log
+        </button>
+        <button class="sub-menu-btn" data-tab="book2">📖 Book 2</button>
+      </div>
+      <div id="book1-content" class="tab-content active"></div>
+      <div id="olivias-log-content" class="tab-content"></div>
+      <div id="book2-content" class="tab-content"></div>
     </section>
-    <script src="./wiki-render.js"></script>
+    <script src="../wiki-render.js"></script>
     <script>
       SpheriaWiki.setActiveNav();
-      SpheriaWiki.initPage("characters", "page-content");
+      SpheriaWiki.initChapterTabs();
     </script>
   </body>
 </html>
