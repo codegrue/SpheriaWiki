@@ -80,7 +80,7 @@
       "caste_or_role": "Lead scientist/physicist",
       "description": "Dark-haired, thin physicist who presented at the Solvay Conference. Project lead for Spheria simulation. Socially awkward, often late, uses e-cigarettes. Passionate about quantum theory.",
       "first_chapter": 2,
-      "world": "Earth",
+      "world": "Human",
       "updates": [
         "Appears older and more tired than before. Dating Min, playing video games with her. Father plays video games but doesn't like Minecraft. Believes universe is mathematical algorithm with God as rule-creator.",
         "Revealed as innocent of weapons conspiracy, trapped by Dana, works with Min to escape, prepared confession video as insurance"
@@ -92,7 +92,7 @@
       "caste_or_role": "Computer science intern",
       "description": "Vietnamese-American computer science student hired as intern. Wears spy glasses that record video. Tech-savvy and enthusiastic. Roommate is Sheila.",
       "first_chapter": 7,
-      "world": "Earth",
+      "world": "Human",
       "updates": [
         "Dating Max, visiting his apartment. Raised Catholic by emigrant parents who converted. Believes world is mathematical formulas and equations. Working late nights preparing calculations. Experiences computer system failure.",
         "Discovers secret weapons project, fights Max, realizes they're both victims of Dana's conspiracy, works with former enemy to survive incinerator"
@@ -104,7 +104,7 @@
       "caste_or_role": "Chair of 25th Solvay Conference",
       "description": "Max's friend from online quantum theory forums. Youthful demeanor despite his age. Helped Max get speaking invitation to prestigious physics conference.",
       "first_chapter": 2,
-      "world": "Earth",
+      "world": "Human",
       "updates": []
     },
     {
@@ -113,7 +113,7 @@
       "caste_or_role": "Student/team member",
       "description": "Student at UConn Health Center. Was present when previous intern Jill died by suicide. Now works on Spheria project team. Makes frozen drinks at happy hour.",
       "first_chapter": 4,
-      "world": "Earth",
+      "world": "Human",
       "updates": []
     },
     {
@@ -122,7 +122,7 @@
       "caste_or_role": "Former intern (deceased)",
       "description": "Previous intern on the project who committed suicide by jumping from library entrance, traumatizing Tim who witnessed it.",
       "first_chapter": 4,
-      "world": "Earth",
+      "world": "Human",
       "updates": []
     },
     {
@@ -131,7 +131,7 @@
       "caste_or_role": "Medical student",
       "description": "Min's Australian roommate. Medical student at UConn Health Center. Beautiful ('knockout'). Found the internship posting that Min applied for.",
       "first_chapter": 7,
-      "world": "Earth",
+      "world": "Human",
       "updates": []
     },
     {
@@ -140,7 +140,7 @@
       "caste_or_role": "Team member/researcher",
       "description": "Team member who uses VR headset and SpaceMouse to observe the Spheria simulation. Unlike other team members, not a video game player. Energized by big meals.",
       "first_chapter": 17,
-      "world": "Earth",
+      "world": "Human",
       "updates": []
     },
     {
@@ -149,7 +149,7 @@
       "caste_or_role": "Journalist for Gizmodo",
       "description": "Reporter who writes article about Spheria project; previously covered Qube technology",
       "first_chapter": 25,
-      "world": "Earth",
+      "world": "Human",
       "updates": []
     },
     {
@@ -176,7 +176,7 @@
       "caste_or_role": "Summer Intern",
       "description": "Intern doing statistical analysis; keeps work journal; goes through breakup with boyfriend Randy; becomes closer with roommate Ashley",
       "first_chapter": 29,
-      "world": "Earth",
+      "world": "Human",
       "updates": []
     },
     {
@@ -185,7 +185,7 @@
       "caste_or_role": "Olivia's ex-boyfriend",
       "description": "Breaks up with Olivia via email after six years; long distance relationship wasn't working",
       "first_chapter": 29,
-      "world": "Earth",
+      "world": "Human",
       "updates": []
     },
     {
@@ -194,7 +194,7 @@
       "caste_or_role": "TV character",
       "description": "Character from The Walking Dead that Ashley is watching",
       "first_chapter": 31,
-      "world": "Earth",
+      "world": "Human",
       "updates": []
     },
     {
@@ -203,7 +203,7 @@
       "caste_or_role": "Candy striper at hospital",
       "description": "Hospital volunteer who discovers Min and Max trapped in incinerator while transporting laundry",
       "first_chapter": 47,
-      "world": "Earth",
+      "world": "Human",
       "updates": []
     },
     {
@@ -212,7 +212,94 @@
       "caste_or_role": "Head of campus security",
       "description": "Security chief who investigated Olivia's death and arrests Dana",
       "first_chapter": 50,
-      "world": "Earth",
+      "world": "Human",
+      "updates": []
+    },
+    {
+      "name": "Graham",
+      "species": "Human",
+      "caste_or_role": "Billionaire benefactor/funder",
+      "description": "Primary financial backer of the Spheria Project; arrives via his airship Buruwa Gunya for major reviews and funding decisions.",
+      "first_chapter": 19,
+      "world": "Human",
+      "updates": [
+        "Witnesses Dana's exposure and the Polyan revolution recordings, recognizing the project's ethical and strategic stakes."
+      ]
+    },
+    {
+      "name": "Dana Carter",
+      "species": "Human",
+      "caste_or_role": "Project administrator/conspirator",
+      "description": "Senior project operator who secretly redirected Spheria infrastructure toward DARPA weapons goals and orchestrated a cover-up.",
+      "first_chapter": 18,
+      "world": "Human",
+      "updates": [
+        "Murdered Olivia and attempted to silence Min and Max before being exposed during Graham's board meeting."
+      ]
+    },
+    {
+      "name": "Ashley",
+      "species": "Human",
+      "caste_or_role": "Olivia's roommate",
+      "description": "Roommate and emotional support for Olivia during her internship and breakup period.",
+      "first_chapter": 29,
+      "world": "Human",
+      "updates": []
+    },
+    {
+      "name": "Frankie",
+      "species": "Human",
+      "caste_or_role": "Team member/world builder",
+      "description": "Project teammate who debates creative aesthetics versus strict mathematics with Min while discussing simulation design.",
+      "first_chapter": 27,
+      "world": "Human",
+      "updates": []
+    },
+    {
+      "name": "Fa�ro",
+      "species": "Polyan",
+      "caste_or_role": "Soldier-turned-dictator",
+      "description": "Authoritarian Polyan leader who overthrows the Council, enslaves Workers, and wages war to preserve absolute control.",
+      "first_chapter": 26,
+      "world": "Spheria",
+      "updates": [
+        "Loses battlefield advantage after Le�ma steals his artifact and the Zalisk herd turns on his forces."
+      ]
+    },
+    {
+      "name": "Ga�zo",
+      "species": "Polyan",
+      "caste_or_role": "Fa�ro loyalist",
+      "description": "Key supporter of Fa�ro who acts as enforcer and participates in suppressing Sa�ma and the Workers.",
+      "first_chapter": 30,
+      "world": "Spheria",
+      "updates": []
+    },
+    {
+      "name": "Za�zo",
+      "species": "Polyan",
+      "caste_or_role": "Fa�ro loyalist",
+      "description": "Loyal ally within Fa�ro's faction during the power consolidation and pursuit of Workers.",
+      "first_chapter": 30,
+      "world": "Spheria",
+      "updates": []
+    },
+    {
+      "name": "Hi�ma",
+      "species": "Polyan",
+      "caste_or_role": "Worker rebel",
+      "description": "Worker involved in Sa�ma's covert escape strategy and movement across the fallen tower bridge.",
+      "first_chapter": 38,
+      "world": "Spheria",
+      "updates": []
+    },
+    {
+      "name": "Pu�ma",
+      "species": "Polyan",
+      "caste_or_role": "Worker rebel",
+      "description": "Worker participant in the coordinated rebellion and Rift-crossing evacuation plan.",
+      "first_chapter": 38,
+      "world": "Spheria",
       "updates": []
     }
   ],
@@ -264,32 +351,32 @@
     },
     {
       "name": "UConn Health Center",
-      "world": "Earth",
+      "world": "Human",
       "description": "Medical-dental school in Hartford County, Connecticut, built 1970. Expanded in 90s for clinical research. Houses the Spheria Project. Contains Lyman Maynard Stowe Library."
     },
     {
       "name": "Hôtel de Ville de Bruxelles",
-      "world": "Earth",
+      "world": "Human",
       "description": "Brussels City Hall tower where 25th Solvay Conference on Physics was held. Max presented here and met with David on the balcony overlooking the city."
     },
     {
       "name": "Spheria Project Office",
-      "world": "Earth",
+      "world": "Human",
       "description": "Research facility at UConn Health Center. Contains reception desk, conference room, cubicles, kitchen, and offices. Team holds Friday happy hours with ethnic food and frozen drinks."
     },
     {
       "name": "UConn Health Center rooftop",
-      "world": "Earth",
+      "world": "Human",
       "description": "Building rooftop with mooring mast disguised as cell tower antenna; Graham's yellow luxury airship 'Buruwa Gunya' docked here; accessible via emergency exit stairway"
     },
     {
       "name": "Buruwa Gunya airship interior",
-      "world": "Earth",
+      "world": "Human",
       "description": "Enormous luxury airship gondola with open floor plan, slanted wraparound windows, sunken booths, kitchen with stainless steel appliances, and private rooms toward rear"
     },
     {
       "name": "Electric Boat Pier 3, Groton CT",
-      "world": "Earth",
+      "world": "Human",
       "description": "Dark pier with Virginia-class submarine, large yellow crane, shipping containers; location of secret meeting in rain"
     },
     {
@@ -309,18 +396,28 @@
     },
     {
       "name": "Secret server room",
-      "world": "Earth",
+      "world": "Human",
       "description": "Hidden duplicate of main server room beneath Qube floor, bathed in red light with cables and Tor network equipment for DARPA weapons project"
     },
     {
       "name": "Hospital incinerator",
-      "world": "Earth",
+      "world": "Human",
       "description": "Crematorium chamber where Min and Max become trapped after Dana locks them inside"
     },
     {
       "name": "Fallen tower bridge",
       "world": "Spheria",
       "description": "The great tower toppled across the Rift by Sa·ma's cannon, creating a bridge for Workers to escape"
+    },
+    {
+      "name": "Spheria",
+      "world": "Spheria",
+      "description": "The simulated spherical world containing Polyans, blue crystal mountains, red rivers, and the Rift, observed by the Earth research team."
+    },
+    {
+      "name": "Lyman Maynard Stowe Library",
+      "world": "Human",
+      "description": "Library at UConn Health Center near the Spheres sculptures and Academic Entrance; site connected to the intern suicide tragedy."
     }
   ],
   "chapters": [
@@ -716,6 +813,21 @@
       "name": "Confession video",
       "description": "Recording of Dana admitting to Olivia's murder and trapping Max",
       "significance": "Max's insurance exposing Dana's conspiracy before board meeting"
+    },
+    {
+      "name": "A Short History of Nearly Everything",
+      "description": "Science book by Bill Bryson that Max repeatedly rereads and references in conversation.",
+      "significance": "Reflects Max's worldview and curiosity about unifying scientific understanding."
+    },
+    {
+      "name": "Mooring mast",
+      "description": "Roof-mounted docking mast on UConn Health Center used to anchor Graham's airship.",
+      "significance": "Physical infrastructure enabling Graham's direct access and oversight of the project."
+    },
+    {
+      "name": "Gridway distributed computing system",
+      "description": "Meta-scheduling/distributed compute software discovered in the secret server environment.",
+      "significance": "Technical evidence linking Spheria infrastructure to covert military computation workflows."
     }
   ],
   "factions": [
@@ -744,7 +856,7 @@
     },
     {
       "name": "Spheria Project Team",
-      "world": "Earth",
+      "world": "Human",
       "description": "Group of scientists and researchers at UConn Health Center studying the artificial Spheria ecosystem. Includes physicists, computer scientists, and observers. Socially awkward but passionate.",
       "members": [
         "Max (lead)",
@@ -792,10 +904,19 @@
     },
     {
       "name": "DARPA conspirators",
-      "world": "Earth",
+      "world": "Human",
       "description": "Military and corporate alliance secretly developing Spheria as weapons research despite Graham's contract prohibitions",
       "members": [
         "Dana"
+      ]
+    },
+    {
+      "name": "25th Solvay Conference attendees",
+      "world": "Human",
+      "description": "Group of leading physicists and conference participants who evaluated frontier theoretical ideas including Max's presentation.",
+      "members": [
+        "Max",
+        "David"
       ]
     }
   ]

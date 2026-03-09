@@ -146,6 +146,11 @@
     return { color: "#2563eb", icon: "🌍" };
   }
 
+  function isHumanWorld(world){
+    const w = (world || "").toLowerCase();
+    return w === "earth" || w === "human" || w === "humans";
+  }
+
   function renderOverview(data){
     const stats = [
       { label: "Characters", value: data.characters.length, border: "#7c3aed", color: "#a78bfa" },
@@ -176,7 +181,7 @@
 
   function renderCharacters(characters){
     const byWorld = {
-      Earth: characters.filter(c => c.world === "Earth"),
+      Human: characters.filter(c => isHumanWorld(c.world)),
       Spheria: characters.filter(c => c.world === "Spheria")
     };
 
@@ -192,19 +197,19 @@
       `;
     }
 
-    const earthCards = byWorld.Earth.map(c => characterCard(c, "#2563eb")).join("");
+    const humanCards = byWorld.Human.map(c => characterCard(c, "#2563eb")).join("");
     const spheriaCards = byWorld.Spheria.map(c => characterCard(c, "#7c3aed")).join("");
 
     return `
-      <div class="world-header"><span>🌍</span><h3 style="color:#2563eb">Earth Characters (${byWorld.Earth.length})</h3></div>
-      <div class="card-grid">${earthCards}</div>
-      <div class="world-header"><span>🔮</span><h3 style="color:#7c3aed">Spherian Characters (${byWorld.Spheria.length})</h3></div>
+      <div class="world-header"><span>🌍</span><h3 style="color:#2563eb">Human Characters (${byWorld.Human.length})</h3></div>
+      <div class="card-grid">${humanCards}</div>
+      <div class="world-header"><span>🔮</span><h3 style="color:#7c3aed">Polyan Characters (${byWorld.Spheria.length})</h3></div>
       <div class="card-grid">${spheriaCards}</div>
     `;
   }
 
   function renderSettings(settings){
-    const earth = settings.filter(s => s.world === "Earth");
+    const human = settings.filter(s => isHumanWorld(s.world));
     const spheria = settings.filter(s => s.world === "Spheria");
 
     function locationCard(item, border){
@@ -217,8 +222,8 @@
     }
 
     return `
-      <div class="world-header"><span>🌍</span><h3 style="color:#2563eb">Earth</h3></div>
-      <div class="card-grid">${earth.map(s => locationCard(s, "#2563eb")).join("")}</div>
+      <div class="world-header"><span>🌍</span><h3 style="color:#2563eb">Human</h3></div>
+      <div class="card-grid">${human.map(s => locationCard(s, "#2563eb")).join("")}</div>
       <div class="world-header"><span>🔮</span><h3 style="color:#7c3aed">Spheria</h3></div>
       <div class="card-grid">${spheria.map(s => locationCard(s, "#7c3aed")).join("")}</div>
     `;
@@ -226,7 +231,7 @@
 
   function renderFactions(factions){
     return `<div class="faction-grid">${factions.map(f => `
-      <div class="faction-card" style="border-top:3px solid ${f.world === "Earth" ? "#2563eb" : "#7c3aed"}">
+      <div class="faction-card" style="border-top:3px solid ${isHumanWorld(f.world) ? "#2563eb" : "#7c3aed"}">
         <div class="faction-name">${escapeHtml(f.name)}</div>
         <div class="faction-world">${escapeHtml(f.world)}</div>
         <div class="faction-body">${escapeHtml(f.description)}</div>
