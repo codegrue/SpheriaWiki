@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spheria - Timeline</title>
+<link rel="stylesheet" href="./wiki.css">
+</head>
+<body>
+<nav>
+  <a href="overview.html">Overview</a>
+  <a href="characters.html">Characters</a>
+  <a href="settings.html">Settings</a>
+  <a href="factions.html">Factions</a>
+  <a href="objects.html">Objects</a>
+  <a href="chapters.html">Chapters</a>
+  <a href="timeline.html">Timeline</a>
+</nav>
+<header>
+  <h1>SPHERIA</h1>
+  <p id="header-subtitle">Novel Wiki - Loading data...</p>
+</header>
+<section>
+  <h2 style="color:#a78bfa">Timeline</h2>
+  <div id="page-content" class="status-msg">Loading timeline...</div>
+</section>
+<script src="./wiki-render.js"></script>
+<script>
+  SpheriaWiki.setActiveNav();
+  SpheriaWiki.initPage("timeline", "page-content");
+</script>
+</body>
+</html>

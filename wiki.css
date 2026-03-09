@@ -1,0 +1,70 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,sans-serif;background:#0f0f1a;color:#e0e0f0;min-height:100vh}
+a{color:#a78bfa;text-decoration:none}
+
+nav{position:sticky;top:0;z-index:100;background:#0a0a14;border-bottom:1px solid #1f2937;display:flex;gap:4px;padding:10px 24px;flex-wrap:wrap}
+nav a{padding:7px 14px;border-radius:8px;font-size:13px;font-weight:600;color:#9ca3af;transition:all .2s}
+nav a:hover,nav a.active{background:linear-gradient(135deg,#7c3aed,#2563eb);color:#fff}
+
+header{text-align:center;padding:48px 24px 32px;background:linear-gradient(180deg,#1a0a2e 0%,#0f0f1a 100%)}
+header h1{font-size:52px;font-weight:900;letter-spacing:6px;background:linear-gradient(135deg,#a78bfa,#60a5fa,#34d399);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header p{color:#6b7280;margin-top:8px;font-size:15px}
+
+section{max-width:1000px;margin:0 auto;padding:40px 24px}
+section h2{font-size:26px;font-weight:800;margin-bottom:24px;padding-bottom:12px;border-bottom:2px solid #1f2937}
+section h3{font-size:18px;font-weight:700;margin:28px 0 14px;display:flex;align-items:center;gap:8px}
+
+.plot-box{background:#1a1a2e;border-radius:12px;padding:24px;line-height:1.8;color:#d1d5db;margin-bottom:24px}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:24px}
+.stat-card{background:#1a1a2e;border-radius:10px;padding:16px;border-top:3px solid #7c3aed;text-align:center}
+.stat-num{font-size:32px;font-weight:800;color:#a78bfa}
+.stat-label{font-size:12px;color:#6b7280;margin-top:4px;text-transform:uppercase;letter-spacing:1px}
+.themes-box{background:#1a1a2e;border-radius:12px;padding:24px}
+.theme-item{padding:8px 0 8px 16px;border-left:3px solid #2563eb;color:#d1d5db;margin-bottom:8px;font-size:14px}
+
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.card{background:#1a1a2e;border-radius:10px;padding:16px}
+.card-name{font-weight:700;color:#f3f4f6;font-size:15px;margin-bottom:4px}
+.card-meta{font-size:11px;color:#9ca3af;margin-bottom:8px}
+.card-body{font-size:13px;color:#d1d5db;line-height:1.6}
+.card-arc{margin-top:8px;font-size:12px;color:#a78bfa;font-style:italic}
+
+.faction-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.faction-card{background:#1a1a2e;border-radius:12px;padding:20px}
+.faction-name{font-weight:700;color:#f3f4f6;font-size:16px;margin-bottom:4px}
+.faction-world{font-size:12px;color:#6b7280;margin-bottom:10px}
+.faction-body{font-size:13px;color:#d1d5db;line-height:1.6;margin-bottom:8px}
+.faction-members{font-size:12px;color:#a78bfa}
+
+.object-card{background:#1a1a2e;border-radius:10px;padding:16px;border-left:4px solid #f59e0b;margin-bottom:12px}
+.object-name{font-weight:700;color:#fbbf24;font-size:16px;margin-bottom:8px}
+.object-body{font-size:13px;color:#d1d5db;margin-bottom:8px;line-height:1.6}
+.object-sig{font-size:12px;color:#9ca3af;font-style:italic}
+
+.chapter-row{background:#1a1a2e;border-radius:10px;padding:14px 16px;margin-bottom:8px}
+.ch-header{display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap}
+.ch-icon{font-size:16px}
+.ch-num{font-weight:700;font-size:13px}
+.ch-title{font-weight:600;color:#f3f4f6;font-size:14px}
+.ch-tag{font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600}
+.ch-synopsis{font-size:13px;color:#d1d5db;line-height:1.7}
+
+.timeline{padding:8px 0}
+.tl-item{display:flex;gap:16px;margin-bottom:16px}
+.tl-dot{display:flex;flex-direction:column;align-items:center;flex-shrink:0}
+.tl-circle{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#7c3aed,#2563eb);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#fff}
+.tl-line{width:2px;flex:1;background:#1f2937;min-height:16px;margin-top:4px}
+.tl-text{color:#d1d5db;font-size:14px;padding-top:6px;line-height:1.6}
+
+.world-header{display:flex;align-items:center;gap:10px;margin:28px 0 14px}
+.world-header span{font-size:20px}
+.world-header h3{margin:0;border:none;padding:0}
+
+.status-msg{background:#1a1a2e;border-radius:10px;padding:16px;color:#9ca3af;font-size:14px}
+.status-msg.error{border-left:4px solid #dc2626;color:#fca5a5}
+
+@media(max-width:600px){
+  header h1{font-size:36px}
+  .card-grid{grid-template-columns:1fr}
+  .faction-grid{grid-template-columns:1fr}
+}
