@@ -51,163 +51,305 @@
     "Dana draws gun on Captain Brennan when confronted about her crimes (Ch 50)",
     "Spheria team reviews recordings of tower bridge creation and Worker liberation battle as Max commands playback (Ch 51)"
   ],
-  "characters": [
-    {
-      "name": "Le·ma",
-      "species": "Polyan",
-      "caste_or_role": "Lumen Seeker apprentice (female)",
-      "description": "A young Polyan with swirling patterns on her body (female marking). Selected to become apprentice to Sa·ma, the Lumen Master. Demonstrates quick thinking and problem-solving ability.",
-      "first_chapter": 3,
-      "world": "Spherian",
-      "updates": [
-        "Volunteers to be fired from Sa·ma's cannon as living projectile. Successfully crashes into Fa·ro mid-battle and steals his artifact. Uses artifact to control Zalisk herd, turning them against Soldiers while protecting Workers. Becomes hero of Worker liberation by neutralizing Fa·ro's greatest advantage."
-      ]
-    },
-    {
-      "name": "Sa·ma",
-      "species": "Polyan",
-      "caste_or_role": "Lumen Master",
-      "description": "The Colony's Lumen Master with straight textured lines (male marking). Guides Le·ma through dangerous trials. Possesses an artifact sensor with three triangles that gives him extraordinary abilities including controlling Zalisks.",
-      "first_chapter": 3,
-      "world": "Spherian",
-      "updates": [
-        "Discovered the golden cave with portal to Qubessence and encountered a cave god. Now imprisoned in Council building for first time in Polyan history after Fa·ro's expedition to the cave went wrong. Warns that nothing is unstoppable despite Colony's apparent strength.",
-        "Revealed as brilliant revolutionary engineer who secretly organized all Workers for mass exodus. Built revolutionary beam cannon capable of destroying structures and launching Polyans. Executed plan to topple tower across Rift, creating first bridge to forbidden lands. Led successful Worker rebellion against Fa·ro's dictatorship."
-      ]
-    },
-    {
-      "name": "Max",
-      "species": "Human",
-      "caste_or_role": "Lead scientist/physicist",
-      "description": "Thin, dark-haired physicist who presented at the 25th Solvay Conference. Leader of the Spheria Project. Chronically late, somewhat socially awkward, prone to philosophical musings.",
-      "first_chapter": 2,
-      "world": "Earth",
-      "updates": [
-        "Relationship with Min deepening through dates and gaming. Shares philosophical views on religion and universe. Nervous around Olivia the new intern. Working late preparing for Graham's important visit.",
-        "Discovers Min in the secret red server room he claims never to have seen before. Confused about the room's purpose and who created it. Traps both Min and Dana in incinerator when hearing sirens, believing one of them is guilty. Trapped himself but escapes. Arrives at board meeting to expose Dana's betrayal via recorded confession video."
-      ]
-    },
-    {
-      "name": "Min",
-      "species": "Human",
-      "caste_or_role": "Intern/computer science student",
-      "description": "Vietnamese-American computer science student with 'spy glasses' that record everything. Enthusiastic about technology. Brings Goi Cuon to team gatherings. Becomes reception desk worker/data analyst.",
-      "first_chapter": 6,
-      "world": "Earth",
-      "updates": [
-        "Relationship with Max developing through dinner dates and visiting his apartment. Debates nature of beauty and mathematics with Frankie. Working alone late when computer crashes before critical Graham meeting.",
-        "Discovers Dana's secret DARPA weapons project and red server room. Realizes Olivia was murdered for uncovering the same truth. Nearly killed by Max (who is confused), then trapped in incinerator by him. Escapes through chimney with help from hospital volunteer Walter. Becomes key witness against Dana."
-      ]
-    },
-    {
-      "name": "David",
-      "species": "Human",
-      "caste_or_role": "Chair of 25th Solvay Conference on Physics",
-      "description": "Max's friend from online quantum theory forums. Youthful demeanor despite age. Helped Max get speaking invitation to prestigious physics conference.",
-      "first_chapter": 2,
-      "world": "Earth",
-      "updates": []
-    },
-    {
-      "name": "Timothy (Tim)",
-      "species": "Human",
-      "caste_or_role": "Team member/scientist",
-      "description": "Student at UConn Health Center. Witnessed traumatic suicide of previous intern (Jill). Makes frozen drinks at happy hour. Works on Spheria Project.",
-      "first_chapter": 4,
-      "world": "Earth",
-      "updates": []
-    },
-    {
-      "name": "Jill",
-      "species": "Human",
-      "caste_or_role": "Previous intern (deceased)",
-      "description": "Former intern who committed suicide by jumping from library entrance, landing near Tim. Her death traumatized the team and created the opening for Min.",
-      "first_chapter": 4,
-      "world": "Earth",
-      "updates": []
-    },
-    {
-      "name": "Sheila",
-      "species": "Human",
-      "caste_or_role": "Medical student, Min's roommate",
-      "description": "Australian medical student at UConn Health Center. Attractive ('knockout'). Found internship posting for Min. Doesn't understand computers but supportive friend.",
-      "first_chapter": 7,
-      "world": "Earth",
-      "updates": []
-    },
-    {
-      "name": "Jean",
-      "species": "Human",
-      "caste_or_role": "Scientist/VR observer",
-      "description": "Team member who observes Spheria using VR headset and 3D SpaceMouse. Energized by big meals. Not a video game player. Uses ritual entry method to observe Polyans.",
-      "first_chapter": 17,
-      "world": "Earth",
-      "updates": []
-    },
-    {
-      "name": "Old Lumen Master",
-      "species": "Polyan",
-      "caste_or_role": "Previous Lumen Master",
-      "description": "Feeble elder who lived in the Lumen Grotto. Selected and trained Sa·ma when he was young. Explained the testing process and purpose of Lumen Seekers.",
-      "first_chapter": 10,
-      "world": "Spherian",
-      "updates": []
-    },
-    {
-      "name": "Olivia Holland",
-      "species": "Human",
-      "caste_or_role": "Intern/Statistical Analyst",
-      "description": "Summer intern working on statistical analysis for the Spheria project. Keeps a work journal documenting her experiences, personal life struggles including a breakup with Randy, and developing friendship with roommate Ashley.",
-      "first_chapter": 29,
-      "world": "Earth",
-      "updates": []
-    },
-    {
-      "name": "Ti·ni",
-      "species": "Polyan (Drone)",
-      "caste_or_role": "Three-legged Drone",
-      "description": "Young Drone who shows less fear of higher castes than others. Appears curious and respectful toward Sa·ma, asking questions during his storytelling.",
-      "first_chapter": 28,
-      "world": "Spheria",
-      "updates": []
-    },
-    {
-      "name": "Po·ni",
-      "species": "Polyan (Drone)",
-      "caste_or_role": "Three-legged Drone",
-      "description": "Another young Drone who forgets her manners in her curiosity about Sa·ma's cave discovery. Stands admiringly next to Ti·ni.",
-      "first_chapter": 28,
-      "world": "Spheria",
-      "updates": []
-    },
-    {
-      "name": "Moses Diego",
-      "species": "Human",
-      "caste_or_role": "Journalist (Gizmodo)",
-      "description": "Tech journalist who previously covered the Qube technology and returns to write an article titled 'Scientists Play God In This Virtual Experiment' about the Spheria project.",
-      "first_chapter": 25,
-      "world": "Earth",
-      "updates": []
-    },
-    {
-      "name": "Walter",
-      "species": "Human",
-      "caste_or_role": "Candy striper at hospital",
-      "description": "Hospital volunteer who discovers Min and Max trapped in the incinerator by following mysterious banging sounds",
-      "first_chapter": 47,
-      "world": "Earth",
-      "updates": []
-    },
-    {
-      "name": "Captain Brennan",
-      "species": "Human",
-      "caste_or_role": "Head of campus security",
-      "description": "Security officer who investigated Olivia's death and arrives to arrest Dana; had doubts about the suicide ruling",
-      "first_chapter": 50,
-      "world": "Earth",
-      "updates": []
-    }
-  ],
+  "characters": {
+    "human": [
+      {
+        "name": "Max",
+        "species": "Human",
+        "caste_or_role": "Lead scientist/physicist",
+        "description": "Thin, dark-haired physicist who presented at the 25th Solvay Conference. Leader of the Spheria Project. Chronically late, somewhat socially awkward, prone to philosophical musings.",
+        "first_chapter": 2,
+        "world": "Earth",
+        "major": true,
+        "updates": [
+          "Relationship with Min deepening through dates and gaming. Shares philosophical views on religion and universe. Nervous around Olivia the new intern. Working late preparing for Graham's important visit.",
+          "Discovers Min in the secret red server room he claims never to have seen before. Confused about the room's purpose and who created it. Traps both Min and Dana in incinerator when hearing sirens, believing one of them is guilty. Trapped himself but escapes. Arrives at board meeting to expose Dana's betrayal via recorded confession video."
+        ]
+      },
+      {
+        "name": "Min",
+        "species": "Human",
+        "caste_or_role": "Intern/computer science student",
+        "description": "Vietnamese-American computer science student with 'spy glasses' that record everything. Enthusiastic about technology. Brings Goi Cuon to team gatherings. Becomes reception desk worker/data analyst.",
+        "first_chapter": 6,
+        "world": "Earth",
+        "major": true,
+        "updates": [
+          "Relationship with Max developing through dinner dates and visiting his apartment. Debates nature of beauty and mathematics with Frankie. Working alone late when computer crashes before critical Graham meeting.",
+          "Discovers Dana's secret DARPA weapons project and red server room. Realizes Olivia was murdered for uncovering the same truth. Nearly killed by Max (who is confused), then trapped in incinerator by him. Escapes through chimney with help from hospital volunteer Walter. Becomes key witness against Dana."
+        ]
+      },
+      {
+        "name": "David",
+        "species": "Human",
+        "caste_or_role": "Chair of 25th Solvay Conference on Physics",
+        "description": "Max's friend from online quantum theory forums. Youthful demeanor despite age. Helped Max get speaking invitation to prestigious physics conference.",
+        "first_chapter": 2,
+        "world": "Earth",
+        "major": false,
+        "updates": []
+      },
+      {
+        "name": "Tim",
+        "species": "Human",
+        "caste_or_role": "Team member/scientist",
+        "description": "Student at UConn Health Center. Witnessed traumatic suicide of previous intern (Olivia). Makes frozen drinks at happy hour. Works on Spheria Project.",
+        "first_chapter": 4,
+        "world": "Earth",
+        "major": false,
+        "updates": []
+      },
+      {
+        "name": "Jill",
+        "species": "Human",
+        "caste_or_role": "Previous intern (deceased)",
+        "description": "Student at UConn Health Center. Was tramatized when Olivia's body landed near her.",
+        "first_chapter": 4,
+        "world": "Earth",
+        "major": false,
+        "updates": []
+      },
+      {
+        "name": "Sheila",
+        "species": "Human",
+        "caste_or_role": "Medical student, Min's roommate",
+        "description": "Australian medical student at UConn Health Center. Attractive ('knockout'). Found internship posting for Min. Doesn't understand computers but supportive friend.",
+        "first_chapter": 7,
+        "world": "Earth",
+        "major": false,
+        "updates": []
+      },
+      {
+        "name": "Jean",
+        "species": "Human",
+        "caste_or_role": "Scientist/VR observer",
+        "description": "Team member who observes Spheria using VR headset and 3D SpaceMouse. Energized by big meals. Not a video game player. Uses ritual entry method to observe Polyans.",
+        "first_chapter": 17,
+        "world": "Earth",
+        "major": false,
+        "updates": []
+      },
+      {
+        "name": "Olivia Holland",
+        "species": "Human",
+        "caste_or_role": "Intern/Statistical Analyst",
+        "description": "Summer intern working on statistical analysis for the Spheria project. Keeps a work journal documenting her experiences, personal life struggles including a breakup with Randy, and developing friendship with roommate Ashley.",
+        "first_chapter": 29,
+        "world": "Earth",
+        "major": false,
+        "updates": []
+      },
+      {
+        "name": "Moses Diego",
+        "species": "Human",
+        "caste_or_role": "Journalist (Gizmodo)",
+        "description": "Tech journalist who previously covered the Qube technology and returns to write an article titled 'Scientists Play God In This Virtual Experiment' about the Spheria project.",
+        "first_chapter": 25,
+        "world": "Earth",
+        "major": false,
+        "updates": []
+      },
+      {
+        "name": "Walter",
+        "species": "Human",
+        "caste_or_role": "Candy striper at hospital",
+        "description": "Hospital volunteer who discovers Min and Max trapped in the incinerator by following mysterious banging sounds",
+        "first_chapter": 47,
+        "world": "Earth",
+        "major": false,
+        "updates": []
+      },
+      {
+        "name": "Captain Brennan",
+        "species": "Human",
+        "caste_or_role": "Head of campus security",
+        "description": "Security officer who investigated Olivia's death and arrives to arrest Dana; had doubts about the suicide ruling",
+        "first_chapter": 50,
+        "world": "Earth",
+        "major": false,
+        "updates": []
+      },
+      {
+        "name": "Graham",
+        "species": "Human",
+        "caste_or_role": "Billionaire funder/benefactor",
+        "description": "Wealthy billionaire who funds the Spheria Project with a pacifist vision. Owns the luxury yellow airship 'Buruwa Gunya.' His grant included stipulations such as building the mooring mast on the UConn Health Center roof. Present at the board meeting where Dana's betrayal is exposed.",
+        "first_chapter": 19,
+        "world": "Earth",
+        "major": false,
+        "updates": [
+          "Arrives via luxury airship 'Buruwa Gunya' for important project update. Expresses concern about Max's absence during Dana's presentation. Compares visionary leadership to Steve Jobs. Witnesses Polyan resourcefulness in recordings, realizing it mirrors human ingenuity."
+        ]
+      },
+      {
+        "name": "Dana Carter",
+        "species": "Human",
+        "caste_or_role": "Project manager/antagonist",
+        "description": "Manager of the Spheria Project who secretly arranged a deal with DARPA to weaponize the technology in exchange for personal funding and land in Costa Rica. Murdered intern Olivia Holland to cover up the conspiracy. Built and operated a secret duplicate server room beneath the Qube floor.",
+        "first_chapter": 18,
+        "world": "Earth",
+        "major": true,
+        "updates": [
+          "Reviews weekly project logs and notices unusual Polyan behavior. Orchestrated unauthorized military weapons research using Tor network and Gridway computing.",
+          "Traps both Min and Max in the hospital incinerator to eliminate witnesses before her board presentation. Arrives disheveled at meeting. When her pre-recorded confession video plays, she draws a gun before Captain Brennan can arrest her."
+        ]
+      },
+      {
+        "name": "Frankie",
+        "species": "Human",
+        "caste_or_role": "Spheria Project team member",
+        "description": "Team member on the Spheria Project who startles Min while she is scrutinizing data. Debates with Min about whether the world is mathematical formulas or beautiful random natural patterns. Invites Min to go collect textures for the project, wanting to show her the beauty in nature beyond equations.",
+        "first_chapter": 27,
+        "world": "Earth",
+        "major": false,
+        "updates": []
+      },
+      {
+        "name": "Ashley",
+        "species": "Human",
+        "caste_or_role": "Intern Olivia's roommate",
+        "description": "Olivia Holland's roommate who befriends her during the difficult period after Olivia's breakup with Randy. Home alone during a thunderstorm watching The Walking Dead when mysterious knocking occurs. Helps Olivia recover from her breakup.",
+        "first_chapter": 29,
+        "world": "Earth",
+        "major": false,
+        "updates": []
+      },
+      {
+        "name": "Abina",
+        "species": "Human",
+        "caste_or_role": "Spheria Project team member",
+        "description": "Team member on the Spheria Project who controls playback of the Spheria simulation recordings. Max commands Abina to pause playback during the final team review of the Polyan prayer circle and battle recordings.",
+        "first_chapter": 51,
+        "world": "Earth",
+        "major": false,
+        "updates": []
+      },
+      {
+        "name": "Rick Grimes",
+        "species": "Human (fictional)",
+        "caste_or_role": "TV character (The Walking Dead)",
+        "description": "Character from the TV show The Walking Dead that Ashley is watching during the thunderstorm in Chapter 31. Sneaks through a zombie-filled warehouse on screen. His on-screen actions are contrasted with the mysterious real-world knocking Ashley hears.",
+        "first_chapter": 31,
+        "world": "Earth",
+        "major": false,
+        "updates": []
+      }
+    ],
+    "polyan": [
+      {
+        "name": "Le·ma",
+        "species": "Polyan",
+        "caste_or_role": "Lumen Seeker apprentice (female)",
+        "description": "A young Polyan with swirling patterns on her body (female marking). Selected to become apprentice to Sa·ma, the Lumen Master. Demonstrates quick thinking and problem-solving ability.",
+        "first_chapter": 3,
+        "world": "Spherian",
+        "major": true,
+        "updates": [
+          "Volunteers to be fired from Sa·ma's cannon as living projectile. Successfully crashes into Fa·ro mid-battle and steals his artifact. Uses artifact to control Zalisk herd, turning them against Soldiers while protecting Workers. Becomes hero of Worker liberation by neutralizing Fa·ro's greatest advantage."
+        ]
+      },
+      {
+        "name": "Sa·ma",
+        "species": "Polyan",
+        "caste_or_role": "Lumen Master",
+        "description": "The Colony's Lumen Master with straight textured lines (male marking). Guides Le·ma through dangerous trials. Possesses an artifact sensor with three triangles that gives him extraordinary abilities including controlling Zalisks.",
+        "first_chapter": 3,
+        "world": "Spherian",
+        "major": true,
+        "updates": [
+          "Discovered the golden cave with portal to Qubessence and encountered a cave god. Now imprisoned in Council building for first time in Polyan history after Fa·ro's expedition to the cave went wrong. Warns that nothing is unstoppable despite Colony's apparent strength.",
+          "Revealed as brilliant revolutionary engineer who secretly organized all Workers for mass exodus. Built revolutionary beam cannon capable of destroying structures and launching Polyans. Executed plan to topple tower across Rift, creating first bridge to forbidden lands. Led successful Worker rebellion against Fa·ro's dictatorship."
+        ]
+      },
+      {
+        "name": "Old Lumen Master",
+        "species": "Polyan",
+        "caste_or_role": "Previous Lumen Master",
+        "description": "Feeble elder who lived in the Lumen Grotto. Selected and trained Sa·ma when he was young. Explained the testing process and purpose of Lumen Seekers.",
+        "first_chapter": 10,
+        "world": "Spherian",
+        "major": false,
+        "updates": []
+      },
+      {
+        "name": "Ti·ni",
+        "species": "Polyan (Drone)",
+        "caste_or_role": "Three-legged Drone",
+        "description": "Young Drone who shows less fear of higher castes than others. Appears curious and respectful toward Sa·ma, asking questions during his storytelling.",
+        "first_chapter": 28,
+        "world": "Spheria",
+        "major": false,
+        "updates": []
+      },
+      {
+        "name": "Po·ni",
+        "species": "Polyan (Drone)",
+        "caste_or_role": "Three-legged Drone",
+        "description": "Another young Drone who forgets her manners in her curiosity about Sa·ma's cave discovery. Stands admiringly next to Ti·ni.",
+        "first_chapter": 28,
+        "world": "Spheria",
+        "major": false,
+        "updates": []
+      },
+      {
+        "name": "Fa·ro",
+        "species": "Polyan",
+        "caste_or_role": "Seven-legged god/dictator",
+        "description": "The first artificially engineered seven-legged Polyan god, created by the Council of Leaders. Ambitious and power-hungry, he stages a coup by eliminating the Council to become sole ruler of the Colony. Commands the Soldiers and enslaves the Workers to build a massive tower reaching toward the Source. Possesses an artifact device that lets him scan for living creatures and control Zalisk herds.",
+        "first_chapter": 26,
+        "world": "Spherian",
+        "major": true,
+        "updates": [
+          "Surveys Colony from central dais, resenting that Leaders don't treat him as superior. Schemes to have Sa·ma build a statue of him.",
+          "Forces Sa·ma to lead him, Ga·zo, and Za·zo to the golden cave to reach the portal to Qubessence, believing it his destiny to join other gods.",
+          "Eliminates the Council and declares himself sole dictator. Enslaves Workers and commands Soldiers to build an enormous tower. Is ultimately pinned beneath a Zalisk during the Workers' rebellion after Le·ma steals his artifact."
+        ]
+      },
+      {
+        "name": "Ga·zo",
+        "species": "Polyan",
+        "caste_or_role": "Fa·ro's chief enforcer/Soldier",
+        "description": "Five-legged Soldier Polyan and Fa·ro's primary loyalist and enforcer. Convinced the Council to create a second god as backup for Fa·ro. Visits Sa·ma in prison to confirm he's alive. Leads the Soldier army in pursuit of the Workers.",
+        "first_chapter": 30,
+        "world": "Spherian",
+        "major": false,
+        "updates": [
+          "Persuades the Council Leaders that creating a second seven-legged god would be wise insurance for the Colony.",
+          "Reports to Fa·ro that all Workers have vanished overnight. Leads Soldiers in pursuit. Attempts to rescue Fa·ro from the Zalisk during the climactic battle."
+        ]
+      },
+      {
+        "name": "Za·zo",
+        "species": "Polyan",
+        "caste_or_role": "Fa·ro's supporter/Soldier",
+        "description": "Five-legged Soldier Polyan who supports Fa·ro's leadership and accompanies Fa·ro and Ga·zo on the expedition to the golden cave. Part of Fa·ro's inner circle along with Ga·zo.",
+        "first_chapter": 30,
+        "world": "Spherian",
+        "major": false,
+        "updates": []
+      },
+      {
+        "name": "Hi·ma",
+        "species": "Polyan",
+        "caste_or_role": "Worker rebel leader",
+        "description": "Four-legged Worker Polyan who is one of Sa·ma's key lieutenants in the rebellion. Follows Sa·ma's secret instructions to gather twelve lead Workers at a hidden meeting place. Witnesses the tower collapse into the bridge across the Rift from inside the fallen structure.",
+        "first_chapter": 38,
+        "world": "Spherian",
+        "major": false,
+        "updates": []
+      },
+      {
+        "name": "Pu·ma",
+        "species": "Polyan",
+        "caste_or_role": "Worker rebel",
+        "description": "Four-legged Worker Polyan who accompanies Hi·ma following Sa·ma's secret instructions to the hidden meeting place for the Worker rebellion.",
+        "first_chapter": 38,
+        "world": "Spherian",
+        "major": false,
+        "updates": []
+      }
+    ]
+  },
   "settings": [
     {
       "name": "The Source",
@@ -308,6 +450,26 @@
       "name": "Fa·ro's Chamber",
       "world": "Spheria",
       "description": "The apex chamber of the tallest structure in the Colony, formerly the Council chamber, now Fa·ro's throne room after he eliminated the Council"
+    },
+    {
+      "name": "Lyman Maynard Stowe Library",
+      "world": "Earth",
+      "description": "Library at UConn Health Center with 'Spheres' sculptures by Wopo Holop outside the Academic Entrance. Site where Jill committed suicide by jumping from the roof, landing on a sculpture pedestal near Tim. Has a cobblestone circle entry."
+    },
+    {
+      "name": "Max's Apartment",
+      "world": "Earth",
+      "description": "Max's minimalist apartment near UConn Health Center. Features an impressive entertainment center with video game systems and a bedroom with walls covered in bookcases. Min visits here to play Minecraft and have dinner dates with Max."
+    },
+    {
+      "name": "UConn Health Center Rooftop",
+      "world": "Earth",
+      "description": "Rooftop of the UConn Health Center building, accessed via emergency stairwell. Features a mooring mast disguised as a cell tower antenna, used as a docking point for Graham's airship 'Buruwa Gunya.'"
+    },
+    {
+      "name": "Qubessence",
+      "world": "Spherian",
+      "description": "The afterlife realm accessible through the portal in the Golden Cave and via the Rift. A violet landscape with violet mountains and violet sky. Described as a place of endless energy where there is no need to hunt. Only the 'structures' (bodies) of dead Polyans can enter; living Polyans who jump into the Rift are destroyed. Gods are believed to reside there."
     }
   ],
   "chapters": [
@@ -708,6 +870,41 @@
       "name": "Blue rock barrier wall",
       "description": "Long continuous vertical wall of blue crystalline material creating a clearing perpendicular to the Soldiers' path",
       "significance": "Defensive fortification created by Workers to slow Soldier pursuit and protect their escape route"
+    },
+    {
+      "name": "Dana's Confession Video",
+      "description": "Pre-recorded video of Dana confessing to murdering Olivia Holland, locking Max in the incinerator, and making a deal with DARPA for military funding and personal land in Costa Rica. Played at the board presentation to expose Dana's crimes.",
+      "significance": "Max's insurance policy ensuring Dana's crimes would be exposed regardless of outcome; directly leads to Dana's arrest"
+    },
+    {
+      "name": "Virginia-class Submarine Photonics Mast",
+      "description": "Low-profile mast with camera array connected by fiber optic cables, resembling a traditional periscope without hull penetration. Observed at Electric Boat Pier 3 in Groton, CT during the clandestine meeting.",
+      "significance": "Advanced U.S. Navy submarine technology present at the mysterious pier meeting, suggesting military involvement"
+    },
+    {
+      "name": "'A Short History of Nearly Everything'",
+      "description": "Non-fiction book by Bill Bryson with a blue cover featuring a small Earth photo and asterisk. Max's all-time favorite book, read at least once a year. He wishes for an updated edition covering quantum physics.",
+      "significance": "Reveals Max's passion for understanding the universe and his belief that they are creating history with the Spheria project"
+    },
+    {
+      "name": "Keurig Coffee Machine",
+      "description": "Coffee maker in the Spheria Project office kitchen with yellow blinking LEDs, uses Dark Embers k-cups. Min uses it during late-night work sessions.",
+      "significance": "Recurring companion during Min's late-night preparations before Graham's visit; her computer crashes after she returns from making coffee"
+    },
+    {
+      "name": "Mooring Mast",
+      "description": "Structure on the UConn Health Center roof that appears to be a cell tower antenna but functions as a docking point for Graham's luxury airship. Was built as a stipulation of Graham's funding grant.",
+      "significance": "Enables Graham to arrive by airship directly to the facility; demonstrates his eccentric wealth and the scale of his investment in the project"
+    },
+    {
+      "name": "Gridway Distributed Computing System",
+      "description": "Open-source meta-scheduling software enabling large-scale sharing of computing resources across distributed processors. Found running on Dana's secret server, being used for unauthorized weapons calculations.",
+      "significance": "Key evidence of the DARPA weapons project; its presence in the secret server room proves Dana is conducting large-scale unauthorized computing operations"
+    },
+    {
+      "name": "Tor Network",
+      "description": "Navy-developed anonymous communication system later adopted for dark web use. Running on Dana's secret server to provide untraceable internet communication despite no official internet access in the facility.",
+      "significance": "Enables covert DARPA weapons data transmission; discovered by Min using Olivia's password and constitutes evidence of Dana's unauthorized military collaboration"
     }
   ],
   "factions": [
@@ -750,31 +947,33 @@
       "name": "Fa·ro's Faction",
       "world": "Spheria",
       "description": "Growing authoritarian movement centered on Fa·ro as a decisive god-leader who breaks Council gridlock. Represents shift from democratic consensus to autocratic rule, with Ga·zo as primary enforcer.",
-      "members": [
-        "Fa·ro",
-        "Ga·zo",
-        "Za·zo"
-      ]
+      "members": ["Fa·ro", "Ga·zo", "Za·zo"]
     },
     {
       "name": "Rebellious Workers",
       "world": "Spheria",
       "description": "All Workers in the Colony who secretly organized under Sa·ma's leadership to flee across the Rift using the fallen tower as a bridge, escaping Fa·ro's tyranny",
-      "members": [
-        "Sa·ma",
-        "Hi·ma",
-        "Pu·ma",
-        "Le·ma",
-        "twelve lead Workers"
-      ]
+      "members": ["Sa·ma", "Hi·ma", "Pu·ma", "Le·ma", "twelve lead Workers"]
     },
     {
       "name": "DARPA partnership",
       "world": "Earth",
       "description": "Secret military collaboration arranged by Dana with Defense Advanced Research Projects Agency to weaponize the Spheria technology in exchange for funding and personal land in Costa Rica",
+      "members": ["Dana Carter", "unnamed DARPA officials"]
+    },
+    {
+      "name": "Council Leaders",
+      "world": "Spherian",
+      "description": "The eight six-legged Polyans who govern the Colony through majority vote. Gridlocked and often indecisive, they increasingly deferred to Fa·ro before he eliminated them entirely and declared himself sole ruler. They attempted to create a second seven-legged god as a backup to Fa·ro, which was the stated reason Fa·ro gave for their deaths.",
       "members": [
-        "Dana Carter",
-        "unnamed DARPA officials"
+        "Wu·sa",
+        "Yo·sa",
+        "Me·sa",
+        "Ju·sa",
+        "Ki·sa",
+        "Co·sa",
+        "Pi·sa",
+        "Vu·sa"
       ]
     }
   ],

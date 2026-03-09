@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const fs = require\\(''fs''\\); try { JSON.parse\\(fs.readFileSync\\(''Spheria_Wiki.json'', ''utf8''\\)\\); console.log\\(''JSON is valid''\\); } catch\\(e\\) { console.log\\(''JSON ERROR:'', e.message\\); }\")",
+      "Bash(node -e \":*)",
+      "Bash(node -e \"const d = require\\(''c:/Users/jeff/OneDrive/Projects/Code/Websites/SpheriaWiki.info/Spheria_Wiki.json''\\); console.log\\(''human count:'', d.characters.human.length\\); console.log\\(''polyan count:'', d.characters.polyan.length\\); console.log\\(''human names:'', d.characters.human.map\\(c=>c.name\\).join\\('', ''\\)\\); console.log\\(''polyan names:'', d.characters.polyan.map\\(c=>c.name\\).join\\('', ''\\)\\);\")"
+    ]
+  }
+}

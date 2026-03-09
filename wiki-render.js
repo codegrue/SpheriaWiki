@@ -23,7 +23,7 @@ function renderOverview(data) {
   const stats = [
     {
       label: "Characters",
-      value: data.characters.length,
+      value: data.characters.human.length + data.characters.polyan.length,
       border: "#7c3aed",
       color: "#a78bfa",
     },
@@ -117,43 +117,51 @@ function characterCard(c, border) {
 }
 
 function renderCharacters(characters) {
-  const byWorld = {
-    Human: characters.filter((c) => isHumanWorld(c.world)),
-    Spheria: characters.filter((c) => c.world === "Spheria"),
-  };
+  const humanMajor = characters.human.filter((c) => c.major);
+  const humanMinor = characters.human.filter((c) => !c.major);
+  const polyanMajor = characters.polyan.filter((c) => c.major);
+  const polyanMinor = characters.polyan.filter((c) => !c.major);
 
-  const humanCards = byWorld.Human.map((c) => characterCard(c, "#2563eb")).join(
-    "",
-  );
-  const spheriaCards = byWorld.Spheria.map((c) =>
-    characterCard(c, "#7c3aed"),
-  ).join("");
+  function section(label, chars, color) {
+    if (!chars.length) return "";
+    return `<h4 style="color:${color};margin:12px 0 6px">${label}</h4><div class="card-grid">${chars.map((c) => characterCard(c, color)).join("")}</div>`;
+  }
 
   return `
-    <div class="world-header"><span>\ud83c\udf0d</span><h3 style="color:#2563eb">Human Characters (${byWorld.Human.length})</h3></div>
-    <div class="card-grid">${humanCards}</div>
-    <div class="world-header"><span>\ud83d\udd2e</span><h3 style="color:#7c3aed">Polyan Characters (${byWorld.Spheria.length})</h3></div>
-    <div class="card-grid">${spheriaCards}</div>
+    <div class="world-header"><span>🌍</span><h3 style="color:#2563eb">Human Characters (${characters.human.length})</h3></div>
+    ${section("Major Characters", humanMajor, "#2563eb")}
+    ${section("Minor Characters", humanMinor, "#2563eb")}
+    <div class="world-header"><span>🔮</span><h3 style="color:#7c3aed">Polyan Characters (${characters.polyan.length})</h3></div>
+    ${section("Major Characters", polyanMajor, "#7c3aed")}
+    ${section("Minor Characters", polyanMinor, "#7c3aed")}
   `;
 }
 
 function renderHumans(characters) {
-  const humans = characters.filter((c) => isHumanWorld(c.world));
-  const humanCards = humans.map((c) => characterCard(c, "#2563eb")).join("");
-
-  return `<div class="card-grid">${humanCards}</div>`;
+  const major = characters.human.filter((c) => c.major);
+  const minor = characters.human.filter((c) => !c.major);
+  return `
+    <h4 style="color:#2563eb;margin:12px 0 6px">Major Characters</h4>
+    <div class="card-grid">${major.map((c) => characterCard(c, "#2563eb")).join("")}</div>
+    <h4 style="color:#6b7280;margin:12px 0 6px">Minor Characters</h4>
+    <div class="card-grid">${minor.map((c) => characterCard(c, "#2563eb")).join("")}</div>
+  `;
 }
 
 function renderPolyanCharacters(characters) {
-  const polyans = characters.filter((c) => c.world === "Spheria");
-  const polyanCards = polyans.map((c) => characterCard(c, "#7c3aed")).join("");
-
-  return `<div class="card-grid">${polyanCards}</div>`;
+  const major = characters.polyan.filter((c) => c.major);
+  const minor = characters.polyan.filter((c) => !c.major);
+  return `
+    <h4 style="color:#7c3aed;margin:12px 0 6px">Major Characters</h4>
+    <div class="card-grid">${major.map((c) => characterCard(c, "#7c3aed")).join("")}</div>
+    <h4 style="color:#6b7280;margin:12px 0 6px">Minor Characters</h4>
+    <div class="card-grid">${minor.map((c) => characterCard(c, "#7c3aed")).join("")}</div>
+  `;
 }
 
 function renderSettings(settings) {
   const human = settings.filter((s) => isHumanWorld(s.world));
-  const spheria = settings.filter((s) => s.world === "Spheria");
+  const spheria = settings.filter((s) => !isHumanWorld(s.world));
 
   function locationCard(item, border) {
     return `
