@@ -35,7 +35,7 @@ function renderOverview(data) {
     },
     {
       label: "Chapters",
-      value: data.chapters.length,
+      value: data.books.book1.chapters.length,
       border: "#059669",
       color: "#34d399",
     },
@@ -233,20 +233,21 @@ function renderChapters(chapters) {
     .join("");
 }
 
-function renderBook1(chapters) {
-  // All current chapters are Book 1
-  return renderChapters(chapters);
+function renderBookSection(book, placeholderMsg) {
+  const synopsis = book.synopsis
+    ? `<div class="book-synopsis">${escapeHtml(book.synopsis)}</div>`
+    : '<div class="status-msg">Synopsis coming soon...</div>';
+  const chapters = book.chapters.length
+    ? renderChapters(book.chapters)
+    : `<div class="status-msg">${placeholderMsg}</div>`;
+  return `
+    <h3 class="book-section-header">Overall Synopsis</h3>
+    ${synopsis}
+    <h3 class="book-section-header">Chapter Synopses</h3>
+    ${chapters}
+  `;
 }
 
-function renderOliviasLog() {
-  // Placeholder for Olivia's Log chapters
-  return '<div class="status-msg">Olivia\'s Log chapters coming soon...</div>';
-}
-
-function renderBook2() {
-  // Placeholder for Book 2 chapters
-  return '<div class="status-msg">Book 2 chapters coming soon...</div>';
-}
 
 function renderTimeline(items) {
   return `<div class="timeline">${items
@@ -543,7 +544,7 @@ async function initPage(pageKey, containerId) {
     else if (pageKey === "objects")
       container.innerHTML = renderObjects(data.objects);
     else if (pageKey === "chapters")
-      container.innerHTML = renderChapters(data.chapters);
+      container.innerHTML = renderChapters(data.books.book1.chapters);
     else if (pageKey === "timeline")
       container.innerHTML = renderTimeline(data.timeline);
     else if (pageKey === "world") container.innerHTML = renderWorld(data.world);
@@ -611,50 +612,48 @@ async function initCharacterTabs() {
 }
 
 async function initChapterTabs() {
+  const subMenu = document.getElementById("books-sub-menu");
+  const tabContentsEl = document.getElementById("books-tab-contents");
   try {
     const response = await fetch("/Spheria_Wiki.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
 
-    // Render all tabs
-    const book1Container = document.getElementById("book1-content");
-    const oliviasLogContainer = document.getElementById("olivias-log-content");
-    const book2Container = document.getElementById("book2-content");
+    const keys = Object.keys(data.books);
 
-    if (book1Container) {
-      book1Container.innerHTML = renderBook1(data.chapters);
-    }
-    if (oliviasLogContainer) {
-      oliviasLogContainer.innerHTML = renderOliviasLog();
-    }
-    if (book2Container) {
-      book2Container.innerHTML = renderBook2();
-    }
+    // Build tab buttons and content divs dynamically
+    subMenu.innerHTML = keys
+      .map((key, i) => `<button class="sub-menu-btn${i === 0 ? " active" : ""}" data-tab="${key}">📖 ${escapeHtml(data.books[key].title)}</button>`)
+      .join("");
+
+    tabContentsEl.innerHTML = keys
+      .map((key, i) => `<div id="${key}-content" class="tab-content${i === 0 ? " active" : ""}"></div>`)
+      .join("");
+
+    // Render each book
+    keys.forEach((key) => {
+      document.getElementById(`${key}-content`).innerHTML =
+        renderBookSection(data.books[key], "Chapters coming soon...");
+    });
 
     // Set up tab switching
-    const tabButtons = document.querySelectorAll(".sub-menu-btn");
-    const tabContents = document.querySelectorAll(".tab-content");
-
+    const tabButtons = subMenu.querySelectorAll(".sub-menu-btn");
     tabButtons.forEach((btn) => {
       btn.addEventListener("click", () => {
         const tabName = btn.getAttribute("data-tab");
-
-        // Update button states
         tabButtons.forEach((b) => b.classList.remove("active"));
         btn.classList.add("active");
-
-        // Update content visibility
-        tabContents.forEach((content) => {
-          content.classList.remove("active");
-        });
+        tabContentsEl.querySelectorAll(".tab-content").forEach((c) => c.classList.remove("active"));
         document.getElementById(`${tabName}-content`).classList.add("active");
       });
     });
   } catch (err) {
-    const book1Container = document.getElementById("book1-content");
-    if (book1Container) {
-      book1Container.classList.add("error");
-      book1Container.innerHTML =
+    if (subMenu) {
+      subMenu.innerHTML = "";
+    }
+    if (tabContentsEl) {
+      tabContentsEl.classList.add("error");
+      tabContentsEl.innerHTML =
         "Could not load Spheria_Wiki.json. Run a local web server (npm run dev) and refresh.";
     }
     console.error(err);

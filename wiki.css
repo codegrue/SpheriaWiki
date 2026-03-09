@@ -242,6 +242,24 @@ section h3 {
   font-style: italic;
 }
 
+.book-section-header {
+  color: #a0aec0;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 20px 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #2d2d4e;
+}
+.book-synopsis {
+  background: #1a1a2e;
+  border-radius: 10px;
+  padding: 14px 16px;
+  color: #c0c0d8;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
 .chapter-row {
   background: #1a1a2e;
   border-radius: 10px;
