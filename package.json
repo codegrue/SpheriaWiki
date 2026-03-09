@@ -1,0 +1,13 @@
+{
+  "name": "spheriawiki-info",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static wiki site for Spheria with JSON-backed content.",
+  "scripts": {
+    "dev": "serve .",
+    "start": "serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
