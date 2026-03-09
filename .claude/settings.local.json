@@ -4,7 +4,10 @@
       "Bash(node -e \"const fs = require\\(''fs''\\); try { JSON.parse\\(fs.readFileSync\\(''Spheria_Wiki.json'', ''utf8''\\)\\); console.log\\(''JSON is valid''\\); } catch\\(e\\) { console.log\\(''JSON ERROR:'', e.message\\); }\")",
       "Bash(node -e \":*)",
       "Bash(node -e \"const d = require\\(''c:/Users/jeff/OneDrive/Projects/Code/Websites/SpheriaWiki.info/Spheria_Wiki.json''\\); console.log\\(''human count:'', d.characters.human.length\\); console.log\\(''polyan count:'', d.characters.polyan.length\\); console.log\\(''human names:'', d.characters.human.map\\(c=>c.name\\).join\\('', ''\\)\\); console.log\\(''polyan names:'', d.characters.polyan.map\\(c=>c.name\\).join\\('', ''\\)\\);\")",
-      "Bash(node -e \"JSON.parse\\(require\\(''fs''\\).readFileSync\\(''c:/Users/jeff/OneDrive/Projects/Code/Websites/SpheriaWiki.info/Spheria_Wiki.json'',''utf8''\\)\\); console.log\\(''Valid JSON''\\)\")"
+      "Bash(node -e \"JSON.parse\\(require\\(''fs''\\).readFileSync\\(''c:/Users/jeff/OneDrive/Projects/Code/Websites/SpheriaWiki.info/Spheria_Wiki.json'',''utf8''\\)\\); console.log\\(''Valid JSON''\\)\")",
+      "Bash(node -e \"const d = JSON.parse\\(require\\(''fs''\\).readFileSync\\(''c:/Users/jeff/OneDrive/Projects/Code/Websites/SpheriaWiki.info/Spheria_Wiki.json'',''utf8''\\)\\); const w = d.world; console.log\\(''geography:'', w.geography.length, ''physics:'', Object.keys\\(w.physics\\).length, ''source_colors:'', w.source_colors.length\\)\")",
+      "Bash(node -e \"const d = JSON.parse\\(require\\(''fs''\\).readFileSync\\(''c:/Users/jeff/OneDrive/Projects/Code/Websites/SpheriaWiki.info/Spheria_Wiki.json'',''utf8''\\)\\); const m = d.mythos; Object.keys\\(m\\).forEach\\(k => { const v = m[k]; console.log\\(k, '':'', Array.isArray\\(v\\) ? v.length : typeof v === ''object'' ? Object.keys\\(v\\).length : 1\\); }\\)\")",
+      "Bash(node -e \"const d = JSON.parse\\(require\\(''fs''\\).readFileSync\\(''c:/Users/jeff/OneDrive/Projects/Code/Websites/SpheriaWiki.info/Spheria_Wiki.json'',''utf8''\\)\\); const f = d.flora_fauna; Object.keys\\(f\\).forEach\\(k => { const v = f[k]; console.log\\(k, '':'', Array.isArray\\(v\\) ? v.length : typeof v === ''object'' ? Object.keys\\(v\\).length : 1\\); }\\)\")"
     ]
   }
 }

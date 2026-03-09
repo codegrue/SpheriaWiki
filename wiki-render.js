@@ -22,68 +22,91 @@ function isHumanWorld(world) {
 function renderOverview(data) {
   const stats = [
     {
+      label: "Books",
+      value: Object.keys(data.books || {}).length,
+      border: "#ec4899",
+      color: "#f472b6",
+      href: "/pages/books.html",
+    },
+    {
+      label: "Chapters",
+      value: Object.values(data.books).reduce((sum, b) => sum + (b.chapters?.length ?? 0), 0),
+      border: "#059669",
+      color: "#34d399",
+      href: "/pages/books.html",
+    },
+    {
       label: "Characters",
       value: data.characters.human.length + data.characters.polyan.length,
       border: "#7c3aed",
       color: "#a78bfa",
+      href: "/pages/characters.html",
     },
     {
-      label: "Locations",
+      label: "Polyan Species",
+      value: (data.polyans?.caste_system?.length ?? 0) + (data.polyans?.energy ? Object.keys(data.polyans.energy).length : 0) + (data.polyans?.sensors ? Object.keys(data.polyans.sensors).length : 0) + Object.keys(data.polyans?.overview || {}).length,
+      border: "#8b5cf6",
+      color: "#c4b5fd",
+      href: "/pages/polyans.html",
+    },
+    {
+      label: "World Facts",
+      value: (data.world?.geography?.length ?? 0) + Object.keys(data.world?.physics || {}).length + (data.world?.source_colors?.length ?? 0),
+      border: "#0ea5e9",
+      color: "#38bdf8",
+      href: "/pages/world.html",
+    },
+    {
+      label: "Places",
       value: data.settings.earth.length + data.settings.spheria.length,
       border: "#2563eb",
       color: "#60a5fa",
-    },
-    {
-      label: "Chapters",
-      value: data.books.book1.chapters.length,
-      border: "#059669",
-      color: "#34d399",
+      href: "/pages/settings.html",
     },
     {
       label: "Factions",
       value: data.factions.length,
       border: "#d97706",
       color: "#fbbf24",
+      href: "/pages/factions.html",
     },
     {
-      label: "Key Objects",
+      label: "Items",
       value: data.objects.length,
       border: "#dc2626",
       color: "#f87171",
-    },
-    {
-      label: "World Facts",
-      value: Object.keys(data.world || {}).length,
-      border: "#0ea5e9",
-      color: "#38bdf8",
-    },
-    {
-      label: "Polyan Lore",
-      value: Object.keys(data.polyans || {}).length,
-      border: "#8b5cf6",
-      color: "#c4b5fd",
+      href: "/pages/items.html",
     },
     {
       label: "Mythos",
-      value: Object.keys(data.mythos || {}).length,
+      value: Object.values(data.mythos || {}).reduce((sum, v) => sum + (Array.isArray(v) ? v.length : typeof v === "object" ? Object.keys(v).length : 1), 0),
       border: "#f59e0b",
       color: "#fbbf24",
+      href: "/pages/mythos.html",
     },
     {
       label: "Flora/Fauna",
-      value: Object.keys(data.flora_fauna || {}).length,
+      value: (data.flora_fauna?.fauna?.length ?? 0) + (data.flora_fauna?.flora?.length ?? 0) + (data.flora_fauna?.crystals?.length ?? 0),
       border: "#22c55e",
       color: "#4ade80",
+      href: "/pages/flora-fauna.html",
+    },
+    {
+      label: "Timeline Events",
+      value: (data.timeline || []).length,
+      border: "#a78bfa",
+      color: "#c4b5fd",
+      href: "/pages/timeline.html",
     },
   ];
 
   const statsHtml = stats
     .map(
       (s) => `
-    <div class="stat-card" style="border-top-color:${s.border}">
+    <a class="stat-card" href="${s.href}" style="border-top-color:${s.border}">
       <div class="stat-num" style="color:${s.color}">${s.value}</div>
       <div class="stat-label">${s.label}</div>
-    </div>
+    </a>
   `,
     )
     .join("");
@@ -372,11 +395,12 @@ function renderWorld(world) {
 }
 
 function renderPolyanOverview(polyans) {
+  const ov = polyans.overview || {};
   return `
     <div class="info-grid">
-      <div class="info-card" style="border-top-color:#a78bfa"><div class="info-title icon-title"><span class="icon">🧬</span>Biology</div><div class="info-body">${escapeHtml(polyans.biology)}</div></div>
-      <div class="info-card" style="border-top-color:#a78bfa"><div class="info-title icon-title"><span class="icon">⚥</span>Gender</div><div class="info-body">${escapeHtml(polyans.gender)}</div></div>
-      <div class="info-card" style="border-top-color:#a78bfa"><div class="info-title icon-title"><span class="icon">🏷</span>Naming Convention</div><div class="info-body">${escapeHtml(polyans.naming_convention)}</div></div>
+      <div class="info-card" style="border-top-color:#a78bfa"><div class="info-title icon-title"><span class="icon">🧬</span>Biology</div><div class="info-body">${escapeHtml(ov.biology)}</div></div>
+      <div class="info-card" style="border-top-color:#a78bfa"><div class="info-title icon-title"><span class="icon">⚥</span>Gender</div><div class="info-body">${escapeHtml(ov.gender)}</div></div>
+      <div class="info-card" style="border-top-color:#a78bfa"><div class="info-title icon-title"><span class="icon">🏷</span>Naming Convention</div><div class="info-body">${escapeHtml(ov.naming_convention)}</div></div>
     </div>
   `;
 }

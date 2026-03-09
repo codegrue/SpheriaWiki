@@ -1038,9 +1038,11 @@
       "types": "Eye sensors for vision, ear sensors for hearing, mouth sensors for speech. Sensors can be vacant 'ports' waiting to be filled.",
       "artifact_sensor": "Sa·ma possesses a three-sided indigo rod with tetrahedrons on each end, given by god Pi·ro. It attaches to a vacant sensor port and grants ability to see beyond normal perception, sense life forms and structures through obstructions (violet outlines for living, yellow for objects of focus), and control/command creatures like Zalisks."
     },
-    "biology": "Polyans are comprised of connected tetrahedrons forming a roundish body. They look like multi-legged spiders with legs evenly spaced around their body rather than lined up on sides. Each has a violet crystal core at center that pulses with light. Their body has textured patterns.",
-    "gender": "Polyans have male and female genders. Males have straight textured line patterns on their bodies; females have swirling patterns. Ca·ro (green plant goddess) is explicitly female.",
-    "naming_convention": "Names follow pattern of two syllables separated by a dot: Sa·ma, Le·ma, Fa·ro, Ga·zo, etc. Leaders all end in ·sa: Wu·sa, Yo·sa, Me·sa, Ju·sa, Ki·sa, Co·sa, Pi·sa, Vu·sa. Gods end in ·ro: Ra·ju (creator), Ta·ro, Ke·ro, Pi·ro, Ju·ro, Ca·ro, Na·ro, Wi·ro, Su·ro."
+    "overview": {
+      "biology": "Polyans are comprised of connected tetrahedrons forming a roundish body. They look like multi-legged spiders with legs evenly spaced around their body rather than lined up on sides. Each has a violet crystal core at center that pulses with light. Their body has textured patterns.",
+      "gender": "Polyans have male and female genders. Males have straight textured line patterns on their bodies; females have swirling patterns. Ca·ro (green plant goddess) is explicitly female.",
+      "naming_convention": "Names follow pattern of two syllables separated by a dot: Sa·ma, Le·ma, Fa·ro, Ga·zo, etc. Leaders all end in ·sa: Wu·sa, Yo·sa, Me·sa, Ju·sa, Ki·sa, Co·sa, Pi·sa, Vu·sa. Gods end in ·ro: Ra·ju (creator), Ta·ro, Ke·ro, Pi·ro, Ju·ro, Ca·ro, Na·ro, Wi·ro, Su·ro."
+    }
   },
   "mythos": {
     "gods": [
