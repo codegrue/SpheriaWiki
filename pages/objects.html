@@ -10,12 +10,17 @@
     <div id="nav-container"></div>
     <section>
       <h2 style="color: #fbbf24">Key Objects</h2>
-      <div id="page-content" class="status-msg">Loading objects...</div>
+      <div class="sub-menu">
+        <button class="sub-menu-btn active" data-tab="earth">🌍 Earth</button>
+        <button class="sub-menu-btn" data-tab="spheria">🔮 Spheria</button>
+      </div>
+      <div id="earth-content" class="tab-content active"></div>
+      <div id="spheria-content" class="tab-content"></div>
     </section>
     <script src="../wiki-render.js"></script>
     <script>
       SpheriaWiki.loadNav();
-      SpheriaWiki.initPage("objects", "page-content");
+      SpheriaWiki.initObjectTabs();
     </script>
   </body>
 </html>

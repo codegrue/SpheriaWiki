@@ -456,127 +456,158 @@
     {
       "name": "Violet Core Crystal",
       "description": "Life-giving crystal at center of all Spherian beings. Powers their existence - without it they are inanimate tetrahedron structures. Large ones found in Zalisks are valuable.",
-      "significance": "Fundamental to all Spherian life; object of Polyan hunts"
+      "significance": "Fundamental to all Spherian life; object of Polyan hunts",
+      "world": "Spheria"
     },
     {
       "name": "Green Crystals",
       "description": "Buried crystals containing seed energy that Zalisks forage for by digging with tusks.",
-      "significance": "Food source for herbivorous Spherian creatures"
+      "significance": "Food source for herbivorous Spherian creatures",
+      "world": "Spheria"
     },
     {
       "name": "Yellow Shards/Crystals",
       "description": "Small yellow crystals that provide light and energy. Can be dropped into Rift where they eventually transform into rising bubbles. Found in Lumen Grotto.",
-      "significance": "Energy source for Polyans; used in rituals and tests"
+      "significance": "Energy source for Polyans; used in rituals and tests",
+      "world": "Spheria"
     },
     {
       "name": "Blue Mountain Crystals",
       "description": "Blue crystals that emit repulsive force field, making them impossible to touch. Form impassable mountain ranges that divide the world.",
-      "significance": "Natural barriers that shape geography and limit exploration"
+      "significance": "Natural barriers that shape geography and limit exploration",
+      "world": "Spheria"
     },
     {
       "name": "Artifact Sensor",
       "description": "Special indigo sensor with three triangles pointing in different directions. Attached to Sa·ma's core. Gives extraordinary abilities including commanding Zalisks.",
-      "significance": "Divine gift from Fertile Field; passed from master to apprentice; enhances Lumenary abilities"
+      "significance": "Divine gift from Fertile Field; passed from master to apprentice; enhances Lumenary abilities",
+      "world": "Spheria"
     },
     {
       "name": "Brown Rock Blocks",
       "description": "Loose inert brown rock material pushed by Drones and stacked by Builders to construct hives and bridges.",
-      "significance": "Primary construction material in Spherian world"
+      "significance": "Primary construction material in Spherian world",
+      "world": "Spheria"
     },
     {
       "name": "Spy Glasses",
       "description": "Thick-rimmed glasses from spygear.com that Min wears constantly. Record everything she sees and hears.",
-      "significance": "Allow Min to document her experiences; she films her interview"
+      "significance": "Allow Min to document her experiences; she films her interview",
+      "world": "Earth"
     },
     {
       "name": "VR Headset and 3D SpaceMouse",
       "description": "Virtual reality equipment with glove that allows team to observe and navigate inside Spheria. SpaceMouse looks like truck towing ball with programmable buttons.",
-      "significance": "Primary interface for observing Spherian world; only engineers allowed to interact"
+      "significance": "Primary interface for observing Spherian world; only engineers allowed to interact",
+      "world": "Earth"
     },
     {
       "name": "'Spheres' Sculptures",
       "description": "Art installations by Wopo Holop at UConn library entrance. Include bronze objects: human retina, dividing frog eggs, Earth, acorn, DNA strand, faceted and smooth spheres.",
-      "significance": "Location of Jill's suicide; thematic connection to project"
+      "significance": "Location of Jill's suicide; thematic connection to project",
+      "world": "Earth"
     },
     {
       "name": "Seven-sided Core Crystal",
       "description": "Empty crystal structure used in the creation of seven-legged Polyans/gods, surrounded by seven orange elongated crystals near each facet",
-      "significance": "Central component in the ritual to create another god to accompany Fa·ro, representing the Polyans' attempt to control or replicate divine creation"
+      "significance": "Central component in the ritual to create another god to accompany Fa·ro, representing the Polyans' attempt to control or replicate divine creation",
+      "world": "Spheria"
     },
     {
       "name": "Blue Rock Wall",
       "description": "Defensive wall constructed along the red river to protect Colony hives from destruction",
-      "significance": "One of Sa·ma's insightful designs demonstrating his engineering abilities and value to the Colony despite his imprisonment"
+      "significance": "One of Sa·ma's insightful designs demonstrating his engineering abilities and value to the Colony despite his imprisonment",
+      "world": "Spheria"
     },
     {
       "name": "Glowing Cave Plants",
       "description": "Strange plants in the golden cave that produce light and can be broken to create directional light beams; they heal themselves over time",
-      "significance": "Mark pathways through the cave maze and can be manipulated to reveal or conceal the portal to the Qubessence"
+      "significance": "Mark pathways through the cave maze and can be manipulated to reveal or conceal the portal to the Qubessence",
+      "world": "Spheria"
     },
     {
       "name": "Yellow Shard",
       "description": "Small glowing crystal used as portable light source",
-      "significance": "Provides minimal illumination in Sa·ma's prison cell, highlighting his reduced circumstances"
+      "significance": "Provides minimal illumination in Sa·ma's prison cell, highlighting his reduced circumstances",
+      "world": "Spheria"
     },
     {
       "name": "Red server room cables and equipment",
       "description": "Bundle of red cables and unauthorized Tor network/Gridway software running in secret duplicate server room beneath the Qube floor",
-      "significance": "Evidence of Dana's secret DARPA weapons project and unauthorized military collaboration"
+      "significance": "Evidence of Dana's secret DARPA weapons project and unauthorized military collaboration",
+      "world": "Earth"
     },
     {
       "name": "Sa·ma's beam cannon",
       "description": "Device created by Sa·ma that fires energy beams capable of destroying tower support columns and launching Polyans through the air",
-      "significance": "Revolutionary technology that enables the Workers' rebellion by creating the bridge across the Rift and functioning as a weapon"
+      "significance": "Revolutionary technology that enables the Workers' rebellion by creating the bridge across the Rift and functioning as a weapon",
+      "world": "Spheria"
     },
     {
       "name": "Fa·ro's artifact",
       "description": "Device that allows Fa·ro to see through obstructions and control Zalisk; stolen by Le·ma during battle",
-      "significance": "Key to controlling the Zalisk herd and turning the tide of battle against the Soldiers"
+      "significance": "Key to controlling the Zalisk herd and turning the tide of battle against the Soldiers",
+      "world": "Spheria"
     },
     {
       "name": "Incinerator gurney with corpse",
       "description": "Metal medical gurney with embalmed cadaver used as makeshift ladder inside the incinerator chamber",
-      "significance": "Provides escape route for Min and Max through exhaust vent to chimney"
+      "significance": "Provides escape route for Min and Max through exhaust vent to chimney",
+      "world": "Earth"
     },
     {
       "name": "Blue rock barrier wall",
       "description": "Long continuous vertical wall of blue crystalline material creating a clearing perpendicular to the Soldiers' path",
-      "significance": "Defensive fortification created by Workers to slow Soldier pursuit and protect their escape route"
+      "significance": "Defensive fortification created by Workers to slow Soldier pursuit and protect their escape route",
+      "world": "Spheria"
     },
     {
       "name": "Dana's Confession Video",
       "description": "Pre-recorded video of Dana confessing to murdering Olivia Holland, locking Max in the incinerator, and making a deal with DARPA for military funding and personal land in Costa Rica. Played at the board presentation to expose Dana's crimes.",
-      "significance": "Max's insurance policy ensuring Dana's crimes would be exposed regardless of outcome; directly leads to Dana's arrest"
+      "significance": "Max's insurance policy ensuring Dana's crimes would be exposed regardless of outcome; directly leads to Dana's arrest",
+      "world": "Earth"
     },
     {
       "name": "Virginia-class Submarine Photonics Mast",
       "description": "Low-profile mast with camera array connected by fiber optic cables, resembling a traditional periscope without hull penetration. Observed at Electric Boat Pier 3 in Groton, CT during the clandestine meeting.",
-      "significance": "Advanced U.S. Navy submarine technology present at the mysterious pier meeting, suggesting military involvement"
+      "significance": "Advanced U.S. Navy submarine technology present at the mysterious pier meeting, suggesting military involvement",
+      "world": "Earth"
     },
     {
       "name": "'A Short History of Nearly Everything'",
       "description": "Non-fiction book by Bill Bryson with a blue cover featuring a small Earth photo and asterisk. Max's all-time favorite book, read at least once a year. He wishes for an updated edition covering quantum physics.",
-      "significance": "Reveals Max's passion for understanding the universe and his belief that they are creating history with the Spheria project"
+      "significance": "Reveals Max's passion for understanding the universe and his belief that they are creating history with the Spheria project",
+      "world": "Earth"
     },
     {
       "name": "Keurig Coffee Machine",
       "description": "Coffee maker in the Spheria Project office kitchen with yellow blinking LEDs, uses Dark Embers k-cups. Min uses it during late-night work sessions.",
-      "significance": "Recurring companion during Min's late-night preparations before Graham's visit; her computer crashes after she returns from making coffee"
+      "significance": "Recurring companion during Min's late-night preparations before Graham's visit; her computer crashes after she returns from making coffee",
+      "world": "Earth"
     },
     {
       "name": "Mooring Mast",
       "description": "Structure on the UConn Health Center roof that appears to be a cell tower antenna but functions as a docking point for Graham's luxury airship. Was built as a stipulation of Graham's funding grant.",
-      "significance": "Enables Graham to arrive by airship directly to the facility; demonstrates his eccentric wealth and the scale of his investment in the project"
+      "significance": "Enables Graham to arrive by airship directly to the facility; demonstrates his eccentric wealth and the scale of his investment in the project",
+      "world": "Earth"
     },
     {
       "name": "Gridway Distributed Computing System",
       "description": "Open-source meta-scheduling software enabling large-scale sharing of computing resources across distributed processors. Found running on Dana's secret server, being used for unauthorized weapons calculations.",
-      "significance": "Key evidence of the DARPA weapons project; its presence in the secret server room proves Dana is conducting large-scale unauthorized computing operations"
+      "significance": "Key evidence of the DARPA weapons project; its presence in the secret server room proves Dana is conducting large-scale unauthorized computing operations",
+      "world": "Earth"
     },
     {
       "name": "Tor Network",
       "description": "Navy-developed anonymous communication system later adopted for dark web use. Running on Dana's secret server to provide untraceable internet communication despite no official internet access in the facility.",
-      "significance": "Enables covert DARPA weapons data transmission; discovered by Min using Olivia's password and constitutes evidence of Dana's unauthorized military collaboration"
+      "significance": "Enables covert DARPA weapons data transmission; discovered by Min using Olivia's password and constitutes evidence of Dana's unauthorized military collaboration",
+      "world": "Earth"
+    },
+    {
+      "name": "Orange Elongated Crystals",
+      "description": "Seven crystals placed near each facet of the core during the god creation ritual.",
+      "significance": "Part of the god-creation process; positioned by Leaders during ceremony",
+      "world": "Spheria"
     }
   ],
   "factions": [
@@ -619,19 +650,32 @@
       "name": "Fa·ro's Faction",
       "world": "Spheria",
       "description": "Growing authoritarian movement centered on Fa·ro as a decisive god-leader who breaks Council gridlock. Represents shift from democratic consensus to autocratic rule, with Ga·zo as primary enforcer.",
-      "members": ["Fa·ro", "Ga·zo", "Za·zo"]
+      "members": [
+        "Fa·ro",
+        "Ga·zo",
+        "Za·zo"
+      ]
     },
     {
       "name": "Rebellious Workers",
       "world": "Spheria",
       "description": "All Workers in the Colony who secretly organized under Sa·ma's leadership to flee across the Rift using the fallen tower as a bridge, escaping Fa·ro's tyranny",
-      "members": ["Sa·ma", "Hi·ma", "Pu·ma", "Le·ma", "twelve lead Workers"]
+      "members": [
+        "Sa·ma",
+        "Hi·ma",
+        "Pu·ma",
+        "Le·ma",
+        "twelve lead Workers"
+      ]
     },
     {
       "name": "DARPA partnership",
       "world": "Earth",
       "description": "Secret military collaboration arranged by Dana with Defense Advanced Research Projects Agency to weaponize the Spheria technology in exchange for funding and personal land in Costa Rica",
-      "members": ["Dana Carter", "unnamed DARPA officials"]
+      "members": [
+        "Dana Carter",
+        "unnamed DARPA officials"
+      ]
     },
     {
       "name": "Council Leaders",
@@ -851,6 +895,10 @@
       {
         "name": "Prayer Circle",
         "description": "Polyans form a circle and appear to pray together - the first observed religious behavior showing organized worship rather than just acknowledging gods."
+      },
+      {
+        "name": "Council Voting",
+        "description": "Eight Leaders meet in columned Council Chamber atop Council structure. Guards stationed at three faces prevent approach during sessions. Leaders govern by majority vote; tie votes result in no action (later Fa·ro breaks ties, then seizes absolute power)."
       }
     ]
   },

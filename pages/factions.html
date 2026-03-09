@@ -10,12 +10,17 @@
     <div id="nav-container"></div>
     <section>
       <h2 style="color: #f59e0b">Factions</h2>
-      <div id="page-content" class="status-msg">Loading factions...</div>
+      <div class="sub-menu">
+        <button class="sub-menu-btn active" data-tab="human">🌍 Human</button>
+        <button class="sub-menu-btn" data-tab="polyan">🔮 Polyan</button>
+      </div>
+      <div id="human-content" class="tab-content active"></div>
+      <div id="polyan-content" class="tab-content"></div>
     </section>
     <script src="../wiki-render.js"></script>
     <script>
       SpheriaWiki.loadNav();
-      SpheriaWiki.initPage("factions", "page-content");
+      SpheriaWiki.initFactionTabs();
     </script>
   </body>
 </html>
