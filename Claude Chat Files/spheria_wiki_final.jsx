@@ -53,6 +53,36 @@ const Q3 = "Analyze final chapters 35-51 of Spheria. Return ONLY valid JSON (no 
   'Include 8-12 key timeline events from chapters 35-51 only, each tagged with chapter number e.g. "(Ch 48)".' + "\n\n" +
   "CHAPTERS 35-51:\n" + B3;
 
+const Q4 = "You are an expert on the novel Spheria by Cody Leet. Using the manuscript excerpts below AND the facts provided, generate ONLY valid JSON for four wiki sections. Return ONLY valid JSON, no other text:\n" +
+  '{"world":{"physics":{"blue_crystal":"","red_crystal":"","brown_rock":"","green_plants":"","violet_core":"","source_gravity":"","rift_description":""},' +
+  '"source_colors":[{"color":"","effect":"","triggered_by":""}],' +
+  '"world_shape":"","creation_story":""},' +
+  '"polyans":{"caste_system":[{"legs":0,"caste_name":"","role":"","social_rank":"","behaviors":""}],' +
+  '"energy":{"how_they_feed":"","crystal_colors":"","hierarchy_of_feeding":"","death_state":""},' +
+  '"sensors":{"description":"","types":"","artifact_sensor":""},' +
+  '"biology":"","gender":"","naming_convention":""},' +
+  '"mythos":{"gods":[{"name":"","color":"","domain":"","role_in_creation":""}],' +
+  '"afterlife":{"name":"","description":"","how_to_reach":"","warning":""},' +
+  '"lumen_tradition":{"lumen_master":"","lumen_seeker":"","lumen_walk":"","lumen_elder":"","lumen_grotto":""},' +
+  '"legends":[{"name":"","description":""}],' +
+  '"rituals":[{"name":"","description":""}]},' +
+  '"flora_fauna":{"fauna":[{"name":"","description":"","behavior":"","danger_level":"","energy_role":""}],' +
+  '"flora":[{"name":"","description":"","properties":"","uses":""}],' +
+  '"crystals":[{"color":"","found_in":"","properties":"","significance":""}]}}' + "\n\n" +
+  "KEY FACTS to include accurately:\n" +
+  "PHYSICS: Blue crystal mountains REPEL everything — Polyans cannot touch them. The repulsion allows floating above blue surfaces (used to climb Uplift Steps by pendulum motion). Red rock rivers ATTRACT everything — living things (violet cores) stick but can detach with effort; non-living things turn red and sink. Brown rock is neutral terrain. Green polyhedrons are plants. The world is a hollow sphere — Polyans live on the inside surface. The Source floats at the center. Gravity pulls outward toward the sphere's interior surface. The Source itself pushes outward (repels) — objects cannot reach it; the higher you go the stronger the push. The Rift is an uncrossable chasm dividing the world into two hemispheres.\n" +
+  "SOURCE COLORS AND EFFECTS: White = forage/hunt (normal behavior, compels creatures to seek energy). Green = growth (vegetation grows new branches, triggered when a green bubble rises from Rift and hits Source). Violet = breeding/reproduction (creatures capable of reproduction begin to procreate). Blue = mountains grow and spread (natural disaster equivalent, blue tetrahedrons sprout on open faces). Red = rivers widen and spread (natural disaster equivalent). Yellow = rest/abundance (a yellow bubble rising from Rift signals a rare day when all life crystals fill from within — no hunting needed; triggered by Lumen Seeker throwing yellow shard into Rift). Bubbles rise slowly from the Rift, giving Polyans warning before color change occurs. The researchers control which bubble color rises and when.\n" +
+  "CASTE SYSTEM: 3 legs = Drones (most numerous, menial tasks like pushing blocks, making rhythmic sounds at celebrations, forage for buried green crystals; lowest social rank, eat last and sometimes get nothing). 4 legs = Workers/Builders (construction, building hives, more skilled labor; eat third). 5 legs = Soldiers (hunting, combat, protection of Colony; eat second). 6 legs = Leaders (wisest and most elite, just one leg short of a god; eat first; there are exactly 8 Leaders — Wu·sa, Yo·sa, Me·sa, Ju·sa, Ki·sa, Co·sa, Pi·sa, Vu·sa; govern by majority vote, tie = no action). 7 legs = Gods (appear as Polyans with 7 legs; no Polyan born with 7 legs naturally until the Leaders engineered one — Fa·ro). 8 legs = Ra·ju the creator god.\n" +
+  "ENERGY/FEEDING: Polyans have a violet crystal core that stores life energy. They feed by touching their core's lower point to a violet shard and draining energy into themselves. Energy is harvested from Zalisks (drain the beast's violet core using clear crystal shards as conduits, then consume the stored violet energy). Green crystals are buried in the ground and have seed energy — a lower-quality food source foraged by Drones. When a Polyan's core runs empty, they die. Dead Polyans' physical structure (the polygon shell) falls apart; their 'structure' descends into the Rift to Qubessence.\n" +
+  "SENSORS: Polyans have indigo sensors on their cores — each sensor has a specific function (eye/vision, ear/hearing, mouth/speech). Sensors can be vacant 'ports.' Sa·ma's artifact is a three-sided indigo rod with tetrahedrons on each end, given by god Pi·ro — it attaches to a vacant sensor port and grants ability to see beyond normal perception and control/command creatures.\n" +
+  "GODS: Ra·ju (white, 8 legs) = creator. His 8 children each detached as a leg that changed color: Ta·ro (brown) = land/earth. Ke·ro (orange) = life/creation of creatures. Pi·ro (red) = rivers, red rock; hot-tempered, decreed everything touching red turns red. Ju·ro (blue) = mountains/divisions. Ca·ro (green) = plants/vegetation; female. Na·ro (yellow) = light/the Source's glow. Wi·ro (violet) = multiplication/reproduction. Su·ro (indigo) = senses. Gods appear in Spheria as 7-legged Polyans with colored cores.\n" +
+  "QUBESSENCE: The afterlife realm below the Rift. Violet landscape, violet mountains, violet sky. Endless energy. No need to hunt. But only structures (dead Polyans) can enter — living Polyans who jump in are destroyed agonizingly as Qubessence only accepts structures, not living bodies. This secret is kept by Lumen Seekers.\n" +
+  "LUMEN TRADITION: Lumen Master = Colony's spiritual/knowledge leader, publicly known; Sa·ma holds this role. Lumen Seeker = apprentice, in training; Le·ma. Lumen Elder = retired Master who goes into seclusion, trains the new Seeker when Master is too busy; Do·ma was elder before. Lumen Walk = rite of passage — apprentice travels with Master across dangerous proving ground to the Rift, performs offering ritual (throwing yellow shard into Rift), then must find their own way back alone. Lumen Grotto = hidden hexagonal room with yellow crystal, where Lumen Elder lives in seclusion.\n" +
+  "FAUNA: Zalisk = six-legged beast with violet core and five tusks, enormous, aggressive; hunted by Polyans for energy. Troaten = massive creature with many tentacles, camouflaged, spins defensively, pierces cores of prey at its center; mythologically became the Source/Rift. Other creatures implied but these are the named ones.\n" +
+  "FLORA: Green polyhedron plants grow on brown rock terrain; some form arched shapes large enough to walk under. Plants have no violet core so they turn red when touching red rivers. Violet crystals grow in the Fertile Field (the legendary circle of 20 large violet crystals that replenish themselves). Yellow shards found in the Proving Ground — used in Lumen offering ritual.\n\n" +
+  "Now also extract any additional flora, fauna, crystals, legends, and rituals from these manuscript excerpts:\n\n" +
+  "CHAPTERS 1-17:\n" + B1 + "\n\nCHAPTERS 18-34:\n" + B2 + "\n\nCHAPTERS 35-51:\n" + B3;
+
 function buildHtml(w) {
   const esc = s => (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
   const earthChars = w.characters.filter(c=>c.world==="Earth"||c.species?.toLowerCase().includes("human"));
@@ -367,16 +397,20 @@ export default function SpheriaWiki() {
     try {
       log("📖 Analyzing chapters 1–17...");
       const r1 = await ask(Q1);
-      setProgress(33);
+      setProgress(25);
       log("✅ Batch 1: " + (r1.characters?.length||0) + " characters, " + (r1.chapters?.length||0) + " chapters");
       log("📖 Analyzing chapters 18–34...");
       const r2 = await ask(Q2);
-      setProgress(66);
+      setProgress(50);
       log("✅ Batch 2: " + (r2.new_characters?.length||0) + " new characters");
       log("📖 Analyzing chapters 35–51 (final act)...");
       const r3 = await ask(Q3);
+      setProgress(75);
+      log("✅ Batch 3 complete");
+      log("🌍 Building World, Polyans, Mythos & Flora/Fauna...");
+      const r4 = await ask(Q4);
       setProgress(100);
-      log("✅ Batch 3 complete — assembling wiki...");
+      log("✅ Deep world pass complete — assembling wiki...");
       const cMap = {};
       [...(r1.characters||[]),...(r2.new_characters||[]),...(r3.new_characters||[])].forEach(c=>{cMap[c.name]={...c,updates:[]};});
       [...(r2.character_updates||[]),...(r3.character_updates||[])].forEach(u=>{if(cMap[u.name]) cMap[u.name].updates.push(u.development_note);});
@@ -389,6 +423,10 @@ export default function SpheriaWiki() {
         chapters: [...(r1.chapters||[]),...(r2.chapters||[]),...(r3.chapters||[])].sort((a,b)=>a.number-b.number),
         objects: [...(r1.objects||[]),...(r2.new_objects||[]),...(r3.new_objects||[])],
         factions: [...(r1.factions||[]),...(r2.new_factions||[]),...(r3.new_factions||[])],
+        world: r4.world||{},
+        polyans: r4.polyans||{},
+        mythos: r4.mythos||{},
+        flora_fauna: r4.flora_fauna||{},
       };
       setWiki(w); setStatus("done"); log("🎉 Wiki ready!");
     } catch(e) {
@@ -447,7 +485,7 @@ export default function SpheriaWiki() {
     document.body.removeChild(a);
   };
 
-  const TABS = ["overview","characters","settings","factions","objects","chapters","timeline"];
+  const TABS = ["overview","characters","settings","factions","objects","chapters","timeline","world","polyans","mythos","flora"];
   const C = (color) => ({background:"#1a1a2e",borderRadius:10,padding:16,borderLeft:"3px solid "+color});
 
   return (
@@ -615,6 +653,178 @@ export default function SpheriaWiki() {
                   <div style={{color:"#d1d5db",fontSize:14,paddingTop:6,lineHeight:1.6}}>{e}</div>
                 </div>
               ))}
+            </div>
+          )}
+
+          {tab==="world" && wiki.world && (
+            <div>
+              <div style={{background:"#1a1a2e",borderRadius:12,padding:24,marginBottom:16}}>
+                <h2 style={{color:"#34d399",marginTop:0}}>🌐 World Shape & Structure</h2>
+                <p style={{color:"#d1d5db",lineHeight:1.8}}>{wiki.world.world_shape}</p>
+              </div>
+              <h3 style={{color:"#60a5fa",marginBottom:12}}>⚗️ Physics & Crystal Properties</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(280px,1fr))",gap:12,marginBottom:24}}>
+                {Object.entries(wiki.world.physics||{}).map(([k,v])=>{
+                  const colors={blue_crystal:"#2563eb",red_crystal:"#dc2626",brown_rock:"#92400e",green_plants:"#059669",violet_core:"#7c3aed",source_gravity:"#a78bfa",rift_description:"#6b7280"};
+                  const labels={blue_crystal:"🔵 Blue Crystal",red_crystal:"🔴 Red Rock",brown_rock:"🟤 Brown Rock",green_plants:"🟢 Green Plants",violet_core:"💜 Violet Core",source_gravity:"✨ The Source",rift_description:"🌌 The Rift"};
+                  return <div key={k} style={{background:"#1a1a2e",borderRadius:10,padding:16,borderLeft:"4px solid "+(colors[k]||"#374151")}}>
+                    <div style={{fontWeight:700,color:"#f3f4f6",marginBottom:6,fontSize:14}}>{labels[k]||k}</div>
+                    <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.6}}>{v}</div>
+                  </div>;
+                })}
+              </div>
+              <h3 style={{color:"#f59e0b",marginBottom:12}}>🎨 Source Colors & Their Effects</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(280px,1fr))",gap:12,marginBottom:24}}>
+                {(wiki.world.source_colors||[]).map((sc,i)=>{
+                  const bg={white:"#f3f4f6",green:"#059669",violet:"#7c3aed",blue:"#2563eb",red:"#dc2626",yellow:"#d97706",orange:"#ea580c"}[sc.color?.toLowerCase()]||"#374151";
+                  return <div key={i} style={{background:"#1a1a2e",borderRadius:10,padding:16,borderTop:"3px solid "+bg}}>
+                    <div style={{fontWeight:700,fontSize:15,marginBottom:4,color:"#f3f4f6",textTransform:"capitalize"}}>● {sc.color}</div>
+                    <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.6,marginBottom:6}}>{sc.effect}</div>
+                    {sc.triggered_by&&<div style={{fontSize:11,color:"#9ca3af",fontStyle:"italic"}}>Triggered by: {sc.triggered_by}</div>}
+                  </div>;
+                })}
+              </div>
+              {wiki.world.creation_story&&<div style={{background:"#1a1a2e",borderRadius:12,padding:24}}>
+                <h3 style={{color:"#a78bfa",marginTop:0,marginBottom:12}}>📜 Creation Story</h3>
+                <p style={{color:"#d1d5db",lineHeight:1.8}}>{wiki.world.creation_story}</p>
+              </div>}
+            </div>
+          )}
+
+          {tab==="polyans" && wiki.polyans && (
+            <div>
+              <h3 style={{color:"#a78bfa",marginBottom:12}}>🦾 Caste System (by Leg Count)</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(300px,1fr))",gap:12,marginBottom:24}}>
+                {(wiki.polyans.caste_system||[]).sort((a,b)=>a.legs-b.legs).map((c,i)=>{
+                  const colors=["#6b7280","#92400e","#2563eb","#7c3aed","#d97706","#dc2626","#f3f4f6"];
+                  const col=colors[Math.min(c.legs-3,6)]||"#374151";
+                  return <div key={i} style={{background:"#1a1a2e",borderRadius:12,padding:20,borderTop:"4px solid "+col}}>
+                    <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:8}}>
+                      <span style={{fontSize:24,fontWeight:900,color:col}}>{c.legs}</span>
+                      <span style={{fontSize:"1.2em"}}>{"◉".repeat(c.legs)}</span>
+                      <span style={{fontWeight:700,color:"#f3f4f6",fontSize:15}}>{c.caste_name}</span>
+                    </div>
+                    <div style={{fontSize:12,color:col,fontWeight:600,marginBottom:6,textTransform:"uppercase",letterSpacing:1}}>{c.social_rank}</div>
+                    <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.6,marginBottom:6}}>{c.role}</div>
+                    <div style={{color:"#9ca3af",fontSize:12,fontStyle:"italic"}}>{c.behaviors}</div>
+                  </div>;
+                })}
+              </div>
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16,marginBottom:16}}>
+                <div style={{background:"#1a1a2e",borderRadius:12,padding:20}}>
+                  <h3 style={{color:"#34d399",marginTop:0,marginBottom:12}}>⚡ Energy & Feeding</h3>
+                  <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.7,marginBottom:8}}><strong style={{color:"#f3f4f6"}}>How they feed:</strong> {wiki.polyans.energy?.how_they_feed}</div>
+                  <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.7,marginBottom:8}}><strong style={{color:"#f3f4f6"}}>Crystal types:</strong> {wiki.polyans.energy?.crystal_colors}</div>
+                  <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.7,marginBottom:8}}><strong style={{color:"#f3f4f6"}}>Feeding order:</strong> {wiki.polyans.energy?.hierarchy_of_feeding}</div>
+                  <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.7}}><strong style={{color:"#f3f4f6"}}>Death:</strong> {wiki.polyans.energy?.death_state}</div>
+                </div>
+                <div style={{background:"#1a1a2e",borderRadius:12,padding:20}}>
+                  <h3 style={{color:"#60a5fa",marginTop:0,marginBottom:12}}>👁 Sensors & Biology</h3>
+                  <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.7,marginBottom:8}}><strong style={{color:"#f3f4f6"}}>Sensors:</strong> {wiki.polyans.sensors?.description}</div>
+                  <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.7,marginBottom:8}}><strong style={{color:"#f3f4f6"}}>Sensor types:</strong> {wiki.polyans.sensors?.types}</div>
+                  <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.7,marginBottom:8}}><strong style={{color:"#f3f4f6"}}>Artifact sensor:</strong> {wiki.polyans.sensors?.artifact_sensor}</div>
+                  <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.7,marginBottom:8}}><strong style={{color:"#f3f4f6"}}>Biology:</strong> {wiki.polyans.biology}</div>
+                  <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.7,marginBottom:8}}><strong style={{color:"#f3f4f6"}}>Gender:</strong> {wiki.polyans.gender}</div>
+                  <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.7}}><strong style={{color:"#f3f4f6"}}>Naming:</strong> {wiki.polyans.naming_convention}</div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {tab==="mythos" && wiki.mythos && (
+            <div>
+              <h3 style={{color:"#f59e0b",marginBottom:12}}>⚡ The Gods</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(240px,1fr))",gap:12,marginBottom:24}}>
+                {(wiki.mythos.gods||[]).map((g,i)=>{
+                  const godColors={brown:"#92400e",orange:"#ea580c",red:"#dc2626",blue:"#2563eb",green:"#059669",yellow:"#d97706",violet:"#7c3aed",indigo:"#4f46e5",white:"#f3f4f6"};
+                  const col=godColors[g.color?.toLowerCase()]||"#374151";
+                  return <div key={i} style={{background:"#1a1a2e",borderRadius:10,padding:16,borderLeft:"4px solid "+col}}>
+                    <div style={{fontWeight:700,color:"#f3f4f6",fontSize:16,marginBottom:4}}>{g.name}</div>
+                    <div style={{fontSize:12,fontWeight:600,marginBottom:8,color:col,textTransform:"capitalize"}}>● {g.color} · {g.domain}</div>
+                    <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.6}}>{g.role_in_creation}</div>
+                  </div>;
+                })}
+              </div>
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16,marginBottom:16}}>
+                <div style={{background:"#1a1a2e",borderRadius:12,padding:20}}>
+                  <h3 style={{color:"#a78bfa",marginTop:0,marginBottom:12}}>🌌 The Qubessence (Afterlife)</h3>
+                  <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.7,marginBottom:8}}><strong style={{color:"#f3f4f6"}}>Description:</strong> {wiki.mythos.afterlife?.description}</div>
+                  <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.7,marginBottom:8}}><strong style={{color:"#f3f4f6"}}>How to reach:</strong> {wiki.mythos.afterlife?.how_to_reach}</div>
+                  <div style={{color:"#dc2626",fontSize:13,lineHeight:1.7}}><strong style={{color:"#f3f4f6"}}>⚠ Warning:</strong> {wiki.mythos.afterlife?.warning}</div>
+                </div>
+                <div style={{background:"#1a1a2e",borderRadius:12,padding:20}}>
+                  <h3 style={{color:"#60a5fa",marginTop:0,marginBottom:12}}>📚 Lumen Tradition</h3>
+                  {Object.entries(wiki.mythos.lumen_tradition||{}).map(([k,v])=>(
+                    <div key={k} style={{marginBottom:8}}>
+                      <strong style={{color:"#f3f4f6",fontSize:13,textTransform:"capitalize"}}>{k.replace(/_/g," ")}: </strong>
+                      <span style={{color:"#d1d5db",fontSize:13}}>{v}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16}}>
+                <div style={{background:"#1a1a2e",borderRadius:12,padding:20}}>
+                  <h3 style={{color:"#34d399",marginTop:0,marginBottom:12}}>📖 Legends</h3>
+                  {(wiki.mythos.legends||[]).map((l,i)=>(
+                    <div key={i} style={{marginBottom:14,paddingBottom:14,borderBottom:i<wiki.mythos.legends.length-1?"1px solid #1f2937":"none"}}>
+                      <div style={{fontWeight:700,color:"#f3f4f6",marginBottom:4}}>{l.name}</div>
+                      <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.6}}>{l.description}</div>
+                    </div>
+                  ))}
+                </div>
+                <div style={{background:"#1a1a2e",borderRadius:12,padding:20}}>
+                  <h3 style={{color:"#fbbf24",marginTop:0,marginBottom:12}}>🕯 Rituals</h3>
+                  {(wiki.mythos.rituals||[]).map((r,i)=>(
+                    <div key={i} style={{marginBottom:14,paddingBottom:14,borderBottom:i<wiki.mythos.rituals.length-1?"1px solid #1f2937":"none"}}>
+                      <div style={{fontWeight:700,color:"#f3f4f6",marginBottom:4}}>{r.name}</div>
+                      <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.6}}>{r.description}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {tab==="flora" && wiki.flora_fauna && (
+            <div>
+              <h3 style={{color:"#dc2626",marginBottom:12}}>🦖 Fauna</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(300px,1fr))",gap:12,marginBottom:24}}>
+                {(wiki.flora_fauna.fauna||[]).map((f,i)=>{
+                  const dangerColor={low:"#059669",medium:"#d97706",high:"#dc2626",extreme:"#7c3aed"}[f.danger_level?.toLowerCase()]||"#6b7280";
+                  return <div key={i} style={{background:"#1a1a2e",borderRadius:10,padding:16,borderLeft:"4px solid "+dangerColor}}>
+                    <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:6}}>
+                      <span style={{fontWeight:700,color:"#f3f4f6",fontSize:15}}>{f.name}</span>
+                      <span style={{fontSize:11,padding:"2px 8px",borderRadius:10,background:dangerColor+"22",color:dangerColor,fontWeight:600}}>{f.danger_level}</span>
+                    </div>
+                    <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.6,marginBottom:6}}>{f.description}</div>
+                    <div style={{color:"#9ca3af",fontSize:12,marginBottom:4}}><strong style={{color:"#d1d5db"}}>Behavior:</strong> {f.behavior}</div>
+                    <div style={{color:"#9ca3af",fontSize:12}}><strong style={{color:"#d1d5db"}}>Energy role:</strong> {f.energy_role}</div>
+                  </div>;
+                })}
+              </div>
+              <h3 style={{color:"#059669",marginBottom:12}}>🌿 Flora</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(280px,1fr))",gap:12,marginBottom:24}}>
+                {(wiki.flora_fauna.flora||[]).map((f,i)=>(
+                  <div key={i} style={{background:"#1a1a2e",borderRadius:10,padding:16,borderLeft:"4px solid #059669"}}>
+                    <div style={{fontWeight:700,color:"#f3f4f6",fontSize:15,marginBottom:6}}>{f.name}</div>
+                    <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.6,marginBottom:6}}>{f.description}</div>
+                    <div style={{color:"#9ca3af",fontSize:12,marginBottom:4}}><strong style={{color:"#d1d5db"}}>Properties:</strong> {f.properties}</div>
+                    <div style={{color:"#9ca3af",fontSize:12}}><strong style={{color:"#d1d5db"}}>Uses:</strong> {f.uses}</div>
+                  </div>
+                ))}
+              </div>
+              <h3 style={{color:"#a78bfa",marginBottom:12}}>💎 Crystals</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(260px,1fr))",gap:12}}>
+                {(wiki.flora_fauna.crystals||[]).map((c,i)=>{
+                  const col={violet:"#7c3aed",green:"#059669",yellow:"#d97706",blue:"#2563eb",red:"#dc2626",clear:"#9ca3af",indigo:"#4f46e5",orange:"#ea580c",brown:"#92400e"}[c.color?.toLowerCase()]||"#374151";
+                  return <div key={i} style={{background:"#1a1a2e",borderRadius:10,padding:16,borderTop:"3px solid "+col}}>
+                    <div style={{fontWeight:700,color:col,fontSize:15,marginBottom:4,textTransform:"capitalize"}}>◆ {c.color}</div>
+                    <div style={{fontSize:11,color:"#6b7280",marginBottom:8}}>{c.found_in}</div>
+                    <div style={{color:"#d1d5db",fontSize:13,lineHeight:1.6,marginBottom:6}}>{c.properties}</div>
+                    <div style={{color:"#9ca3af",fontSize:12,fontStyle:"italic"}}>{c.significance}</div>
+                  </div>;
+                })}
+              </div>
             </div>
           )}
         </div>
