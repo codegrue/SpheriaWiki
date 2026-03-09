@@ -1,423 +1,313 @@
 {
-  "overall_plot": "Spheria concludes by interweaving parallel revolutions on Earth and Spheria. On Earth, Min discovers Dana's secret DARPA weapons project hidden beneath the Qube floor, using Olivia's Wow Signal password to access Tor networks and military computing systems. When Max discovers Min in the secret room, they fight before realizing both are Dana's victims. Dana, exposed by her own greed for Costa Rica land and military funding, murders Olivia to protect the conspiracy and traps Min and Max in a hospital incinerator to eliminate witnesses before her board presentation. The duo escapes through chimney exhausts with hospital volunteer Walter's help. Meanwhile on Spheria, Fa·ro eliminates the Council to become sole dictator, enslaving Workers to build an impossible tower reaching the Source. But Sa·ma secretly engineers a revolutionary cannon that topples the tower across the Rift, creating a bridge to freedom. When Fa·ro's Soldiers attack, Le·ma launches herself through Sa·ma's cannon to steal Fa·ro's Zalisk-controlling artifact, turning his own weapons against him. The Zalisk herd tramples the Soldiers while Workers escape across the fallen tower bridge to liberation beyond the Rift. As Graham and the team watch recordings of both the Polyan revolution and Dana's confession video, the novel's central themes crystallize: the parallel struggles against tyranny, the corrupting nature of unchecked power, and how revolutionary ingenuity and sacrifice can overcome oppression. The Polyans' physical escape across the Rift mirrors humanity's moral reckoning with weaponizing their creation, as both civilizations confront whether freedom or control will define their futures.",
+  "overall_plot": "Spheria concludes with parallel climaxes on Earth and the alien world. On Earth, Min discovers Dana's secret red server room running unauthorized DARPA weapons projects using Spheria technology. Dana had murdered Olivia for discovering the same truth and made a deal with the military for funding and personal gain, betraying Graham's pacifist vision. When confronted, Max (confused about the room's existence) traps Min and Dana in the hospital incinerator, but they escape with help from a hospital volunteer. At the board meeting, Max exposes Dana with a recorded confession video showing her admitting to Olivia's murder and the military deal. When campus security arrives, Dana draws a gun. On Spheria, Fa·ro has eliminated the Council and declared himself dictator, but Sa·ma has secretly organized a Worker rebellion. Sa·ma built a revolutionary beam cannon and used it to topple the Colony's massive tower across the Rift, creating the first bridge to the forbidden lands. As Fa·ro's Soldiers massacre fleeing Workers, Le·ma is launched from Sa·ma's cannon, crashes into Fa·ro, and steals his artifact. She uses it to control a Zalisk herd that decimates the Soldiers while ignoring Workers, enabling mass escape across the bridge. The Workers achieve liberation from tyranny by reaching lands previously thought unreachable, while Fa·ro lies pinned beneath a Zalisk, his reign collapsing. The Spheria team watches these dramatic events unfold on their screens as the simulation reveals unprecedented developments in both civilizations.",
   "themes": [
+    "Betrayal and corruption of idealistic visions",
     "Revolution and liberation from tyranny",
-    "Corruption of scientific ideals by military-industrial complex",
-    "Parallel struggles between artificial and human civilizations",
-    "Sacrifice and heroism in face of oppression",
-    "Betrayal of trust for personal gain",
-    "Ingenuity and engineering as tools of freedom",
-    "Price of unchecked authoritarian power",
-    "Moral responsibility for created intelligence",
-    "Technology as weapon versus tool of liberation",
-    "Cost of bearing witness and speaking truth"
+    "Military-industrial complex and weaponization of peaceful technology",
+    "Sacrifice for the greater good (Le·ma's cannon launch)",
+    "The price of freedom and organized resistance",
+    "Deception and hidden agendas within trusted relationships",
+    "Resourcefulness and innovation in desperate circumstances",
+    "The collapse of authoritarian control",
+    "Surveillance and discovery of truth",
+    "Bridge-building (literal and metaphorical) to impossible destinations",
+    "Genocide and mass violence in pursuit of power",
+    "The corrupting influence of absolute power (Fa·ro)",
+    "Greed versus idealism (Dana versus Graham)"
   ],
   "timeline": [
-    "Max presents at the 25th Solvay Conference on Physics in Brussels, impressing leading physicists (Ch 2)",
-    "Jill commits suicide by jumping at the UConn library entrance while Tim ties his shoe below (Ch 4)",
-    "Sa·ma leads Le·ma through Uplift Pass in the blue mountains to begin her Lumen Master training (Ch 3)",
-    "Le·ma and Sa·ma camp at the Rift and throw a yellow crystal in, which transforms into a rising bubble (Ch 8)",
-    "Young Sa·ma discovers the Lumen Grotto and meets the old Polyan who was expecting him, beginning his own training (Ch 10)",
-    "Min interviews for the internship position and records it with her spy glasses to show roommate Sheila (Ch 7)",
-    "Min starts her first day working at the reception desk and meets the full Spheria Project team (Ch 9)",
-    "Le·ma nearly killed by Zalisk, but Sa·ma saves her using his new third sensor that commands creatures telepathically (Ch 14)",
-    "Sa·ma reveals he discovered the legendary Fertile Field and received the third sensor as a gift from the gods (Ch 14)",
-    "Max and Min get drunk at Friday happy hour, then walk through parking lot where Max sits in unlocked Mercedes (Ch 15)",
-    "Le·ma and Sa·ma discuss the return journey challenge—no passage exists on their side of the mountains (Ch 16)",
-    "Jean observes Polyan Colony in VR, watching Drones and Builders construct new hive, wanting to help but forbidden (Ch 17)",
-    "Graham's enormous yellow luxury airship 'Buruwa Gunya' docks atop UConn Health Center; Max and Dana board it (Ch 19-20)",
-    "Mysterious figure in black sedan meets at Electric Boat pier in Groton during rainstorm near Virginia-class submarine (Ch 21)",
-    "Fourth consecutive red bubble rises toward Source; Council debates moving Colony as red river threatens dwellings (Ch 22)",
-    "Gizmodo publishes article 'Scientists Play God' by Moses Diego revealing Spheria project and sentient Polyans to public (Ch 25)",
-    "Sa·ma discovers cave system with glowing plants and portal to Qubessence beyond river in wilderness (Ch 28)",
-    "Olivia's boyfriend Randy breaks up with her via email after 6 years; she becomes closer with roommate Ashley (Ch 29)",
-    "Sa·ma leads Fa·ro, Ga·zo, and Za·zo into cave system; Fa·ro demands access to portal to join other gods (Ch 30)",
-    "Sa·ma imprisoned in triangular cell inside Council building - Spheria's first prison; Ga·zo guards him (Ch 32)",
-    "Min works late preparing calculations for Graham's visit; experiences computer system failure with blue screen (Ch 33)",
-    "Council prepares to create second seven-legged god with Fa·ro's approval; violet bubble approaches Source triggering replication urge (Ch 34)",
-    "Fa·ro acts with apparent selflessness by agreeing to share divine status with second god; Council's respect for him grows (Ch 34)",
-    "Setup complete for god creation ceremony with seven-sided core crystal and seven orange leg crystals in Council Chamber (Ch 34)",
-    "Min discovers secret red-lit server room beneath Qube floor with military equipment (Ch 35)",
-    "Fa·ro eliminates Council and declares himself sole ruler of Spherian Colony (Ch 36)",
-    "Min accesses secret terminal using Olivia's Wow Signal password, discovers DARPA weapons research (Ch 37)",
-    "Sa·ma's cannon topples massive tower across Rift creating bridge for Workers' escape (Ch 38-40)",
-    "Dana traps Min and Max in hospital incinerator after exposing her conspiracy (Ch 43)",
-    "Le·ma launches herself from Sa·ma's cannon, steals Fa·ro's Zalisk-controlling artifact during battle (Ch 46)",
-    "Zalisk herd attacks Soldiers exclusively while Workers cross tower bridge to freedom (Ch 48)",
-    "Hospital volunteer Walter rescues Min and Max from incinerator chimney (Ch 47)",
-    "Dana's confession video plays during board meeting exposing Olivia's murder and DARPA conspiracy (Ch 50)",
-    "Captain Brennan arrests Dana as she pulls gun on Graham and team (Ch 50)",
-    "Graham and team watch recordings of Polyan revolution paralleling human moral crisis (Ch 51)",
-    "Workers successfully escape Fa·ro's tyranny across fallen tower bridge while Soldiers are destroyed (Ch 51)"
+    "Max presents research at prestigious 25th Solvay Conference on Physics in Brussels (Ch 2)",
+    "Jill commits suicide at UConn Health Center library entrance, traumatizing Tim (Ch 4)",
+    "Min interviews for internship to replace deceased Jill, films interview with spy glasses (Ch 7)",
+    "Young Sa·ma discovers Lumen Grotto and is tested by old Lumen Master (Ch 10 flashback)",
+    "Le·ma selected as Sa·ma's apprentice and taken on Lumen Walk journey through Uplift Pass (Ch 3)",
+    "Le·ma and Sa·ma reach the Rift at world's edge; Le·ma drops yellow shard into bottomless chasm (Ch 8)",
+    "Sa·ma abandons Le·ma at Rift camp for solo return journey as final test (Ch 12)",
+    "Sa·ma discovers legendary Fertile Field and receives artifact sensor with three triangles from the gods (Ch 14)",
+    "Sa·ma uses artifact sensor to command attacking Zalisk to spare Le·ma's life (Ch 14)",
+    "Le·ma faces final test: must find way over vertical blue mountains with no passage on return side (Ch 16)",
+    "Min begins work at Spheria Project, assigned to reception desk with data analysis duties (Ch 9)",
+    "Jean observes Polyan Colony construction in VR, watches Drones and Builders making new hive (Ch 17)",
+    "Dana reviews logs showing Polyan anthropology activity exceeding engineering for first time; unusual behaviors increasing (Ch 18)",
+    "Graham's airship 'Buruwa Gunya' arrives moored to UConn Health Center roof (Ch 19)",
+    "Gizmodo publishes article 'Scientists Play God In This Virtual Experiment' bringing public attention to Spheria project (Ch 25)",
+    "Four consecutive red bubbles rise toward Source, threatening Colony with flooding; Council debates relocation (Ch 22)",
+    "Sa·ma discovers golden cave with glowing plants and portal to Qubessence, encounters cave god (Ch 28)",
+    "Fa·ro forces Sa·ma to lead expedition back to golden cave with Ga·zo and Za·zo to reach portal (Ch 30)",
+    "Sa·ma imprisoned in repurposed Council building - Polyans' first use of incarceration (Ch 32)",
+    "Min's computer crashes with system failure before critical Graham meeting (Ch 33)",
+    "Ga·zo convinces Council to create second seven-legged god; preparation ritual begins as violet bubble approaches (Ch 34)",
+    "Mysterious figure meets at Electric Boat submarine facility during storm, suggesting external threats or espionage (Ch 21)",
+    "Min discovers secret red server room beneath Qube floor with Tor network and unauthorized military equipment (Ch 35)",
+    "Fa·ro reveals he eliminated the Council and declares himself sole dictator of the Colony (Ch 36)",
+    "Min hacks secret room computer using Olivia's password 6EQUJ5 and discovers evidence of weapons project (Ch 37)",
+    "Max confronts and fights Min in the secret server room, chasing her through damaged equipment (Ch 39)",
+    "Ga·zo reports all Workers have vanished overnight; Fa·ro locates them gathered near the tower using his artifact (Ch 40)",
+    "Sa·ma's beam cannon fires and destroys tower support columns, causing massive structure to fall across the Rift creating a bridge (Ch 44)",
+    "Max traps Min and Dana in hospital incinerator which activates; they escape through chimney with help from volunteer Walter (Ch 45-47)",
+    "Le·ma is launched from Sa·ma's cannon, crashes into Fa·ro during battle, and steals his artifact (Ch 46)",
+    "Le·ma uses stolen artifact to control Zalisk herd which attacks Soldiers while protecting Workers, enabling mass escape across bridge (Ch 48)",
+    "At board meeting, video confession plays showing Dana admitting to Olivia's murder and DARPA deal; Captain Brennan arrives to arrest her (Ch 50)",
+    "Dana draws gun on Captain Brennan when confronted about her crimes (Ch 50)",
+    "Spheria team reviews recordings of tower bridge creation and Worker liberation battle as Max commands playback (Ch 51)"
   ],
   "characters": [
     {
       "name": "Le·ma",
       "species": "Polyan",
       "caste_or_role": "Lumen Seeker apprentice (female)",
-      "description": "Female Polyan with swirling patterns on her body. Apprentice to Sa·ma, learning to become a Lumen Master. Quick learner, curious, and brave despite fear.",
+      "description": "A young Polyan with swirling patterns on her body (female marking). Selected to become apprentice to Sa·ma, the Lumen Master. Demonstrates quick thinking and problem-solving ability.",
       "first_chapter": 3,
-      "world": "Spheria",
+      "world": "Spherian",
       "updates": [
-        "Heroically launches herself at Fa·ro using Sa·ma's cannon, steals artifact to turn Zalisk against Soldiers, enables Workers' escape"
+        "Volunteers to be fired from Sa·ma's cannon as living projectile. Successfully crashes into Fa·ro mid-battle and steals his artifact. Uses artifact to control Zalisk herd, turning them against Soldiers while protecting Workers. Becomes hero of Worker liberation by neutralizing Fa·ro's greatest advantage."
       ]
     },
     {
       "name": "Sa·ma",
       "species": "Polyan",
       "caste_or_role": "Lumen Master",
-      "description": "Male Polyan with straight textured lines. Colony's Lumen Master who guides Le·ma. Knowledgeable about world secrets and later gains a mysterious third sensor with three triangles.",
+      "description": "The Colony's Lumen Master with straight textured lines (male marking). Guides Le·ma through dangerous trials. Possesses an artifact sensor with three triangles that gives him extraordinary abilities including controlling Zalisks.",
       "first_chapter": 3,
-      "world": "Spheria",
+      "world": "Spherian",
       "updates": [
-        "Discovered cave system with glowing plants and portal to Qubessence; encountered cave god. Now imprisoned in first Polyan prison cell - triangular room inside Council building. Warns Colony about closed-minded thinking and dangers ahead.",
-        "Masterminds Workers' escape using ingenious cannon technology to topple tower across Rift, creates defensive barriers against Soldiers"
+        "Discovered the golden cave with portal to Qubessence and encountered a cave god. Now imprisoned in Council building for first time in Polyan history after Fa·ro's expedition to the cave went wrong. Warns that nothing is unstoppable despite Colony's apparent strength.",
+        "Revealed as brilliant revolutionary engineer who secretly organized all Workers for mass exodus. Built revolutionary beam cannon capable of destroying structures and launching Polyans. Executed plan to topple tower across Rift, creating first bridge to forbidden lands. Led successful Worker rebellion against Fa·ro's dictatorship."
       ]
     },
     {
       "name": "Max",
       "species": "Human",
       "caste_or_role": "Lead scientist/physicist",
-      "description": "Dark-haired, thin physicist who presented at the Solvay Conference. Project lead for Spheria simulation. Socially awkward, often late, uses e-cigarettes. Passionate about quantum theory.",
+      "description": "Thin, dark-haired physicist who presented at the 25th Solvay Conference. Leader of the Spheria Project. Chronically late, somewhat socially awkward, prone to philosophical musings.",
       "first_chapter": 2,
-      "world": "Human",
+      "world": "Earth",
       "updates": [
-        "Appears older and more tired than before. Dating Min, playing video games with her. Father plays video games but doesn't like Minecraft. Believes universe is mathematical algorithm with God as rule-creator.",
-        "Revealed as innocent of weapons conspiracy, trapped by Dana, works with Min to escape, prepared confession video as insurance"
+        "Relationship with Min deepening through dates and gaming. Shares philosophical views on religion and universe. Nervous around Olivia the new intern. Working late preparing for Graham's important visit.",
+        "Discovers Min in the secret red server room he claims never to have seen before. Confused about the room's purpose and who created it. Traps both Min and Dana in incinerator when hearing sirens, believing one of them is guilty. Trapped himself but escapes. Arrives at board meeting to expose Dana's betrayal via recorded confession video."
       ]
     },
     {
       "name": "Min",
       "species": "Human",
-      "caste_or_role": "Computer science intern",
-      "description": "Vietnamese-American computer science student hired as intern. Wears spy glasses that record video. Tech-savvy and enthusiastic. Roommate is Sheila.",
-      "first_chapter": 7,
-      "world": "Human",
+      "caste_or_role": "Intern/computer science student",
+      "description": "Vietnamese-American computer science student with 'spy glasses' that record everything. Enthusiastic about technology. Brings Goi Cuon to team gatherings. Becomes reception desk worker/data analyst.",
+      "first_chapter": 6,
+      "world": "Earth",
       "updates": [
-        "Dating Max, visiting his apartment. Raised Catholic by emigrant parents who converted. Believes world is mathematical formulas and equations. Working late nights preparing calculations. Experiences computer system failure.",
-        "Discovers secret weapons project, fights Max, realizes they're both victims of Dana's conspiracy, works with former enemy to survive incinerator"
+        "Relationship with Max developing through dinner dates and visiting his apartment. Debates nature of beauty and mathematics with Frankie. Working alone late when computer crashes before critical Graham meeting.",
+        "Discovers Dana's secret DARPA weapons project and red server room. Realizes Olivia was murdered for uncovering the same truth. Nearly killed by Max (who is confused), then trapped in incinerator by him. Escapes through chimney with help from hospital volunteer Walter. Becomes key witness against Dana."
       ]
     },
     {
       "name": "David",
       "species": "Human",
-      "caste_or_role": "Chair of 25th Solvay Conference",
-      "description": "Max's friend from online quantum theory forums. Youthful demeanor despite his age. Helped Max get speaking invitation to prestigious physics conference.",
+      "caste_or_role": "Chair of 25th Solvay Conference on Physics",
+      "description": "Max's friend from online quantum theory forums. Youthful demeanor despite age. Helped Max get speaking invitation to prestigious physics conference.",
       "first_chapter": 2,
-      "world": "Human",
+      "world": "Earth",
       "updates": []
     },
     {
       "name": "Timothy (Tim)",
       "species": "Human",
-      "caste_or_role": "Student/team member",
-      "description": "Student at UConn Health Center. Was present when previous intern Jill died by suicide. Now works on Spheria project team. Makes frozen drinks at happy hour.",
+      "caste_or_role": "Team member/scientist",
+      "description": "Student at UConn Health Center. Witnessed traumatic suicide of previous intern (Jill). Makes frozen drinks at happy hour. Works on Spheria Project.",
       "first_chapter": 4,
-      "world": "Human",
+      "world": "Earth",
       "updates": []
     },
     {
       "name": "Jill",
       "species": "Human",
-      "caste_or_role": "Former intern (deceased)",
-      "description": "Previous intern on the project who committed suicide by jumping from library entrance, traumatizing Tim who witnessed it.",
+      "caste_or_role": "Previous intern (deceased)",
+      "description": "Former intern who committed suicide by jumping from library entrance, landing near Tim. Her death traumatized the team and created the opening for Min.",
       "first_chapter": 4,
-      "world": "Human",
+      "world": "Earth",
       "updates": []
     },
     {
       "name": "Sheila",
       "species": "Human",
-      "caste_or_role": "Medical student",
-      "description": "Min's Australian roommate. Medical student at UConn Health Center. Beautiful ('knockout'). Found the internship posting that Min applied for.",
+      "caste_or_role": "Medical student, Min's roommate",
+      "description": "Australian medical student at UConn Health Center. Attractive ('knockout'). Found internship posting for Min. Doesn't understand computers but supportive friend.",
       "first_chapter": 7,
-      "world": "Human",
+      "world": "Earth",
       "updates": []
     },
     {
       "name": "Jean",
       "species": "Human",
-      "caste_or_role": "Team member/researcher",
-      "description": "Team member who uses VR headset and SpaceMouse to observe the Spheria simulation. Unlike other team members, not a video game player. Energized by big meals.",
+      "caste_or_role": "Scientist/VR observer",
+      "description": "Team member who observes Spheria using VR headset and 3D SpaceMouse. Energized by big meals. Not a video game player. Uses ritual entry method to observe Polyans.",
       "first_chapter": 17,
-      "world": "Human",
+      "world": "Earth",
       "updates": []
     },
     {
-      "name": "Moses Diego",
+      "name": "Old Lumen Master",
+      "species": "Polyan",
+      "caste_or_role": "Previous Lumen Master",
+      "description": "Feeble elder who lived in the Lumen Grotto. Selected and trained Sa·ma when he was young. Explained the testing process and purpose of Lumen Seekers.",
+      "first_chapter": 10,
+      "world": "Spherian",
+      "updates": []
+    },
+    {
+      "name": "Olivia Holland",
       "species": "Human",
-      "caste_or_role": "Journalist for Gizmodo",
-      "description": "Reporter who writes article about Spheria project; previously covered Qube technology",
-      "first_chapter": 25,
-      "world": "Human",
+      "caste_or_role": "Intern/Statistical Analyst",
+      "description": "Summer intern working on statistical analysis for the Spheria project. Keeps a work journal documenting her experiences, personal life struggles including a breakup with Randy, and developing friendship with roommate Ashley.",
+      "first_chapter": 29,
+      "world": "Earth",
       "updates": []
     },
     {
       "name": "Ti·ni",
-      "species": "Polyan",
+      "species": "Polyan (Drone)",
       "caste_or_role": "Three-legged Drone",
-      "description": "Young Drone who is too new to have developed proper respect for higher castes; asks Sa·ma questions",
+      "description": "Young Drone who shows less fear of higher castes than others. Appears curious and respectful toward Sa·ma, asking questions during his storytelling.",
       "first_chapter": 28,
       "world": "Spheria",
       "updates": []
     },
     {
       "name": "Po·ni",
-      "species": "Polyan",
+      "species": "Polyan (Drone)",
       "caste_or_role": "Three-legged Drone",
-      "description": "Drone who forgets her manners and asks Sa·ma questions about the cave; stands admiringly next to Ti·ni",
+      "description": "Another young Drone who forgets her manners in her curiosity about Sa·ma's cave discovery. Stands admiringly next to Ti·ni.",
       "first_chapter": 28,
       "world": "Spheria",
       "updates": []
     },
     {
-      "name": "Olivia Holland",
+      "name": "Moses Diego",
       "species": "Human",
-      "caste_or_role": "Summer Intern",
-      "description": "Intern doing statistical analysis; keeps work journal; goes through breakup with boyfriend Randy; becomes closer with roommate Ashley",
-      "first_chapter": 29,
-      "world": "Human",
-      "updates": []
-    },
-    {
-      "name": "Randy",
-      "species": "Human",
-      "caste_or_role": "Olivia's ex-boyfriend",
-      "description": "Breaks up with Olivia via email after six years; long distance relationship wasn't working",
-      "first_chapter": 29,
-      "world": "Human",
-      "updates": []
-    },
-    {
-      "name": "Rick Grimes",
-      "species": "Human",
-      "caste_or_role": "TV character",
-      "description": "Character from The Walking Dead that Ashley is watching",
-      "first_chapter": 31,
-      "world": "Human",
+      "caste_or_role": "Journalist (Gizmodo)",
+      "description": "Tech journalist who previously covered the Qube technology and returns to write an article titled 'Scientists Play God In This Virtual Experiment' about the Spheria project.",
+      "first_chapter": 25,
+      "world": "Earth",
       "updates": []
     },
     {
       "name": "Walter",
       "species": "Human",
       "caste_or_role": "Candy striper at hospital",
-      "description": "Hospital volunteer who discovers Min and Max trapped in incinerator while transporting laundry",
+      "description": "Hospital volunteer who discovers Min and Max trapped in the incinerator by following mysterious banging sounds",
       "first_chapter": 47,
-      "world": "Human",
+      "world": "Earth",
       "updates": []
     },
     {
       "name": "Captain Brennan",
       "species": "Human",
       "caste_or_role": "Head of campus security",
-      "description": "Security chief who investigated Olivia's death and arrests Dana",
+      "description": "Security officer who investigated Olivia's death and arrives to arrest Dana; had doubts about the suicide ruling",
       "first_chapter": 50,
-      "world": "Human",
-      "updates": []
-    },
-    {
-      "name": "Graham",
-      "species": "Human",
-      "caste_or_role": "Billionaire benefactor/funder",
-      "description": "Primary financial backer of the Spheria Project; arrives via his airship Buruwa Gunya for major reviews and funding decisions.",
-      "first_chapter": 19,
-      "world": "Human",
-      "updates": [
-        "Witnesses Dana's exposure and the Polyan revolution recordings, recognizing the project's ethical and strategic stakes."
-      ]
-    },
-    {
-      "name": "Dana Carter",
-      "species": "Human",
-      "caste_or_role": "Project administrator/conspirator",
-      "description": "Senior project operator who secretly redirected Spheria infrastructure toward DARPA weapons goals and orchestrated a cover-up.",
-      "first_chapter": 18,
-      "world": "Human",
-      "updates": [
-        "Murdered Olivia and attempted to silence Min and Max before being exposed during Graham's board meeting."
-      ]
-    },
-    {
-      "name": "Ashley",
-      "species": "Human",
-      "caste_or_role": "Olivia's roommate",
-      "description": "Roommate and emotional support for Olivia during her internship and breakup period.",
-      "first_chapter": 29,
-      "world": "Human",
-      "updates": []
-    },
-    {
-      "name": "Frankie",
-      "species": "Human",
-      "caste_or_role": "Team member/world builder",
-      "description": "Project teammate who debates creative aesthetics versus strict mathematics with Min while discussing simulation design.",
-      "first_chapter": 27,
-      "world": "Human",
-      "updates": []
-    },
-    {
-      "name": "Fa�ro",
-      "species": "Polyan",
-      "caste_or_role": "Soldier-turned-dictator",
-      "description": "Authoritarian Polyan leader who overthrows the Council, enslaves Workers, and wages war to preserve absolute control.",
-      "first_chapter": 26,
-      "world": "Spheria",
-      "updates": [
-        "Loses battlefield advantage after Le�ma steals his artifact and the Zalisk herd turns on his forces."
-      ]
-    },
-    {
-      "name": "Ga�zo",
-      "species": "Polyan",
-      "caste_or_role": "Fa�ro loyalist",
-      "description": "Key supporter of Fa�ro who acts as enforcer and participates in suppressing Sa�ma and the Workers.",
-      "first_chapter": 30,
-      "world": "Spheria",
-      "updates": []
-    },
-    {
-      "name": "Za�zo",
-      "species": "Polyan",
-      "caste_or_role": "Fa�ro loyalist",
-      "description": "Loyal ally within Fa�ro's faction during the power consolidation and pursuit of Workers.",
-      "first_chapter": 30,
-      "world": "Spheria",
-      "updates": []
-    },
-    {
-      "name": "Hi�ma",
-      "species": "Polyan",
-      "caste_or_role": "Worker rebel",
-      "description": "Worker involved in Sa�ma's covert escape strategy and movement across the fallen tower bridge.",
-      "first_chapter": 38,
-      "world": "Spheria",
-      "updates": []
-    },
-    {
-      "name": "Pu�ma",
-      "species": "Polyan",
-      "caste_or_role": "Worker rebel",
-      "description": "Worker participant in the coordinated rebellion and Rift-crossing evacuation plan.",
-      "first_chapter": 38,
-      "world": "Spheria",
+      "world": "Earth",
       "updates": []
     }
   ],
   "settings": [
     {
-      "name": "The Colony",
-      "world": "Spheria",
-      "description": "Central Polyan settlement where the crystalline beings live in hives. Contains Drones, Builders, Soldiers, and is led by six-legged Leaders. Center gathering place for safety at night."
+      "name": "The Source",
+      "world": "Spherian",
+      "description": "The bright shining orb above the Polyan world that governs behavior and provides light. Changes color (white for travel, fades at night). Contains the entire Spherian world."
     },
     {
-      "name": "Uplift Pass",
-      "world": "Spheria",
-      "description": "Large slit/passage through the blue crystal mountains. Named by ancient ancestors. Used by Lumen Masters to train apprentices. Leads to forbidden knowledge areas."
-    },
-    {
-      "name": "The Rift",
-      "world": "Spheria",
-      "description": "Massive dark chasm at the edge of the world. Most prominent landmark in Spheria. Yellow crystals thrown in turn into bubbles. Marks boundary of known territory."
+      "name": "Polyan Colony",
+      "world": "Spherian",
+      "description": "Home settlement of the Polyans. Contains hives (igloo-like pointed structures). Center gathering place. Location where Drones, Builders, Soldiers, and Leaders live."
     },
     {
       "name": "Blue Mountains",
-      "world": "Spheria",
-      "description": "Mountain ranges made of blue crystal that emit repulsive force. Impassable barriers that divide the world into maze-like sections. Nearly vertical on some sides."
+      "world": "Spherian",
+      "description": "Mountain ranges made of blue crystal that emit repulsive force, making them impassable. Divide world into maze-like sections. Nearly vertical on one side."
+    },
+    {
+      "name": "Uplift Pass",
+      "world": "Spherian",
+      "description": "Large slit/crevice in blue mountains containing platforms that allow passage to other side. Contains steps. Named by ancestors. Used for Lumen Seeker training."
+    },
+    {
+      "name": "The Rift",
+      "world": "Spherian",
+      "description": "Massive chasm at edge of world. Appears as vertical artificial horizon. So deep the bottom cannot be seen. Yellow shards dropped in eventually become bubbles rising back up."
     },
     {
       "name": "Valley of Three",
-      "world": "Spheria",
-      "description": "Perfect triangle formation of mountains visible on opposite hemisphere at night. No red rivers inside. Used by Soldiers for navigation. Legendarily where gods play games."
-    },
-    {
-      "name": "The Source",
-      "world": "Spheria",
-      "description": "Bright shining orb above the world that governs Polyan behavior. Changes color (white during day). Center of the spherical world where observers can float."
+      "world": "Spherian",
+      "description": "Large perfect triangle formation of mountains on opposite hemisphere with no rivers inside. Used for navigation at night. Legends say gods play games there (flickering dots sometimes visible)."
     },
     {
       "name": "Red Rivers",
-      "world": "Spheria",
-      "description": "Glowing red rivers that flow through the landscape. Can be crossed by building bridges. Illuminate the blue mountains at night from opposite hemisphere."
+      "world": "Spherian",
+      "description": "Rivers of red liquid/energy that flow through Spherian landscape. Can be crossed with bridges made from brown rock. Illuminate blue mountains at night."
     },
     {
       "name": "Lumen Grotto",
-      "world": "Spheria",
-      "description": "Hexagonal dwelling far from the Colony with vertical sides like a cut hill. Resting place where old Lumenary waited for Sa·ma. Contains yellow glowing crystal."
+      "world": "Spherian",
+      "description": "Hexagonal room cut into hill-like formation far from Colony. Resting place where old Lumen Master waits to test potential Lumen Seekers. Contains glowing yellow crystal."
     },
     {
-      "name": "The Fertile Field",
-      "world": "Spheria",
-      "description": "Legendary field of endless energy that Sa·ma discovered. Not always present/visible. Location where Sa·ma received his mysterious third sensor gift."
-    },
-    {
-      "name": "UConn Health Center",
-      "world": "Human",
-      "description": "Medical-dental school in Hartford County, Connecticut, built 1970. Expanded in 90s for clinical research. Houses the Spheria Project. Contains Lyman Maynard Stowe Library."
+      "name": "Fertile Field",
+      "world": "Spherian",
+      "description": "Legendary location of endless energy. Not always visible/present. Sa·ma discovered it and received artifact sensor there. Considered a gift from the gods."
     },
     {
       "name": "Hôtel de Ville de Bruxelles",
-      "world": "Human",
-      "description": "Brussels City Hall tower where 25th Solvay Conference on Physics was held. Max presented here and met with David on the balcony overlooking the city."
+      "world": "Earth",
+      "description": "Tower building in Brussels, Belgium where 25th Solvay Conference on Physics took place. Has balcony overlooking city."
+    },
+    {
+      "name": "UConn Health Center",
+      "world": "Earth",
+      "description": "Medical-dental school in Hartford County built 1970 on highest point. Expanded in 90s for clinical research. Houses Spheria Project. Contains Lyman Maynard Stowe Library with 'Spheres' sculptures."
     },
     {
       "name": "Spheria Project Office",
-      "world": "Human",
-      "description": "Research facility at UConn Health Center. Contains reception desk, conference room, cubicles, kitchen, and offices. Team holds Friday happy hours with ethnic food and frozen drinks."
+      "world": "Earth",
+      "description": "Research facility with makeshift lobby/reception desk, cubicles, conference room, kitchen. Team holds happy hour gatherings. Min works at reception desk with three large monitors."
     },
     {
-      "name": "UConn Health Center rooftop",
-      "world": "Human",
-      "description": "Building rooftop with mooring mast disguised as cell tower antenna; Graham's yellow luxury airship 'Buruwa Gunya' docked here; accessible via emergency exit stairway"
-    },
-    {
-      "name": "Buruwa Gunya airship interior",
-      "world": "Human",
-      "description": "Enormous luxury airship gondola with open floor plan, slanted wraparound windows, sunken booths, kitchen with stainless steel appliances, and private rooms toward rear"
+      "name": "Graham's Airship 'Buruwa Gunya'",
+      "world": "Earth",
+      "description": "A massive yellow luxury airship belonging to Graham, moored to the UConn Health Center roof via a disguised cell tower antenna. Features a suspended gondola with open floor plan, sunken booths, kitchen with stainless steel appliances, slanted wraparound windows, and private rooms toward the rear."
     },
     {
       "name": "Electric Boat Pier 3, Groton CT",
-      "world": "Human",
-      "description": "Dark pier with Virginia-class submarine, large yellow crane, shipping containers; location of secret meeting in rain"
+      "world": "Earth",
+      "description": "Submarine manufacturing facility at Shaw Cove with docks for Virginia-class submarines. Features a large yellow crane for lifting cargo and containers, minimally lit at night. Used for clandestine meetings."
     },
     {
-      "name": "Cave system with glowing plants",
+      "name": "The Golden Cave",
       "world": "Spheria",
-      "description": "Underground cave with strange glowing plants that emit light beams when broken; twisting maze of passages; contains portal room; discovered by Sa·ma near mountains beyond river"
+      "description": "A mysterious cave discovered by Sa·ma containing golden crystalline formations, strange glowing plants, and a portal to the 'Qubessence.' Features twisting maze-like passages with light-producing plants that can be broken to create beams. Contains a room with a portal that Sa·ma encounters a cave god through."
     },
     {
-      "name": "Portal room in cave",
+      "name": "Council Building Prison Cell",
       "world": "Spheria",
-      "description": "Cave room containing portal to 'Qubessence'; where Sa·ma encountered cave god; location Fa·ro demands to visit"
+      "description": "Triangular chamber tapering to a point, the hollow interior of the Council building. Originally a shelter against Zalisk attacks, later used for storage, now repurposed as the Polyans' first prison. Features a single large door, no windows, and a shallow hexagonal pit in the center."
     },
     {
-      "name": "Council building prison cell",
+      "name": "Secret red server room",
+      "world": "Earth",
+      "description": "Hidden duplicate server room beneath the Qube floor with red lighting, containing unauthorized Tor network equipment and Gridway distributed computing system for DARPA weapons project"
+    },
+    {
+      "name": "Hospital incinerator chamber",
+      "world": "Earth",
+      "description": "Domed propane-fueled incinerator where Min and Max become trapped; contains exhaust vent leading to chimney with clean-out door"
+    },
+    {
+      "name": "The bridge (fallen tower)",
       "world": "Spheria",
-      "description": "Triangular room tapering to point; hollow interior of Council building; former shelter against Zalisk attacks; now Spheria's first prison; contains shallow hexagonal pit in center; single large door, no windows"
+      "description": "The massive tower knocked down by Sa·ma's cannon to span across the Rift, creating the first bridge to the forbidden side"
     },
     {
-      "name": "Secret server room",
-      "world": "Human",
-      "description": "Hidden duplicate of main server room beneath Qube floor, bathed in red light with cables and Tor network equipment for DARPA weapons project"
-    },
-    {
-      "name": "Hospital incinerator",
-      "world": "Human",
-      "description": "Crematorium chamber where Min and Max become trapped after Dana locks them inside"
-    },
-    {
-      "name": "Fallen tower bridge",
+      "name": "Fa·ro's Chamber",
       "world": "Spheria",
-      "description": "The great tower toppled across the Rift by Sa·ma's cannon, creating a bridge for Workers to escape"
-    },
-    {
-      "name": "Spheria",
-      "world": "Spheria",
-      "description": "The simulated spherical world containing Polyans, blue crystal mountains, red rivers, and the Rift, observed by the Earth research team."
-    },
-    {
-      "name": "Lyman Maynard Stowe Library",
-      "world": "Human",
-      "description": "Library at UConn Health Center near the Spheres sculptures and Academic Entrance; site connected to the intern suicide tragedy."
+      "description": "The apex chamber of the tallest structure in the Colony, formerly the Council chamber, now Fa·ro's throne room after he eliminated the Council"
     }
   ],
   "chapters": [
@@ -425,451 +315,441 @@
       "number": 1,
       "title": "Shard of Life",
       "perspective": "Spherian",
-      "synopsis": "Nine Polyan Soldiers hunt a massive Zalisk beast. The creature forages for green crystals containing seed energy. The Polyans target the violet crystal in the Zalisk's core that gives it life. They work as a coordinated team, having learned from past deaths."
+      "synopsis": "Nine Soldier-caste Polyans (five-limbed beings with violet cores) hunt a massive six-legged Zalisk beast for its violet life crystal. The Source governs their behavior. They work as coordinated team to take down the dangerous creature."
     },
     {
       "number": 2,
       "title": "1% Inspiration, 99% Funding",
       "perspective": "Human",
-      "synopsis": "Max stands on a balcony in Brussels after presenting at the 25th Solvay Conference on Physics. His friend David, the conference chair, congratulates him. Max reflects on being a rookie impressing leading particle physicists and his admiration for historical figures like Einstein and Curie."
+      "synopsis": "Max, a physicist, stands on balcony in Brussels after presenting at prestigious 25th Solvay Conference on Physics. His friend David, conference chair, congratulates him. Max reflects on scientific heroes Einstein, Curie, and Poincaré."
     },
     {
       "number": 3,
       "title": "Uplift Pass",
       "perspective": "Spherian",
-      "synopsis": "Le·ma follows Sa·ma far from the Colony to a mountain range. They reach Uplift Pass, a large slit in the blue crystal mountains. Sa·ma reveals this passage leads to secret knowledge passed down through generations of Lumen Masters."
+      "synopsis": "Le·ma follows Sa·ma on journey far from Colony to blue mountains. They enter Uplift Pass, a crevice through the mountains. Sa·ma reveals Le·ma is his apprentice Lumen Seeker and will someday replace him as Colony's Lumen Master."
     },
     {
       "number": 4,
       "title": "Cell Division",
       "perspective": "Human",
-      "synopsis": "Timothy and Jill walk to the UConn library at night to study. As Tim bends to tie his shoe near the 'Spheres' sculptures, Jill is killed in a suicide jump from above. Tim is splattered with blood and hears her scream."
+      "synopsis": "Timothy and Jill arrive at UConn Health Center library at night to study. As Tim ties his shoe near 'Spheres' sculptures, Jill commits suicide by jumping from above, her blood spattering his new white sneakers."
     },
     {
       "number": 5,
       "title": "Arcane Physics",
       "perspective": "Spherian",
-      "synopsis": "Le·ma must descend the steep mountain slope after Sa·ma jumps. She learns to navigate using the repulsive force of blue crystals, bouncing and gliding down flat outcroppings. Sa·ma reveals there's no passage back from this side—finding the return route is one of her tests."
+      "synopsis": "Le·ma must descend steep blue mountain by bouncing off repulsive force field. After terrifying descent, she learns to glide using the field. Sa·ma teaches her about physics of their world and tests her problem-solving."
     },
     {
       "number": 6,
       "title": "First Impressions",
       "perspective": "Human",
-      "synopsis": "Max waits impatiently for a slow elevator where kids pressed all the buttons. He's late for interviewing a candidate to replace their previous intern who committed suicide. He frustratedly wishes elevators had undo buttons like computer interfaces."
+      "synopsis": "Max waits for elevator, frustrated by kids who pressed all buttons. He philosophizes about elevator design while slowly ascending. He's late for interview with candidate to replace tragic previous intern."
     },
     {
       "number": 7,
       "title": "The Interview",
       "perspective": "Human",
-      "synopsis": "Min returns home and tells her roommate Sheila about the amazing internship interview. She explains the Spheria virtual world with computer creatures called Spherians/Polyans. Min shows Sheila footage from her spy glasses of the interview and the simulation."
+      "synopsis": "Min interviews with Max for internship. Her roommate Sheila (Australian medical student) found the posting. Min films interview with spy glasses and later shows Sheila footage of the Spheria Project and its computer-generated Polyan creatures."
     },
     {
       "number": 8,
       "title": "The Rift",
       "perspective": "Spherian",
-      "synopsis": "Le·ma and Sa·ma camp beside the massive Rift chasm at world's edge. They observe the opposite hemisphere at night, including the Valley of Three triangle formation. Sa·ma explains the Rift's significance and they prepare to test if a yellow crystal will transform when thrown in."
+      "synopsis": "Le·ma and Sa·ma camp beside the massive Rift at world's edge. At night they observe Valley of Three and other hemisphere. Sa·ma explains nobody has reached opposite side. Le·ma drops yellow shard into bottomless Rift."
     },
     {
       "number": 9,
       "title": "First Day",
       "perspective": "Human",
-      "synopsis": "Min starts her internship working at the reception desk, which rarely has visitors. Max introduces her to the team at the 11am meeting. She meets the socially awkward scientists who make up the Spheria Project staff."
+      "synopsis": "Min starts work at reception desk with three monitors. Max introduces her to team at meeting. She learns about Spheria Project structure and meets colleagues. Project involves monitoring virtual world with Spherian creatures."
     },
     {
       "number": 10,
       "title": "The Fertile Field",
       "perspective": "Spherian",
-      "synopsis": "Flashback to young Sa·ma's exploration beyond the Colony. He discovers the Lumen Grotto, a hexagonal dwelling with a glowing yellow crystal. An old Polyan was expecting him, explaining this is the first test of becoming a Lumen Seeker."
+      "synopsis": "Flashback: Young Sa·ma explored beyond Colony and found Lumen Grotto with old feeble Polyan beside yellow crystal. Elder explained this is test location - only confident Polyans venture far enough to find it and become Lumen Seekers."
     },
     {
       "number": 11,
       "title": "Min's Assignment",
       "perspective": "Human",
-      "synopsis": "Min meets with Max who gives her an assignment to analyze data files. He shows her his book collection including his favorite 'A Short History of Nearly Everything' by Bill Bryson, which he reads yearly and wishes had a quantum physics chapter."
+      "synopsis": "Min arrives at work with Starbucks coffee. Max summons her to office and browses his books while he prepares files. She notices 'A Short History of Nearly Everything' by Bill Bryson is his favorite, read yearly."
     },
     {
       "number": 12,
       "title": "Return Journey",
       "perspective": "Spherian",
-      "synopsis": "Le·ma wakes to find Sa·ma has left her alone. She observes a yellow bubble rising from the Rift, possibly the transformed crystal. She begins her solo return journey, taking time to observe her surroundings and reflect on her learning. She encounters a peaceful pond."
+      "synopsis": "Le·ma wakes to find Sa·ma gone - she must return alone as final test. She sees yellow bubble rising from Rift (her shard transformed). Travels back toward mountains, observing environment more carefully, encountering various Spherian life."
     },
     {
       "number": 13,
       "title": "Happy Hour",
       "perspective": "Human",
-      "synopsis": "At 6:12pm Friday happy hour, Min brings Vietnamese Goi Cuon (salad rolls) with Nuoc cham sauce. Max tries and loves them. Tim makes frozen drinks with a blender. The team socializes over ethnic food and beverages."
+      "synopsis": "At 6:12pm, team gathers for happy hour with ethnic food. Min brings Vietnamese Goi Cuon (salad rolls) with Nuoc cham sauce. Tim makes frozen drinks. Team bonds over food and conversation about their work."
     },
     {
       "number": 14,
       "title": "Extra Sense",
       "perspective": "Spherian",
-      "synopsis": "A Zalisk about to kill Le·ma suddenly obeys Sa·ma's telepathic command and walks away. Sa·ma reveals a new third sensor with three triangles—an artifact gift from the gods. He discovered the legendary Fertile Field and gained this ability to communicate and influence creatures."
+      "synopsis": "Zalisk attacks Le·ma but Sa·ma commands it to leave using mysterious power. He reveals new artifact sensor with three triangles on his core - gift from gods found at Fertile Field. Gives him greater insight and control over creatures."
     },
     {
       "number": 15,
       "title": "Starlight Walk",
       "perspective": "Human",
-      "synopsis": "Max and Min leave the office drunk and walk through the parking lot at night. Max drunkenly sits in an unlocked Mercedes. They eventually walk down to look at the pond, Max staggering between parked cars in the medical staff lot."
+      "synopsis": "Max and Min leave office at night, Max intoxicated. They walk through parking lot. Max sits in unlocked Mercedes, briefly worrying Min. They discuss their experiences and the project under the night sky."
     },
     {
       "number": 16,
       "title": "Cliffhanger",
       "perspective": "Spherian",
-      "synopsis": "Le·ma and Sa·ma discuss how to return over the nearly vertical mountains. Sa·ma reveals there's no passage on this side—Le·ma must create a way over. He hints she should use what she knows, letting slip they need to 'make it to the other side.'"
+      "synopsis": "Le·ma and Sa·ma head back toward vertical blue mountains. Sa·ma reveals there's no passage on this side - she must create her own way over using her knowledge. He begins guiding her to solve this final test of the Lumen Walk."
     },
     {
       "number": 17,
       "title": "God from the Machine",
-      "perspective": "Human",
-      "synopsis": "Jean uses VR headset and SpaceMouse to observe the Polyan Colony in the simulation. She flies through the virtual world, watching Drones and Builders construct a new igloo-like hive. She wants to help but is forbidden from interacting—only engineers can."
+      "perspective": "Mixed",
+      "synopsis": "Jean uses VR headset and 3D SpaceMouse to observe Spheria from inside the Source. She watches Drones and Builders constructing new hive at Colony. She wants to help but is forbidden to interact - only engineers can manipulate the world."
     },
     {
       "number": 18,
       "title": "Prime Directive",
       "perspective": "Human",
-      "synopsis": "Dana reviews weekly logs showing increased unusual Polyan activity. For first time, anthropology log entries exceed engineering entries. Jean notes Polyans seem to be moving toward 'new social zeitgeist' with most interesting behaviors happening collectively rather than individually."
+      "synopsis": "Dana reviews weekly logs showing increased unusual Polyan behavior. For the first time, anthropology entries exceed engineering entries. Jean's notes indicate Polyans are moving toward a new social zeitgeist or 'new age,' with interesting behaviors happening off-camera."
     },
     {
       "number": 19,
       "title": "Crossing Over",
       "perspective": "Human",
-      "synopsis": "Max drives to UConn Health Center and is amazed to see Graham's enormous yellow luxury airship 'Buruwa Gunya' moored atop building. Due to Ponzo Illusion, airship appears even larger than it is. Max reflects on visual perception tricks."
+      "synopsis": "Max drives to UConn Health Center and is amazed by Graham's massive yellow airship 'Buruwa Gunya' moored to the building's roof. He experiences the Ponzo Illusion observing the airship's size relative to the building through trees."
     },
     {
       "number": 20,
       "title": "Running Out",
       "perspective": "Human",
-      "synopsis": "Dana and Max climb to roof and board Graham's luxury airship via gangway. Interior is massive gondola with open floor plan, wraparound windows, sunken booths, kitchen, and private rooms. They are impressed by the scale."
+      "synopsis": "Dana and Max climb to the roof and board Graham's luxury airship. The interior features an open floor plan with sunken booths, kitchen, wraparound windows, and indicates Graham's arrival for an important meeting about the project."
     },
     {
       "number": 21,
       "title": "Cat and Mouse",
       "perspective": "Human",
-      "synopsis": "In rain at night, mysterious driver in black sedan arrives at Electric Boat pier in Groton CT. Virginia-class submarine docked nearby. Driver in hooded rain jacket skulks toward shipping containers beneath large yellow crane."
+      "synopsis": "A mysterious figure in a black sedan arrives at Electric Boat Pier 3 in Groton during a rainstorm. They meet near a Virginia-class submarine and cargo containers beneath a crane in darkness, suggesting clandestine activity related to the project."
     },
     {
       "number": 22,
       "title": "In Our Image",
       "perspective": "Spherian",
-      "synopsis": "Fourth consecutive red bubble rises toward Source. Eight Leaders (Wu·sa, Yo·sa, Me·sa, Ju·sa, Ki·sa, Co·sa, Pi·sa, Vu·sa) meet with Sa·ma in Council Chamber. Red river threatening Colony; they debate moving it. Me·sa claims gods are angry. Council divided on reasons but agrees Colony must relocate."
+      "synopsis": "The eight Leaders (Wu·sa, Yo·sa, Me·sa, Ju·sa, Ki·sa, Co·sa, Pi·sa, Vu·sa) convene in the Council Chamber as the fourth consecutive red bubble rises. They debate moving the Colony as the expanding red river threatens dwellings. Sa·ma cannot explain why the gods are angry and dares not reveal his encounters with Pi·ro and Ju·ro."
     },
     {
       "number": 23,
       "title": "Nourishment",
       "perspective": "Human",
-      "synopsis": "Max and Min have dinner date discussing religion and beliefs. Min was raised Catholic but doesn't dwell on it. Max believes universe is mathematical algorithm; if God exists, he just created fundamental rules and watches. They discuss self-assembling patterns in nature."
+      "synopsis": "Max and Min have dinner and discuss religion. Min was raised Catholic after her parents converted upon emigrating, while Max believes the universe is mathematical and algorithmic, with God having created fundamental rules that allow everything to self-assemble over time."
     },
     {
       "number": 24,
       "title": "Pro Creation",
       "perspective": "Human",
-      "synopsis": "Min visits Max's minimalist apartment with impressive entertainment center and video game systems. They discuss games; Min prefers building games like Minecraft. Max's dad doesn't like Minecraft because it has no story. They prepare to play together with beers."
+      "synopsis": "Min visits Max's minimalist apartment featuring impressive entertainment center and video game systems. They bond over Minecraft and discuss the game's appeal of building your own story. Min is surprised by Max's healthy refrigerator selections."
     },
     {
       "number": 25,
       "title": "Start the Press",
       "perspective": "Human",
-      "synopsis": "Gizmodo article by Moses Diego titled 'Scientists Play God In This Virtual Experiment' describes visiting Max's lab. Article details Polyans as sentient polygonal creatures with caste system based on leg count (3-6), recent creation of seven-legged god figure, and introduces virtual world called Spheria."
+      "synopsis": "A Gizmodo article by Moses Diego titled 'Scientists Play God In This Virtual Experiment' is published. The article describes the Polyan creatures, their caste system based on leg count, and the seven-legged Polyan revered as a god, bringing public attention to the project."
     },
     {
       "number": 26,
       "title": "Conspiracy",
       "perspective": "Spherian",
-      "synopsis": "Fa·ro walks through empty Colony center and climbs central dais, feeling he should be revered more as god. He poses dramatically. He resents Council treating him like servant. He considers having Sa·ma build statue of him and schemes about maintaining his divine status."
+      "synopsis": "Fa·ro surveys the Colony from the central dais, disturbed that he doesn't look down on the Council Leaders despite being a god. He poses imposingly for watching Drones and contemplates having Sa·ma build a statue of him to ensure he's always remembered."
     },
     {
       "number": 27,
       "title": "The World Builder",
       "perspective": "Human",
-      "synopsis": "Min examines data when Frankie startles her. They debate whether world is mathematical or magical. Min argues repeating patterns in nature follow equations. Frankie invites her to see real beauty in random patterns. He's going out to get textures for the project."
+      "synopsis": "Frankie startles Min while she's scrutinizing numbers. They debate whether the world is mathematical formulas or beautiful random patterns. Frankie invites Min to go collect textures, wanting to show her the real beauty in nature's patterns beyond equations."
     },
     {
       "number": 28,
       "title": "Streets of Gold",
       "perspective": "Spherian",
-      "synopsis": "Sa·ma returns to Colony in daze and gathers audience of Drones including Ti·ni and Po·ni. He tells story of following river into wilderness, sensing something below ground, discovering large cave entrance on hillside. Cave was unlike any he'd seen before with unusual properties."
+      "synopsis": "Sa·ma returns from the wilderness and shares his discovery of a mysterious cave with glowing plants and golden crystalline formations beneath the ground. The young Drones Ti·ni and Po·ni listen with fascination as he describes entering the unusual cave, unlike any he'd experienced before."
     },
     {
       "number": 29,
       "title": "The Deleted File",
       "perspective": "Human",
-      "synopsis": "Olivia Holland's work journal entries from 5/30 to later dates. First real job as intern doing statistical analysis. Boyfriend Randy breaks up with her via email after 6 years. She gets hungover at work. Becomes closer with roommate Ashley during recovery."
+      "synopsis": "Olivia Holland's work journal entries document her first weeks as an intern: arriving on her first day, being dumped by boyfriend Randy via email, getting over the breakup with roommate Ashley's help, and settling into work analyzing data for Max."
     },
     {
       "number": 30,
       "title": "God Like You",
       "perspective": "Spherian",
-      "synopsis": "Sa·ma leads Fa·ro, Ga·zo, and Za·zo into cave system. Fa·ro demands to reach portal to 'Qubessence' to join other gods, claiming it's his destiny. Sa·ma worried because cave god said 'come back when it's done' and didn't invite others. Floor rougher than Sa·ma remembers."
+      "synopsis": "Fa·ro forces Sa·ma to lead him, Ga·zo, and Za·zo back to the golden cave. Fa·ro believes it's his destiny to join the other gods through the portal to the 'Qubessence.' Sa·ma worries because the cave god told him to 'come back when it's done' and not to bring others. The portal appears to be closed."
     },
     {
       "number": 31,
       "title": "The Exchange",
       "perspective": "Human",
-      "synopsis": "Ashley watches The Walking Dead alone during thunderstorm. She counts lightning distance. Rick Grimes sneaks through zombie-filled warehouse on screen. Knocking sound occurs but Rick doesn't react on TV - suggesting something unusual happening in real world."
+      "synopsis": "Ashley is home alone during a thunderstorm watching The Walking Dead. She hears mysterious knocking sounds that don't match the TV show, suggesting something unusual or supernatural is occurring in her apartment."
     },
     {
       "number": 32,
       "title": "Confinement",
       "perspective": "Spherian",
-      "synopsis": "Sa·ma imprisoned in triangular cell - hollow interior of Council building, Spheria's first prison. Ga·zo visits with yellow shard light. Ga·zo loyal to Fa·ro, says Colony stronger than ever with god's leadership. Sa·ma warns nothing is unstoppable and criticizes closed minds."
+      "synopsis": "Sa·ma is imprisoned in the repurposed hollow interior of the Council building, the Polyans' first prison. Ga·zo visits to confirm he's alive per Fa·ro's wishes. They argue about the Colony's direction, with Ga·zo praising Fa·ro's godlike leadership while Sa·ma warns that nothing is unstoppable."
     },
     {
       "number": 33,
       "title": "Coffee Break",
       "perspective": "Human",
-      "synopsis": "Min works late alone preparing for Graham's visit tomorrow. Everyone else gone home after working all night. Her eyes hurt from staring at numbers. She gets coffee from Keurig. Returns to find blue screen system failure requiring reboot. Computer won't respond to any commands."
+      "synopsis": "Min works late alone preparing for Graham's visit the next day. Her computer crashes with a blue screen system failure that won't respond to any inputs, threatening her critical calculations needed for the progress report."
     },
     {
       "number": 34,
       "title": "Putsch",
       "perspective": "Spherian",
-      "synopsis": "Leaders and Fa·ro prepare to create second seven-legged god. Ga·zo convinced them backup god would be wise. Council divided but Fa·ro broke tie by agreeing. They respect his apparent selflessness. Setup complete with seven-sided core crystal and seven orange leg crystals. Source shifts violet triggering replication urge."
+      "synopsis": "The Council prepares to create a second seven-legged god as the violet bubble approaches the Source. Ga·zo convinced the Leaders this would provide backup for Fa·ro. Seven Leaders take positions near leg crystals around an empty seven-sided core crystal, with Ki·sa and Fa·ro watching to assist if needed."
     },
     {
       "number": 35,
       "title": "The Shadow Room",
       "perspective": "Human",
-      "synopsis": "Min discovers a hidden hatch beneath the Qube floor leading to a secret red-lit server room with mysterious cables and equipment she doesn't recognize."
+      "synopsis": "Min discovers a secret red-lit duplicate server room hidden beneath the Qube floor, with unauthorized cables and equipment. She finds a submarine-style hatch leading down to the lower floor where red light emanates."
     },
     {
       "number": 36,
       "title": "Enslaved",
       "perspective": "Spherian",
-      "synopsis": "Fa·ro declares himself sole ruler after eliminating the Council. He announces the Leaders are dead and forces the entire Colony to witness his ascension, with Sa·ma as captive witness."
+      "synopsis": "Fa·ro reveals he has eliminated the Council and declared himself sole ruler of the Colony. He drags Sa·ma before the assembled Polyans and announces the Council's death, blaming them for a failed attempt to create another god."
     },
     {
       "number": 37,
       "title": "Split Decision",
       "perspective": "Human",
-      "synopsis": "Min accesses the secret terminal using Olivia's Wow Signal password. She discovers Gridway meta-scheduling software and Tor network connections, realizing this is military weapons research."
+      "synopsis": "Min accesses the secret server room computer using Olivia's password (6EQUJ5). She discovers Tor network software and Gridway distributed computing being used, realizing someone is conducting unauthorized operations, possibly weapons-related."
     },
     {
       "number": 38,
       "title": "The Plan",
       "perspective": "Spherian",
-      "synopsis": "Hi·ma and Pu·ma follow secret instructions to meet Sa·ma in darkness. Flashback reveals Sa·ma showing Fa·ro the tower design while secretly planning with Workers to topple it across the Rift."
+      "synopsis": "Hi·ma and Pu·ma travel to a secret meeting location with twelve lead Workers. Through flashback, Sa·ma is shown working on a mysterious contraption and having tense interactions with Fa·ro about the tower's construction."
     },
     {
       "number": 39,
       "title": "Mala Sanctis",
       "perspective": "Human",
-      "synopsis": "Min fights Max in the secret room after he discovers her. She kicks him, causing chaos with fallen Qubes and ladder. She escapes toward the elevator."
+      "synopsis": "Max confronts Min in the secret server room. She kicks the cabinet door into his face and tries to escape, but he trips her. They fight among spilled Qubes as Max pursues her through the damaged room."
     },
     {
       "number": 40,
       "title": "The Machine",
       "perspective": "Spherian",
-      "synopsis": "Fa·ro discovers all Workers have vanished overnight. Using his artifact, he sees them gathered beyond the fallen tower with Sa·ma's cannon device."
+      "synopsis": "Ga·zo reports to Fa·ro that all the Workers have vanished overnight. Using his artifact, Fa·ro scans and locates the Workers gathered near the tower in the distance beyond the Colony."
     },
     {
       "number": 41,
       "title": "Button Mashup",
       "perspective": "Human",
-      "synopsis": "Min bursts into Dana's office warning about Max's weapon project and Olivia's murder. Dana locks the door and listens as Max pounds on it demanding entry."
+      "synopsis": "Min escapes to Dana's office and frantically reveals Max's secret room and weapon project. Dana locks the door and questions Min about what she discovered. Min explains her theory about Olivia's murder being connected to the secret project."
     },
     {
       "number": 42,
       "title": "Storm Wind",
       "perspective": "Spherian",
-      "synopsis": "Ga·zo leads Soldiers pursuing the Workers but they encounter a blue rock wall erected perpendicular to their path - another of Sa·ma's defenses using the cannon."
+      "synopsis": "The Soldiers pursue the Workers but encounter a mysterious blue rock wall that blocks their path. Ga·zo orders them to find the edges of this barrier, which forms a long perpendicular clearing through the foliage."
     },
     {
       "number": 43,
       "title": "The Incinerator",
       "perspective": "Human",
-      "synopsis": "Confrontation between Max, Min, and Dana escalates. Max reveals he knew nothing about the secret room. Dana pulls a gun and forces them both into the hospital incinerator."
+      "synopsis": "Max, Min, and Dana confront each other in confusion. Max claims he's never been in the red room before and accuses Min. They hear sirens approaching. Max grabs both women and forces them through the Qube incinerator door, trapping them inside as it activates."
     },
     {
       "number": 44,
       "title": "The Great Divide",
       "perspective": "Spherian",
-      "synopsis": "Hi·ma enters the fallen tower now forming a bridge across the Rift. Sa·ma's cannon had destroyed support columns, causing the tower to topple perfectly across the chasm."
+      "synopsis": "Hi·ma witnesses Sa·ma's device fire a beam that destroys two tower support columns. The massive tower falls across the Rift, creating a bridge to the other side. Workers begin crossing single-file to escape the approaching Soldiers."
     },
     {
       "number": 45,
       "title": "Ashes to Ashes",
       "perspective": "Human",
-      "synopsis": "Trapped in the incinerator with a corpse, Min and Max work together. They discover an exhaust vent and Min climbs through to find a chimney clean-out door."
+      "synopsis": "Trapped in the incinerator with depleting oxygen, Min and Max discover a corpse on a gurney. Max suggests using it as a ladder to reach the exhaust vent. Min climbs through and slides down into the chimney, searching for the clean-out door."
     },
     {
       "number": 46,
       "title": "Into Battle",
       "perspective": "Spherian",
-      "synopsis": "Le·ma uses Sa·ma's cannon to launch herself at Fa·ro during battle. Sa·ma fires her through the air and she collides with Fa·ro, stealing his artifact that controls Zalisk."
+      "synopsis": "The Soldiers massacre Workers at the bridge. Le·ma volunteers to be shot from Sa·ma's cannon. She's loaded into the barrel and launched through the air, crashing into Fa·ro and stealing his artifact before the Zalisk herd arrives to attack the Soldiers."
     },
     {
       "number": 47,
       "title": "Clean-out",
       "perspective": "Human",
-      "synopsis": "Hospital volunteer Walter hears banging from the incinerator chimney while transporting laundry. He investigates the morse-code-like pattern and unlocks the clean-out door."
+      "synopsis": "Walter, a hospital candy striper, hears mysterious banging while transporting laundry in the basement. He follows the sound through storage cages to the incinerator chimney's clean-out door and decides to investigate by opening it."
     },
     {
       "number": 48,
       "title": "Liberation",
       "perspective": "Spherian",
-      "synopsis": "Using Fa·ro's stolen artifact, Le·ma commands Zalisk herd to attack only Soldiers. The Workers escape across the tower bridge while Soldiers are trampled and destroyed."
+      "synopsis": "The Zalisk herd, controlled by Le·ma using Fa·ro's stolen artifact, attacks only the Soldiers while ignoring the Workers. This allows the Workers to escape across the bridge. Fa·ro fights a Zalisk that pins him down as Ga·zo tries to help."
     },
     {
       "number": 49,
       "title": "Projection",
       "perspective": "Human",
-      "synopsis": "Dana presents quarterly report to Graham and team without Max. Graham serves her coffee and questions Max's absence, expressing concern about needing visionary leadership."
+      "synopsis": "Dana presents the quarterly report to Graham and the team, with Max and Min absent. Graham serves Dana coffee and expresses concern about Max's absence, emphasizing the importance of visionary leadership for the project's future."
     },
     {
       "number": 50,
       "title": "Interruptions",
       "perspective": "Human",
-      "synopsis": "During presentation, screens show Dana's confession video admitting she murdered Olivia and trapped Max for DARPA funding and Costa Rica land. Captain Brennan arrives to arrest her but she pulls a gun."
+      "synopsis": "Instead of Dana's presentation, a video plays showing Dana confessing to Olivia's murder and her deal with DARPA for military funding in exchange for Costa Rican land. The video shows her locking Max in the incinerator. Captain Brennan enters to arrest her, but Dana draws a gun."
     },
     {
       "number": 51,
       "title": "Hand of God",
       "perspective": "Mixed",
-      "synopsis": "Max and team watch Spherian recordings showing tower collapse and Zalisk battle. Graham witnesses Polyans' resourcefulness. The parallel between Polyan and human struggles for freedom becomes clear as both stories converge."
+      "synopsis": "Max commands Abina to pause the Spheria playback showing Polyans in a prayer circle. The team reviews recordings of the tower falling to create the bridge and the battle where Workers were slaughtered before the Zalisk intervention. The final revelation of the novel's climax begins."
     }
   ],
   "objects": [
     {
       "name": "Violet Core Crystal",
-      "description": "Life-giving crystal in the center of all Spherian creatures. Without it, they become inanimate tetrahedron structures. The Polyans hunt Zalisks for these.",
-      "significance": "Fundamental to life in Spheria—the source of animation and consciousness for all beings"
+      "description": "Life-giving crystal at center of all Spherian beings. Powers their existence - without it they are inanimate tetrahedron structures. Large ones found in Zalisks are valuable.",
+      "significance": "Fundamental to all Spherian life; object of Polyan hunts"
     },
     {
       "name": "Green Crystals",
-      "description": "Buried crystals containing seed energy that creatures like Zalisks forage for food.",
-      "significance": "Primary food source for herbivorous Spherian creatures"
+      "description": "Buried crystals containing seed energy that Zalisks forage for by digging with tusks.",
+      "significance": "Food source for herbivorous Spherian creatures"
     },
     {
-      "name": "Yellow Crystal Shard",
-      "description": "Small yellow crystals carried by Lumen Seekers. When thrown into the Rift, transform into bubbles that slowly rise.",
-      "significance": "Used in Lumen Master rituals and tests; demonstrates mysterious properties of the Rift"
+      "name": "Yellow Shards/Crystals",
+      "description": "Small yellow crystals that provide light and energy. Can be dropped into Rift where they eventually transform into rising bubbles. Found in Lumen Grotto.",
+      "significance": "Energy source for Polyans; used in rituals and tests"
     },
     {
-      "name": "Blue Crystal Mountains",
-      "description": "Mountains made of repulsive blue crystal that push beings away, creating impassable barriers.",
-      "significance": "Divide the world into regions; fundamental geographic feature that shapes Polyan civilization"
+      "name": "Blue Mountain Crystals",
+      "description": "Blue crystals that emit repulsive force field, making them impossible to touch. Form impassable mountain ranges that divide the world.",
+      "significance": "Natural barriers that shape geography and limit exploration"
     },
     {
-      "name": "Third Sensor",
-      "description": "Mysterious indigo sensor with three triangles that Sa·ma received as a 'gift from the gods.' Grants telepathic/command abilities.",
-      "significance": "Artifact that gives Lumen Masters enhanced powers to influence creatures and perceive the world"
+      "name": "Artifact Sensor",
+      "description": "Special indigo sensor with three triangles pointing in different directions. Attached to Sa·ma's core. Gives extraordinary abilities including commanding Zalisks.",
+      "significance": "Divine gift from Fertile Field; passed from master to apprentice; enhances Lumenary abilities"
+    },
+    {
+      "name": "Brown Rock Blocks",
+      "description": "Loose inert brown rock material pushed by Drones and stacked by Builders to construct hives and bridges.",
+      "significance": "Primary construction material in Spherian world"
     },
     {
       "name": "Spy Glasses",
-      "description": "Thick-rimmed glasses worn by Min that secretly record video. She uses them to document everything.",
-      "significance": "Allow Min to capture footage of the Spheria simulation and her interviews"
+      "description": "Thick-rimmed glasses from spygear.com that Min wears constantly. Record everything she sees and hears.",
+      "significance": "Allow Min to document her experiences; she films her interview"
     },
     {
-      "name": "VR Headset and SpaceMouse",
-      "description": "Virtual reality equipment and 3D controller used by researchers to observe and navigate the Spheria simulation.",
-      "significance": "Interface technology that allows humans to view and move through the artificial world"
+      "name": "VR Headset and 3D SpaceMouse",
+      "description": "Virtual reality equipment with glove that allows team to observe and navigate inside Spheria. SpaceMouse looks like truck towing ball with programmable buttons.",
+      "significance": "Primary interface for observing Spherian world; only engineers allowed to interact"
     },
     {
-      "name": "Spheres Sculptures",
-      "description": "Bronze sculptures by Wopo Holop at UConn showing retina, dividing frog eggs, Earth, acorn, DNA strand, and faceted spheres on pedestals.",
-      "significance": "Ironic location where Jill committed suicide; symbolic of life, cells, and worlds"
+      "name": "'Spheres' Sculptures",
+      "description": "Art installations by Wopo Holop at UConn library entrance. Include bronze objects: human retina, dividing frog eggs, Earth, acorn, DNA strand, faceted and smooth spheres.",
+      "significance": "Location of Jill's suicide; thematic connection to project"
     },
     {
-      "name": "Buruwa Gunya airship",
-      "description": "Graham's enormous yellow luxury airship with red script name; has mooring capability; gondola interior with open floor plan, wraparound windows, sunken booths, kitchen",
-      "significance": "Graham's personal transportation and mobile office; demonstrates his wealth and unconventional style"
+      "name": "Seven-sided Core Crystal",
+      "description": "Empty crystal structure used in the creation of seven-legged Polyans/gods, surrounded by seven orange elongated crystals near each facet",
+      "significance": "Central component in the ritual to create another god to accompany Fa·ro, representing the Polyans' attempt to control or replicate divine creation"
     },
     {
-      "name": "Virginia-class submarine photonics mast",
-      "description": "Low-profile mast with camera array connected by fiber optic cables; resembles traditional periscope; no hull penetration strengthens structural integrity; may have 360-degree camera",
-      "significance": "Advanced submarine technology observed at secret pier meeting location"
+      "name": "Blue Rock Wall",
+      "description": "Defensive wall constructed along the red river to protect Colony hives from destruction",
+      "significance": "One of Sa·ma's insightful designs demonstrating his engineering abilities and value to the Colony despite his imprisonment"
     },
     {
-      "name": "Seven-sided core crystal",
-      "description": "Empty crystal with seven facets used in Polyan creation ceremony; placed in center of Council Chamber; seven orange elongated crystals positioned near each facet",
-      "significance": "Ritual object for creating seven-legged Polyan gods; used to make second god after Fa·ro"
+      "name": "Glowing Cave Plants",
+      "description": "Strange plants in the golden cave that produce light and can be broken to create directional light beams; they heal themselves over time",
+      "significance": "Mark pathways through the cave maze and can be manipulated to reveal or conceal the portal to the Qubessence"
     },
     {
-      "name": "Glowing cave plants",
-      "description": "Strange plants in underground cave that emit light beams when broken; can heal themselves; used by Sa·ma to illuminate cave passages",
-      "significance": "Mysterious natural lighting system in cave; indicates unusual environment near portal to Qubessence"
+      "name": "Yellow Shard",
+      "description": "Small glowing crystal used as portable light source",
+      "significance": "Provides minimal illumination in Sa·ma's prison cell, highlighting his reduced circumstances"
     },
     {
-      "name": "Yellow shard light source",
-      "description": "Small glowing yellow crystal used by Ga·zo to illuminate Sa·ma's prison cell",
-      "significance": "Portable Polyan light source used in dark enclosed spaces"
+      "name": "Red server room cables and equipment",
+      "description": "Bundle of red cables and unauthorized Tor network/Gridway software running in secret duplicate server room beneath the Qube floor",
+      "significance": "Evidence of Dana's secret DARPA weapons project and unauthorized military collaboration"
     },
     {
-      "name": "Sa·ma's cannon",
-      "description": "Blue rock device that fires beams or launches objects, used to topple tower and create defensive wall",
-      "significance": "Revolutionary weapon enabling Workers to escape Fa·ro's tyranny by bridging the Rift"
+      "name": "Sa·ma's beam cannon",
+      "description": "Device created by Sa·ma that fires energy beams capable of destroying tower support columns and launching Polyans through the air",
+      "significance": "Revolutionary technology that enables the Workers' rebellion by creating the bridge across the Rift and functioning as a weapon"
     },
     {
       "name": "Fa·ro's artifact",
-      "description": "Device allowing visual scanning and control of Zalisk herds, outlined in yellow and violet",
-      "significance": "Symbol of power that Le·ma steals to turn Fa·ro's own weapon against him"
+      "description": "Device that allows Fa·ro to see through obstructions and control Zalisk; stolen by Le·ma during battle",
+      "significance": "Key to controlling the Zalisk herd and turning the tide of battle against the Soldiers"
     },
     {
-      "name": "Tor network equipment",
-      "description": "Untraceable dark web communication system in secret server room",
-      "significance": "Evidence of Dana's covert DARPA weapons research using Spheria"
+      "name": "Incinerator gurney with corpse",
+      "description": "Metal medical gurney with embalmed cadaver used as makeshift ladder inside the incinerator chamber",
+      "significance": "Provides escape route for Min and Max through exhaust vent to chimney"
     },
     {
-      "name": "Confession video",
-      "description": "Recording of Dana admitting to Olivia's murder and trapping Max",
-      "significance": "Max's insurance exposing Dana's conspiracy before board meeting"
-    },
-    {
-      "name": "A Short History of Nearly Everything",
-      "description": "Science book by Bill Bryson that Max repeatedly rereads and references in conversation.",
-      "significance": "Reflects Max's worldview and curiosity about unifying scientific understanding."
-    },
-    {
-      "name": "Mooring mast",
-      "description": "Roof-mounted docking mast on UConn Health Center used to anchor Graham's airship.",
-      "significance": "Physical infrastructure enabling Graham's direct access and oversight of the project."
-    },
-    {
-      "name": "Gridway distributed computing system",
-      "description": "Meta-scheduling/distributed compute software discovered in the secret server environment.",
-      "significance": "Technical evidence linking Spheria infrastructure to covert military computation workflows."
+      "name": "Blue rock barrier wall",
+      "description": "Long continuous vertical wall of blue crystalline material creating a clearing perpendicular to the Soldiers' path",
+      "significance": "Defensive fortification created by Workers to slow Soldier pursuit and protect their escape route"
     }
   ],
   "factions": [
     {
       "name": "Polyan Castes",
-      "world": "Spheria",
-      "description": "Hierarchical society of crystalline beings divided by number of legs: three-legged Drones (workers), four-legged Builders (construction), five-legged Soldiers (hunters), six-legged Leaders (governance).",
+      "world": "Spherian",
+      "description": "Social hierarchy with specialized roles: 3-legged Drones (workers), 4-legged Builders (construction), 5-legged Soldiers (hunters/warriors), 6-legged Leaders (governance). Females have swirling patterns, males have straight lines.",
       "members": [
         "Le·ma",
         "Sa·ma",
+        "Soldier hunting party",
         "Drones",
         "Builders",
-        "Soldiers",
         "Leaders"
       ]
     },
     {
       "name": "Lumen Seekers",
-      "world": "Spheria",
-      "description": "Elite group of Polyans who possess secret knowledge about the world. Led by Lumen Master, pass down ancient wisdom through apprenticeship. Special status equal to or higher than six-legged Leaders.",
+      "world": "Spherian",
+      "description": "Elite group who possess special knowledge about the world. Only confident Polyans who venture far from Colony can find Lumen Grotto and be tested. Lumen Master has status equal to or higher than Leaders.",
       "members": [
-        "Sa·ma (Lumen Master)",
+        "Sa·ma (current Master)",
         "Le·ma (apprentice)",
-        "unnamed old Polyan at Lumen Grotto"
+        "Old Lumen Master (previous)"
       ]
     },
     {
       "name": "Spheria Project Team",
-      "world": "Human",
-      "description": "Group of scientists and researchers at UConn Health Center studying the artificial Spheria ecosystem. Includes physicists, computer scientists, and observers. Socially awkward but passionate.",
+      "world": "Earth",
+      "description": "Scientists at UConn Health Center studying virtual ecosystem with computer-generated creatures called Spherians/Polyans. Mix of physicists, programmers, and researchers. Hold happy hour gatherings.",
       "members": [
-        "Max (lead)",
+        "Max (lead scientist)",
         "Min (intern)",
-        "Jean (observer)",
         "Tim",
-        "David (conference chair)"
+        "Jean",
+        "David (external colleague)"
       ]
     },
     {
       "name": "Fa·ro's Faction",
       "world": "Spheria",
-      "description": "Pro-Fa·ro group believing he brings decisive leadership to previously gridlocked Council; see him as god who makes Colony unstoppable; includes Ga·zo and Za·zo as loyalists",
+      "description": "Growing authoritarian movement centered on Fa·ro as a decisive god-leader who breaks Council gridlock. Represents shift from democratic consensus to autocratic rule, with Ga·zo as primary enforcer.",
       "members": [
         "Fa·ro",
         "Ga·zo",
@@ -877,47 +757,324 @@
       ]
     },
     {
-      "name": "Council Leaders",
+      "name": "Rebellious Workers",
       "world": "Spheria",
-      "description": "Eight six-legged Polyans who govern Colony; often divided and gridlocked; increasingly defer to Fa·ro to break ties; named Wu·sa, Yo·sa, Me·sa, Ju·sa, Ki·sa, Co·sa, Pi·sa, Vu·sa",
-      "members": [
-        "Wu·sa",
-        "Yo·sa",
-        "Me·sa",
-        "Ju·sa",
-        "Ki·sa",
-        "Co·sa",
-        "Pi·sa",
-        "Vu·sa"
-      ]
-    },
-    {
-      "name": "Escaped Workers",
-      "world": "Spheria",
-      "description": "Workers who crossed the fallen tower bridge to freedom beyond the Rift under Sa·ma's leadership",
+      "description": "All Workers in the Colony who secretly organized under Sa·ma's leadership to flee across the Rift using the fallen tower as a bridge, escaping Fa·ro's tyranny",
       "members": [
         "Sa·ma",
         "Hi·ma",
         "Pu·ma",
-        "Le·ma"
+        "Le·ma",
+        "twelve lead Workers"
       ]
     },
     {
-      "name": "DARPA conspirators",
-      "world": "Human",
-      "description": "Military and corporate alliance secretly developing Spheria as weapons research despite Graham's contract prohibitions",
+      "name": "DARPA partnership",
+      "world": "Earth",
+      "description": "Secret military collaboration arranged by Dana with Defense Advanced Research Projects Agency to weaponize the Spheria technology in exchange for funding and personal land in Costa Rica",
       "members": [
-        "Dana"
-      ]
-    },
-    {
-      "name": "25th Solvay Conference attendees",
-      "world": "Human",
-      "description": "Group of leading physicists and conference participants who evaluated frontier theoretical ideas including Max's presentation.",
-      "members": [
-        "Max",
-        "David"
+        "Dana Carter",
+        "unnamed DARPA officials"
       ]
     }
-  ]
+  ],
+  "world": {
+    "physics": {
+      "blue_crystal": "Blue crystal mountains emit a repulsive force - Polyans cannot touch them directly. The repulsion allows floating above blue surfaces, used to climb structures like the Uplift Steps through pendulum motion. Blue rock can be shaped into barriers and structures.",
+      "red_crystal": "Red rock rivers ATTRACT everything. Living things with violet cores stick to red surfaces but can detach with effort. Non-living objects touching red turn red themselves and sink into the river. When the Source turns red, rivers widen and spread - a natural disaster.",
+      "brown_rock": "Brown rock is neutral terrain - the standard ground material. It doesn't repel or attract. Brown blocks are used as building materials. Brown rock can be overturned to reveal buried green crystals beneath.",
+      "green_plants": "Green polyhedrons are plants that grow on brown rock terrain. Some form arched shapes large enough to walk under. Plants have no violet core, so they turn red and are consumed when touching red rivers. Inside caves, glowing green plants emit light and can be broken to create light beams.",
+      "violet_core": "The violet crystal core is the source of life energy for all living creatures in Spheria. Without it, beings are mere inanimate structures of connected tetrahedrons. Cores pulse with light and store energy drained from other sources.",
+      "source_gravity": "Gravity pulls outward from the center toward the sphere's interior surface where Polyans live. The Source itself pushes outward (repels) - objects cannot reach it. The higher you go toward the Source, the stronger the outward push becomes.",
+      "rift_description": "The Rift is an uncrossable chasm dividing the world into two hemispheres. It appears as a vertical artificial horizon. Bubbles of different colors rise slowly from the Rift, giving warning before they reach the Source and trigger their effects. Below the Rift lies Qubessence, the afterlife realm."
+    },
+    "source_colors": [
+      {
+        "color": "White",
+        "effect": "Normal behavior - compels creatures to forage and hunt for energy",
+        "triggered_by": "Default state when no colored bubble has reached the Source"
+      },
+      {
+        "color": "Green",
+        "effect": "Growth - vegetation grows new branches and spreads",
+        "triggered_by": "A green bubble rising from the Rift and hitting the Source"
+      },
+      {
+        "color": "Violet",
+        "effect": "Breeding/reproduction - creatures capable of reproduction begin to procreate",
+        "triggered_by": "A violet bubble rising from the Rift and hitting the Source"
+      },
+      {
+        "color": "Blue",
+        "effect": "Mountains grow and spread - natural disaster as blue tetrahedrons sprout on open faces",
+        "triggered_by": "A blue bubble rising from the Rift and hitting the Source"
+      },
+      {
+        "color": "Red",
+        "effect": "Rivers widen and spread - natural disaster equivalent",
+        "triggered_by": "A red bubble rising from the Rift and hitting the Source"
+      },
+      {
+        "color": "Yellow",
+        "effect": "Rest/abundance - all life crystals fill from within, no hunting needed",
+        "triggered_by": "A yellow bubble rising from the Rift, signaled by Lumen Seeker throwing yellow shard into Rift"
+      }
+    ],
+    "world_shape": "Hollow sphere - Polyans live on the inside surface with the Source floating at the center",
+    "creation_story": "Ra·ju (8-legged creator god with white core) created the world. His 8 children each detached as one of his legs and changed color to become the other gods: Ta·ro (brown) created land/earth, Ke·ro (orange) created life and creatures, Pi·ro (red) created rivers and red rock, Ju·ro (blue) created mountains and divisions, Ca·ro (green, female) created plants and vegetation, Na·ro (yellow) created light and the Source's glow, Wi·ro (violet) created multiplication and reproduction, Su·ro (indigo) created senses."
+  },
+  "polyans": {
+    "caste_system": [
+      {
+        "legs": 3,
+        "caste_name": "Drones",
+        "role": "Menial tasks - pushing blocks, making rhythmic sounds at celebrations, foraging for buried green crystals",
+        "social_rank": "Lowest - eat last and sometimes get nothing",
+        "behaviors": "Most numerous caste, perform simple labor, dig for green seed crystals in the ground"
+      },
+      {
+        "legs": 4,
+        "caste_name": "Workers/Builders",
+        "role": "Construction, building hives, skilled labor",
+        "social_rank": "Third in hierarchy - eat third after Leaders and Soldiers",
+        "behaviors": "Build structures, construct hives, handle materials, capable of organized rebellion"
+      },
+      {
+        "legs": 5,
+        "caste_name": "Soldiers",
+        "role": "Hunting, combat, protection of Colony",
+        "social_rank": "Second in hierarchy - eat second after Leaders",
+        "behaviors": "Hunt Zalisks in coordinated teams, use whips as weapons, enforce Colony rules, can be aggressive"
+      },
+      {
+        "legs": 6,
+        "caste_name": "Leaders",
+        "role": "Governance and wisdom - make decisions by majority vote",
+        "social_rank": "Highest natural caste - eat first, just one leg short of a god",
+        "behaviors": "There are exactly 8 Leaders: Wu·sa, Yo·sa, Me·sa, Ju·sa, Ki·sa, Co·sa, Pi·sa, and Vu·sa. They govern by majority vote; tie means no action taken. They meet in the Council Chamber atop the Council structure."
+      },
+      {
+        "legs": 7,
+        "caste_name": "Gods",
+        "role": "Divine beings or engineered god-equivalents",
+        "social_rank": "Above all castes - revered as divine",
+        "behaviors": "Gods appear as 7-legged Polyans with colored cores. No Polyan is born naturally with 7 legs until the Leaders engineered Fa·ro, the first artificially created god."
+      }
+    ],
+    "energy": {
+      "how_they_feed": "Polyans feed by touching their core's lower point to a violet shard and draining energy into themselves. Primary food source is energy harvested from Zalisks - drain the beast's violet core using clear crystal shards as conduits, then consume the stored violet energy.",
+      "crystal_colors": "Violet crystals contain life energy (highest quality). Green crystals buried in ground contain seed energy (lower quality food source foraged by Drones). Clear crystals serve as conduits for energy transfer.",
+      "hierarchy_of_feeding": "Leaders eat first, Soldiers second, Workers third, Drones last (sometimes getting nothing). When a Polyan's violet core runs empty, they die.",
+      "death_state": "When dead, a Polyan's physical structure (polygon shell) falls apart. Their 'structure' descends into the Rift to Qubessence, the afterlife realm."
+    },
+    "sensors": {
+      "description": "Polyans have indigo sensors on their cores - each sensor has a specific function and can be a vacant port awaiting an attachment",
+      "types": "Eye sensors for vision, ear sensors for hearing, mouth sensors for speech. Sensors can be vacant 'ports' waiting to be filled.",
+      "artifact_sensor": "Sa·ma possesses a three-sided indigo rod with tetrahedrons on each end, given by god Pi·ro. It attaches to a vacant sensor port and grants ability to see beyond normal perception, sense life forms and structures through obstructions (violet outlines for living, yellow for objects of focus), and control/command creatures like Zalisks."
+    },
+    "biology": "Polyans are comprised of connected tetrahedrons forming a roundish body. They look like multi-legged spiders with legs evenly spaced around their body rather than lined up on sides. Each has a violet crystal core at center that pulses with light. Their body has textured patterns.",
+    "gender": "Polyans have male and female genders. Males have straight textured line patterns on their bodies; females have swirling patterns. Ca·ro (green plant goddess) is explicitly female.",
+    "naming_convention": "Names follow pattern of two syllables separated by a dot: Sa·ma, Le·ma, Fa·ro, Ga·zo, etc. Leaders all end in ·sa: Wu·sa, Yo·sa, Me·sa, Ju·sa, Ki·sa, Co·sa, Pi·sa, Vu·sa. Gods end in ·ro: Ra·ju (creator), Ta·ro, Ke·ro, Pi·ro, Ju·ro, Ca·ro, Na·ro, Wi·ro, Su·ro."
+  },
+  "mythos": {
+    "gods": [
+      {
+        "name": "Ra·ju",
+        "color": "White",
+        "domain": "Creator of all - the original god with 8 legs",
+        "role_in_creation": "Created the entire world. His 8 children detached as his legs and became the other gods."
+      },
+      {
+        "name": "Ta·ro",
+        "color": "Brown",
+        "domain": "Land and earth",
+        "role_in_creation": "Created the brown rock terrain and solid ground"
+      },
+      {
+        "name": "Ke·ro",
+        "color": "Orange",
+        "domain": "Life and creatures",
+        "role_in_creation": "Created living creatures and the spark of life"
+      },
+      {
+        "name": "Pi·ro",
+        "color": "Red",
+        "domain": "Rivers and red rock",
+        "role_in_creation": "Created the red rivers. Hot-tempered god who decreed everything touching red turns red. Gave Sa·ma the artifact sensor."
+      },
+      {
+        "name": "Ju·ro",
+        "color": "Blue",
+        "domain": "Mountains and divisions",
+        "role_in_creation": "Created the blue crystal mountains that divide the world into sections"
+      },
+      {
+        "name": "Ca·ro",
+        "color": "Green",
+        "domain": "Plants and vegetation",
+        "role_in_creation": "Female goddess who created all plant life and green crystals"
+      },
+      {
+        "name": "Na·ro",
+        "color": "Yellow",
+        "domain": "Light and the Source's glow",
+        "role_in_creation": "Created the light of the Source that illuminates the world"
+      },
+      {
+        "name": "Wi·ro",
+        "color": "Violet",
+        "domain": "Multiplication and reproduction",
+        "role_in_creation": "Created the ability for creatures to reproduce and multiply"
+      },
+      {
+        "name": "Su·ro",
+        "color": "Indigo",
+        "domain": "Senses and perception",
+        "role_in_creation": "Created the sensory organs - eyes, ears, mouths - that allow perception"
+      }
+    ],
+    "afterlife": {
+      "name": "Qubessence",
+      "description": "The afterlife realm below the Rift. Violet landscape with violet mountains and violet sky. Endless energy available - no need to hunt.",
+      "how_to_reach": "Only structures (dead Polyans) can enter Qubessence. When a Polyan dies, their structure descends into the Rift.",
+      "warning": "Living Polyans who jump into the Rift are destroyed agonizingly - Qubessence only accepts structures (dead bodies), not living bodies with active cores. This secret is kept by Lumen Seekers."
+    },
+    "lumen_tradition": {
+      "lumen_master": "The Colony's spiritual and knowledge leader, publicly known role. Sa·ma holds this position. Has special status equal to or higher than six-legged Leaders. Teaches apprentices and preserves sacred knowledge.",
+      "lumen_seeker": "Apprentice in training to eventually become Lumen Master. Le·ma is the current Seeker. Learns sacred rituals, secret passages, and hidden knowledge from the Master.",
+      "lumen_walk": "Rite of passage where apprentice travels with Master across dangerous proving ground to the Rift, performs offering ritual (throwing yellow shard into Rift to trigger yellow bubble/abundance), then must find their own way back alone as a test.",
+      "lumen_elder": "Retired Lumen Master who goes into seclusion and trains the new Seeker when the current Master is too busy. Do·ma was the previous elder. Lives in the Lumen Grotto.",
+      "lumen_grotto": "Hidden hexagonal room with a glowing yellow crystal at center. Secret dwelling where Lumen Elder lives in seclusion, far from the Colony. Serves as meeting place and sanctuary."
+    },
+    "legends": [
+      {
+        "name": "The Fertile Field",
+        "description": "A legendary circle of 20 large violet crystals that replenish themselves with endless energy. Sa·ma discovered it actually exists - it appears and disappears, not always in the same location. The crystals provide abundant life energy without need to hunt."
+      },
+      {
+        "name": "Valley of Three",
+        "description": "A large perfect triangle formation of mountains on the opposite hemisphere with no rivers inside. A fixture in the night sky that Soldiers use for navigation. Legend says gods go there to play games. Sometimes flickering dots (gods) can be seen moving inside on certain nights. No Polyan has ever reached it."
+      },
+      {
+        "name": "Troaten",
+        "description": "Mythological massive creature with many tentacles that camouflages itself and spins defensively, piercing cores of prey at its center. In mythology, the Troaten became the Source and the Rift."
+      },
+      {
+        "name": "The Portal Cave",
+        "description": "A cave with twisting passages filled with glowing green plants that can be broken to create light beams. Deep inside is a room where a seven-legged god (cave god) guards a portal. The portal leads to Qubessence and glows violet. Contains streets that appear to be made of gold."
+      }
+    ],
+    "rituals": [
+      {
+        "name": "Yellow Shard Offering",
+        "description": "Sacred ritual performed during Lumen Walk where the Lumen Seeker throws a yellow shard into the Rift. This triggers a yellow bubble to rise, which signals a day of abundance when all life crystals fill from within."
+      },
+      {
+        "name": "God Creation Ceremony",
+        "description": "The Leaders gather in Council Chamber around an empty seven-sided core crystal. Seven orange elongated crystals are placed near each facet. When the Source turns violet (breeding season), the Leaders channel energy to create a seven-legged Polyan god. This is how Fa·ro was created."
+      },
+      {
+        "name": "Celebratory Gathering",
+        "description": "Colony members gather at the central dais in the Colony center. Drones make rhythmic sounds. A platform/staging area is used for performances and announcements."
+      },
+      {
+        "name": "Prayer Circle",
+        "description": "Polyans form a circle and appear to pray together - the first observed religious behavior showing organized worship rather than just acknowledging gods."
+      }
+    ]
+  },
+  "flora_fauna": {
+    "fauna": [
+      {
+        "name": "Zalisk",
+        "description": "Enormous six-legged beast with five scooping tusks on a shelf arrangement and a massive violet core at center",
+        "behavior": "Aggressive creature that forages for buried green crystals. Known for severe aggression - many Polyans died before learning to hunt them as coordinated teams. Uses tusks to overturn chunks of brown rock to find crystals.",
+        "danger_level": "Extremely high - primary threat to Polyans, requires team of 9 Soldiers to safely hunt",
+        "energy_role": "Primary food source for Polyans - their enormous violet cores provide substantial life energy when drained"
+      },
+      {
+        "name": "Troaten",
+        "description": "Massive creature with many tentacles that camouflages itself",
+        "behavior": "Spins defensively and pierces the cores of prey at its center using tentacles",
+        "danger_level": "Extreme - mythologically powerful enough to become the Source and Rift",
+        "energy_role": "Unknown - appears in mythology more than current ecosystem"
+      }
+    ],
+    "flora": [
+      {
+        "name": "Green Polyhedron Plants",
+        "description": "Plants shaped as green polyhedrons that grow on brown rock terrain. Some form large arched shapes you can walk under.",
+        "properties": "Have no violet core, so turn red and are consumed when touching red rivers. Different from green crystals buried in ground.",
+        "uses": "Provide visual cover and shelter for Polyans moving through wilderness"
+      },
+      {
+        "name": "Glowing Cave Plants",
+        "description": "Green plants inside caves that emit light, found in the portal cave's twisting passages",
+        "properties": "Can be broken to create directional light beams. Will heal themselves over time if broken.",
+        "uses": "Provide illumination in dark caves and can be used to reveal hidden passages when broken"
+      },
+      {
+        "name": "Green Seed Crystals",
+        "description": "Small green crystals buried beneath the brown rock surface",
+        "properties": "Contain seed energy - a lower quality food source compared to violet crystals",
+        "uses": "Foraged by Drones and lower castes, eaten by creatures like Zalisks. Emergency food when violet energy unavailable."
+      }
+    ],
+    "crystals": [
+      {
+        "color": "Violet",
+        "found_in": "Centers of all living creatures as their core. The Fertile Field contains 20 large self-replenishing violet crystals. Qubessence afterlife is entirely violet.",
+        "properties": "Stores and pulses with life energy. When drained, the creature dies. Can be refilled by draining energy from other violet sources.",
+        "significance": "The source of all life in Spheria - without a violet core, beings are just inanimate structures"
+      },
+      {
+        "color": "Blue",
+        "found_in": "Mountains and mountain ranges that divide the world. Can be shaped into barriers and walls.",
+        "properties": "Emits repulsive force - prevents direct contact. Repulsion allows floating/gliding above surfaces. Can be used to build walls and structures.",
+        "significance": "Creates natural barriers dividing world into sections. When Source turns blue, mountains grow and spread as a natural disaster."
+      },
+      {
+        "color": "Red",
+        "found_in": "Rivers of red rock that flow through the landscape. Red pipes in hidden facilities.",
+        "properties": "Attracts everything - living things with cores stick but can detach; non-living objects turn red and sink. When Source turns red, rivers widen.",
+        "significance": "Major geographical feature and hazard. Can trap and consume Polyans if they're not careful."
+      },
+      {
+        "color": "Yellow",
+        "found_in": "Small shards found in the Proving Ground near the Rift. Large yellow crystal in the Lumen Grotto. Streets in portal cave appear gold/yellow.",
+        "properties": "Used in offering ritual - thrown into Rift to trigger yellow bubble for abundance. The Grotto crystal glows and provides sanctuary.",
+        "significance": "Sacred color associated with rest, abundance, and the Lumen tradition. Signals rare days when all life crystals fill from within."
+      },
+      {
+        "color": "Green",
+        "found_in": "Buried in brown rock ground, vegetation/plants",
+        "properties": "Contains seed energy - lower quality than violet. Plants have green color but no cores.",
+        "significance": "Supplementary food source for lower castes and foraging creatures"
+      },
+      {
+        "color": "Brown",
+        "found_in": "Standard ground terrain throughout the world",
+        "properties": "Neutral - doesn't attract or repel. Used as building material in blocks.",
+        "significance": "The foundation terrain where most life exists and structures are built"
+      },
+      {
+        "color": "Orange",
+        "found_in": "Elongated crystals used in god creation ceremony",
+        "properties": "Seven orange crystals placed around the seven-sided core during the ritual to create a seven-legged god",
+        "significance": "Essential component in engineering divine beings"
+      },
+      {
+        "color": "Indigo",
+        "found_in": "Sensors on Polyan cores. Sa·ma's artifact is an indigo rod.",
+        "properties": "Forms sensory organs - eyes, ears, mouths. Artifact version grants enhanced perception, ability to see through obstructions, and command creatures.",
+        "significance": "Associated with Su·ro, god of senses. Enables perception and consciousness."
+      },
+      {
+        "color": "Clear/Transparent",
+        "found_in": "Used by hunters as energy conduits",
+        "properties": "Serves as conduit for transferring violet energy from killed Zalisks to storage",
+        "significance": "Essential tool for harvesting life energy from hunted beasts"
+      }
+    ]
+  }
 }
