@@ -1,13 +1,13 @@
 # Spheria Wiki Local Run Guide
 
-This project uses `fetch()` in `overview.html` to load `Spheria_Wiki.json`.
+This project uses `fetch()` in `pages/overview.html` to load `Spheria_Wiki.json`.
 Because of browser security rules, opening the HTML directly with `file://` will usually fail.
 
 Use the npm workflow below (recommended), or one of the fallback options.
 
 ## Project Files
 
-- `overview.html`
+- `pages/overview.html`
 - `Spheria_Wiki.json`
 
 ## Option 1: npm run dev (recommended)
@@ -22,20 +22,22 @@ npm run dev
 ```
 
 Open:
+
 - `http://localhost:3000/`
 
-`npm run dev` serves the project folder. The root URL (`/`) opens `index.html`, which redirects to `overview.html`.
-This keeps JSON requests like `./Spheria_Wiki.json` working.
+`npm run dev` serves the project folder. The root URL (`/`) opens `index.html`, which redirects to `pages/overview.html`.
+This keeps JSON requests like `../Spheria_Wiki.json` working from files in `pages/`.
 
 To stop the server, press `Ctrl+C` in that terminal.
 
 ## Option 2: VS Code Live Server
 
 1. Install the **Live Server** VS Code extension (`ritwickdey.LiveServer`).
-2. In VS Code, open `overview.html`.
+2. In VS Code, open `pages/overview.html`.
 3. Right-click in the editor and select `Open with Live Server`.
 4. Your browser should open something like:
-  - `http://127.0.0.1:5500/overview.html`
+
+- `http://127.0.0.1:5500/pages/overview.html`
 
 ## Option 3: Python HTTP Server
 
@@ -48,7 +50,7 @@ python -m http.server 8000
 
 Then open:
 
-- `http://localhost:8000/overview.html`
+- `http://localhost:8000/pages/overview.html`
 
 To stop the server, press `Ctrl+C` in that terminal.
 
@@ -63,7 +65,7 @@ npx serve .
 
 Open the local URL shown in terminal (commonly `http://localhost:3000`) and navigate to:
 
-- `/overview.html`
+- `/pages/overview.html`
 
 To mirror npm behavior without scripts, you can run:
 
@@ -75,7 +77,7 @@ npx serve .
 
 - If you see the message that JSON could not be loaded:
   - Confirm you are using `http://...`, not `file://...`.
-  - Confirm `Spheria_Wiki.json` is in the same folder as `overview.html`.
+  - Confirm `Spheria_Wiki.json` is in the project root (one level above files in `pages/`).
   - Refresh the page after starting the server.
 - If port `8000` is busy, use another port:
 

@@ -479,14 +479,33 @@ function setActiveNav() {
     location.pathname.split("/").pop() || "overview.html"
   ).toLowerCase();
   document.querySelectorAll("nav a").forEach((a) => {
-    const hrefFile = (a.getAttribute("href") || "").toLowerCase();
+    const hrefFile = (
+      (a.getAttribute("href") || "").split("/").pop() || ""
+    ).toLowerCase();
     a.classList.toggle("active", hrefFile === file);
   });
 }
 
+async function loadNav(containerId = "nav-container") {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  try {
+    const response = await fetch("/pages/_includes/nav.html", {
+      cache: "no-store",
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+    container.innerHTML = await response.text();
+    setActiveNav();
+  } catch (err) {
+    console.error("Could not load nav include:", err);
+  }
+}
+
 async function initPage(pageKey, containerId) {
   try {
-    const response = await fetch("../Spheria_Wiki.json", { cache: "no-store" });
+    const response = await fetch("/Spheria_Wiki.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
 
@@ -529,7 +548,7 @@ async function initPage(pageKey, containerId) {
 
 async function initCharacterTabs() {
   try {
-    const response = await fetch("../Spheria_Wiki.json", { cache: "no-store" });
+    const response = await fetch("/Spheria_Wiki.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
 
@@ -576,7 +595,7 @@ async function initCharacterTabs() {
 
 async function initChapterTabs() {
   try {
-    const response = await fetch("../Spheria_Wiki.json", { cache: "no-store" });
+    const response = await fetch("/Spheria_Wiki.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
 
@@ -626,6 +645,7 @@ async function initChapterTabs() {
 }
 
 window.SpheriaWiki = {
+  loadNav,
   initPage,
   setActiveNav,
   initCharacterTabs,

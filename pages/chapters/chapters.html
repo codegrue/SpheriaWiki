@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Spheria - Chapters</title>
+    <link rel="stylesheet" href="../../wiki.css" />
+  </head>
+  <body>
+    <div id="nav-container"></div>
+    <section>
+      <h2 style="color: #e0e0f0">Chapter Synopses</h2>
+      <div class="sub-menu">
+        <button class="sub-menu-btn active" data-tab="book1">📖 Book 1</button>
+        <button class="sub-menu-btn" data-tab="olivias-log">
+          📝 Olivia's Log
+        </button>
+        <button class="sub-menu-btn" data-tab="book2">📖 Book 2</button>
+      </div>
+      <div id="book1-content" class="tab-content active"></div>
+      <div id="olivias-log-content" class="tab-content"></div>
+      <div id="book2-content" class="tab-content"></div>
+    </section>
+    <script src="../../wiki-render.js"></script>
+    <script>
+      SpheriaWiki.loadNav();
+      SpheriaWiki.initChapterTabs();
+    </script>
+  </body>
+</html>
