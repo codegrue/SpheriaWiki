@@ -391,28 +391,25 @@
       {
         "name": "UConn Health Center Rooftop",
         "description": "Rooftop of the UConn Health Center building, accessed via emergency stairwell. Features a mooring mast disguised as a cell tower antenna, used as a docking point for Graham's airship 'Buruwa Gunya.'"
+      },
+      {
+        "name": "Quantum Server Room",
+        "description": "The main computer room where the Spheria experiment is hosted. It contains a build of the proprietary Qube based quantum computer, consisting of a traditional server rack plus two walls panels of Qubes, each emitting the glow of their alignment."
+      },
+      {
+        "name": "Red Server Room",
+        "description": "Bundle of red cables and unauthorized Tor network/Gridway software running in secret duplicate server room beneath the Qube floor",
+        "significance": "Evidence of Dana's secret DARPA weapons project and unauthorized military collaboration"
       }
     ],
     "spheria": [
-      {
-        "name": "The Source",
-        "description": "The bright shining orb above the Polyan world that governs behavior and provides light. Changes color (white for travel, fades at night). Contains the entire Spherian world."
-      },
       {
         "name": "Polyan Colony",
         "description": "Home settlement of the Polyans. Contains hives (igloo-like pointed structures). Center gathering place. Location where Drones, Builders, Soldiers, and Leaders live."
       },
       {
-        "name": "Blue Mountains",
-        "description": "Mountain ranges made of blue crystal that emit repulsive force, making them impassable. Divide world into maze-like sections. Nearly vertical on one side."
-      },
-      {
         "name": "Uplift Pass",
         "description": "Large slit/crevice in blue mountains containing platforms that allow passage to other side. Contains steps. Named by ancestors. Used for Lumen Seeker training."
-      },
-      {
-        "name": "The Rift",
-        "description": "Massive chasm at edge of world. Appears as vertical artificial horizon. So deep the bottom cannot be seen. Yellow shards dropped in eventually become bubbles rising back up."
       },
       {
         "name": "Valley of Three",
@@ -445,10 +442,6 @@
       {
         "name": "Fa·ro's Chamber",
         "description": "The apex chamber of the tallest structure in the Colony, formerly the Council chamber, now Fa·ro's throne room after he eliminated the Council"
-      },
-      {
-        "name": "Qubessence",
-        "description": "The afterlife realm accessible through the portal in the Golden Cave and via the Rift. A violet landscape with violet mountains and violet sky. Described as a place of endless energy where there is no need to hunt. Only the 'structures' (bodies) of dead Polyans can enter; living Polyans who jump into the Rift are destroyed. Gods are believed to reside there."
       }
     ]
   },
@@ -530,12 +523,6 @@
       "description": "Small glowing crystal used as portable light source",
       "significance": "Provides minimal illumination in Sa·ma's prison cell, highlighting his reduced circumstances",
       "world": "Spheria"
-    },
-    {
-      "name": "Red server room cables and equipment",
-      "description": "Bundle of red cables and unauthorized Tor network/Gridway software running in secret duplicate server room beneath the Qube floor",
-      "significance": "Evidence of Dana's secret DARPA weapons project and unauthorized military collaboration",
-      "world": "Earth"
     },
     {
       "name": "Sa·ma's beam cannon",
@@ -650,32 +637,19 @@
       "name": "Fa·ro's Faction",
       "world": "Spheria",
       "description": "Growing authoritarian movement centered on Fa·ro as a decisive god-leader who breaks Council gridlock. Represents shift from democratic consensus to autocratic rule, with Ga·zo as primary enforcer.",
-      "members": [
-        "Fa·ro",
-        "Ga·zo",
-        "Za·zo"
-      ]
+      "members": ["Fa·ro", "Ga·zo", "Za·zo"]
     },
     {
       "name": "Rebellious Workers",
       "world": "Spheria",
       "description": "All Workers in the Colony who secretly organized under Sa·ma's leadership to flee across the Rift using the fallen tower as a bridge, escaping Fa·ro's tyranny",
-      "members": [
-        "Sa·ma",
-        "Hi·ma",
-        "Pu·ma",
-        "Le·ma",
-        "twelve lead Workers"
-      ]
+      "members": ["Sa·ma", "Hi·ma", "Pu·ma", "Le·ma", "twelve lead Workers"]
     },
     {
       "name": "DARPA partnership",
       "world": "Earth",
       "description": "Secret military collaboration arranged by Dana with Defense Advanced Research Projects Agency to weaponize the Spheria technology in exchange for funding and personal land in Costa Rica",
-      "members": [
-        "Dana Carter",
-        "unnamed DARPA officials"
-      ]
+      "members": ["Dana Carter", "unnamed DARPA officials"]
     },
     {
       "name": "Council Leaders",
@@ -735,8 +709,24 @@
         "triggered_by": "A yellow bubble rising from the Rift, signaled by Lumen Seeker throwing yellow shard into Rift"
       }
     ],
-    "world_shape": "Hollow sphere - Polyans live on the inside surface with the Source floating at the center",
-    "creation_story": "Ra·ju (8-legged creator god with white core) created the world. His 8 children each detached as one of his legs and changed color to become the other gods: Ta·ro (brown) created land/earth, Ke·ro (orange) created life and creatures, Pi·ro (red) created rivers and red rock, Ju·ro (blue) created mountains and divisions, Ca·ro (green, female) created plants and vegetation, Na·ro (yellow) created light and the Source's glow, Wi·ro (violet) created multiplication and reproduction, Su·ro (indigo) created senses."
+    "geography": [
+      {
+        "name": "World Shape",
+        "description": "Hollow sphere - Polyans live on the inside surface with the Source floating at the center"
+      },
+      {
+        "name": "The Source",
+        "description": "The bright shining orb above the Polyan world that governs behavior and provides light. Changes color when bubbles rising from the rift contact it (see Source Colors for these effects.) Fades to create a night/sleep cycle)."
+      },
+      {
+        "name": "Blue Mountains",
+        "description": "Mountain ranges made of blue crystal that emit repulsive force, making them impassable. Divide world into maze-like sections. Nearly vertical on one side."
+      },
+      {
+        "name": "The Rift",
+        "description": "Massive chasm at edge of world. Appears as vertical artificial horizon. So deep the bottom cannot be seen. Yellow shards dropped in eventually become bubbles rising back up."
+      }
+    ]
   },
   "polyans": {
     "caste_system": [
@@ -848,12 +838,20 @@
         "role_in_creation": "Created the sensory organs - eyes, ears, mouths - that allow perception"
       }
     ],
-    "afterlife": {
-      "name": "Qubessence",
-      "description": "The afterlife realm below the Rift. Violet landscape with violet mountains and violet sky. Endless energy available - no need to hunt.",
-      "how_to_reach": "Only structures (dead Polyans) can enter Qubessence. When a Polyan dies, their structure descends into the Rift.",
-      "warning": "Living Polyans who jump into the Rift are destroyed agonizingly - Qubessence only accepts structures (dead bodies), not living bodies with active cores. This secret is kept by Lumen Seekers."
-    },
+    "afterlife": [
+      {
+        "name": "Qubessence",
+        "description": "The afterlife realm below the Rift. Said to be a Violet landscape with violet mountains and violet sky. Described as a place of endless energy where there is no need to hunt."
+      },
+      {
+        "name": "How to Reach",
+        "description": "Only structures (dead Polyans) can enter Qubessence. When a Polyan dies, their structure is said to descend into the Rift."
+      },
+      {
+        "name": "Warning",
+        "description": "Living Polyans who jump into the Rift are destroyed agonizingly - Qubessence only accepts structures (dead bodies), not living bodies with active cores. This secret is kept by Lumen Seekers."
+      }
+    ],
     "lumen_tradition": {
       "lumen_master": "The Colony's spiritual and knowledge leader, publicly known role. Sa·ma holds this position. Has special status equal to or higher than six-legged Leaders. Teaches apprentices and preserves sacred knowledge.",
       "lumen_seeker": "Apprentice in training to eventually become Lumen Master. Le·ma is the current Seeker. Learns sacred rituals, secret passages, and hidden knowledge from the Master.",
@@ -862,6 +860,10 @@
       "lumen_grotto": "Hidden hexagonal room with a glowing yellow crystal at center. Secret dwelling where Lumen Elder lives in seclusion, far from the Colony. Serves as meeting place and sanctuary."
     },
     "legends": [
+      {
+        "name": "Creation Story",
+        "description": "Ra·ju (8-legged creator god with white core) created the world. His 8 children each detached as one of his legs and changed color to become the other gods: Ta·ro (brown) created land/earth, Ke·ro (orange) created life and creatures, Pi·ro (red) created rivers and red rock, Ju·ro (blue) created mountains and divisions, Ca·ro (green, female) created plants and vegetation, Na·ro (yellow) created light and the Source's glow, Wi·ro (violet) created multiplication and reproduction, Su·ro (indigo) created senses."
+      },
       {
         "name": "The Fertile Field",
         "description": "A legendary circle of 20 large violet crystals that replenish themselves with endless energy. Sa·ma discovered it actually exists - it appears and disappears, not always in the same location. The crystals provide abundant life energy without need to hunt."

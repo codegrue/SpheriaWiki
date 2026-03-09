@@ -298,42 +298,50 @@ function renderLegDots(legs) {
   return `<span class="leg-dots" aria-label="${count} legs">${dots}</span>`;
 }
 
-function renderWorld(world) {
-  if (!world)
-    return `<div class="status-msg error">World data is missing.</div>`;
+function renderWorldGeography(world) {
+  return `<div class="info-grid">${(world.geography || []).map((item) => {
+    const body = escapeHtml(item.description).replace(
+      "see Source Colors for these effects.",
+      `<a href="#" class="tab-link" onclick="event.preventDefault();document.querySelector('.sub-menu-btn[data-tab=source-colors]').click()">see Source Colors for these effects.</a>`
+    );
+    return `
+      <div class="info-card" style="border-top-color:#60a5fa">
+        <div class="info-title">${escapeHtml(item.name)}</div>
+        <div class="info-body">${body}</div>
+      </div>
+    `;
+  }).join("")}</div>`;
+}
 
+function renderWorldPhysics(world) {
   const physics = world.physics || {};
-  const physicsHtml = Object.keys(physics)
-    .map(
-      (key) => `
-    <div class="info-card" style="border-top-color:#60a5fa">
-      <div class="info-title">${escapeHtml(titleFromKey(key))}</div>
-      <div class="info-body">${escapeHtml(physics[key])}</div>
-    </div>
-  `,
-    )
+  const html = Object.keys(physics)
+    .map((key) => `
+      <div class="info-card" style="border-top-color:#60a5fa">
+        <div class="info-title">${escapeHtml(titleFromKey(key))}</div>
+        <div class="info-body">${escapeHtml(physics[key])}</div>
+      </div>
+    `)
     .join("");
+  return `<div class="info-grid">${html}</div>`;
+}
 
-  const sourceColors = (world.source_colors || [])
-    .map(
-      (item) => `
-    <div class="source-color-card">
-      <div class="source-color-name">${escapeHtml(item.color)}</div>
-      <div class="source-color-effect">${escapeHtml(item.effect)}</div>
-      <div class="source-color-trigger">Triggered By: ${escapeHtml(item.triggered_by)}</div>
-    </div>
-  `,
-    )
+function renderWorldSourceColors(world) {
+  const html = (world.source_colors || [])
+    .map((item) => `
+      <div class="source-color-card">
+        <div class="source-color-name">${escapeHtml(item.color)}</div>
+        <div class="source-color-effect">${escapeHtml(item.effect)}</div>
+        <div class="source-color-trigger">Triggered By: ${escapeHtml(item.triggered_by)}</div>
+      </div>
+    `)
     .join("");
+  return `<div class="source-color-grid">${html}</div>`;
+}
 
-  return `
-    <div class="plot-box"><strong>World Shape:</strong> ${escapeHtml(world.world_shape)}</div>
-    <div class="plot-box"><strong>Creation Story:</strong> ${escapeHtml(world.creation_story)}</div>
-    <h3 style="color:#60a5fa">Physics</h3>
-    <div class="info-grid">${physicsHtml}</div>
-    <h3 style="color:#a78bfa">Source Colors</h3>
-    <div class="source-color-grid">${sourceColors}</div>
-  `;
+function renderWorld(world) {
+  if (!world) return `<div class="status-msg error">World data is missing.</div>`;
+  return renderWorldGeography(world) + renderWorldPhysics(world) + renderWorldSourceColors(world);
 }
 
 function renderPolyans(polyans) {
@@ -382,63 +390,60 @@ function renderPolyans(polyans) {
   `;
 }
 
-function renderMythos(mythos) {
-  if (!mythos)
-    return `<div class="status-msg error">Mythos data is missing.</div>`;
-
-  const gods = (mythos.gods || [])
-    .map(
-      (g) => `
+function renderMythosGods(mythos) {
+  const gods = (mythos.gods || []).map((g) => `
     <div class="info-card" style="border-top-color:#f59e0b">
       <div class="info-title icon-title"><span class="icon">✨</span>${escapeHtml(g.name)} (${escapeHtml(g.color)})</div>
       <div class="info-body">${escapeHtml(g.domain)}</div>
       <div class="source-color-trigger">Creation Role: ${escapeHtml(g.role_in_creation)}</div>
     </div>
-  `,
-    )
-    .join("");
+  `).join("");
+  return `<div class="info-grid">${gods}</div>`;
+}
 
-  const legends = (mythos.legends || [])
-    .map(
-      (l) => `
-    <div class="object-card"><div class="object-name">${escapeHtml(l.name)}</div><div class="object-body">${escapeHtml(l.description)}</div></div>
-  `,
-    )
-    .join("");
+function renderMythosAfterlife(mythos) {
+  const items = Array.isArray(mythos.afterlife) ? mythos.afterlife : [mythos.afterlife];
+  const html = items.map((item) => {
+    const title = item.name || (item.how_to_reach ? "How To Reach" : item.warning ? "Warning" : "");
+    const body = item.description || item.how_to_reach || item.warning || "";
+    return `
+      <div class="info-card" style="border-top-color:#34d399">
+        <div class="info-title">${escapeHtml(title)}</div>
+        <div class="info-body">${escapeHtml(body)}</div>
+      </div>
+    `;
+  }).join("");
+  return `<div class="info-grid">${html}</div>`;
+}
 
-  const rituals = (mythos.rituals || [])
-    .map(
-      (r) => `
-    <div class="object-card"><div class="object-name">${escapeHtml(r.name)}</div><div class="object-body">${escapeHtml(r.description)}</div></div>
-  `,
-    )
-    .join("");
-
-  const afterlife = mythos.afterlife || {};
+function renderMythosLumen(mythos) {
   const lumen = mythos.lumen_tradition || {};
+  const html = Object.keys(lumen).map((key) =>
+    `<div class="info-card" style="border-top-color:#60a5fa"><div class="info-title icon-title"><span class="icon">📜</span>${escapeHtml(titleFromKey(key))}</div><div class="info-body">${escapeHtml(lumen[key])}</div></div>`
+  ).join("");
+  return `<div class="info-grid">${html}</div>`;
+}
 
+function renderMythosLegends(mythos) {
+  return (mythos.legends || []).map((l) =>
+    `<div class="object-card"><div class="object-name">${escapeHtml(l.name)}</div><div class="object-body">${escapeHtml(l.description)}</div></div>`
+  ).join("");
+}
+
+function renderMythosRituals(mythos) {
+  return (mythos.rituals || []).map((r) =>
+    `<div class="object-card"><div class="object-name">${escapeHtml(r.name)}</div><div class="object-body">${escapeHtml(r.description)}</div></div>`
+  ).join("");
+}
+
+function renderMythos(mythos) {
+  if (!mythos) return `<div class="status-msg error">Mythos data is missing.</div>`;
   return `
-    <h3 style="color:#f59e0b">👑 Gods</h3>
-    <div class="info-grid">${gods}</div>
-    <h3 style="color:#34d399">🌌 Afterlife</h3>
-    <div class="info-grid">
-      <div class="info-card" style="border-top-color:#34d399"><div class="info-title icon-title"><span class="icon">🕊</span>${escapeHtml(afterlife.name)}</div><div class="info-body">${escapeHtml(afterlife.description)}</div></div>
-      <div class="info-card" style="border-top-color:#34d399"><div class="info-title icon-title"><span class="icon">🧭</span>How To Reach</div><div class="info-body">${escapeHtml(afterlife.how_to_reach)}</div></div>
-      <div class="info-card" style="border-top-color:#34d399"><div class="info-title icon-title"><span class="icon">⚠</span>Warning</div><div class="info-body">${escapeHtml(afterlife.warning)}</div></div>
-    </div>
-    <h3 style="color:#60a5fa">🔮 Lumen Tradition</h3>
-    <div class="info-grid">
-      ${Object.keys(lumen)
-        .map(
-          (key) =>
-            `<div class="info-card" style="border-top-color:#60a5fa"><div class="info-title icon-title"><span class="icon">📜</span>${escapeHtml(titleFromKey(key))}</div><div class="info-body">${escapeHtml(lumen[key])}</div></div>`,
-        )
-        .join("")}
-    </div>
-    <h3 style="color:#a78bfa">📖 Legends</h3>
-    ${legends}
-    <h3 style="color:#a78bfa">🕯 Rituals</h3>
-    ${rituals}
+    <h3 style="color:#f59e0b">👑 Gods</h3>${renderMythosGods(mythos)}
+    <h3 style="color:#34d399">🌌 Afterlife</h3>${renderMythosAfterlife(mythos)}
+    <h3 style="color:#60a5fa">🔮 Lumen Tradition</h3>${renderMythosLumen(mythos)}
+    <h3 style="color:#a78bfa">📖 Legends</h3>${renderMythosLegends(mythos)}
+    <h3 style="color:#a78bfa">🕯 Rituals</h3>${renderMythosRituals(mythos)}
   `;
 }
 
@@ -783,6 +788,84 @@ async function initObjectTabs() {
   }
 }
 
+async function initWorldTabs() {
+  try {
+    const response = await fetch("/Spheria_Wiki.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+
+    const geoContainer = document.getElementById("geography-content");
+    const physicsContainer = document.getElementById("physics-content");
+    const colorsContainer = document.getElementById("source-colors-content");
+
+    if (geoContainer) geoContainer.innerHTML = renderWorldGeography(data.world);
+    if (physicsContainer) physicsContainer.innerHTML = renderWorldPhysics(data.world);
+    if (colorsContainer) colorsContainer.innerHTML = renderWorldSourceColors(data.world);
+
+    const tabButtons = document.querySelectorAll(".sub-menu-btn");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    tabButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const tabName = btn.getAttribute("data-tab");
+        tabButtons.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        tabContents.forEach((content) => content.classList.remove("active"));
+        document.getElementById(`${tabName}-content`).classList.add("active");
+      });
+    });
+  } catch (err) {
+    const geoContainer = document.getElementById("geography-content");
+    if (geoContainer) {
+      geoContainer.classList.add("error");
+      geoContainer.innerHTML =
+        "Could not load Spheria_Wiki.json. Run a local web server (npm run dev) and refresh.";
+    }
+    console.error(err);
+  }
+}
+
+async function initMythosTabs() {
+  try {
+    const response = await fetch("/Spheria_Wiki.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+
+    const tabs = {
+      "gods-content": renderMythosGods,
+      "afterlife-content": renderMythosAfterlife,
+      "lumen-content": renderMythosLumen,
+      "legends-content": renderMythosLegends,
+      "rituals-content": renderMythosRituals,
+    };
+
+    Object.entries(tabs).forEach(([id, fn]) => {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = fn(data.mythos);
+    });
+
+    const tabButtons = document.querySelectorAll(".sub-menu-btn");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    tabButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const tabName = btn.getAttribute("data-tab");
+        tabButtons.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        tabContents.forEach((content) => content.classList.remove("active"));
+        document.getElementById(`${tabName}-content`).classList.add("active");
+      });
+    });
+  } catch (err) {
+    const el = document.getElementById("gods-content");
+    if (el) {
+      el.classList.add("error");
+      el.innerHTML = "Could not load Spheria_Wiki.json. Run a local web server (npm run dev) and refresh.";
+    }
+    console.error(err);
+  }
+}
+
 window.SpheriaWiki = {
   loadNav,
   initPage,
@@ -792,4 +875,6 @@ window.SpheriaWiki = {
   initSettingsTabs,
   initFactionTabs,
   initObjectTabs,
+  initWorldTabs,
+  initMythosTabs,
 };

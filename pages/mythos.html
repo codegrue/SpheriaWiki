@@ -10,12 +10,23 @@
     <div id="nav-container"></div>
     <section>
       <h2 style="color: #f59e0b">📚 Mythos</h2>
-      <div id="page-content" class="status-msg">Loading mythos...</div>
+      <div class="sub-menu">
+        <button class="sub-menu-btn active" data-tab="lumen">🔮 Lumen Tradition</button>
+        <button class="sub-menu-btn" data-tab="legends">📖 Legends</button>
+        <button class="sub-menu-btn" data-tab="rituals">🕯️ Rituals</button>
+        <button class="sub-menu-btn" data-tab="afterlife">🌌 Afterlife</button>
+        <button class="sub-menu-btn" data-tab="gods">👑 Gods</button>
+      </div>
+      <div id="lumen-content" class="tab-content active"></div>
+      <div id="legends-content" class="tab-content"></div>
+      <div id="rituals-content" class="tab-content"></div>
+      <div id="afterlife-content" class="tab-content"></div>
+      <div id="gods-content" class="tab-content"></div>
     </section>
     <script src="../wiki-render.js"></script>
     <script>
       SpheriaWiki.loadNav();
-      SpheriaWiki.initPage("mythos", "page-content");
+      SpheriaWiki.initMythosTabs();
     </script>
   </body>
 </html>

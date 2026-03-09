@@ -9,13 +9,24 @@
   <body>
     <div id="nav-container"></div>
     <section>
-      <h2 style="color: #60a5fa">World</h2>
-      <div id="page-content" class="status-msg">Loading world data...</div>
+      <h2 style="color: #60a5fa">World (Spheria Simulation)</h2>
+      <div class="sub-menu">
+        <button class="sub-menu-btn active" data-tab="geography">
+          🗺️ Geography
+        </button>
+        <button class="sub-menu-btn" data-tab="physics">⚛️ Physics</button>
+        <button class="sub-menu-btn" data-tab="source-colors">
+          🌈 Source Colors
+        </button>
+      </div>
+      <div id="geography-content" class="tab-content active"></div>
+      <div id="physics-content" class="tab-content"></div>
+      <div id="source-colors-content" class="tab-content"></div>
     </section>
     <script src="../wiki-render.js"></script>
     <script>
       SpheriaWiki.loadNav();
-      SpheriaWiki.initPage("world", "page-content");
+      SpheriaWiki.initWorldTabs();
     </script>
   </body>
 </html>

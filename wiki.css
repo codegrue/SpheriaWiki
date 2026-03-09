@@ -242,6 +242,14 @@ section h3 {
   font-style: italic;
 }
 
+.tab-link {
+  color: #60a5fa;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.tab-link:hover {
+  color: #93c5fd;
+}
 .book-section-header {
   color: #a0aec0;
   font-size: 1rem;
