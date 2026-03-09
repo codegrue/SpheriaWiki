@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Pirulen";
+  src: url("/fonts/pirulen_rg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,8 +38,9 @@ nav {
   gap: 8px;
 }
 .nav-logo {
+  font-family: "Pirulen", sans-serif;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: normal;
   background: linear-gradient(135deg, #a78bfa, #60a5fa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -91,8 +99,9 @@ section {
   padding: 40px 24px;
 }
 section h2 {
+  font-family: "Pirulen", sans-serif;
   font-size: 26px;
-  font-weight: 800;
+  font-weight: normal;
   margin-bottom: 24px;
   padding-bottom: 12px;
   border-bottom: 2px solid #1f2937;
