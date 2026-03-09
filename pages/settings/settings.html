@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Spheria - Settings</title>
+    <link rel="stylesheet" href="../../wiki.css" />
+  </head>
+  <body>
+    <div id="nav-container"></div>
+    <section>
+      <h2 style="color: #34d399">Settings</h2>
+      <div class="sub-menu">
+        <button class="sub-menu-btn active" data-tab="human">🌍 Earth</button>
+        <button class="sub-menu-btn" data-tab="spheria">🔮 Spheria</button>
+      </div>
+      <div id="human-content" class="tab-content active"></div>
+      <div id="spheria-content" class="tab-content"></div>
+    </section>
+    <script src="../../wiki-render.js"></script>
+    <script>
+      SpheriaWiki.loadNav();
+      SpheriaWiki.initSettingsTabs();
+    </script>
+  </body>
+</html>

@@ -29,7 +29,7 @@ function renderOverview(data) {
     },
     {
       label: "Locations",
-      value: data.settings.length,
+      value: data.settings.earth.length + data.settings.spheria.length,
       border: "#2563eb",
       color: "#60a5fa",
     },
@@ -159,25 +159,30 @@ function renderPolyanCharacters(characters) {
   `;
 }
 
-function renderSettings(settings) {
-  const human = settings.filter((s) => isHumanWorld(s.world));
-  const spheria = settings.filter((s) => !isHumanWorld(s.world));
-
-  function locationCard(item, border) {
-    return `
-      <div class="card" style="border-left:4px solid ${border}">
-        <div class="card-name">${escapeHtml(item.name)}</div>
-        <div class="card-body">${escapeHtml(item.description)}</div>
-      </div>
-    `;
-  }
-
+function locationCard(item, border) {
   return `
-    <div class="world-header"><span>\ud83c\udf0d</span><h3 style="color:#2563eb">Human</h3></div>
-    <div class="card-grid">${human.map((s) => locationCard(s, "#2563eb")).join("")}</div>
-    <div class="world-header"><span>\ud83d\udd2e</span><h3 style="color:#7c3aed">Spheria</h3></div>
-    <div class="card-grid">${spheria.map((s) => locationCard(s, "#7c3aed")).join("")}</div>
+    <div class="card" style="border-left:4px solid ${border}">
+      <div class="card-name">${escapeHtml(item.name)}</div>
+      <div class="card-body">${escapeHtml(item.description)}</div>
+    </div>
   `;
+}
+
+function renderSettings(settings) {
+  return `
+    <div class="world-header"><span>🌍</span><h3 style="color:#2563eb">Earth (${settings.earth.length})</h3></div>
+    <div class="card-grid">${settings.earth.map((s) => locationCard(s, "#2563eb")).join("")}</div>
+    <div class="world-header"><span>🔮</span><h3 style="color:#7c3aed">Spheria (${settings.spheria.length})</h3></div>
+    <div class="card-grid">${settings.spheria.map((s) => locationCard(s, "#7c3aed")).join("")}</div>
+  `;
+}
+
+function renderHumanSettings(settings) {
+  return `<div class="card-grid">${settings.earth.map((s) => locationCard(s, "#2563eb")).join("")}</div>`;
+}
+
+function renderSpheriaSettings(settings) {
+  return `<div class="card-grid">${settings.spheria.map((s) => locationCard(s, "#7c3aed")).join("")}</div>`;
 }
 
 function renderFactions(factions) {
@@ -529,6 +534,10 @@ async function initPage(pageKey, containerId) {
       container.innerHTML = renderPolyanCharacters(data.characters);
     else if (pageKey === "settings")
       container.innerHTML = renderSettings(data.settings);
+    else if (pageKey === "human-settings")
+      container.innerHTML = renderHumanSettings(data.settings);
+    else if (pageKey === "spheria-settings")
+      container.innerHTML = renderSpheriaSettings(data.settings);
     else if (pageKey === "factions")
       container.innerHTML = renderFactions(data.factions);
     else if (pageKey === "objects")
@@ -652,10 +661,46 @@ async function initChapterTabs() {
   }
 }
 
+async function initSettingsTabs() {
+  try {
+    const response = await fetch("/Spheria_Wiki.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+
+    const humanContainer = document.getElementById("human-content");
+    const spheriaContainer = document.getElementById("spheria-content");
+
+    if (humanContainer) humanContainer.innerHTML = renderHumanSettings(data.settings);
+    if (spheriaContainer) spheriaContainer.innerHTML = renderSpheriaSettings(data.settings);
+
+    const tabButtons = document.querySelectorAll(".sub-menu-btn");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    tabButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const tabName = btn.getAttribute("data-tab");
+        tabButtons.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        tabContents.forEach((content) => content.classList.remove("active"));
+        document.getElementById(`${tabName}-content`).classList.add("active");
+      });
+    });
+  } catch (err) {
+    const humanContainer = document.getElementById("human-content");
+    if (humanContainer) {
+      humanContainer.classList.add("error");
+      humanContainer.innerHTML =
+        "Could not load Spheria_Wiki.json. Run a local web server (npm run dev) and refresh.";
+    }
+    console.error(err);
+  }
+}
+
 window.SpheriaWiki = {
   loadNav,
   initPage,
   setActiveNav,
   initCharacterTabs,
   initChapterTabs,
+  initSettingsTabs,
 };

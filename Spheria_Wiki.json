@@ -350,128 +350,108 @@
       }
     ]
   },
-  "settings": [
-    {
-      "name": "The Source",
-      "world": "Spherian",
-      "description": "The bright shining orb above the Polyan world that governs behavior and provides light. Changes color (white for travel, fades at night). Contains the entire Spherian world."
-    },
-    {
-      "name": "Polyan Colony",
-      "world": "Spherian",
-      "description": "Home settlement of the Polyans. Contains hives (igloo-like pointed structures). Center gathering place. Location where Drones, Builders, Soldiers, and Leaders live."
-    },
-    {
-      "name": "Blue Mountains",
-      "world": "Spherian",
-      "description": "Mountain ranges made of blue crystal that emit repulsive force, making them impassable. Divide world into maze-like sections. Nearly vertical on one side."
-    },
-    {
-      "name": "Uplift Pass",
-      "world": "Spherian",
-      "description": "Large slit/crevice in blue mountains containing platforms that allow passage to other side. Contains steps. Named by ancestors. Used for Lumen Seeker training."
-    },
-    {
-      "name": "The Rift",
-      "world": "Spherian",
-      "description": "Massive chasm at edge of world. Appears as vertical artificial horizon. So deep the bottom cannot be seen. Yellow shards dropped in eventually become bubbles rising back up."
-    },
-    {
-      "name": "Valley of Three",
-      "world": "Spherian",
-      "description": "Large perfect triangle formation of mountains on opposite hemisphere with no rivers inside. Used for navigation at night. Legends say gods play games there (flickering dots sometimes visible)."
-    },
-    {
-      "name": "Red Rivers",
-      "world": "Spherian",
-      "description": "Rivers of red liquid/energy that flow through Spherian landscape. Can be crossed with bridges made from brown rock. Illuminate blue mountains at night."
-    },
-    {
-      "name": "Lumen Grotto",
-      "world": "Spherian",
-      "description": "Hexagonal room cut into hill-like formation far from Colony. Resting place where old Lumen Master waits to test potential Lumen Seekers. Contains glowing yellow crystal."
-    },
-    {
-      "name": "Fertile Field",
-      "world": "Spherian",
-      "description": "Legendary location of endless energy. Not always visible/present. Sa·ma discovered it and received artifact sensor there. Considered a gift from the gods."
-    },
-    {
-      "name": "Hôtel de Ville de Bruxelles",
-      "world": "Earth",
-      "description": "Tower building in Brussels, Belgium where 25th Solvay Conference on Physics took place. Has balcony overlooking city."
-    },
-    {
-      "name": "UConn Health Center",
-      "world": "Earth",
-      "description": "Medical-dental school in Hartford County built 1970 on highest point. Expanded in 90s for clinical research. Houses Spheria Project. Contains Lyman Maynard Stowe Library with 'Spheres' sculptures."
-    },
-    {
-      "name": "Spheria Project Office",
-      "world": "Earth",
-      "description": "Research facility with makeshift lobby/reception desk, cubicles, conference room, kitchen. Team holds happy hour gatherings. Min works at reception desk with three large monitors."
-    },
-    {
-      "name": "Graham's Airship 'Buruwa Gunya'",
-      "world": "Earth",
-      "description": "A massive yellow luxury airship belonging to Graham, moored to the UConn Health Center roof via a disguised cell tower antenna. Features a suspended gondola with open floor plan, sunken booths, kitchen with stainless steel appliances, slanted wraparound windows, and private rooms toward the rear."
-    },
-    {
-      "name": "Electric Boat Pier 3, Groton CT",
-      "world": "Earth",
-      "description": "Submarine manufacturing facility at Shaw Cove with docks for Virginia-class submarines. Features a large yellow crane for lifting cargo and containers, minimally lit at night. Used for clandestine meetings."
-    },
-    {
-      "name": "The Golden Cave",
-      "world": "Spheria",
-      "description": "A mysterious cave discovered by Sa·ma containing golden crystalline formations, strange glowing plants, and a portal to the 'Qubessence.' Features twisting maze-like passages with light-producing plants that can be broken to create beams. Contains a room with a portal that Sa·ma encounters a cave god through."
-    },
-    {
-      "name": "Council Building Prison Cell",
-      "world": "Spheria",
-      "description": "Triangular chamber tapering to a point, the hollow interior of the Council building. Originally a shelter against Zalisk attacks, later used for storage, now repurposed as the Polyans' first prison. Features a single large door, no windows, and a shallow hexagonal pit in the center."
-    },
-    {
-      "name": "Secret red server room",
-      "world": "Earth",
-      "description": "Hidden duplicate server room beneath the Qube floor with red lighting, containing unauthorized Tor network equipment and Gridway distributed computing system for DARPA weapons project"
-    },
-    {
-      "name": "Hospital incinerator chamber",
-      "world": "Earth",
-      "description": "Domed propane-fueled incinerator where Min and Max become trapped; contains exhaust vent leading to chimney with clean-out door"
-    },
-    {
-      "name": "The bridge (fallen tower)",
-      "world": "Spheria",
-      "description": "The massive tower knocked down by Sa·ma's cannon to span across the Rift, creating the first bridge to the forbidden side"
-    },
-    {
-      "name": "Fa·ro's Chamber",
-      "world": "Spheria",
-      "description": "The apex chamber of the tallest structure in the Colony, formerly the Council chamber, now Fa·ro's throne room after he eliminated the Council"
-    },
-    {
-      "name": "Lyman Maynard Stowe Library",
-      "world": "Earth",
-      "description": "Library at UConn Health Center with 'Spheres' sculptures by Wopo Holop outside the Academic Entrance. Site where Jill committed suicide by jumping from the roof, landing on a sculpture pedestal near Tim. Has a cobblestone circle entry."
-    },
-    {
-      "name": "Max's Apartment",
-      "world": "Earth",
-      "description": "Max's minimalist apartment near UConn Health Center. Features an impressive entertainment center with video game systems and a bedroom with walls covered in bookcases. Min visits here to play Minecraft and have dinner dates with Max."
-    },
-    {
-      "name": "UConn Health Center Rooftop",
-      "world": "Earth",
-      "description": "Rooftop of the UConn Health Center building, accessed via emergency stairwell. Features a mooring mast disguised as a cell tower antenna, used as a docking point for Graham's airship 'Buruwa Gunya.'"
-    },
-    {
-      "name": "Qubessence",
-      "world": "Spherian",
-      "description": "The afterlife realm accessible through the portal in the Golden Cave and via the Rift. A violet landscape with violet mountains and violet sky. Described as a place of endless energy where there is no need to hunt. Only the 'structures' (bodies) of dead Polyans can enter; living Polyans who jump into the Rift are destroyed. Gods are believed to reside there."
-    }
-  ],
+  "settings": {
+    "earth": [
+      {
+        "name": "Hôtel de Ville de Bruxelles",
+        "description": "Tower building in Brussels, Belgium where 25th Solvay Conference on Physics took place. Has balcony overlooking city."
+      },
+      {
+        "name": "UConn Health Center",
+        "description": "Medical-dental school in Hartford County built 1970 on highest point. Expanded in 90s for clinical research. Houses Spheria Project. Contains Lyman Maynard Stowe Library with 'Spheres' sculptures."
+      },
+      {
+        "name": "Spheria Project Office",
+        "description": "Research facility with makeshift lobby/reception desk, cubicles, conference room, kitchen. Team holds happy hour gatherings. Min works at reception desk with three large monitors."
+      },
+      {
+        "name": "Graham's Airship 'Buruwa Gunya'",
+        "description": "A massive yellow luxury airship belonging to Graham, moored to the UConn Health Center roof via a disguised cell tower antenna. Features a suspended gondola with open floor plan, sunken booths, kitchen with stainless steel appliances, slanted wraparound windows, and private rooms toward the rear."
+      },
+      {
+        "name": "Electric Boat Pier 3, Groton CT",
+        "description": "Submarine manufacturing facility at Shaw Cove with docks for Virginia-class submarines. Features a large yellow crane for lifting cargo and containers, minimally lit at night. Used for clandestine meetings."
+      },
+      {
+        "name": "Secret red server room",
+        "description": "Hidden duplicate server room beneath the Qube floor with red lighting, containing unauthorized Tor network equipment and Gridway distributed computing system for DARPA weapons project"
+      },
+      {
+        "name": "Hospital incinerator chamber",
+        "description": "Domed propane-fueled incinerator where Min and Max become trapped; contains exhaust vent leading to chimney with clean-out door"
+      },
+      {
+        "name": "Lyman Maynard Stowe Library",
+        "description": "Library at UConn Health Center with 'Spheres' sculptures by Wopo Holop outside the Academic Entrance. Site where Jill committed suicide by jumping from the roof, landing on a sculpture pedestal near Tim. Has a cobblestone circle entry."
+      },
+      {
+        "name": "Max's Apartment",
+        "description": "Max's minimalist apartment near UConn Health Center. Features an impressive entertainment center with video game systems and a bedroom with walls covered in bookcases. Min visits here to play Minecraft and have dinner dates with Max."
+      },
+      {
+        "name": "UConn Health Center Rooftop",
+        "description": "Rooftop of the UConn Health Center building, accessed via emergency stairwell. Features a mooring mast disguised as a cell tower antenna, used as a docking point for Graham's airship 'Buruwa Gunya.'"
+      }
+    ],
+    "spheria": [
+      {
+        "name": "The Source",
+        "description": "The bright shining orb above the Polyan world that governs behavior and provides light. Changes color (white for travel, fades at night). Contains the entire Spherian world."
+      },
+      {
+        "name": "Polyan Colony",
+        "description": "Home settlement of the Polyans. Contains hives (igloo-like pointed structures). Center gathering place. Location where Drones, Builders, Soldiers, and Leaders live."
+      },
+      {
+        "name": "Blue Mountains",
+        "description": "Mountain ranges made of blue crystal that emit repulsive force, making them impassable. Divide world into maze-like sections. Nearly vertical on one side."
+      },
+      {
+        "name": "Uplift Pass",
+        "description": "Large slit/crevice in blue mountains containing platforms that allow passage to other side. Contains steps. Named by ancestors. Used for Lumen Seeker training."
+      },
+      {
+        "name": "The Rift",
+        "description": "Massive chasm at edge of world. Appears as vertical artificial horizon. So deep the bottom cannot be seen. Yellow shards dropped in eventually become bubbles rising back up."
+      },
+      {
+        "name": "Valley of Three",
+        "description": "Large perfect triangle formation of mountains on opposite hemisphere with no rivers inside. Used for navigation at night. Legends say gods play games there (flickering dots sometimes visible)."
+      },
+      {
+        "name": "Red Rivers",
+        "description": "Rivers of red liquid/energy that flow through Spherian landscape. Can be crossed with bridges made from brown rock. Illuminate blue mountains at night."
+      },
+      {
+        "name": "Lumen Grotto",
+        "description": "Hexagonal room cut into hill-like formation far from Colony. Resting place where old Lumen Master waits to test potential Lumen Seekers. Contains glowing yellow crystal."
+      },
+      {
+        "name": "Fertile Field",
+        "description": "Legendary location of endless energy. Not always visible/present. Sa·ma discovered it and received artifact sensor there. Considered a gift from the gods."
+      },
+      {
+        "name": "The Golden Cave",
+        "description": "A mysterious cave discovered by Sa·ma containing golden crystalline formations, strange glowing plants, and a portal to the 'Qubessence.' Features twisting maze-like passages with light-producing plants that can be broken to create beams. Contains a room with a portal that Sa·ma encounters a cave god through."
+      },
+      {
+        "name": "Council Building Prison Cell",
+        "description": "Triangular chamber tapering to a point, the hollow interior of the Council building. Originally a shelter against Zalisk attacks, later used for storage, now repurposed as the Polyans' first prison. Features a single large door, no windows, and a shallow hexagonal pit in the center."
+      },
+      {
+        "name": "The bridge (fallen tower)",
+        "description": "The massive tower knocked down by Sa·ma's cannon to span across the Rift, creating the first bridge to the forbidden side"
+      },
+      {
+        "name": "Fa·ro's Chamber",
+        "description": "The apex chamber of the tallest structure in the Colony, formerly the Council chamber, now Fa·ro's throne room after he eliminated the Council"
+      },
+      {
+        "name": "Qubessence",
+        "description": "The afterlife realm accessible through the portal in the Golden Cave and via the Rift. A violet landscape with violet mountains and violet sky. Described as a place of endless energy where there is no need to hunt. Only the 'structures' (bodies) of dead Polyans can enter; living Polyans who jump into the Rift are destroyed. Gods are believed to reside there."
+      }
+    ]
+  },
   "chapters": [
     {
       "number": 1,
@@ -947,19 +927,32 @@
       "name": "Fa·ro's Faction",
       "world": "Spheria",
       "description": "Growing authoritarian movement centered on Fa·ro as a decisive god-leader who breaks Council gridlock. Represents shift from democratic consensus to autocratic rule, with Ga·zo as primary enforcer.",
-      "members": ["Fa·ro", "Ga·zo", "Za·zo"]
+      "members": [
+        "Fa·ro",
+        "Ga·zo",
+        "Za·zo"
+      ]
     },
     {
       "name": "Rebellious Workers",
       "world": "Spheria",
       "description": "All Workers in the Colony who secretly organized under Sa·ma's leadership to flee across the Rift using the fallen tower as a bridge, escaping Fa·ro's tyranny",
-      "members": ["Sa·ma", "Hi·ma", "Pu·ma", "Le·ma", "twelve lead Workers"]
+      "members": [
+        "Sa·ma",
+        "Hi·ma",
+        "Pu·ma",
+        "Le·ma",
+        "twelve lead Workers"
+      ]
     },
     {
       "name": "DARPA partnership",
       "world": "Earth",
       "description": "Secret military collaboration arranged by Dana with Defense Advanced Research Projects Agency to weaponize the Spheria technology in exchange for funding and personal land in Costa Rica",
-      "members": ["Dana Carter", "unnamed DARPA officials"]
+      "members": [
+        "Dana Carter",
+        "unnamed DARPA officials"
+      ]
     },
     {
       "name": "Council Leaders",
