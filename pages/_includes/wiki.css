@@ -123,6 +123,12 @@ section h3 {
   color: #d1d5db;
   margin-bottom: 24px;
 }
+.plot-box p {
+  margin: 0 0 1em;
+}
+.plot-box p:last-child {
+  margin-bottom: 0;
+}
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));

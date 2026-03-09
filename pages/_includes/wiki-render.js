@@ -115,8 +115,12 @@ function renderOverview(data) {
     .map((theme) => `<div class="theme-item">${escapeHtml(theme)}</div>`)
     .join("");
 
+  const plotHtml = Array.isArray(data.overall_plot)
+    ? data.overall_plot.map(p => `<p>${escapeHtml(p)}</p>`).join("")
+    : `<p>${escapeHtml(data.overall_plot)}</p>`;
+
   return `
-    <div class="plot-box">${escapeHtml(data.overall_plot)}</div>
+    <div class="plot-box">${plotHtml}</div>
     <div class="stats-grid">${statsHtml}</div>
     <div class="themes-box">
       <h3 style="color:#60a5fa;margin-top:0;margin-bottom:16px">Themes</h3>
