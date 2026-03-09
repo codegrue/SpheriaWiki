@@ -225,11 +225,11 @@ function renderObjects(objects) {
 }
 
 function renderEarthObjects(objects) {
-  return objects.filter((o) => isHumanWorld(o.world)).map(objectCard).join("");
+  return `<div class="info-grid">${objects.filter((o) => isHumanWorld(o.world)).map(objectCard).join("")}</div>`;
 }
 
 function renderSpheriaObjects(objects) {
-  return objects.filter((o) => !isHumanWorld(o.world)).map(objectCard).join("");
+  return `<div class="info-grid">${objects.filter((o) => !isHumanWorld(o.world)).map(objectCard).join("")}</div>`;
 }
 
 function renderChapters(chapters) {
@@ -263,8 +263,11 @@ function renderBookSection(book, placeholderMsg) {
   const chapters = book.chapters.length
     ? renderChapters(book.chapters)
     : `<div class="status-msg">${placeholderMsg}</div>`;
+  const getBtn = book.get_link
+    ? `<a class="book-get-btn" href="${escapeHtml(book.get_link)}" target="_blank" rel="noopener noreferrer">Get Book</a>`
+    : "";
   return `
-    <h3 class="book-section-header">Overall Synopsis</h3>
+    <h3 class="book-section-header">Overall Synopsis ${getBtn}</h3>
     ${synopsis}
     <h3 class="book-section-header">Chapter Synopses</h3>
     ${chapters}
@@ -279,21 +282,32 @@ function renderTimeline(items, books) {
     const label = shortTitle ? `${shortTitle} - Ch. ${item.chapter}` : `Ch. ${item.chapter}`;
     return ` <span class="tl-chapter">${escapeHtml(label)}</span>`;
   }
-  return `<div class="timeline">${items
-    .map(
-      (item, idx) => `
+  function bookSeparator(bookKey) {
+    const title = books?.[bookKey]?.title ?? bookKey ?? "";
+    return `<div class="tl-book-separator"><span class="tl-book-title">${escapeHtml(title)}</span></div>`;
+  }
+  let currentBook = null;
+  let eventNum = 0;
+  const parts = [];
+  items.forEach((item, idx) => {
+    if (item.book !== currentBook) {
+      currentBook = item.book;
+      parts.push(bookSeparator(currentBook));
+    }
+    eventNum++;
+    const isLast = idx === items.length - 1;
+    parts.push(`
     <div class="tl-item">
       <div class="tl-dot">
-        <div class="tl-circle">${idx + 1}</div>
-        ${idx < items.length - 1 ? '<div class="tl-line"></div>' : ""}
+        <div class="tl-circle">${eventNum}</div>
+        ${!isLast ? '<div class="tl-line"></div>' : ""}
       </div>
       <div class="tl-text">
         ${escapeHtml(item.text ?? item)}${bookLabel(item)}
       </div>
-    </div>
-  `,
-    )
-    .join("")}</div>`;
+    </div>`);
+  });
+  return `<div class="timeline">${parts.join("")}</div>`;
 }
 
 function titleFromKey(key) {

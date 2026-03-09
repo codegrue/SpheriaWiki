@@ -231,7 +231,6 @@ section h3 {
   border-radius: 10px;
   padding: 16px;
   border-left: 4px solid #f59e0b;
-  margin-bottom: 12px;
 }
 .object-name {
   font-weight: 700;
@@ -260,6 +259,9 @@ section h3 {
   color: #93c5fd;
 }
 .book-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: #a0aec0;
   font-size: 1rem;
   font-weight: 600;
@@ -269,6 +271,24 @@ section h3 {
   padding-bottom: 6px;
   border-bottom: 1px solid #2d2d4e;
 }
+.book-get-btn {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #a78bfa;
+  background: #a78bfa22;
+  border: 1px solid #a78bfa55;
+  border-radius: 6px;
+  padding: 3px 10px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+}
+.book-get-btn:hover {
+  background: #a78bfa44;
+  color: #c4b5fd;
+}
 .book-synopsis {
   background: #1a1a2e;
   border-radius: 10px;
@@ -276,6 +296,9 @@ section h3 {
   color: #c0c0d8;
   line-height: 1.6;
   margin-bottom: 8px;
+}
+.book-synopsis p + p {
+  margin-top: 1em;
 }
 .chapter-row {
   background: #1a1a2e;
@@ -363,6 +386,26 @@ section h3 {
   font-size: 14px;
   padding-top: 6px;
   line-height: 1.6;
+}
+.tl-book-separator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0 16px;
+}
+.tl-book-separator::before,
+.tl-book-separator::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #374151;
+}
+.tl-book-title {
+  font-family: "Pirulen", sans-serif;
+  font-size: 12px;
+  color: #a78bfa;
+  white-space: nowrap;
+  letter-spacing: 0.05em;
 }
 
 .info-grid {

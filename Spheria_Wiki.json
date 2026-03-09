@@ -17,6 +17,66 @@
   ],
   "timeline": [
     {
+      "book": "novella1",
+      "chapter": 1,
+      "text": "Olivia meditates on the Academic Building roof; a seagull interrupts her"
+    },
+    {
+      "book": "novella1",
+      "chapter": 1,
+      "text": "Randy visits Farmington and uses a thermal imager to spy on Ashley in the shower; Olivia kicks him out"
+    },
+    {
+      "book": "novella1",
+      "chapter": 2,
+      "text": "Randy sends a breakup email and asks for his thermal imager back; Olivia keeps the device"
+    },
+    {
+      "book": "novella1",
+      "chapter": 2,
+      "text": "Olivia and Ashley drink scorpion bowls at the Butterfly lounge; Ashley signs them up for karaoke"
+    },
+    {
+      "book": "novella1",
+      "chapter": 3,
+      "text": "Max asks Olivia to make a sign for the lab open house; she goes to the 6th floor storage room"
+    },
+    {
+      "book": "novella1",
+      "chapter": 3,
+      "text": "Olivia witnesses Dana enter a hidden room via keypad; uses thermal imager to read the code 2465"
+    },
+    {
+      "book": "novella1",
+      "chapter": 4,
+      "text": "Olivia returns alone at 11pm, enters the secret red Qube server room, and creates a hidden admin account with Wow! Signal passcode 6EQUJ5"
+    },
+    {
+      "book": "novella1",
+      "chapter": 5,
+      "text": "Dana catches Olivia in the secret room and bribes her with $400,000 to stay silent, threatening to name her as an accomplice"
+    },
+    {
+      "book": "novella1",
+      "chapter": 5,
+      "text": "Olivia encodes the floor and keypad code into her journal using an acrostic cipher and attempts to email it to Ashley as insurance"
+    },
+    {
+      "book": "novella1",
+      "chapter": 5,
+      "text": "The email fails to send — network connection lost — unknown to Olivia"
+    },
+    {
+      "book": "novella1",
+      "chapter": 6,
+      "text": "Olivia returns to the roof to meditate and resolves to tell Max in the morning"
+    },
+    {
+      "book": "novella1",
+      "chapter": 6,
+      "text": "Dana pushes Olivia off the roof; Olivia's last word is 'No'"
+    },
+    {
       "book": "book1",
       "chapter": 2,
       "text": "Max presents research at prestigious 25th Solvay Conference on Physics in Brussels"
@@ -369,6 +429,29 @@
         "world": "Earth",
         "major": false,
         "updates": []
+      },
+      {
+        "name": "Randy",
+        "species": "Human",
+        "caste_or_role": "Olivia's ex-boyfriend",
+        "description": "Engineering student in Boston, Olivia's long-distance boyfriend of four years. Uses a borrowed Seek Thermal Imager to spy on Ashley in the shower, is kicked out by Olivia, then breaks up with her by email and asks for his device back. His abandoned thermal imager becomes the pivotal tool Olivia uses to crack Dana's keypad.",
+        "first_chapter": 1,
+        "world": "Earth",
+        "major": false,
+        "updates": [
+          "Breaks up with Olivia via email; asks for thermal imager back",
+          "His thermal imager, kept by Olivia, becomes the key to discovering Dana's secret"
+        ]
+      },
+      {
+        "name": "Lee",
+        "species": "Human",
+        "caste_or_role": "Spheria Project Developer",
+        "description": "Fast typist on the Spheria team, described as resembling a Buddha-like figure. Suggests Max ask Olivia to help with open house decorations rather than doing it himself.",
+        "first_chapter": 3,
+        "world": "Earth",
+        "major": false,
+        "updates": []
       }
     ],
     "polyan": [
@@ -536,6 +619,18 @@
         "name": "Red Server Room",
         "description": "Bundle of red cables and unauthorized Tor network/Gridway software running in secret duplicate server room beneath the Qube floor",
         "significance": "Evidence of Dana's secret DARPA weapons project and unauthorized military collaboration"
+      },
+      {
+        "name": "The Exchange Apartment",
+        "description": "Olivia and Ashley's modern apartment building directly across from the UConn Health Center. A pub is located in the building. Olivia lives here with Ashley; Randy visits from Boston."
+      },
+      {
+        "name": "6th Floor Storage Room",
+        "description": "A dim, disorganized storage room one floor below the Spheria lab. Filled with filing cabinets, moving boxes, and office supplies. Contains a hidden metal door secured by a keypad — the entrance to Dana's secret server room. Code: 2465."
+      },
+      {
+        "name": "The Butterfly Lounge",
+        "description": "A packed bar/lounge where Olivia and Ashley drink scorpion bowls to process the breakup. Has a DJ and a karaoke setup. Ashley signs them up for 'Stop Draggin' My Heart Around.'"
       }
     ],
     "spheria": [
@@ -731,6 +826,30 @@
       "description": "Seven crystals placed near each facet of the core during the god creation ritual.",
       "significance": "Part of the god-creation process; positioned by Leaders during ceremony",
       "world": "Spheria"
+    },
+    {
+      "name": "Seek Thermal Imager",
+      "description": "A phone camera attachment belonging to Randy that detects infrared heat signatures. Originally borrowed from his engineering lab. He uses it to spy on Ashley; Olivia keeps it after kicking him out. She later uses it to read the residual heat on the keypad buttons, identifying the code 2465.",
+      "significance": "The pivotal object of Olivia's Log — Randy's betrayal connects directly to Olivia's discovery of Dana's secret. A tool of voyeurism that becomes a tool of espionage.",
+      "world": "Earth"
+    },
+    {
+      "name": "Olivia's Journal / Log File",
+      "description": "A digital journal Olivia maintains on her work computer. After discovering Dana's secret, she adds a coded entry using an acrostic cipher — the first letter/number of each sentence spells out 'FLOOR 6 CODE 2465.' Intended as insurance sent to Ashley by email.",
+      "significance": "Olivia's attempt to leave a trail and protect herself. The email fails to send, making it a tragic near-miss. Gives the novella its title — Olivia's Log.",
+      "world": "Earth"
+    },
+    {
+      "name": "Red Qubes",
+      "description": "Server hardware components that are normally incinerated after use in the Spheria project. Dana has been diverting them to a secret 6th floor server room where every Qube glows red. Connected to an outside network, they run complex unsolved equations for Dana's benefactor.",
+      "significance": "The physical evidence of Dana's corruption. Their red glow mirrors the red rock rivers of Spheria — an aesthetic parallel between the two worlds.",
+      "world": "Earth"
+    },
+    {
+      "name": "Keypad (6th Floor Metal Door)",
+      "description": "A numeric keypad securing the hidden server room door on the 6th floor. Code is 2465, deduced by Olivia using the thermal imager to read residual heat on the most-pressed keys.",
+      "significance": "The literal and symbolic lock on Dana's secret.",
+      "world": "Earth"
     }
   ],
   "factions": [
@@ -786,6 +905,12 @@
       "world": "Earth",
       "description": "Secret military collaboration arranged by Dana with Defense Advanced Research Projects Agency to weaponize the Spheria technology in exchange for funding and personal land in Costa Rica",
       "members": ["Dana Carter", "unnamed DARPA officials"]
+    },
+    {
+      "name": "Dana's Shadow Project",
+      "world": "Earth",
+      "description": "A clandestine operation run by Dana Carter using diverted red Qubes on the 6th floor. Dana solves complex equations and manipulates Polyans inside Spheria to change their moral alignment for an unnamed outside benefactor. Operates entirely without Max's knowledge. Discovered by intern Olivia Holland, who was murdered to prevent exposure.",
+      "members": ["Dana Carter", "unnamed outside benefactor"]
     },
     {
       "name": "Council Leaders",
@@ -1139,6 +1264,7 @@
       "title": "Spheria 1: Eversion",
       "short_title": "Spheria 1",
       "subtitle": "Eversion",
+      "get_link": "https://www.codyleet.com/books/spheria",
       "synopsis": [
         "Spheria follows parallel narratives on Earth and within a revolutionary virtual ecosystem simulation. Physicist Max recruits intern Min to join the Spheria Project after a previous intern's suspicious suicide, working alongside a team that observes crystalline beings called Polyans living inside their digital creation.",
         "Inside the simulation, young Le·ma apprentices under the wise Lumen Master Sa·ma, who leads her on a perilous journey through Uplift Pass to discover the legendary Fertile Field beyond the blue crystal mountains. During their quest, Sa·ma acquires a mysterious triangular artifact that grants him power to control creatures, saving Le·ma from a deadly Zalisk beast. As their final test, Le·ma must find an impossible route back over the mountains.",
@@ -1462,14 +1588,62 @@
       "title": "Spheria: Olivia's Log",
       "short_title": "Olivia's Log",
       "subtitle": "",
-      "synopsis": "Coming SOON",
-      "chapters": []
+      "get_link": "https://www.codyleet.com/spheria-signup",
+      "synopsis": [
+        "Spheria: Olivia's Log is a prequel short story set entirely on Earth, following Olivia Holland, an intern on the Spheria Project at UConn Health Center in Farmington, Connecticut. The story opens with Olivia meditating on the roof of the Academic Building, her secret sanctuary, while processing a recent fight with her long-distance boyfriend Randy, who used a borrowed thermal imager to spy on her roommate Ashley in the shower.",
+        "Randy breaks up with Olivia by email shortly after, citing her as 'uptight,' which she processes with Ashley over drinks at the Butterfly lounge. When asked to make a sign for the lab's open house, Olivia retrieves poster boards from a storage room on the 6th floor and discovers something unusual: Dana, the Spheria Project Director, using a hidden keypad to access a secret room.",
+        "Using Randy's abandoned thermal imager, Olivia reads the residual heat on the keys and deduces the code — 2465. That night she returns alone, enters the room, and finds a clandestine second server room filled entirely with red Qubes — hardware that should have been incinerated — connected to an external network and running unsolved equations, apparently as part of a shadow project funded by an outside benefactor.",
+        "Olivia creates a hidden administrator account (passcode: 6EQUJ5, the Wow! Signal) to preserve access, but is caught by Dana returning to the room. Dana coerces Olivia into silence with a bribe of $400,000, threatening to name her as an accomplice if she talks. Olivia plays along while inwardly resolving to tell Max in the morning.",
+        "She encodes the floor number and keypad code into her journal using first letters of sentences, and emails it to Ashley as a safeguard — but the email fails to send due to a lost network connection, unbeknownst to her. On the roof that night, still wrestling with her decision, she is approached from behind by Dana and shoved to her death."
+      ],
+      "chapters": [
+        {
+          "number": 1,
+          "title": "Meditation",
+          "perspective": "Human",
+          "synopsis": "Olivia meditates on the roof of the Academic Building, interrupted by a seagull. She recalls Randy's recent visit — his use of a thermal imager to spy on her roommate Ashley led to a fierce argument and she kicked him out. The chapter establishes Olivia's character, her relationship with Ashley, and her sanctuary on the roof."
+        },
+        {
+          "number": 2,
+          "title": "Breakup",
+          "perspective": "Human",
+          "synopsis": "Randy sends a cold breakup email and asks for his thermal imager back. Olivia is devastated. Ashley takes her out to the Butterfly lounge for scorpion bowls and karaoke to lift her spirits. Olivia keeps Randy's device."
+        },
+        {
+          "number": 3,
+          "title": "Open House",
+          "perspective": "Human",
+          "synopsis": "Max asks Olivia to make a sign for the lab's open house. She goes to the 6th floor storage room and witnesses Dana entering a hidden room via a keypad in the dark. Using Randy's thermal imager, Olivia reads the residual heat signature on the keypad and deduces the code 2465. She takes the poster boards and leaves, planning to investigate further."
+        },
+        {
+          "number": 4,
+          "title": "Keypad",
+          "perspective": "Human",
+          "synopsis": "At 11pm, Olivia returns to the 6th floor storage room alone. She enters the hidden room and finds a secret server farm running entirely on red Qubes that should have been incinerated, connected to an outside network. She finds documents suggesting an illegal shadow project with money transfers. She creates a hidden admin account (passcode: 6EQUJ5 — the Wow! Signal) and is caught by Dana returning."
+        },
+        {
+          "number": 5,
+          "title": "The Offer",
+          "perspective": "Human",
+          "synopsis": "Dana confronts Olivia in the secret room. She reveals she has been diverting red Qubes and using them to solve complex problems for an outside benefactor, also manipulating Polyans inside Spheria to change their moral alignment. She offers Olivia $400,000 to stay silent and threatens to name her as an accomplice if she refuses. Olivia negotiates up from $250K and agrees under duress. Alone afterward, she encodes the keypad code and floor number into a journal entry using an acrostic cipher and tries to email it to Ashley as insurance — but the email fails to send."
+        },
+        {
+          "number": 6,
+          "title": "Meditation",
+          "perspective": "Human",
+          "synopsis": "Olivia returns to her rooftop sanctuary, weighing the offer against her conscience. She resolves to tell Max everything in the morning. The seagull reappears. As she stands at the edge looking down at a couple on the street below, Dana appears behind her and shoves her off the roof. Olivia's last word is 'No.'"
+        }
+      ]
     },
     "book2": {
       "title": "Spheria 2: Annulus",
       "short_title": "Spheria 2",
       "subtitle": "Annulus",
-      "synopsis": "Coming SOON",
+      "synopsis": [
+        "When a radical group of environmentalists decides the era of humans should end, they release an agent of mass extinction into the population. As the race for a cure begins around the world, the Spheria team volunteers the raw computing power of their project.",
+        "Can quantum computing find a solution faster than every other traditional research technique? Meanwhile, as the Polyans go about their lives, what impact will they have in all of this, unaware of the role they play?",
+        "...Work in Progress..."
+      ],
       "chapters": []
     }
   }
