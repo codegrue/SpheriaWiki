@@ -108,7 +108,9 @@ section {
   min-width: 0;
 }
 .overview-stats {
-  background: #1a1a2e;
+  background: rgba(26, 26, 46, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-radius: 12px;
   padding: 16px;
   display: flex;
@@ -131,7 +133,9 @@ section h3 {
 }
 
 .plot-box {
-  background: #1a1a2e;
+  background: rgba(26, 26, 46, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-radius: 12px;
   padding: 24px;
   line-height: 1.8;
@@ -152,7 +156,7 @@ section h3 {
 }
 .stat-card {
   display: block;
-  background: #1a1a2e;
+  background: rgba(15, 15, 30, 0.5);
   border-radius: 10px;
   padding: 16px;
   border-top: 3px solid #7c3aed;
@@ -178,7 +182,9 @@ section h3 {
   letter-spacing: 1px;
 }
 .themes-box {
-  background: #1a1a2e;
+  background: rgba(26, 26, 46, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-radius: 12px;
   padding: 24px;
 }
@@ -196,7 +202,9 @@ section h3 {
   gap: 12px;
 }
 .card {
-  background: #1a1a2e;
+  background: rgba(26, 26, 46, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-radius: 10px;
   padding: 16px;
 }
@@ -229,7 +237,9 @@ section h3 {
   gap: 16px;
 }
 .faction-card {
-  background: #1a1a2e;
+  background: rgba(26, 26, 46, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-radius: 12px;
   padding: 20px;
 }
@@ -273,7 +283,9 @@ section h3 {
 }
 
 .object-card {
-  background: #1a1a2e;
+  background: rgba(26, 26, 46, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-radius: 10px;
   padding: 16px;
   border-top: 3px solid var(--page-color, #f59e0b);
@@ -336,7 +348,9 @@ section h3 {
   color: #c4b5fd;
 }
 .book-synopsis {
-  background: #1a1a2e;
+  background: rgba(26, 26, 46, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-radius: 10px;
   padding: 14px 16px;
   color: #c0c0d8;
@@ -347,7 +361,9 @@ section h3 {
   margin-top: 1em;
 }
 .chapter-row {
-  background: #1a1a2e;
+  background: rgba(26, 26, 46, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-radius: 10px;
   padding: 14px 16px;
   margin-bottom: 8px;
@@ -460,7 +476,9 @@ section h3 {
   gap: 12px;
 }
 .info-card {
-  background: #1a1a2e;
+  background: rgba(26, 26, 46, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-radius: 12px;
   padding: 16px;
   border-top: 3px solid var(--page-color, #334155);
@@ -500,7 +518,9 @@ section h3 {
   gap: 12px;
 }
 .source-color-card {
-  background: #1a1a2e;
+  background: rgba(26, 26, 46, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-radius: 10px;
   padding: 14px;
   border-top: 3px solid var(--page-color, #7c3aed);
