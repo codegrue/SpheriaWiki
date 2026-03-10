@@ -120,11 +120,24 @@ function renderOverview(data) {
     : `<p>${escapeHtml(data.overall_plot)}</p>`;
 
   return `
-    <div class="plot-box">${plotHtml}</div>
-    <div class="stats-grid">${statsHtml}</div>
-    <div class="themes-box">
-      <h3 style="color:#60a5fa;margin-top:0;margin-bottom:16px">Themes</h3>
-      ${themesHtml}
+    <div style="display:grid;grid-template-columns:1fr 20%;gap:24px;align-items:start">
+      <div>
+        <div class="plot-box">
+          <h3 style="color:#60a5fa;margin-top:0;margin-bottom:16px">Premise</h3>
+          ${plotHtml}
+        </div>
+        <div class="themes-box">
+          <h3 style="color:#60a5fa;margin-top:0;margin-bottom:16px">Themes</h3>
+          ${themesHtml}
+        </div>
+      </div>
+      <div style="background:#1a1a2e;border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:10px">
+        ${stats.map(s => `
+          <a class="stat-card" href="${s.href}" style="border-top-color:${s.border}">
+            <div class="stat-num" style="color:${s.color}">${s.value}</div>
+            <div class="stat-label">${s.label}</div>
+          </a>`).join("")}
+      </div>
     </div>
   `;
 }
