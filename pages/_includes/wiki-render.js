@@ -176,14 +176,14 @@ function renderCharacters(characters) {
 
   function section(label, chars, color) {
     if (!chars.length) return "";
-    return `<h4 style="color:${color};margin:12px 0 6px">${label}</h4><div class="card-grid">${chars.map((c) => characterCard(c, color)).join("")}</div>`;
+    return `<h3 class="book-section-header">${label}</h3><div class="card-grid">${chars.map((c) => characterCard(c, color)).join("")}</div>`;
   }
 
   return `
-    <div class="world-header"><span>🌍</span><h3 style="color:#2563eb">Human Characters (${characters.human.length})</h3></div>
+    <h3 class="book-section-header">🌍 Human Characters (${characters.human.length})</h3>
     ${section("Major Characters", humanMajor, "#2563eb")}
     ${section("Minor Characters", humanMinor, "#2563eb")}
-    <div class="world-header"><span>🔮</span><h3 style="color:#7c3aed">Polyan Characters (${characters.polyan.length})</h3></div>
+    <h3 class="book-section-header">🔮 Polyan Characters (${characters.polyan.length})</h3>
     ${section("Major Characters", polyanMajor, "#7c3aed")}
     ${section("Minor Characters", polyanMinor, "#7c3aed")}
   `;
@@ -193,9 +193,9 @@ function renderHumans(characters) {
   const major = characters.human.filter((c) => c.major);
   const minor = characters.human.filter((c) => !c.major);
   return `
-    <h4 style="color:#2563eb;margin:12px 0 6px">Major Characters</h4>
+    <h3 class="book-section-header">Major Characters</h3>
     <div class="card-grid">${major.map((c) => characterCard(c, "#2563eb")).join("")}</div>
-    <h4 style="color:#6b7280;margin:12px 0 6px">Minor Characters</h4>
+    <h3 class="book-section-header">Minor Characters</h3>
     <div class="card-grid">${minor.map((c) => characterCard(c, "#2563eb")).join("")}</div>
   `;
 }
@@ -204,9 +204,9 @@ function renderPolyanCharacters(characters) {
   const major = characters.polyan.filter((c) => c.major);
   const minor = characters.polyan.filter((c) => !c.major);
   return `
-    <h4 style="color:#7c3aed;margin:12px 0 6px">Major Characters</h4>
+    <h3 class="book-section-header">Major Characters</h3>
     <div class="card-grid">${major.map((c) => characterCard(c, "#7c3aed")).join("")}</div>
-    <h4 style="color:#6b7280;margin:12px 0 6px">Minor Characters</h4>
+    <h3 class="book-section-header">Minor Characters</h3>
     <div class="card-grid">${minor.map((c) => characterCard(c, "#7c3aed")).join("")}</div>
   `;
 }
@@ -395,12 +395,20 @@ function renderWorldGeography(world) {
 function renderWorldPhysics(world) {
   const physics = world.physics || {};
   const html = Object.keys(physics)
-    .map((key) => `
-      <div class="info-card">
-        <div class="info-title">${escapeHtml(titleFromKey(key))}</div>
-        <div class="info-body">${escapeHtml(physics[key])}</div>
-      </div>
-    `)
+    .map((key) => {
+      const node = typeof physics[key] === "object" ? physics[key] : { description: physics[key] };
+      const title = node.use ? `${titleFromKey(key)} - ${node.use}` : titleFromKey(key);
+      const effectPill = node.effect ? `<div class="pill-row" style="margin-top:6px"><span class="pill">${escapeHtml(node.effect)}</span></div>` : "";
+      const notes = node.notes ? `<div class="source-color-trigger">Notes: ${escapeHtml(node.notes)}</div>` : "";
+      return `
+        <div class="info-card">
+          <div class="info-title">${escapeHtml(title)}</div>
+          ${effectPill}
+          <div class="info-body" style="margin-top:8px">${escapeHtml(node.description)}</div>
+          ${notes}
+        </div>
+      `;
+    })
     .join("");
   return `<div class="info-grid">${html}</div>`;
 }
