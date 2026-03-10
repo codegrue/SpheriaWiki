@@ -134,7 +134,7 @@ function characterCard(c, border) {
     .map((u) => `<div class="card-arc">-> ${escapeHtml(u)}</div>`)
     .join("");
   return `
-    <div class="card" style="border-left:4px solid ${border}">
+    <div class="card" style="border-top:3px solid ${border}">
       <div class="card-name">${escapeHtml(c.name)}</div>
       <div class="card-meta">${escapeHtml(c.caste_or_role)} | ${escapeHtml(c.species)} | Ch.${escapeHtml(c.first_chapter)}</div>
       <div class="card-body">${escapeHtml(c.description)}</div>
@@ -188,7 +188,7 @@ function renderPolyanCharacters(characters) {
 
 function locationCard(item, border) {
   return `
-    <div class="card" style="border-left:4px solid ${border}">
+    <div class="card" style="border-top:3px solid ${border}">
       <div class="card-name">${escapeHtml(item.name)}</div>
       <div class="card-body">${escapeHtml(item.description)}</div>
     </div>
@@ -483,15 +483,17 @@ function renderMythosLumen(mythos) {
 }
 
 function renderMythosLegends(mythos) {
-  return (mythos.legends || []).map((l) =>
+  const cards = (mythos.legends || []).map((l) =>
     `<div class="object-card"><div class="object-name">${escapeHtml(l.name)}</div><div class="object-body">${escapeHtml(l.description)}</div></div>`
   ).join("");
+  return `<div class="object-grid">${cards}</div>`;
 }
 
 function renderMythosRituals(mythos) {
-  return (mythos.rituals || []).map((r) =>
+  const cards = (mythos.rituals || []).map((r) =>
     `<div class="object-card"><div class="object-name">${escapeHtml(r.name)}</div><div class="object-body">${escapeHtml(r.description)}</div></div>`
   ).join("");
+  return `<div class="object-grid">${cards}</div>`;
 }
 
 function renderMythos(mythos) {
@@ -539,7 +541,7 @@ function renderFlora(data) {
 function renderCrystals(data) {
   const cards = (data.crystals || [])
     .map((item) => `
-      <div class="source-color-card" style="border-left-color:#a78bfa">
+      <div class="source-color-card" style="border-top-color:#a78bfa">
         <div class="source-color-name">💎 ${escapeHtml(item.color)} Crystal</div>
         <div class="source-color-effect">${escapeHtml(item.properties)}</div>
         <div class="source-color-trigger">Found In: ${escapeHtml(item.found_in)}</div>

@@ -177,7 +177,7 @@ section h3 {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 12px;
 }
 .card {
@@ -210,7 +210,7 @@ section h3 {
 
 .faction-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
 .faction-card {
@@ -240,11 +240,27 @@ section h3 {
   color: #a78bfa;
 }
 
+.object-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 700px) {
+  .card-grid,
+  .faction-grid,
+  .object-grid,
+  .info-grid,
+  .source-color-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .object-card {
   background: #1a1a2e;
   border-radius: 10px;
   padding: 16px;
-  border-left: 4px solid #f59e0b;
+  border-top: 3px solid #f59e0b;
 }
 .object-name {
   font-weight: 700;
@@ -424,7 +440,7 @@ section h3 {
 
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 12px;
 }
 .info-card {
@@ -464,14 +480,14 @@ section h3 {
 
 .source-color-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 12px;
 }
 .source-color-card {
   background: #1a1a2e;
   border-radius: 10px;
   padding: 14px;
-  border-left: 4px solid #7c3aed;
+  border-top: 3px solid #7c3aed;
 }
 .source-color-name {
   font-weight: 700;
@@ -594,11 +610,5 @@ section h3 {
 @media (max-width: 600px) {
   header h1 {
     font-size: 36px;
-  }
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-  .faction-grid {
-    grid-template-columns: 1fr;
   }
 }
