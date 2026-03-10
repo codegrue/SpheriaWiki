@@ -98,6 +98,23 @@ section {
   margin: 0 auto;
   padding: 40px 24px;
 }
+.overview-layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+.overview-body {
+  flex: 1;
+  min-width: 0;
+}
+.overview-stats {
+  background: #1a1a2e;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 section h2 {
   font-family: "Pirulen", sans-serif;
   font-size: 26px;

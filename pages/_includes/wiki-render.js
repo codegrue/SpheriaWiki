@@ -120,23 +120,26 @@ function renderOverview(data) {
     : `<p>${escapeHtml(data.overall_plot)}</p>`;
 
   return `
-    <div style="display:grid;grid-template-columns:1fr 20%;gap:24px;align-items:start">
-      <div>
+    <div class="overview-layout">
+      <div class="overview-body">
+        <h3 class="book-section-header" style="margin-top:0">Premise</h3>
         <div class="plot-box">
-          <h3 style="color:#60a5fa;margin-top:0;margin-bottom:16px">Premise</h3>
           ${plotHtml}
         </div>
+        <h3 class="book-section-header">Themes</h3>
         <div class="themes-box">
-          <h3 style="color:#60a5fa;margin-top:0;margin-bottom:16px">Themes</h3>
           ${themesHtml}
         </div>
       </div>
-      <div style="background:#1a1a2e;border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:10px">
-        ${stats.map(s => `
-          <a class="stat-card" href="${s.href}" style="border-top-color:${s.border}">
-            <div class="stat-num" style="color:${s.color}">${s.value}</div>
-            <div class="stat-label">${s.label}</div>
-          </a>`).join("")}
+      <div style="width:200px;flex-shrink:0">
+        <h3 class="book-section-header" style="margin-top:0">Stats</h3>
+        <div class="overview-stats">
+          ${stats.map(s => `
+            <a class="stat-card" href="${s.href}" style="border-top-color:${s.border}">
+              <div class="stat-num" style="color:${s.color}">${s.value}</div>
+              <div class="stat-label">${s.label}</div>
+            </a>`).join("")}
+        </div>
       </div>
     </div>
   `;
