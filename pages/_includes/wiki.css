@@ -15,7 +15,8 @@ body {
     system-ui,
     -apple-system,
     sans-serif;
-  background: #0f0f1a url("../../images/Background-Dark.jpg") center center / cover fixed;
+  background: #0f0f1a url("../../images/Background-Dark.jpg") center center /
+    cover fixed;
   color: #e0e0f0;
   min-height: 100vh;
 }
@@ -51,6 +52,9 @@ body {
   background-clip: text;
   white-space: nowrap;
   padding: 7px 8px;
+}
+.nav-menu {
+  display: contents;
 }
 .nav-center {
   display: flex;
@@ -167,7 +171,9 @@ section h3 {
   border-top: 3px solid #7c3aed;
   text-align: center;
   text-decoration: none;
-  transition: background 0.2s, transform 0.15s;
+  transition:
+    background 0.2s,
+    transform 0.15s;
   cursor: pointer;
 }
 .stat-card:hover {
@@ -299,7 +305,9 @@ section h3 {
   height: 2px;
   background: currentColor;
   border-radius: 2px;
-  transition: transform 0.3s, opacity 0.3s;
+  transition:
+    transform 0.3s,
+    opacity 0.3s;
 }
 nav.nav-open .nav-hamburger span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
@@ -311,45 +319,42 @@ nav.nav-open .nav-hamburger span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1230px) {
   body {
     padding-top: 50px;
   }
   nav {
     grid-template-columns: 1fr auto;
-    grid-template-rows: auto auto auto;
     padding: 8px 16px;
-  }
-  .nav-logo {
-    grid-column: 1;
-    grid-row: 1;
   }
   .nav-hamburger {
     display: flex;
-    grid-column: 2;
-    grid-row: 1;
+  }
+  .nav-menu {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background: #0a0a14;
+    border-bottom: 1px solid #1f2937;
+    flex-direction: column;
+    z-index: 99;
+  }
+  nav.nav-open .nav-menu {
+    display: flex;
   }
   .nav-center {
-    display: none;
-    grid-column: 1 / -1;
-    grid-row: 2;
     flex-direction: column;
     gap: 2px;
     padding: 8px 0;
-    border-top: 1px solid #1f2937;
   }
   .nav-right {
-    display: none;
-    grid-column: 1 / -1;
-    grid-row: 3;
     justify-content: flex-start;
-    padding-bottom: 8px;
+    padding: 0 0 8px;
+    border-top: 1px solid #1f2937;
   }
-  nav.nav-open .nav-center,
-  nav.nav-open .nav-right {
-    display: flex;
-  }
-  nav a {
+  .nav-menu a {
     width: 100%;
     text-align: left;
     padding: 10px 14px;
@@ -423,7 +428,9 @@ nav.nav-open .nav-hamburger span:nth-child(3) {
   padding: 3px 10px;
   text-decoration: none;
   white-space: nowrap;
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
 .book-get-btn:hover {
   background: #a78bfa44;
@@ -707,7 +714,11 @@ nav.nav-open .nav-hamburger span:nth-child(3) {
 .sub-menu-btn.active {
   color: #fff;
   border-bottom-color: var(--page-color, #7c3aed);
-  background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--page-color, #7c3aed) 13%, transparent));
+  background: linear-gradient(
+    180deg,
+    transparent,
+    color-mix(in srgb, var(--page-color, #7c3aed) 13%, transparent)
+  );
 }
 
 .tab-content {
@@ -812,7 +823,11 @@ nav.nav-open .nav-hamburger span:nth-child(3) {
   .sub-menu-wrapper .sub-menu-btn.active {
     color: #fff;
     border-bottom-color: #1f2937;
-    background: linear-gradient(90deg, color-mix(in srgb, var(--page-color, #7c3aed) 20%, transparent), transparent);
+    background: linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--page-color, #7c3aed) 20%, transparent),
+      transparent
+    );
   }
   .overview-layout {
     flex-direction: column;
