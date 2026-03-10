@@ -478,7 +478,7 @@ function renderMythosGods(mythos) {
     <div class="info-card">
       <div class="info-title icon-title"><span class="icon">✨</span>${escapeHtml(g.name)} (${escapeHtml(g.color)})</div>
       <div class="info-body">${escapeHtml(g.domain)}</div>
-      <div class="source-color-trigger">Creation Role: ${escapeHtml(g.role_in_creation)}</div>
+      <div class="object-sig" style="margin-top:8px">Creation Role: ${escapeHtml(g.role_in_creation)}</div>
     </div>
   `).join("");
   return `<div class="info-grid">${gods}</div>`;
@@ -538,11 +538,9 @@ function renderFauna(data) {
       <div class="info-card">
         <div class="info-title icon-title"><span class="icon">🦴</span>${escapeHtml(item.name)}</div>
         <div class="info-body">${escapeHtml(item.description)}</div>
-        <div class="pill-row">
-          <span class="pill">Behavior: ${escapeHtml(item.behavior)}</span>
-          <span class="pill">Danger: ${escapeHtml(item.danger_level)}</span>
-          <span class="pill">Energy Role: ${escapeHtml(item.energy_role)}</span>
-        </div>
+        <div class="source-color-trigger">Behavior: ${escapeHtml(item.behavior)}</div>
+        <div class="source-color-trigger">Danger: ${escapeHtml(item.danger_level)}</div>
+        <div class="source-color-trigger">Energy Role: ${escapeHtml(item.energy_role)}</div>
       </div>
     `)
     .join("");

@@ -185,7 +185,7 @@ section h3 {
 }
 .card-name {
   font-weight: 700;
-  color: #f3f4f6;
+  color: #ffffff;
   font-size: 15px;
   margin-bottom: 4px;
 }
@@ -218,7 +218,7 @@ section h3 {
 }
 .faction-name {
   font-weight: 700;
-  color: #f3f4f6;
+  color: #ffffff;
   font-size: 16px;
   margin-bottom: 4px;
 }
@@ -235,7 +235,8 @@ section h3 {
 }
 .faction-members {
   font-size: 12px;
-  color: #a78bfa;
+  color: #9ca3af;
+  font-style: italic;
 }
 
 .object-grid {
@@ -262,7 +263,7 @@ section h3 {
 }
 .object-name {
   font-weight: 700;
-  color: #fbbf24;
+  color: #ffffff;
   font-size: 16px;
   margin-bottom: 8px;
 }
@@ -450,7 +451,7 @@ section h3 {
 .info-title {
   font-size: 14px;
   font-weight: 700;
-  color: #f3f4f6;
+  color: #ffffff;
   margin-bottom: 8px;
 }
 .info-body {
@@ -490,7 +491,7 @@ section h3 {
 .source-color-name {
   font-weight: 700;
   font-size: 13px;
-  color: #f3f4f6;
+  color: #ffffff;
   margin-bottom: 6px;
   text-transform: capitalize;
 }
