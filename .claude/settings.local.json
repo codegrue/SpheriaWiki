@@ -9,7 +9,8 @@
       "Bash(node -e \"const d = JSON.parse\\(require\\(''fs''\\).readFileSync\\(''c:/Users/jeff/OneDrive/Projects/Code/Websites/SpheriaWiki.info/Spheria_Wiki.json'',''utf8''\\)\\); const m = d.mythos; Object.keys\\(m\\).forEach\\(k => { const v = m[k]; console.log\\(k, '':'', Array.isArray\\(v\\) ? v.length : typeof v === ''object'' ? Object.keys\\(v\\).length : 1\\); }\\)\")",
       "Bash(node -e \"const d = JSON.parse\\(require\\(''fs''\\).readFileSync\\(''c:/Users/jeff/OneDrive/Projects/Code/Websites/SpheriaWiki.info/Spheria_Wiki.json'',''utf8''\\)\\); const f = d.flora_fauna; Object.keys\\(f\\).forEach\\(k => { const v = f[k]; console.log\\(k, '':'', Array.isArray\\(v\\) ? v.length : typeof v === ''object'' ? Object.keys\\(v\\).length : 1\\); }\\)\")",
       "Bash(npm install)",
-      "Bash(grep -n \"h2 style\" c:/Users/jeff/OneDrive/Projects/Code/Websites/SpheriaWiki.info/pages/*.html)"
+      "Bash(grep -n \"h2 style\" c:/Users/jeff/OneDrive/Projects/Code/Websites/SpheriaWiki.info/pages/*.html)",
+      "WebFetch(domain:spheria.info)"
     ]
   }
 }
