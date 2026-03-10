@@ -133,11 +133,23 @@ function characterCard(c, border) {
   const updates = (c.updates || [])
     .map((u) => `<div class="card-arc">-> ${escapeHtml(u)}</div>`)
     .join("");
+  const roleLabel = c.caste_or_role || c.role;
+  const rolePill = roleLabel ? `<span class="pill">${escapeHtml(roleLabel)}</span>` : "";
+  const fields = [
+    c.caste != null ? `<span class="pill">${escapeHtml(c.caste)}</span>` : "",
+    c.Legs != null ? `<span class="pill">${escapeHtml(String(c.Legs))} Legs</span>` : c.age != null ? `<span class="pill">${escapeHtml(String(c.age))} years old</span>` : "",
+    c.gender != null ? `<span class="pill">${escapeHtml(c.gender)}</span>` : "",
+  ].filter(Boolean).join("");
+  const fieldRow = fields ? `<div class="pill-row">${fields}</div>` : "";
   return `
     <div class="card" style="border-top:3px solid ${border}">
       <div class="card-name">${escapeHtml(c.name)}</div>
-      <div class="card-meta">${escapeHtml(c.caste_or_role || c.role)} | Ch.${escapeHtml(c.first_chapter)}</div>
-      <div class="card-body">${escapeHtml(c.description)}</div>
+      <div class="pill-row" style="margin-top:6px;justify-content:space-between;align-items:center">
+        <div>${rolePill}</div>
+        <div class="card-meta" style="margin:0">Ch.${escapeHtml(c.first_chapter)}</div>
+      </div>
+      <div class="card-body" style="margin-top:8px">${escapeHtml(c.description)}</div>
+      ${fieldRow}
       ${updates}
     </div>
   `;
