@@ -7,7 +7,8 @@
       "Bash(node -e \"JSON.parse\\(require\\(''fs''\\).readFileSync\\(''c:/Users/jeff/OneDrive/Projects/Code/Websites/SpheriaWiki.info/Spheria_Wiki.json'',''utf8''\\)\\); console.log\\(''Valid JSON''\\)\")",
       "Bash(node -e \"const d = JSON.parse\\(require\\(''fs''\\).readFileSync\\(''c:/Users/jeff/OneDrive/Projects/Code/Websites/SpheriaWiki.info/Spheria_Wiki.json'',''utf8''\\)\\); const w = d.world; console.log\\(''geography:'', w.geography.length, ''physics:'', Object.keys\\(w.physics\\).length, ''source_colors:'', w.source_colors.length\\)\")",
       "Bash(node -e \"const d = JSON.parse\\(require\\(''fs''\\).readFileSync\\(''c:/Users/jeff/OneDrive/Projects/Code/Websites/SpheriaWiki.info/Spheria_Wiki.json'',''utf8''\\)\\); const m = d.mythos; Object.keys\\(m\\).forEach\\(k => { const v = m[k]; console.log\\(k, '':'', Array.isArray\\(v\\) ? v.length : typeof v === ''object'' ? Object.keys\\(v\\).length : 1\\); }\\)\")",
-      "Bash(node -e \"const d = JSON.parse\\(require\\(''fs''\\).readFileSync\\(''c:/Users/jeff/OneDrive/Projects/Code/Websites/SpheriaWiki.info/Spheria_Wiki.json'',''utf8''\\)\\); const f = d.flora_fauna; Object.keys\\(f\\).forEach\\(k => { const v = f[k]; console.log\\(k, '':'', Array.isArray\\(v\\) ? v.length : typeof v === ''object'' ? Object.keys\\(v\\).length : 1\\); }\\)\")"
+      "Bash(node -e \"const d = JSON.parse\\(require\\(''fs''\\).readFileSync\\(''c:/Users/jeff/OneDrive/Projects/Code/Websites/SpheriaWiki.info/Spheria_Wiki.json'',''utf8''\\)\\); const f = d.flora_fauna; Object.keys\\(f\\).forEach\\(k => { const v = f[k]; console.log\\(k, '':'', Array.isArray\\(v\\) ? v.length : typeof v === ''object'' ? Object.keys\\(v\\).length : 1\\); }\\)\")",
+      "Bash(npm install)"
     ]
   }
 }
