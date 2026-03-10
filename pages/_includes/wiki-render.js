@@ -155,7 +155,7 @@ function characterCard(c, border) {
   ].filter(Boolean).join("");
   const fieldRow = fields ? `<div class="pill-row">${fields}</div>` : "";
   return `
-    <div class="card" style="border-top:3px solid ${border}">
+    <div class="card" style="border-top:3px solid var(--page-color, ${border})">
       <div class="card-name">${escapeHtml(c.name)}</div>
       <div class="pill-row" style="margin-top:6px;justify-content:space-between;align-items:center">
         <div>${rolePill}</div>
@@ -213,7 +213,7 @@ function renderPolyanCharacters(characters) {
 
 function locationCard(item, border) {
   return `
-    <div class="card" style="border-top:3px solid ${border}">
+    <div class="card" style="border-top:3px solid var(--page-color, ${border})">
       <div class="card-name">${escapeHtml(item.name)}</div>
       <div class="card-body">${escapeHtml(item.description)}</div>
     </div>
@@ -239,7 +239,7 @@ function renderSpheriaSettings(settings) {
 
 function factionCard(f, color) {
   return `
-    <div class="faction-card" style="border-top:3px solid ${color}">
+    <div class="faction-card" style="border-top:3px solid var(--page-color, ${color})">
       <div class="faction-name">${escapeHtml(f.name)}</div>
       <div class="faction-world">${escapeHtml(f.world)}</div>
       <div class="faction-body">${escapeHtml(f.description)}</div>
@@ -384,7 +384,7 @@ function renderWorldGeography(world) {
       `<a href="#" class="tab-link" onclick="event.preventDefault();document.querySelector('.sub-menu-btn[data-tab=source-colors]').click()">see Source Colors for these effects.</a>`
     );
     return `
-      <div class="info-card" style="border-top-color:#60a5fa">
+      <div class="info-card">
         <div class="info-title">${escapeHtml(item.name)}</div>
         <div class="info-body">${body}</div>
       </div>
@@ -396,7 +396,7 @@ function renderWorldPhysics(world) {
   const physics = world.physics || {};
   const html = Object.keys(physics)
     .map((key) => `
-      <div class="info-card" style="border-top-color:#60a5fa">
+      <div class="info-card">
         <div class="info-title">${escapeHtml(titleFromKey(key))}</div>
         <div class="info-body">${escapeHtml(physics[key])}</div>
       </div>
@@ -427,9 +427,9 @@ function renderPolyanOverview(polyans) {
   const ov = polyans.overview || {};
   return `
     <div class="info-grid">
-      <div class="info-card" style="border-top-color:#a78bfa"><div class="info-title icon-title"><span class="icon">🧬</span>Biology</div><div class="info-body">${escapeHtml(ov.biology)}</div></div>
-      <div class="info-card" style="border-top-color:#a78bfa"><div class="info-title icon-title"><span class="icon">⚥</span>Gender</div><div class="info-body">${escapeHtml(ov.gender)}</div></div>
-      <div class="info-card" style="border-top-color:#a78bfa"><div class="info-title icon-title"><span class="icon">🏷</span>Naming Convention</div><div class="info-body">${escapeHtml(ov.naming_convention)}</div></div>
+      <div class="info-card"><div class="info-title icon-title"><span class="icon">🧬</span>Biology</div><div class="info-body">${escapeHtml(ov.biology)}</div></div>
+      <div class="info-card"><div class="info-title icon-title"><span class="icon">⚥</span>Gender</div><div class="info-body">${escapeHtml(ov.gender)}</div></div>
+      <div class="info-card"><div class="info-title icon-title"><span class="icon">🏷</span>Naming Convention</div><div class="info-body">${escapeHtml(ov.naming_convention)}</div></div>
     </div>
   `;
 }
@@ -437,7 +437,7 @@ function renderPolyanOverview(polyans) {
 function renderPolyanCasteSystem(polyans) {
   const cards = (polyans.caste_system || [])
     .map((item) => `
-      <div class="info-card" style="border-top-color:#7c3aed">
+      <div class="info-card">
         <div class="info-title icon-title"><span class="icon">🔷</span>${escapeHtml(item.caste_name)} (${escapeHtml(String(item.legs))} legs) ${renderLegDots(item.legs)}</div>
         <div class="info-body">${escapeHtml(item.role)}</div>
         <div class="pill-row">
@@ -454,10 +454,10 @@ function renderPolyanEnergy(polyans) {
   const energy = polyans.energy || {};
   return `
     <div class="info-grid">
-      <div class="info-card" style="border-top-color:#34d399"><div class="info-title icon-title"><span class="icon">🍽</span>How They Feed</div><div class="info-body">${escapeHtml(energy.how_they_feed)}</div></div>
-      <div class="info-card" style="border-top-color:#34d399"><div class="info-title icon-title"><span class="icon">💠</span>Crystal Colors</div><div class="info-body">${escapeHtml(energy.crystal_colors)}</div></div>
-      <div class="info-card" style="border-top-color:#34d399"><div class="info-title icon-title"><span class="icon">📊</span>Feeding Hierarchy</div><div class="info-body">${escapeHtml(energy.hierarchy_of_feeding)}</div></div>
-      <div class="info-card" style="border-top-color:#34d399"><div class="info-title icon-title"><span class="icon">🕯</span>Death State</div><div class="info-body">${escapeHtml(energy.death_state)}</div></div>
+      <div class="info-card"><div class="info-title icon-title"><span class="icon">🍽</span>How They Feed</div><div class="info-body">${escapeHtml(energy.how_they_feed)}</div></div>
+      <div class="info-card"><div class="info-title icon-title"><span class="icon">💠</span>Crystal Colors</div><div class="info-body">${escapeHtml(energy.crystal_colors)}</div></div>
+      <div class="info-card"><div class="info-title icon-title"><span class="icon">📊</span>Feeding Hierarchy</div><div class="info-body">${escapeHtml(energy.hierarchy_of_feeding)}</div></div>
+      <div class="info-card"><div class="info-title icon-title"><span class="icon">🕯</span>Death State</div><div class="info-body">${escapeHtml(energy.death_state)}</div></div>
     </div>
   `;
 }
@@ -466,16 +466,16 @@ function renderPolyanSensors(polyans) {
   const sensors = polyans.sensors || {};
   return `
     <div class="info-grid">
-      <div class="info-card" style="border-top-color:#60a5fa"><div class="info-title icon-title"><span class="icon">📡</span>Description</div><div class="info-body">${escapeHtml(sensors.description)}</div></div>
-      <div class="info-card" style="border-top-color:#60a5fa"><div class="info-title icon-title"><span class="icon">🧭</span>Types</div><div class="info-body">${escapeHtml(sensors.types)}</div></div>
-      <div class="info-card" style="border-top-color:#60a5fa"><div class="info-title icon-title"><span class="icon">🔱</span>Artifact Sensor</div><div class="info-body">${escapeHtml(sensors.artifact_sensor)}</div></div>
+      <div class="info-card"><div class="info-title icon-title"><span class="icon">📡</span>Description</div><div class="info-body">${escapeHtml(sensors.description)}</div></div>
+      <div class="info-card"><div class="info-title icon-title"><span class="icon">🧭</span>Types</div><div class="info-body">${escapeHtml(sensors.types)}</div></div>
+      <div class="info-card"><div class="info-title icon-title"><span class="icon">🔱</span>Artifact Sensor</div><div class="info-body">${escapeHtml(sensors.artifact_sensor)}</div></div>
     </div>
   `;
 }
 
 function renderMythosGods(mythos) {
   const gods = (mythos.gods || []).map((g) => `
-    <div class="info-card" style="border-top-color:#f59e0b">
+    <div class="info-card">
       <div class="info-title icon-title"><span class="icon">✨</span>${escapeHtml(g.name)} (${escapeHtml(g.color)})</div>
       <div class="info-body">${escapeHtml(g.domain)}</div>
       <div class="source-color-trigger">Creation Role: ${escapeHtml(g.role_in_creation)}</div>
@@ -490,7 +490,7 @@ function renderMythosAfterlife(mythos) {
     const title = item.name || (item.how_to_reach ? "How To Reach" : item.warning ? "Warning" : "");
     const body = item.description || item.how_to_reach || item.warning || "";
     return `
-      <div class="info-card" style="border-top-color:#34d399">
+      <div class="info-card">
         <div class="info-title">${escapeHtml(title)}</div>
         <div class="info-body">${escapeHtml(body)}</div>
       </div>
@@ -502,7 +502,7 @@ function renderMythosAfterlife(mythos) {
 function renderMythosLumen(mythos) {
   const lumen = mythos.lumen_tradition || {};
   const html = Object.keys(lumen).map((key) =>
-    `<div class="info-card" style="border-top-color:#60a5fa"><div class="info-title icon-title"><span class="icon">📜</span>${escapeHtml(titleFromKey(key))}</div><div class="info-body">${escapeHtml(lumen[key])}</div></div>`
+    `<div class="info-card"><div class="info-title icon-title"><span class="icon">📜</span>${escapeHtml(titleFromKey(key))}</div><div class="info-body">${escapeHtml(lumen[key])}</div></div>`
   ).join("");
   return `<div class="info-grid">${html}</div>`;
 }
@@ -535,7 +535,7 @@ function renderMythos(mythos) {
 function renderFauna(data) {
   const cards = (data.fauna || [])
     .map((item) => `
-      <div class="info-card" style="border-top-color:#ef4444">
+      <div class="info-card">
         <div class="info-title icon-title"><span class="icon">🦴</span>${escapeHtml(item.name)}</div>
         <div class="info-body">${escapeHtml(item.description)}</div>
         <div class="pill-row">
@@ -552,7 +552,7 @@ function renderFauna(data) {
 function renderFlora(data) {
   const cards = (data.flora || [])
     .map((item) => `
-      <div class="info-card" style="border-top-color:#22c55e">
+      <div class="info-card">
         <div class="info-title icon-title"><span class="icon">🌿</span>${escapeHtml(item.name)}</div>
         <div class="info-body">${escapeHtml(item.description)}</div>
         <div class="source-color-trigger">Properties: ${escapeHtml(item.properties)}</div>
@@ -566,7 +566,7 @@ function renderFlora(data) {
 function renderCrystals(data) {
   const cards = (data.crystals || [])
     .map((item) => `
-      <div class="source-color-card" style="border-top-color:#a78bfa">
+      <div class="source-color-card">
         <div class="source-color-name">💎 ${escapeHtml(item.color)} Crystal</div>
         <div class="source-color-effect">${escapeHtml(item.properties)}</div>
         <div class="source-color-trigger">Found In: ${escapeHtml(item.found_in)}</div>

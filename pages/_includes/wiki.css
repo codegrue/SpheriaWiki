@@ -103,8 +103,6 @@ section h2 {
   font-size: 26px;
   font-weight: normal;
   margin-bottom: 24px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid #1f2937;
 }
 section h3 {
   font-size: 18px;
@@ -260,7 +258,7 @@ section h3 {
   background: #1a1a2e;
   border-radius: 10px;
   padding: 16px;
-  border-top: 3px solid #f59e0b;
+  border-top: 3px solid var(--page-color, #f59e0b);
 }
 .object-name {
   font-weight: 700;
@@ -447,7 +445,7 @@ section h3 {
   background: #1a1a2e;
   border-radius: 12px;
   padding: 16px;
-  border-top: 3px solid #334155;
+  border-top: 3px solid var(--page-color, #334155);
 }
 .info-title {
   font-size: 14px;
@@ -487,7 +485,7 @@ section h3 {
   background: #1a1a2e;
   border-radius: 10px;
   padding: 14px;
-  border-top: 3px solid #7c3aed;
+  border-top: 3px solid var(--page-color, #7c3aed);
 }
 .source-color-name {
   font-weight: 700;
@@ -584,8 +582,8 @@ section h3 {
 }
 .sub-menu-btn.active {
   color: #fff;
-  border-bottom-color: #7c3aed;
-  background: linear-gradient(180deg, transparent, #7c3aed22);
+  border-bottom-color: var(--page-color, #7c3aed);
+  background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--page-color, #7c3aed) 13%, transparent));
 }
 
 .tab-content {
