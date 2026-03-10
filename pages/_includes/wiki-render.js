@@ -575,7 +575,7 @@ async function loadNav(containerId = "nav-container") {
   if (!container) return;
 
   try {
-    const response = await fetch("/pages/_includes/nav.html", {
+    const response = await fetch("./_includes/nav.html", {
       cache: "no-store",
     });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -589,7 +589,7 @@ async function loadNav(containerId = "nav-container") {
 
 async function initPage(pageKey, containerId) {
   try {
-    const response = await fetch("/data/Spheria_Wiki.json", { cache: "no-store" });
+    const response = await fetch("../data/Spheria_Wiki.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
 
@@ -636,7 +636,7 @@ async function initPage(pageKey, containerId) {
 
 async function initCharacterTabs() {
   try {
-    const response = await fetch("/data/Spheria_Wiki.json", { cache: "no-store" });
+    const response = await fetch("../data/Spheria_Wiki.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
 
@@ -685,7 +685,7 @@ async function initChapterTabs() {
   const subMenu = document.getElementById("books-sub-menu");
   const tabContentsEl = document.getElementById("books-tab-contents");
   try {
-    const response = await fetch("/data/Spheria_Wiki.json", { cache: "no-store" });
+    const response = await fetch("../data/Spheria_Wiki.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
 
@@ -732,7 +732,7 @@ async function initChapterTabs() {
 
 async function initSettingsTabs() {
   try {
-    const response = await fetch("/data/Spheria_Wiki.json", { cache: "no-store" });
+    const response = await fetch("../data/Spheria_Wiki.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
 
@@ -767,7 +767,7 @@ async function initSettingsTabs() {
 
 async function initFactionTabs() {
   try {
-    const response = await fetch("/data/Spheria_Wiki.json", { cache: "no-store" });
+    const response = await fetch("../data/Spheria_Wiki.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
 
@@ -802,7 +802,7 @@ async function initFactionTabs() {
 
 async function initObjectTabs() {
   try {
-    const response = await fetch("/data/Spheria_Wiki.json", { cache: "no-store" });
+    const response = await fetch("../data/Spheria_Wiki.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
 
@@ -837,7 +837,7 @@ async function initObjectTabs() {
 
 async function initWorldTabs() {
   try {
-    const response = await fetch("/data/Spheria_Wiki.json", { cache: "no-store" });
+    const response = await fetch("../data/Spheria_Wiki.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
 
@@ -874,7 +874,7 @@ async function initWorldTabs() {
 
 async function initMythosTabs() {
   try {
-    const response = await fetch("/data/Spheria_Wiki.json", { cache: "no-store" });
+    const response = await fetch("../data/Spheria_Wiki.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
 
@@ -915,7 +915,7 @@ async function initMythosTabs() {
 
 async function initFloraFaunaTabs() {
   try {
-    const response = await fetch("/data/Spheria_Wiki.json", { cache: "no-store" });
+    const response = await fetch("../data/Spheria_Wiki.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
 
@@ -954,7 +954,7 @@ async function initFloraFaunaTabs() {
 
 async function initPolyanTabs() {
   try {
-    const response = await fetch("/data/Spheria_Wiki.json", { cache: "no-store" });
+    const response = await fetch("../data/Spheria_Wiki.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
 
