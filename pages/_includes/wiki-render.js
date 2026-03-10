@@ -768,6 +768,8 @@ async function initChapterTabs() {
         document.getElementById(`${tabName}-content`).classList.add("active");
       });
     });
+
+    initMobileSubMenus();
   } catch (err) {
     if (subMenu) {
       subMenu.innerHTML = "";
@@ -1042,6 +1044,52 @@ async function initPolyanTabs() {
     console.error(err);
   }
 }
+
+function initMobileSubMenus() {
+  document.querySelectorAll(".sub-menu").forEach((menu) => {
+    // Don't double-wrap
+    if (menu.parentElement.classList.contains("sub-menu-wrapper")) return;
+    // Skip menus with no buttons yet (dynamically populated)
+    if (!menu.querySelector(".sub-menu-btn")) return;
+
+    const wrapper = document.createElement("div");
+    wrapper.className = "sub-menu-wrapper";
+    menu.parentNode.insertBefore(wrapper, menu);
+    wrapper.appendChild(menu);
+
+    const activeBtn = menu.querySelector(".sub-menu-btn.active");
+    const toggle = document.createElement("button");
+    toggle.className = "sub-menu-accordion-toggle";
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.innerHTML = `<span class="sub-menu-active-label">${activeBtn ? activeBtn.textContent.trim() : "Menu"}</span><span class="sub-menu-chevron">▾</span>`;
+    wrapper.insertBefore(toggle, menu);
+
+    toggle.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isOpen = wrapper.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    menu.addEventListener("click", (e) => {
+      const btn = e.target.closest(".sub-menu-btn");
+      if (!btn) return;
+      const label = wrapper.querySelector(".sub-menu-active-label");
+      if (label) label.textContent = btn.textContent.trim();
+      wrapper.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  document.addEventListener("click", () => {
+    document.querySelectorAll(".sub-menu-wrapper.open").forEach((w) => {
+      w.classList.remove("open");
+      const t = w.querySelector(".sub-menu-accordion-toggle");
+      if (t) t.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", initMobileSubMenus);
 
 window.SpheriaWiki = {
   loadNav,
