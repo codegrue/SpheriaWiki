@@ -618,6 +618,21 @@ async function loadNav(containerId = "nav-container") {
 
     container.innerHTML = await response.text();
     setActiveNav();
+
+    const hamburger = container.querySelector(".nav-hamburger");
+    const navEl = container.querySelector("nav");
+    if (hamburger && navEl) {
+      hamburger.addEventListener("click", () => {
+        const isOpen = navEl.classList.toggle("nav-open");
+        hamburger.setAttribute("aria-expanded", String(isOpen));
+      });
+      navEl.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navEl.classList.remove("nav-open");
+          hamburger.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
   } catch (err) {
     console.error("Could not load nav include:", err);
   }

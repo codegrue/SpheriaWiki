@@ -267,12 +267,86 @@ section h3 {
   gap: 12px;
 }
 
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: #9ca3af;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+.nav-hamburger:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+.nav-hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+nav.nav-open .nav-hamburger span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+nav.nav-open .nav-hamburger span:nth-child(2) {
+  opacity: 0;
+}
+nav.nav-open .nav-hamburger span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  nav {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto auto;
+    padding: 8px 16px;
+  }
+  .nav-logo {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .nav-hamburger {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .nav-center {
+    display: none;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 0;
+    border-top: 1px solid #1f2937;
+  }
+  .nav-right {
+    display: none;
+    grid-column: 1 / -1;
+    grid-row: 3;
+    justify-content: flex-start;
+    padding-bottom: 8px;
+  }
+  nav.nav-open .nav-center,
+  nav.nav-open .nav-right {
+    display: flex;
+  }
+  nav a {
+    width: 100%;
+    text-align: left;
+    padding: 10px 14px;
+  }
+}
+
 @media (max-width: 700px) {
   .card-grid,
   .faction-grid,
-  .object-grid,
-  .info-grid,
-  .source-color-grid {
+  .object-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -638,8 +712,33 @@ section h3 {
   color: #fca5a5;
 }
 
+@media (max-width: 700px) {
+  .info-grid,
+  .source-color-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 600px) {
   header h1 {
-    font-size: 36px;
+    font-size: 32px;
+    letter-spacing: 3px;
+  }
+  header {
+    padding: 32px 16px 24px;
+  }
+  section {
+    padding: 24px 16px;
+  }
+  .sub-menu {
+    overflow-x: auto;
+    gap: 4px;
+  }
+  .sub-menu-btn {
+    white-space: nowrap;
+    padding: 10px 14px;
+  }
+  .overview-layout {
+    flex-direction: column;
   }
 }
