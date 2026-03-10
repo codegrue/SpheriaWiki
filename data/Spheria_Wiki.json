@@ -265,10 +265,7 @@
         "first_chapter": 2,
         "world": "Earth",
         "major": true,
-        "updates": [
-          "Relationship with Min deepening through dates and gaming. Shares philosophical views on religion and universe. Nervous around Olivia the new intern. Working late preparing for Graham's important visit.",
-          "Discovers Min in the secret red server room he claims never to have seen before. Confused about the room's purpose and who created it. Traps both Min and Dana in incinerator when hearing sirens, believing one of them is guilty. Trapped himself but escapes. Arrives at board meeting to expose Dana's betrayal via recorded confession video."
-        ]
+        "updates": []
       },
       {
         "name": "Min",
@@ -278,10 +275,7 @@
         "first_chapter": 6,
         "world": "Earth",
         "major": true,
-        "updates": [
-          "Relationship with Max developing through dinner dates and visiting his apartment. Debates nature of beauty and mathematics with Frankie. Working alone late when computer crashes before critical Graham meeting.",
-          "Discovers Dana's secret DARPA weapons project and red server room. Realizes Olivia was murdered for uncovering the same truth. Nearly killed by Max (who is confused), then trapped in incinerator by him. Escapes through chimney with help from hospital volunteer Walter. Becomes key witness against Dana."
-        ]
+        "updates": []
       },
       {
         "name": "David",
@@ -381,9 +375,7 @@
         "first_chapter": 19,
         "world": "Earth",
         "major": false,
-        "updates": [
-          "Arrives via luxury airship 'Buruwa Gunya' for important project update. Expresses concern about Max's absence during Dana's presentation. Compares visionary leadership to Steve Jobs. Witnesses Polyan resourcefulness in recordings, realizing it mirrors human ingenuity."
-        ]
+        "updates": []
       },
       {
         "name": "Dana Carter",
@@ -393,10 +385,7 @@
         "first_chapter": 18,
         "world": "Earth",
         "major": true,
-        "updates": [
-          "Reviews weekly project logs and notices unusual Polyan behavior. Orchestrated unauthorized military weapons research using Tor network and Gridway computing.",
-          "Traps both Min and Max in the hospital incinerator to eliminate witnesses before her board presentation. Arrives disheveled at meeting. When her pre-recorded confession video plays, she draws a gun before Captain Brennan can arrest her."
-        ]
+        "updates": []
       },
       {
         "name": "Frankie",
@@ -446,10 +435,7 @@
         "first_chapter": 1,
         "world": "Earth",
         "major": false,
-        "updates": [
-          "Breaks up with Olivia via email; asks for thermal imager back",
-          "His thermal imager, kept by Olivia, becomes the key to discovering Dana's secret"
-        ]
+        "updates": []
       },
       {
         "name": "Lee",
@@ -466,42 +452,49 @@
       {
         "name": "Le·ma",
         "species": "Polyan",
-        "caste_or_role": "Lumen Seeker apprentice (female)",
+        "gender": "female",
+        "Legs": 4,
+        "caste": "Worker",
+        "role": "Lumen Seeker apprentice",
         "description": "A young Polyan with swirling patterns on her body (female marking). Selected to become apprentice to Sa·ma, the Lumen Master. Demonstrates quick thinking and problem-solving ability.",
         "first_chapter": 3,
-        "world": "Spherian",
+        "world": "Spheria",
         "major": true,
-        "updates": [
-          "Volunteers to be fired from Sa·ma's cannon as living projectile. Successfully crashes into Fa·ro mid-battle and steals his artifact. Uses artifact to control Zalisk herd, turning them against Soldiers while protecting Workers. Becomes hero of Worker liberation by neutralizing Fa·ro's greatest advantage."
-        ]
+        "updates": []
       },
       {
         "name": "Sa·ma",
         "species": "Polyan",
-        "caste_or_role": "Lumen Master",
+        "gender": "male",
+        "Legs": 4,
+        "caste": "Worker",
+        "role": "Lumen Master",
         "description": "The Colony's Lumen Master with straight textured lines (male marking). Guides Le·ma through dangerous trials. Possesses an artifact sensor with three triangles that gives him extraordinary abilities including controlling Zalisks.",
         "first_chapter": 3,
-        "world": "Spherian",
+        "world": "Spheria",
         "major": true,
-        "updates": [
-          "Discovered the golden cave with portal to Qubessence and encountered a cave god. Now imprisoned in Council building for first time in Polyan history after Fa·ro's expedition to the cave went wrong. Warns that nothing is unstoppable despite Colony's apparent strength.",
-          "Revealed as brilliant revolutionary engineer who secretly organized all Workers for mass exodus. Built revolutionary beam cannon capable of destroying structures and launching Polyans. Executed plan to topple tower across Rift, creating first bridge to forbidden lands. Led successful Worker rebellion against Fa·ro's dictatorship."
-        ]
+        "updates": []
       },
       {
         "name": "Old Lumen Master",
         "species": "Polyan",
-        "caste_or_role": "Previous Lumen Master",
+        "gender": "male",
+        "Legs": 4,
+        "caste": "Worker",
+        "role": "Previous Lumen Master",
         "description": "Feeble elder who lived in the Lumen Grotto. Selected and trained Sa·ma when he was young. Explained the testing process and purpose of Lumen Seekers.",
         "first_chapter": 10,
-        "world": "Spherian",
+        "world": "Spheria",
         "major": false,
         "updates": []
       },
       {
         "name": "Ti·ni",
-        "species": "Polyan (Drone)",
-        "caste_or_role": "Three-legged Drone",
+        "species": "Polyan",
+        "gender": "female",
+        "Legs": 3,
+        "caste": "Drone",
+        "role": "Encounters an untimely death",
         "description": "Young Drone who shows less fear of higher castes than others. Appears curious and respectful toward Sa·ma, asking questions during his storytelling.",
         "first_chapter": 28,
         "world": "Spheria",
@@ -510,8 +503,11 @@
       },
       {
         "name": "Po·ni",
-        "species": "Polyan (Drone)",
-        "caste_or_role": "Three-legged Drone",
+        "species": "Polyan",
+        "gender": "female",
+        "Legs": 3,
+        "caste": "Drone",
+        "role": "First Polyan to proy",
         "description": "Another young Drone who forgets her manners in her curiosity about Sa·ma's cave discovery. Stands admiringly next to Ti·ni.",
         "first_chapter": 28,
         "world": "Spheria",
@@ -521,57 +517,65 @@
       {
         "name": "Fa·ro",
         "species": "Polyan",
-        "caste_or_role": "Seven-legged god/dictator",
+        "gender": "male",
+        "Legs": 7,
+        "caste": "God",
+        "role": "Dictator",
         "description": "The first artificially engineered seven-legged Polyan god, created by the Council of Leaders. Ambitious and power-hungry, he stages a coup by eliminating the Council to become sole ruler of the Colony. Commands the Soldiers and enslaves the Workers to build a massive tower reaching toward the Source. Possesses an artifact device that lets him scan for living creatures and control Zalisk herds.",
         "first_chapter": 26,
-        "world": "Spherian",
+        "world": "Spheria",
         "major": true,
-        "updates": [
-          "Surveys Colony from central dais, resenting that Leaders don't treat him as superior. Schemes to have Sa·ma build a statue of him.",
-          "Forces Sa·ma to lead him, Ga·zo, and Za·zo to the golden cave to reach the portal to Qubessence, believing it his destiny to join other gods.",
-          "Eliminates the Council and declares himself sole dictator. Enslaves Workers and commands Soldiers to build an enormous tower. Is ultimately pinned beneath a Zalisk during the Workers' rebellion after Le·ma steals his artifact."
-        ]
+        "updates": []
       },
       {
         "name": "Ga·zo",
         "species": "Polyan",
-        "caste_or_role": "Fa·ro's chief enforcer/Soldier",
-        "description": "Five-legged Soldier Polyan and Fa·ro's primary loyalist and enforcer. Convinced the Council to create a second god as backup for Fa·ro. Visits Sa·ma in prison to confirm he's alive. Leads the Soldier army in pursuit of the Workers.",
+        "gender": "male",
+        "Legs": 5,
+        "caste": "Soldier",
+        "role": "Fa·ro's chief enforcer/Soldier",
+        "description": "Fa·ro's primary loyalist and enforcer. Convinced the Council to create a second god as backup for Fa·ro. Visits Sa·ma in prison to confirm he's alive. Leads the Soldier army in pursuit of the Workers.",
         "first_chapter": 30,
-        "world": "Spherian",
-        "major": false,
-        "updates": [
-          "Persuades the Council Leaders that creating a second seven-legged god would be wise insurance for the Colony.",
-          "Reports to Fa·ro that all Workers have vanished overnight. Leads Soldiers in pursuit. Attempts to rescue Fa·ro from the Zalisk during the climactic battle."
-        ]
+        "world": "Spheria",
+        "major": true,
+        "updates": []
       },
       {
         "name": "Za·zo",
         "species": "Polyan",
-        "caste_or_role": "Fa·ro's supporter/Soldier",
-        "description": "Five-legged Soldier Polyan who supports Fa·ro's leadership and accompanies Fa·ro and Ga·zo on the expedition to the golden cave. Part of Fa·ro's inner circle along with Ga·zo.",
+        "gender": "male",
+        "Legs": 5,
+        "caste": "Soldier",
+        "role": "Fa·ro's supporter/Soldier",
+        "description": "Soldier who supports Fa·ro's leadership and accompanies Fa·ro and Ga·zo on the expedition to the golden cave. Part of Fa·ro's inner circle along with Ga·zo.",
         "first_chapter": 30,
-        "world": "Spherian",
+        "world": "Spheria",
         "major": false,
         "updates": []
       },
       {
         "name": "Hi·ma",
         "species": "Polyan",
-        "caste_or_role": "Worker rebel leader",
-        "description": "Four-legged Worker Polyan who is one of Sa·ma's key lieutenants in the rebellion. Follows Sa·ma's secret instructions to gather twelve lead Workers at a hidden meeting place. Witnesses the tower collapse into the bridge across the Rift from inside the fallen structure.",
+        "gender": "female",
+        "Legs": 4,
+        "caste": "Worker",
+        "role": "Rebel leader",
+        "description": "One of Sa·ma's key lieutenants in the rebellion. Follows Sa·ma's secret instructions to gather twelve lead Workers at a hidden meeting place. Witnesses the tower collapse into the bridge across the Rift from inside the fallen structure.",
         "first_chapter": 38,
-        "world": "Spherian",
+        "world": "Spheria",
         "major": false,
         "updates": []
       },
       {
         "name": "Pu·ma",
         "species": "Polyan",
-        "caste_or_role": "Worker rebel",
-        "description": "Four-legged Worker Polyan who accompanies Hi·ma following Sa·ma's secret instructions to the hidden meeting place for the Worker rebellion.",
+        "gender": "male",
+        "Legs": 4,
+        "caste": "Worker",
+        "role": "Worker rebel",
+        "description": "Accompanies Hi·ma following Sa·ma's secret instructions to the hidden meeting place for the Worker rebellion.",
         "first_chapter": 38,
-        "world": "Spherian",
+        "world": "Spheria",
         "major": false,
         "updates": []
       }
@@ -900,25 +904,41 @@
       "name": "Fa·ro's Faction",
       "world": "Spheria",
       "description": "Growing authoritarian movement centered on Fa·ro as a decisive god-leader who breaks Council gridlock. Represents shift from democratic consensus to autocratic rule, with Ga·zo as primary enforcer.",
-      "members": ["Fa·ro", "Ga·zo", "Za·zo"]
+      "members": [
+        "Fa·ro",
+        "Ga·zo",
+        "Za·zo"
+      ]
     },
     {
       "name": "Rebellious Workers",
       "world": "Spheria",
       "description": "All Workers in the Colony who secretly organized under Sa·ma's leadership to flee across the Rift using the fallen tower as a bridge, escaping Fa·ro's tyranny",
-      "members": ["Sa·ma", "Hi·ma", "Pu·ma", "Le·ma", "twelve lead Workers"]
+      "members": [
+        "Sa·ma",
+        "Hi·ma",
+        "Pu·ma",
+        "Le·ma",
+        "twelve lead Workers"
+      ]
     },
     {
       "name": "DARPA partnership",
       "world": "Earth",
       "description": "Secret military collaboration arranged by Dana with Defense Advanced Research Projects Agency to weaponize the Spheria technology in exchange for funding and personal land in Costa Rica",
-      "members": ["Dana Carter", "unnamed DARPA officials"]
+      "members": [
+        "Dana Carter",
+        "unnamed DARPA officials"
+      ]
     },
     {
       "name": "Dana's Shadow Project",
       "world": "Earth",
       "description": "A clandestine operation run by Dana Carter using diverted red Qubes on the 6th floor. Dana solves complex equations and manipulates Polyans inside Spheria to change their moral alignment for an unnamed outside benefactor. Operates entirely without Max's knowledge. Discovered by intern Olivia Holland, who was murdered to prevent exposure.",
-      "members": ["Dana Carter", "unnamed outside benefactor"]
+      "members": [
+        "Dana Carter",
+        "unnamed outside benefactor"
+      ]
     },
     {
       "name": "Council Leaders",

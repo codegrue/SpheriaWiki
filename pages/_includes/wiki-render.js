@@ -136,7 +136,7 @@ function characterCard(c, border) {
   return `
     <div class="card" style="border-top:3px solid ${border}">
       <div class="card-name">${escapeHtml(c.name)}</div>
-      <div class="card-meta">${escapeHtml(c.caste_or_role)} | ${escapeHtml(c.species)} | Ch.${escapeHtml(c.first_chapter)}</div>
+      <div class="card-meta">${escapeHtml(c.caste_or_role || c.role)} | Ch.${escapeHtml(c.first_chapter)}</div>
       <div class="card-body">${escapeHtml(c.description)}</div>
       ${updates}
     </div>
