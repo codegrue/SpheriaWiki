@@ -15,7 +15,7 @@ body {
     system-ui,
     -apple-system,
     sans-serif;
-  background: #0f0f1a;
+  background: #0f0f1a url("../../images/Background-Dark.jpg") center center / cover fixed;
   color: #e0e0f0;
   min-height: 100vh;
 }
