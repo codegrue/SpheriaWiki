@@ -108,11 +108,6 @@ section {
   min-width: 0;
 }
 .overview-stats {
-  background: rgba(26, 26, 46, 0.7);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-radius: 12px;
-  padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 10px;
