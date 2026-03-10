@@ -81,7 +81,8 @@ nav a.active {
   background: linear-gradient(135deg, #7c3aed, #2563eb);
   color: #fff;
 }
-nav a.nav-logo:hover {
+nav a.nav-logo:hover,
+nav a.nav-logo.active {
   background: none;
   -webkit-text-fill-color: #fff;
   color: #fff;
