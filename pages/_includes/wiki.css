@@ -334,12 +334,15 @@ nav.nav-open .nav-hamburger span:nth-child(3) {
     display: none;
     position: fixed;
     top: 50px;
-    left: 0;
     right: 0;
+    width: 240px;
     background: #0a0a14;
+    border-left: 1px solid #1f2937;
     border-bottom: 1px solid #1f2937;
+    border-radius: 0 0 0 10px;
     flex-direction: column;
     z-index: 99;
+    box-shadow: -4px 4px 16px rgba(0, 0, 0, 0.4);
   }
   nav.nav-open .nav-menu {
     display: flex;
