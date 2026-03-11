@@ -942,41 +942,25 @@
       "name": "Fa·ro's Faction",
       "world": "Spheria",
       "description": "Growing authoritarian movement centered on Fa·ro as a decisive god-leader who breaks Council gridlock. Represents shift from democratic consensus to autocratic rule, with Ga·zo as primary enforcer.",
-      "members": [
-        "Fa·ro",
-        "Ga·zo",
-        "Za·zo"
-      ]
+      "members": ["Fa·ro", "Ga·zo", "Za·zo"]
     },
     {
       "name": "Rebellious Workers",
       "world": "Spheria",
       "description": "All Workers in the Colony who secretly organized under Sa·ma's leadership to flee across the Rift using the fallen tower as a bridge, escaping Fa·ro's tyranny",
-      "members": [
-        "Sa·ma",
-        "Hi·ma",
-        "Pu·ma",
-        "Le·ma",
-        "twelve lead Workers"
-      ]
+      "members": ["Sa·ma", "Hi·ma", "Pu·ma", "Le·ma", "twelve lead Workers"]
     },
     {
       "name": "DARPA partnership",
       "world": "Earth",
       "description": "Secret military collaboration arranged by Dana with Defense Advanced Research Projects Agency to weaponize the Spheria technology in exchange for funding and personal land in Costa Rica",
-      "members": [
-        "Dana Carter",
-        "unnamed DARPA officials"
-      ]
+      "members": ["Dana Carter", "unnamed DARPA officials"]
     },
     {
       "name": "Dana's Shadow Project",
       "world": "Earth",
       "description": "A clandestine operation run by Dana Carter using diverted red Qubes on the 6th floor. Dana solves complex equations and manipulates Polyans inside Spheria to change their moral alignment for an unnamed outside benefactor. Operates entirely without Max's knowledge. Discovered by intern Olivia Holland, who was murdered to prevent exposure.",
-      "members": [
-        "Dana Carter",
-        "unnamed outside benefactor"
-      ]
+      "members": ["Dana Carter", "unnamed outside benefactor"]
     },
     {
       "name": "Council Leaders",
@@ -1010,37 +994,37 @@
       },
       "brown_crystal": {
         "use": "Terrain",
-        "effect": "Benign",        
+        "effect": "Benign",
         "description": "Brown rock is neutral terrain - the standard ground material. It doesn't repel or attract. Brown blocks are used as building materials. Brown rock can be overturned to reveal buried green crystals beneath.",
         "notes": ""
       },
       "green_crystal": {
         "use": "Vegetation",
-        "effect": "Minor Food Source",          
+        "effect": "Minor Food Source",
         "description": "Green polyhedrons are plants that grow on brown rock terrain. Some form arched shapes large enough to walk under. Plants have no violet core, so they turn red and are consumed when touching red rivers. Inside caves, glowing green plants emit light and can be broken to create light beams.",
         "notes": ""
       },
       "violet_crystal": {
         "use": "Cores",
-        "effect": "Power Source",          
+        "effect": "Power Source",
         "description": "The violet crystal core is the source of life energy for all living creatures in Spheria. Without it, beings are mere inanimate structures of connected tetrahedrons. Cores pulse with light and store energy drained from other sources.",
         "notes": ""
       },
       "the_source": {
         "use": "Gravity",
-        "effect": "Global Repulsion",  
+        "effect": "Global Repulsion",
         "description": "Gravity pushes outward from the center toward the sphere's inside surface where Polyans live. The Source itself generates this repulsion which gets stronger the closer ('higher') you go. Technically, objects can never reach the source because the repulsion grows to 100%.",
         "notes": "Although humans can watch Spheria from any vantage point, the Source is a default camera position that can zoom into any area of the world surface."
       },
       "bubbles": {
         "use": "Colors",
-        "effect": "Regulates Behaviors",  
+        "effect": "Regulates Behaviors",
         "description": "When the Source is lit, it emits one of several possible colors (see the colors tab.). Each color regulates the current behavior or priorities of the inhabitants of Spheria. The color changes when a bubble of a given color rises from the rift and makes contact.",
         "notes": "Bubbles originate deep in the rift and rise, about once per day. The origin of bubbles is currently unknown."
       },
       "the_rift": {
         "use": "Barrier",
-        "effect": "Hemispherical Separator",          
+        "effect": "Hemispherical Separator",
         "description": "The Rift is an uncrossable chasm dividing the world into two hemispheres. It appears as a vertical artificial horizon. Bubbles of different colors rise slowly from the Rift, giving warning before they reach the Source and trigger their effects. Below the Rift lies Qubessence, the afterlife realm.",
         "notes": ""
       }
@@ -1080,18 +1064,27 @@
     "geography": [
       {
         "name": "World Shape",
+        "image": "../../images/geography-shape.png",
         "description": "Hollow sphere - Polyans live on the inside surface with the Source floating at the center"
       },
       {
         "name": "The Source",
+        "image": "../../images/geography-source.jpg",
         "description": "The bright shining orb above the Polyan world that governs behavior and provides light. Changes color when bubbles rising from the rift contact it (see Source Colors for these effects.) Fades to create a night/sleep cycle)."
       },
       {
         "name": "Blue Mountains",
+        "image": "../../images/geography-mountains.jpg",
         "description": "Mountain ranges made of blue crystal that emit repulsive force, making them impassable. Divide world into maze-like sections. Nearly vertical on one side."
       },
       {
+        "name": "Red Rivers",
+        "image": "../../images/geography-rivers.jpg",
+        "description": "Rivers made of red crystal that emit attractive force, making them impassable. Divide world into maze-like sections. Nearly vertical on one side."
+      },
+      {
         "name": "The Rift",
+        "image": "../../images/geography-rift.jpg",
         "description": "Massive chasm at edge of world. Appears as vertical artificial horizon. So deep the bottom cannot be seen. Yellow shards dropped in eventually become bubbles rising back up."
       }
     ]

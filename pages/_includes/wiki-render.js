@@ -389,6 +389,7 @@ function renderWorldGeography(world) {
     return `
       <div class="info-card">
         <div class="info-title">${escapeHtml(item.name)}</div>
+        ${item.image ? `<img class="card-image" src="${escapeHtml(item.image)}" alt="${escapeHtml(item.name)}" />` : ""}
         <div class="info-body">${body}</div>
       </div>
     `;
