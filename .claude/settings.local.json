@@ -10,7 +10,11 @@
       "Bash(node -e \"const d = JSON.parse\\(require\\(''fs''\\).readFileSync\\(''c:/Users/jeff/OneDrive/Projects/Code/Websites/SpheriaWiki.info/Spheria_Wiki.json'',''utf8''\\)\\); const f = d.flora_fauna; Object.keys\\(f\\).forEach\\(k => { const v = f[k]; console.log\\(k, '':'', Array.isArray\\(v\\) ? v.length : typeof v === ''object'' ? Object.keys\\(v\\).length : 1\\); }\\)\")",
       "Bash(npm install)",
       "Bash(grep -n \"h2 style\" c:/Users/jeff/OneDrive/Projects/Code/Websites/SpheriaWiki.info/pages/*.html)",
-      "WebFetch(domain:spheria.info)"
+      "WebFetch(domain:spheria.info)",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Read(//c/Users/jeff/OneDrive/Projects/Code/Websites/SpheriaWiki.info/**)",
+      "Bash(done)"
     ]
   }
 }
