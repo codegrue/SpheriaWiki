@@ -19,6 +19,8 @@ body {
     cover fixed;
   color: #e0e0f0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 a {
   color: #a78bfa;
@@ -113,6 +115,9 @@ section {
   max-width: 1000px;
   margin: 0 auto;
   padding: 40px 24px;
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
 }
 .overview-layout {
   display: flex;
