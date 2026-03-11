@@ -606,6 +606,18 @@ function setActiveNav() {
   });
 }
 
+async function loadFooter(containerId = "footer-container") {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  try {
+    const response = await fetch("./_includes/footer.html", { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    container.innerHTML = await response.text();
+  } catch (e) {
+    console.warn("Footer failed to load:", e);
+  }
+}
+
 async function loadNav(containerId = "nav-container") {
   const container = document.getElementById(containerId);
   if (!container) return;
@@ -1093,6 +1105,7 @@ document.addEventListener("DOMContentLoaded", initMobileSubMenus);
 
 window.SpheriaWiki = {
   loadNav,
+  loadFooter,
   initPage,
   setActiveNav,
   initCharacterTabs,
