@@ -839,6 +839,14 @@ nav.nav-open .nav-hamburger span:nth-child(3) {
   }
 }
 
+/* Card image */
+.card-image {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: block;
+}
+
 /* Footer */
 footer {
   display: flex;

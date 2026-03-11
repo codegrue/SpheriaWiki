@@ -1278,6 +1278,7 @@
     "fauna": [
       {
         "name": "Zalisk",
+        "image": "../../images/fauna-zalisk.jpg",
         "description": "Enormous six-legged beast with five scooping tusks on a shelf arrangement and a massive violet core at center",
         "behavior": "Aggressive creature that forages for buried green crystals. Known for severe aggression - many Polyans died before learning to hunt them as coordinated teams. Uses tusks to overturn chunks of brown rock to find crystals.",
         "danger_level": "Extremely high - primary threat to Polyans, requires team of 9 Soldiers to safely hunt",
@@ -1285,6 +1286,7 @@
       },
       {
         "name": "Troaten",
+        "image": "../../images/fauna-troaten.jpg",
         "description": "Massive creature with many tentacles that camouflages itself",
         "behavior": "Spins defensively and pierces the cores of prey at its center using tentacles",
         "danger_level": "Extreme - mythologically powerful enough to become the Source and Rift",
