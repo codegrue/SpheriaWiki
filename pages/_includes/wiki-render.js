@@ -572,6 +572,7 @@ function renderFlora(data) {
     .map((item) => `
       <div class="info-card">
         <div class="info-title icon-title"><span class="icon">🌿</span>${escapeHtml(item.name)}</div>
+        ${item.image ? `<img class="card-image" src="${escapeHtml(item.image)}" alt="${escapeHtml(item.name)}" />` : ""}
         <div class="info-body">${escapeHtml(item.description)}</div>
         <div class="source-color-trigger">Properties: ${escapeHtml(item.properties)}</div>
         <div class="source-color-trigger">Uses: ${escapeHtml(item.uses)}</div>

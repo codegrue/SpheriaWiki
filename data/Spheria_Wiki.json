@@ -1295,18 +1295,21 @@
     "flora": [
       {
         "name": "Green Polyhedron Plants",
+        "image": "../../images/flora-brambles.jpg",
         "description": "Plants shaped as green polyhedrons that grow on brown rock terrain. Some form large arched shapes you can walk under.",
         "properties": "Have no violet core, so turn red and are consumed when touching red rivers. Different from green crystals buried in ground.",
         "uses": "Provide visual cover and shelter for Polyans moving through wilderness"
       },
       {
         "name": "Glowing Cave Plants",
+        "image": "../../images/flora-cave-plant.jpg",
         "description": "Green plants inside caves that emit light, found in the portal cave's twisting passages",
         "properties": "Can be broken to create directional light beams. Will heal themselves over time if broken.",
         "uses": "Provide illumination in dark caves and can be used to reveal hidden passages when broken"
       },
       {
         "name": "Green Seed Crystals",
+        "image": "../../images/flora-seed.jpg",
         "description": "Small green crystals buried beneath the brown rock surface",
         "properties": "Contain seed energy - a lower quality food source compared to violet crystals",
         "uses": "Foraged by Drones and lower castes, eaten by creatures like Zalisks. Emergency food when violet energy unavailable."
