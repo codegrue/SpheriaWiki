@@ -839,6 +839,30 @@ nav.nav-open .nav-hamburger span:nth-child(3) {
   }
 }
 
+/* Book cover float */
+.book-cover-float {
+  float: left;
+  width: 240px;
+  border-radius: 6px;
+  margin: 0 24px 16px 0;
+  display: block;
+}
+@media (max-width: 480px) {
+  .book-cover-float {
+    float: none;
+    width: 100%;
+    margin: 0 0 16px 0;
+  }
+}
+
+/* Premise image */
+.premise-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  display: block;
+}
+
 /* Card image */
 .card-image {
   width: 100%;

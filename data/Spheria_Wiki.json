@@ -900,6 +900,12 @@
       "description": "A numeric keypad securing the hidden server room door on the 6th floor. Code is 2465, deduced by Olivia using the thermal imager to read residual heat on the most-pressed keys.",
       "significance": "The literal and symbolic lock on Dana's secret.",
       "world": "Earth"
+    },
+    {
+      "name": "Gris-Gris",
+      "description": "A small leather pouch on a string necklace, sewn shut, containing a couple of small solid objects whose exact contents are never revealed. Worn around the neck.",
+      "significance": "A common token shared among the Spheria project team. Ravi and at least two other unnamed team members also wear one, suggesting Abina gave them to the broader team.",
+      "world": "Earth"
     }
   ],
   "factions": [
@@ -1368,6 +1374,7 @@
       "title": "Spheria 1: Eversion",
       "short_title": "Spheria 1",
       "subtitle": "Eversion",
+      "cover": "../../images/spheria-cover.png",
       "get_link": "https://www.codyleet.com/books/spheria",
       "synopsis": [
         "Spheria follows parallel narratives on Earth and within a revolutionary virtual ecosystem simulation. Physicist Max recruits intern Min to join the Spheria Project after a previous intern's suspicious suicide, working alongside a team that observes crystalline beings called Polyans living inside their digital creation.",
@@ -1692,6 +1699,7 @@
       "title": "Spheria: Olivia's Log",
       "short_title": "Olivia's Log",
       "subtitle": "",
+      "cover": "../../images/spheria-olivia-cover.png",
       "get_link": "https://www.codyleet.com/spheria-signup",
       "synopsis": [
         "Spheria: Olivia's Log is a prequel short story set entirely on Earth, following Olivia Holland, an intern on the Spheria Project at UConn Health Center in Farmington, Connecticut. The story opens with Olivia meditating on the roof of the Academic Building, her secret sanctuary, while processing a recent fight with her long-distance boyfriend Randy, who used a borrowed thermal imager to spy on her roommate Ashley in the shower.",
@@ -1743,6 +1751,8 @@
       "title": "Spheria 2: Annulus",
       "short_title": "Spheria 2",
       "subtitle": "Annulus",
+      "cover": "../../images/spheria2-cover.png",
+      "get_link": "https://www.codyleet.com/books/spheria-2",
       "synopsis": [
         "When a radical group of environmentalists decides the era of humans should end, they release an agent of mass extinction into the population. As the race for a cure begins around the world, the Spheria team volunteers the raw computing power of their project.",
         "Can quantum computing find a solution faster than every other traditional research technique? Meanwhile, as the Polyans go about their lives, what impact will they have in all of this, unaware of the role they play?",

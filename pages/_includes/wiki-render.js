@@ -123,6 +123,7 @@ function renderOverview(data) {
     <div class="overview-layout">
       <div class="overview-body">
         <h3 class="book-section-header" style="margin-top:0">Premise</h3>
+        <img src="../images/Background-Light.jpg" alt="Spheria" class="premise-image" />
         <div class="plot-box">
           ${plotHtml}
         </div>
@@ -312,8 +313,14 @@ function renderBookSection(book, placeholderMsg) {
     : book.synopsis
       ? `<p>${escapeHtml(book.synopsis)}</p>`
       : null;
+  const coverImgTag = book.cover
+    ? `<img class="book-cover-float" src="${escapeHtml(book.cover)}" alt="${escapeHtml(book.title)} cover" />`
+    : "";
+  const coverImg = coverImgTag && book.get_link
+    ? `<a href="${escapeHtml(book.get_link)}" target="_blank" rel="noopener noreferrer">${coverImgTag}</a>`
+    : coverImgTag;
   const synopsis = synopsisBody
-    ? `<div class="book-synopsis">${synopsisBody}</div>`
+    ? `<div class="book-synopsis">${coverImg}${synopsisBody}</div>`
     : '<div class="status-msg">Synopsis coming soon...</div>';
   const chapters = book.chapters.length
     ? renderChapters(book.chapters)
