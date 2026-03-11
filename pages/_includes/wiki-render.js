@@ -57,6 +57,13 @@ function renderOverview(data) {
       href: "./world.html",
     },
     {
+      label: "Flora/Fauna",
+      value: (data.flora_fauna?.fauna?.length ?? 0) + (data.flora_fauna?.flora?.length ?? 0) + (data.flora_fauna?.crystals?.length ?? 0),
+      border: "#22c55e",
+      color: "#4ade80",
+      href: "./flora-fauna.html",
+    },
+    {
       label: "Places",
       value: data.settings.earth.length + data.settings.spheria.length,
       border: "#2563eb",
@@ -83,13 +90,6 @@ function renderOverview(data) {
       border: "#f59e0b",
       color: "#fbbf24",
       href: "./mythos.html",
-    },
-    {
-      label: "Flora/Fauna",
-      value: (data.flora_fauna?.fauna?.length ?? 0) + (data.flora_fauna?.flora?.length ?? 0) + (data.flora_fauna?.crystals?.length ?? 0),
-      border: "#22c55e",
-      color: "#4ade80",
-      href: "./flora-fauna.html",
     },
     {
       label: "Timeline Events",
@@ -457,12 +457,12 @@ function renderPolyanCasteSystem(polyans) {
   const cards = (polyans.caste_system || [])
     .map((item) => `
       <div class="info-card">
-        <div class="info-title icon-title"><span class="icon">🔷</span>${escapeHtml(item.caste_name)} (${escapeHtml(String(item.legs))} legs) ${renderLegDots(item.legs)}</div>
+        <div class="info-title icon-title"><span class="icon">🔷</span>${escapeHtml(item.caste_name)} ${renderLegDots(item.legs)}</div>
+        <div class="pill-row"><span class="pill">${escapeHtml(String(item.legs))} Legs</span></div>
         <div class="info-body">${escapeHtml(item.role)}</div>
-        <div class="pill-row">
-          <span class="pill">Rank: ${escapeHtml(item.social_rank)}</span>
-          <span class="pill">Behavior: ${escapeHtml(item.behaviors)}</span>
-        </div>
+        ${item.name_suffix ? `<div class="source-color-trigger">Name Suffix: ·${escapeHtml(item.name_suffix)}</div>` : ""}
+        <div class="source-color-trigger">Rank: ${escapeHtml(item.social_rank)}</div>
+        <div class="source-color-trigger">Behavior: ${escapeHtml(item.behaviors)}</div>
       </div>
     `)
     .join("");

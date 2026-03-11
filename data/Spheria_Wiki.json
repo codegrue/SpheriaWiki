@@ -1100,6 +1100,7 @@
       {
         "legs": 3,
         "caste_name": "Drones",
+        "name_suffix": "ni",
         "role": "Menial tasks - pushing blocks, making rhythmic sounds at celebrations, foraging for buried green crystals",
         "social_rank": "Lowest - eat last and sometimes get nothing",
         "behaviors": "Most numerous caste, perform simple labor, dig for green seed crystals in the ground"
@@ -1107,6 +1108,7 @@
       {
         "legs": 4,
         "caste_name": "Workers/Builders",
+        "name_suffix": "zo",
         "role": "Construction, building hives, skilled labor",
         "social_rank": "Third in hierarchy - eat third after Leaders and Soldiers",
         "behaviors": "Build structures, construct hives, handle materials, capable of organized rebellion"
@@ -1114,6 +1116,7 @@
       {
         "legs": 5,
         "caste_name": "Soldiers",
+        "name_suffix": "ma",
         "role": "Hunting, combat, protection of Colony",
         "social_rank": "Second in hierarchy - eat second after Leaders",
         "behaviors": "Hunt Zalisks in coordinated teams, use whips as weapons, enforce Colony rules, can be aggressive"
@@ -1121,6 +1124,7 @@
       {
         "legs": 6,
         "caste_name": "Leaders",
+        "name_suffix": "sa",
         "role": "Governance and wisdom - make decisions by majority vote",
         "social_rank": "Highest natural caste - eat first, just one leg short of a god",
         "behaviors": "There are exactly 8 Leaders: Wu·sa, Yo·sa, Me·sa, Ju·sa, Ki·sa, Co·sa, Pi·sa, and Vu·sa. They govern by majority vote; tie means no action taken. They meet in the Council Chamber atop the Council structure."
@@ -1128,6 +1132,7 @@
       {
         "legs": 7,
         "caste_name": "Gods",
+        "name_suffix": "ro",
         "role": "Divine beings or engineered god-equivalents",
         "social_rank": "Above all castes - revered as divine",
         "behaviors": "Gods appear as 7-legged Polyans with colored cores. No Polyan is born naturally with 7 legs until the Leaders engineered Fa·ro, the first artificially created god."
