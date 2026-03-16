@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /pages/_includes/
+Disallow: /data/
 
 Sitemap: https://spheria.info/sitemap.xml
