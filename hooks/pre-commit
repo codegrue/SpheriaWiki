@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+FOOTER_FILE="pages/_includes/footer.html"
+
+if [[ ! -f "$FOOTER_FILE" ]]; then
+  echo "pre-commit: $FOOTER_FILE not found; skipping footer date update"
+  exit 0
+fi
+
+CURRENT_DATE=$(date +"%B %d, %Y")
+
+# Replace only the date portion while preserving surrounding HTML.
+sed -E -i "s#(Last updated: )[A-Za-z]+ [0-9]{1,2}, [0-9]{4}#\\1${CURRENT_DATE}#" "$FOOTER_FILE"
+
+git add "$FOOTER_FILE"

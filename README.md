@@ -84,3 +84,19 @@ npx serve .
 ```powershell
 python -m http.server 8080
 ```
+
+## Shared Git Hook Setup
+
+This repo includes a tracked pre-commit hook at `hooks/pre-commit`.
+
+Enable it once per local clone:
+
+```bash
+git config core.hooksPath hooks
+chmod +x hooks/pre-commit
+```
+
+What it does:
+
+- Updates `pages/_includes/footer.html` to today's date
+- Stages that footer file before commit
