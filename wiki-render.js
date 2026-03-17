@@ -1,3 +1,32 @@
+// Global cache for wiki data
+let cachedWikiData = null;
+let wikiDataPromise = null;
+
+async function getWikiData() {
+  // Return cached data if available
+  if (cachedWikiData) {
+    return cachedWikiData;
+  }
+
+  // Return pending promise if fetch is already in progress
+  if (wikiDataPromise) {
+    return wikiDataPromise;
+  }
+
+  // Start fetch and cache the promise to avoid duplicate requests
+  wikiDataPromise = fetch("/data/Spheria_Wiki.json", { cache: "default" })
+    .then((response) => {
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return response.json();
+    })
+    .then((data) => {
+      cachedWikiData = data;
+      return data;
+    });
+
+  return wikiDataPromise;
+}
+
 function escapeHtml(value) {
   return String(value ?? "")
     .replace(/&/g, "&amp;")
@@ -30,7 +59,10 @@ function renderOverview(data) {
     },
     {
       label: "Chapters",
-      value: Object.values(data.books).reduce((sum, b) => sum + (b.chapters?.length ?? 0), 0),
+      value: Object.values(data.books).reduce(
+        (sum, b) => sum + (b.chapters?.length ?? 0),
+        0,
+      ),
       border: "#059669",
       color: "#34d399",
       href: "/pages/books.html",
@@ -44,14 +76,21 @@ function renderOverview(data) {
     },
     {
       label: "Polyan Species",
-      value: (data.polyans?.caste_system?.length ?? 0) + (data.polyans?.energy ? Object.keys(data.polyans.energy).length : 0) + (data.polyans?.sensors ? Object.keys(data.polyans.sensors).length : 0) + Object.keys(data.polyans?.overview || {}).length,
+      value:
+        (data.polyans?.caste_system?.length ?? 0) +
+        (data.polyans?.energy ? Object.keys(data.polyans.energy).length : 0) +
+        (data.polyans?.sensors ? Object.keys(data.polyans.sensors).length : 0) +
+        Object.keys(data.polyans?.overview || {}).length,
       border: "#8b5cf6",
       color: "#c4b5fd",
       href: "/pages/polyans.html",
     },
     {
       label: "World Facts",
-      value: (data.world?.geography?.length ?? 0) + Object.keys(data.world?.physics || {}).length + (data.world?.source_colors?.length ?? 0),
+      value:
+        (data.world?.geography?.length ?? 0) +
+        Object.keys(data.world?.physics || {}).length +
+        (data.world?.source_colors?.length ?? 0),
       border: "#0ea5e9",
       color: "#38bdf8",
       href: "/pages/world.html",
@@ -79,14 +118,26 @@ function renderOverview(data) {
     },
     {
       label: "Mythos",
-      value: Object.values(data.mythos || {}).reduce((sum, v) => sum + (Array.isArray(v) ? v.length : typeof v === "object" ? Object.keys(v).length : 1), 0),
+      value: Object.values(data.mythos || {}).reduce(
+        (sum, v) =>
+          sum +
+          (Array.isArray(v)
+            ? v.length
+            : typeof v === "object"
+              ? Object.keys(v).length
+              : 1),
+        0,
+      ),
       border: "#f59e0b",
       color: "#fbbf24",
       href: "/pages/mythos.html",
     },
     {
       label: "Flora/Fauna",
-      value: (data.flora_fauna?.fauna?.length ?? 0) + (data.flora_fauna?.flora?.length ?? 0) + (data.flora_fauna?.crystals?.length ?? 0),
+      value:
+        (data.flora_fauna?.fauna?.length ?? 0) +
+        (data.flora_fauna?.flora?.length ?? 0) +
+        (data.flora_fauna?.crystals?.length ?? 0),
       border: "#22c55e",
       color: "#4ade80",
       href: "/pages/flora-fauna.html",
@@ -248,11 +299,17 @@ function renderObjects(objects) {
 }
 
 function renderEarthObjects(objects) {
-  return `<div class="info-grid">${objects.filter((o) => isHumanWorld(o.world)).map(objectCard).join("")}</div>`;
+  return `<div class="info-grid">${objects
+    .filter((o) => isHumanWorld(o.world))
+    .map(objectCard)
+    .join("")}</div>`;
 }
 
 function renderSpheriaObjects(objects) {
-  return `<div class="info-grid">${objects.filter((o) => !isHumanWorld(o.world)).map(objectCard).join("")}</div>`;
+  return `<div class="info-grid">${objects
+    .filter((o) => !isHumanWorld(o.world))
+    .map(objectCard)
+    .join("")}</div>`;
 }
 
 function renderChapters(chapters) {
@@ -276,7 +333,7 @@ function renderChapters(chapters) {
 
 function renderBookSection(book, placeholderMsg) {
   const synopsisBody = Array.isArray(book.synopsis)
-    ? book.synopsis.map(p => `<p>${escapeHtml(p)}</p>`).join("")
+    ? book.synopsis.map((p) => `<p>${escapeHtml(p)}</p>`).join("")
     : book.synopsis
       ? `<p>${escapeHtml(book.synopsis)}</p>`
       : null;
@@ -297,12 +354,13 @@ function renderBookSection(book, placeholderMsg) {
   `;
 }
 
-
 function renderTimeline(items, books) {
   function bookLabel(item) {
     if (item.chapter == null) return "";
     const shortTitle = books?.[item.book]?.short_title ?? item.book ?? "";
-    const label = shortTitle ? `${shortTitle} - Ch. ${item.chapter}` : `Ch. ${item.chapter}`;
+    const label = shortTitle
+      ? `${shortTitle} - Ch. ${item.chapter}`
+      : `Ch. ${item.chapter}`;
     return ` <span class="tl-chapter">${escapeHtml(label)}</span>`;
   }
   function bookSeparator(bookKey) {
@@ -349,49 +407,60 @@ function renderLegDots(legs) {
 }
 
 function renderWorldGeography(world) {
-  return `<div class="info-grid">${(world.geography || []).map((item) => {
-    const body = escapeHtml(item.description).replace(
-      "see Source Colors for these effects.",
-      `<a href="#" class="tab-link" onclick="event.preventDefault();document.querySelector('.sub-menu-btn[data-tab=source-colors]').click()">see Source Colors for these effects.</a>`
-    );
-    return `
+  return `<div class="info-grid">${(world.geography || [])
+    .map((item) => {
+      const body = escapeHtml(item.description).replace(
+        "see Source Colors for these effects.",
+        `<a href="#" class="tab-link" onclick="event.preventDefault();document.querySelector('.sub-menu-btn[data-tab=source-colors]').click()">see Source Colors for these effects.</a>`,
+      );
+      return `
       <div class="info-card" style="border-top-color:#60a5fa">
         <div class="info-title">${escapeHtml(item.name)}</div>
         <div class="info-body">${body}</div>
       </div>
     `;
-  }).join("")}</div>`;
+    })
+    .join("")}</div>`;
 }
 
 function renderWorldPhysics(world) {
   const physics = world.physics || {};
   const html = Object.keys(physics)
-    .map((key) => `
+    .map(
+      (key) => `
       <div class="info-card" style="border-top-color:#60a5fa">
         <div class="info-title">${escapeHtml(titleFromKey(key))}</div>
         <div class="info-body">${escapeHtml(physics[key])}</div>
       </div>
-    `)
+    `,
+    )
     .join("");
   return `<div class="info-grid">${html}</div>`;
 }
 
 function renderWorldSourceColors(world) {
   const html = (world.source_colors || [])
-    .map((item) => `
+    .map(
+      (item) => `
       <div class="source-color-card">
         <div class="source-color-name">${escapeHtml(item.color)}</div>
         <div class="source-color-effect">${escapeHtml(item.effect)}</div>
         <div class="source-color-trigger">Triggered By: ${escapeHtml(item.triggered_by)}</div>
       </div>
-    `)
+    `,
+    )
     .join("");
   return `<div class="source-color-grid">${html}</div>`;
 }
 
 function renderWorld(world) {
-  if (!world) return `<div class="status-msg error">World data is missing.</div>`;
-  return renderWorldGeography(world) + renderWorldPhysics(world) + renderWorldSourceColors(world);
+  if (!world)
+    return `<div class="status-msg error">World data is missing.</div>`;
+  return (
+    renderWorldGeography(world) +
+    renderWorldPhysics(world) +
+    renderWorldSourceColors(world)
+  );
 }
 
 function renderPolyanOverview(polyans) {
@@ -407,7 +476,8 @@ function renderPolyanOverview(polyans) {
 
 function renderPolyanCasteSystem(polyans) {
   const cards = (polyans.caste_system || [])
-    .map((item) => `
+    .map(
+      (item) => `
       <div class="info-card" style="border-top-color:#7c3aed">
         <div class="info-title icon-title"><span class="icon">🔷</span>${escapeHtml(item.caste_name)} (${escapeHtml(String(item.legs))} legs) ${renderLegDots(item.legs)}</div>
         <div class="info-body">${escapeHtml(item.role)}</div>
@@ -416,7 +486,8 @@ function renderPolyanCasteSystem(polyans) {
           <span class="pill">Behavior: ${escapeHtml(item.behaviors)}</span>
         </div>
       </div>
-    `)
+    `,
+    )
     .join("");
   return `<div class="info-grid">${cards}</div>`;
 }
@@ -445,53 +516,73 @@ function renderPolyanSensors(polyans) {
 }
 
 function renderMythosGods(mythos) {
-  const gods = (mythos.gods || []).map((g) => `
+  const gods = (mythos.gods || [])
+    .map(
+      (g) => `
     <div class="info-card" style="border-top-color:#f59e0b">
       <div class="info-title icon-title"><span class="icon">✨</span>${escapeHtml(g.name)} (${escapeHtml(g.color)})</div>
       <div class="info-body">${escapeHtml(g.domain)}</div>
       <div class="source-color-trigger">Creation Role: ${escapeHtml(g.role_in_creation)}</div>
     </div>
-  `).join("");
+  `,
+    )
+    .join("");
   return `<div class="info-grid">${gods}</div>`;
 }
 
 function renderMythosAfterlife(mythos) {
-  const items = Array.isArray(mythos.afterlife) ? mythos.afterlife : [mythos.afterlife];
-  const html = items.map((item) => {
-    const title = item.name || (item.how_to_reach ? "How To Reach" : item.warning ? "Warning" : "");
-    const body = item.description || item.how_to_reach || item.warning || "";
-    return `
+  const items = Array.isArray(mythos.afterlife)
+    ? mythos.afterlife
+    : [mythos.afterlife];
+  const html = items
+    .map((item) => {
+      const title =
+        item.name ||
+        (item.how_to_reach ? "How To Reach" : item.warning ? "Warning" : "");
+      const body = item.description || item.how_to_reach || item.warning || "";
+      return `
       <div class="info-card" style="border-top-color:#34d399">
         <div class="info-title">${escapeHtml(title)}</div>
         <div class="info-body">${escapeHtml(body)}</div>
       </div>
     `;
-  }).join("");
+    })
+    .join("");
   return `<div class="info-grid">${html}</div>`;
 }
 
 function renderMythosLumen(mythos) {
   const lumen = mythos.lumen_tradition || {};
-  const html = Object.keys(lumen).map((key) =>
-    `<div class="info-card" style="border-top-color:#60a5fa"><div class="info-title icon-title"><span class="icon">📜</span>${escapeHtml(titleFromKey(key))}</div><div class="info-body">${escapeHtml(lumen[key])}</div></div>`
-  ).join("");
+  const html = Object.keys(lumen)
+    .map(
+      (key) =>
+        `<div class="info-card" style="border-top-color:#60a5fa"><div class="info-title icon-title"><span class="icon">📜</span>${escapeHtml(titleFromKey(key))}</div><div class="info-body">${escapeHtml(lumen[key])}</div></div>`,
+    )
+    .join("");
   return `<div class="info-grid">${html}</div>`;
 }
 
 function renderMythosLegends(mythos) {
-  return (mythos.legends || []).map((l) =>
-    `<div class="object-card"><div class="object-name">${escapeHtml(l.name)}</div><div class="object-body">${escapeHtml(l.description)}</div></div>`
-  ).join("");
+  return (mythos.legends || [])
+    .map(
+      (l) =>
+        `<div class="object-card"><div class="object-name">${escapeHtml(l.name)}</div><div class="object-body">${escapeHtml(l.description)}</div></div>`,
+    )
+    .join("");
 }
 
 function renderMythosRituals(mythos) {
-  return (mythos.rituals || []).map((r) =>
-    `<div class="object-card"><div class="object-name">${escapeHtml(r.name)}</div><div class="object-body">${escapeHtml(r.description)}</div></div>`
-  ).join("");
+  return (mythos.rituals || [])
+    .map(
+      (r) =>
+        `<div class="object-card"><div class="object-name">${escapeHtml(r.name)}</div><div class="object-body">${escapeHtml(r.description)}</div></div>`,
+    )
+    .join("");
 }
 
 function renderMythos(mythos) {
-  if (!mythos) return `<div class="status-msg error">Mythos data is missing.</div>`;
+  if (!mythos)
+    return `<div class="status-msg error">Mythos data is missing.</div>`;
   return `
     <h3 style="color:#f59e0b">👑 Gods</h3>${renderMythosGods(mythos)}
     <h3 style="color:#34d399">🌌 Afterlife</h3>${renderMythosAfterlife(mythos)}
@@ -503,7 +594,8 @@ function renderMythos(mythos) {
 
 function renderFauna(data) {
   const cards = (data.fauna || [])
-    .map((item) => `
+    .map(
+      (item) => `
       <div class="info-card" style="border-top-color:#ef4444">
         <div class="info-title icon-title"><span class="icon">🦴</span>${escapeHtml(item.name)}</div>
         <div class="info-body">${escapeHtml(item.description)}</div>
@@ -513,35 +605,40 @@ function renderFauna(data) {
           <span class="pill">Energy Role: ${escapeHtml(item.energy_role)}</span>
         </div>
       </div>
-    `)
+    `,
+    )
     .join("");
   return `<div class="info-grid">${cards}</div>`;
 }
 
 function renderFlora(data) {
   const cards = (data.flora || [])
-    .map((item) => `
+    .map(
+      (item) => `
       <div class="info-card" style="border-top-color:#22c55e">
         <div class="info-title icon-title"><span class="icon">🌿</span>${escapeHtml(item.name)}</div>
         <div class="info-body">${escapeHtml(item.description)}</div>
         <div class="source-color-trigger">Properties: ${escapeHtml(item.properties)}</div>
         <div class="source-color-trigger">Uses: ${escapeHtml(item.uses)}</div>
       </div>
-    `)
+    `,
+    )
     .join("");
   return `<div class="info-grid">${cards}</div>`;
 }
 
 function renderCrystals(data) {
   const cards = (data.crystals || [])
-    .map((item) => `
+    .map(
+      (item) => `
       <div class="source-color-card" style="border-left-color:#a78bfa">
         <div class="source-color-name">💎 ${escapeHtml(item.color)} Crystal</div>
         <div class="source-color-effect">${escapeHtml(item.properties)}</div>
         <div class="source-color-trigger">Found In: ${escapeHtml(item.found_in)}</div>
         <div class="source-color-trigger">Significance: ${escapeHtml(item.significance)}</div>
       </div>
-    `)
+    `,
+    )
     .join("");
   return `<div class="source-color-grid">${cards}</div>`;
 }
@@ -585,9 +682,7 @@ async function loadNav(containerId = "nav-container") {
 
 async function initPage(pageKey, containerId) {
   try {
-    const response = await fetch("/data/Spheria_Wiki.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
+    const data = await getWikiData();
 
     const container = document.getElementById(containerId);
     if (!container) return;
@@ -632,9 +727,7 @@ async function initPage(pageKey, containerId) {
 
 async function initCharacterTabs() {
   try {
-    const response = await fetch("/data/Spheria_Wiki.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
+    const data = await getWikiData();
 
     // Render both tabs
     const humansContainer = document.getElementById("humans-content");
@@ -681,25 +774,31 @@ async function initChapterTabs() {
   const subMenu = document.getElementById("books-sub-menu");
   const tabContentsEl = document.getElementById("books-tab-contents");
   try {
-    const response = await fetch("/data/Spheria_Wiki.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
+    const data = await getWikiData();
 
     const keys = Object.keys(data.books);
 
     // Build tab buttons and content divs dynamically
     subMenu.innerHTML = keys
-      .map((key, i) => `<button class="sub-menu-btn${i === 0 ? " active" : ""}" data-tab="${key}">📖 ${escapeHtml(data.books[key].title)}</button>`)
+      .map(
+        (key, i) =>
+          `<button class="sub-menu-btn${i === 0 ? " active" : ""}" data-tab="${key}">📖 ${escapeHtml(data.books[key].title)}</button>`,
+      )
       .join("");
 
     tabContentsEl.innerHTML = keys
-      .map((key, i) => `<div id="${key}-content" class="tab-content${i === 0 ? " active" : ""}"></div>`)
+      .map(
+        (key, i) =>
+          `<div id="${key}-content" class="tab-content${i === 0 ? " active" : ""}"></div>`,
+      )
       .join("");
 
     // Render each book
     keys.forEach((key) => {
-      document.getElementById(`${key}-content`).innerHTML =
-        renderBookSection(data.books[key], "Chapters coming soon...");
+      document.getElementById(`${key}-content`).innerHTML = renderBookSection(
+        data.books[key],
+        "Chapters coming soon...",
+      );
     });
 
     // Set up tab switching
@@ -709,7 +808,9 @@ async function initChapterTabs() {
         const tabName = btn.getAttribute("data-tab");
         tabButtons.forEach((b) => b.classList.remove("active"));
         btn.classList.add("active");
-        tabContentsEl.querySelectorAll(".tab-content").forEach((c) => c.classList.remove("active"));
+        tabContentsEl
+          .querySelectorAll(".tab-content")
+          .forEach((c) => c.classList.remove("active"));
         document.getElementById(`${tabName}-content`).classList.add("active");
       });
     });
@@ -728,15 +829,15 @@ async function initChapterTabs() {
 
 async function initSettingsTabs() {
   try {
-    const response = await fetch("/data/Spheria_Wiki.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
+    const data = await getWikiData();
 
     const humanContainer = document.getElementById("human-content");
     const spheriaContainer = document.getElementById("spheria-content");
 
-    if (humanContainer) humanContainer.innerHTML = renderHumanSettings(data.settings);
-    if (spheriaContainer) spheriaContainer.innerHTML = renderSpheriaSettings(data.settings);
+    if (humanContainer)
+      humanContainer.innerHTML = renderHumanSettings(data.settings);
+    if (spheriaContainer)
+      spheriaContainer.innerHTML = renderSpheriaSettings(data.settings);
 
     const tabButtons = document.querySelectorAll(".sub-menu-btn");
     const tabContents = document.querySelectorAll(".tab-content");
@@ -763,15 +864,15 @@ async function initSettingsTabs() {
 
 async function initFactionTabs() {
   try {
-    const response = await fetch("/data/Spheria_Wiki.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
+    const data = await getWikiData();
 
     const humanContainer = document.getElementById("human-content");
     const polyanContainer = document.getElementById("polyan-content");
 
-    if (humanContainer) humanContainer.innerHTML = renderHumanFactions(data.factions);
-    if (polyanContainer) polyanContainer.innerHTML = renderPolyanFactions(data.factions);
+    if (humanContainer)
+      humanContainer.innerHTML = renderHumanFactions(data.factions);
+    if (polyanContainer)
+      polyanContainer.innerHTML = renderPolyanFactions(data.factions);
 
     const tabButtons = document.querySelectorAll(".sub-menu-btn");
     const tabContents = document.querySelectorAll(".tab-content");
@@ -798,15 +899,15 @@ async function initFactionTabs() {
 
 async function initObjectTabs() {
   try {
-    const response = await fetch("/data/Spheria_Wiki.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
+    const data = await getWikiData();
 
     const earthContainer = document.getElementById("earth-content");
     const spheriaContainer = document.getElementById("spheria-content");
 
-    if (earthContainer) earthContainer.innerHTML = renderEarthObjects(data.objects);
-    if (spheriaContainer) spheriaContainer.innerHTML = renderSpheriaObjects(data.objects);
+    if (earthContainer)
+      earthContainer.innerHTML = renderEarthObjects(data.objects);
+    if (spheriaContainer)
+      spheriaContainer.innerHTML = renderSpheriaObjects(data.objects);
 
     const tabButtons = document.querySelectorAll(".sub-menu-btn");
     const tabContents = document.querySelectorAll(".tab-content");
@@ -833,17 +934,17 @@ async function initObjectTabs() {
 
 async function initWorldTabs() {
   try {
-    const response = await fetch("/data/Spheria_Wiki.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
+    const data = await getWikiData();
 
     const geoContainer = document.getElementById("geography-content");
     const physicsContainer = document.getElementById("physics-content");
     const colorsContainer = document.getElementById("source-colors-content");
 
     if (geoContainer) geoContainer.innerHTML = renderWorldGeography(data.world);
-    if (physicsContainer) physicsContainer.innerHTML = renderWorldPhysics(data.world);
-    if (colorsContainer) colorsContainer.innerHTML = renderWorldSourceColors(data.world);
+    if (physicsContainer)
+      physicsContainer.innerHTML = renderWorldPhysics(data.world);
+    if (colorsContainer)
+      colorsContainer.innerHTML = renderWorldSourceColors(data.world);
 
     const tabButtons = document.querySelectorAll(".sub-menu-btn");
     const tabContents = document.querySelectorAll(".tab-content");
@@ -870,9 +971,7 @@ async function initWorldTabs() {
 
 async function initMythosTabs() {
   try {
-    const response = await fetch("/data/Spheria_Wiki.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
+    const data = await getWikiData();
 
     const tabs = {
       "gods-content": renderMythosGods,
@@ -903,7 +1002,8 @@ async function initMythosTabs() {
     const el = document.getElementById("gods-content");
     if (el) {
       el.classList.add("error");
-      el.innerHTML = "Could not load Spheria_Wiki.json. Run a local web server (npm run dev) and refresh.";
+      el.innerHTML =
+        "Could not load Spheria_Wiki.json. Run a local web server (npm run dev) and refresh.";
     }
     console.error(err);
   }
@@ -911,7 +1011,9 @@ async function initMythosTabs() {
 
 async function initFloraFaunaTabs() {
   try {
-    const response = await fetch("/data/Spheria_Wiki.json", { cache: "no-store" });
+    const response = await fetch("/data/Spheria_Wiki.json", {
+      cache: "no-store",
+    });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
 
@@ -942,7 +1044,8 @@ async function initFloraFaunaTabs() {
     const el = document.getElementById("fauna-content");
     if (el) {
       el.classList.add("error");
-      el.innerHTML = "Could not load Spheria_Wiki.json. Run a local web server (npm run dev) and refresh.";
+      el.innerHTML =
+        "Could not load Spheria_Wiki.json. Run a local web server (npm run dev) and refresh.";
     }
     console.error(err);
   }
@@ -950,7 +1053,9 @@ async function initFloraFaunaTabs() {
 
 async function initPolyanTabs() {
   try {
-    const response = await fetch("/data/Spheria_Wiki.json", { cache: "no-store" });
+    const response = await fetch("/data/Spheria_Wiki.json", {
+      cache: "no-store",
+    });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
 
@@ -982,7 +1087,8 @@ async function initPolyanTabs() {
     const el = document.getElementById("overview-content");
     if (el) {
       el.classList.add("error");
-      el.innerHTML = "Could not load Spheria_Wiki.json. Run a local web server (npm run dev) and refresh.";
+      el.innerHTML =
+        "Could not load Spheria_Wiki.json. Run a local web server (npm run dev) and refresh.";
     }
     console.error(err);
   }
