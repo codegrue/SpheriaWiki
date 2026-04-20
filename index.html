@@ -6,15 +6,168 @@
     <title>Spheria Wiki - Official Fan Encyclopedia</title>
     <meta
       name="description"
-      content="The official wiki and encyclopedia for the Spheria novel series by Cody Leet. Explore characters, factions, world-building, lore, and more."
+      content="The official fan encyclopedia for the Spheria novel series by Cody Leet. Explore books, characters, factions, world-building, mythology, and timeline entries."
     />
-    <link rel="canonical" href="https://spheria.info/pages/overview.html" />
+    <link rel="canonical" href="https://spheria.info/" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <script>
-      window.location.replace("./pages/overview.html");
-    </script>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Spheria Wiki" />
+    <meta
+      property="og:title"
+      content="Spheria Wiki - Official Fan Encyclopedia"
+    />
+    <meta
+      property="og:description"
+      content="Explore the Spheria universe with detailed pages on books, characters, world lore, factions, and timeline events."
+    />
+    <meta property="og:url" content="https://spheria.info/" />
+    <meta
+      property="og:image"
+      content="https://spheria.info/images/Background-Dark.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Spheria Wiki - Official Fan Encyclopedia"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore the Spheria universe with detailed pages on books, characters, world lore, factions, and timeline events."
+    />
+    <meta
+      name="twitter:image"
+      content="https://spheria.info/images/Background-Dark.jpg"
+    />
+    <style>
+      :root {
+        --bg: #05070d;
+        --panel: #111827;
+        --text: #e5e7eb;
+        --muted: #9ca3af;
+        --accent: #60a5fa;
+        --accent-2: #a78bfa;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(
+            900px 500px at 85% -10%,
+            rgba(167, 139, 250, 0.2),
+            transparent 60%
+          ),
+          radial-gradient(
+            900px 500px at -5% 110%,
+            rgba(96, 165, 250, 0.2),
+            transparent 60%
+          ),
+          var(--bg);
+      }
+
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 48px 20px 60px;
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: clamp(2rem, 4.8vw, 3.25rem);
+        line-height: 1.1;
+      }
+
+      p {
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      .lead {
+        font-size: 1.05rem;
+        max-width: 70ch;
+      }
+
+      .cta-row {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin: 26px 0 12px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 18px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .btn-primary {
+        background: linear-gradient(120deg, var(--accent), var(--accent-2));
+        color: #0b1020;
+      }
+
+      .btn-secondary {
+        border: 1px solid #334155;
+        color: var(--text);
+        background: rgba(17, 24, 39, 0.7);
+      }
+
+      .grid {
+        margin-top: 26px;
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      }
+
+      .card {
+        background: rgba(17, 24, 39, 0.75);
+        border: 1px solid #1f2937;
+        border-radius: 12px;
+        padding: 14px;
+      }
+
+      .card a {
+        color: #bfdbfe;
+        text-decoration: none;
+        font-weight: 600;
+      }
+    </style>
   </head>
   <body>
-    <p>Redirecting to <a href="./pages/overview.html">Spheria Wiki</a>...</p>
+    <main>
+      <h1>Spheria Wiki</h1>
+      <p class="lead">
+        Welcome to the official fan encyclopedia for the Spheria series by Cody
+        Leet. Browse lore, characters, factions, timeline events, and
+        world-building details.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="/pages/overview.html"
+          >Start with Overview</a
+        >
+        <a class="btn btn-secondary" href="/pages/books.html">Browse Books</a>
+      </div>
+
+      <section class="grid" aria-label="Spheria wiki sections">
+        <div class="card"><a href="/pages/characters.html">Characters</a></div>
+        <div class="card"><a href="/pages/polyans.html">Polyans</a></div>
+        <div class="card"><a href="/pages/world.html">World</a></div>
+        <div class="card">
+          <a href="/pages/flora-fauna.html">Flora & Fauna</a>
+        </div>
+        <div class="card"><a href="/pages/settings.html">Places</a></div>
+        <div class="card"><a href="/pages/factions.html">Factions</a></div>
+        <div class="card"><a href="/pages/items.html">Items</a></div>
+        <div class="card"><a href="/pages/mythos.html">Mythos</a></div>
+        <div class="card"><a href="/pages/timeline.html">Timeline</a></div>
+      </section>
+    </main>
   </body>
 </html>
