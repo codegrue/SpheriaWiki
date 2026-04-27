@@ -12,162 +12,178 @@
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Spheria Wiki" />
-    <meta
-      property="og:title"
-      content="Spheria Wiki - Official Fan Encyclopedia"
-    />
-    <meta
-      property="og:description"
-      content="Explore the Spheria universe with detailed pages on books, characters, world lore, factions, and timeline events."
-    />
+    <meta property="og:title" content="Spheria Wiki - Official Fan Encyclopedia" />
+    <meta property="og:description" content="Explore the Spheria universe with detailed pages on books, characters, world lore, factions, and timeline events." />
     <meta property="og:url" content="https://spheria.info/" />
-    <meta
-      property="og:image"
-      content="https://spheria.info/images/Background-Dark.jpg"
-    />
+    <meta property="og:image" content="https://spheria.info/images/Background-Dark.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Spheria Wiki - Official Fan Encyclopedia"
-    />
-    <meta
-      name="twitter:description"
-      content="Explore the Spheria universe with detailed pages on books, characters, world lore, factions, and timeline events."
-    />
-    <meta
-      name="twitter:image"
-      content="https://spheria.info/images/Background-Dark.jpg"
-    />
+    <meta name="twitter:title" content="Spheria Wiki - Official Fan Encyclopedia" />
+    <meta name="twitter:description" content="Explore the Spheria universe with detailed pages on books, characters, world lore, factions, and timeline events." />
+    <meta name="twitter:image" content="https://spheria.info/images/Background-Dark.jpg" />
+    <link rel="stylesheet" href="./pages/_includes/wiki.css" />
     <style>
-      :root {
-        --bg: #05070d;
-        --panel: #111827;
-        --text: #e5e7eb;
-        --muted: #9ca3af;
-        --accent: #60a5fa;
-        --accent-2: #a78bfa;
+      header h1 {
+        font-family: "Pirulen", sans-serif;
+        font-size: clamp(1.8rem, 5vw, 3.2rem);
+        font-weight: normal;
+        letter-spacing: 4px;
       }
-
-      * {
-        box-sizing: border-box;
+      header p {
+        max-width: 56ch;
+        margin: 12px auto 0;
+        line-height: 1.7;
       }
-
-      body {
-        margin: 0;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        color: var(--text);
-        background:
-          radial-gradient(
-            900px 500px at 85% -10%,
-            rgba(167, 139, 250, 0.2),
-            transparent 60%
-          ),
-          radial-gradient(
-            900px 500px at -5% 110%,
-            rgba(96, 165, 250, 0.2),
-            transparent 60%
-          ),
-          var(--bg);
-      }
-
-      main {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 48px 20px 60px;
-      }
-
-      h1 {
-        margin: 0 0 10px;
-        font-size: clamp(2rem, 4.8vw, 3.25rem);
-        line-height: 1.1;
-      }
-
-      p {
-        color: var(--muted);
-        line-height: 1.65;
-      }
-
-      .lead {
-        font-size: 1.05rem;
-        max-width: 70ch;
-      }
-
-      .cta-row {
+      .home-cta {
         display: flex;
         gap: 12px;
+        justify-content: center;
         flex-wrap: wrap;
-        margin: 26px 0 12px;
+        margin-top: 28px;
       }
-
       .btn {
         display: inline-block;
-        padding: 12px 18px;
-        border-radius: 10px;
-        text-decoration: none;
+        padding: 11px 24px;
+        border-radius: 8px;
+        font-size: 14px;
         font-weight: 600;
+        text-decoration: none;
+        transition: opacity 0.2s, transform 0.15s;
       }
-
       .btn-primary {
-        background: linear-gradient(120deg, var(--accent), var(--accent-2));
-        color: #0b1020;
+        background: linear-gradient(135deg, #7c3aed, #2563eb);
+        color: #fff;
       }
-
+      .btn-primary:hover {
+        opacity: 0.85;
+        transform: translateY(-1px);
+      }
       .btn-secondary {
         border: 1px solid #334155;
-        color: var(--text);
-        background: rgba(17, 24, 39, 0.7);
+        color: #e0e0f0;
+        background: rgba(26, 26, 46, 0.7);
       }
-
-      .grid {
-        margin-top: 26px;
+      .btn-secondary:hover {
+        background: rgba(40, 40, 70, 0.9);
+        border-color: #4b5563;
+      }
+      .home-grid {
         display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
         gap: 12px;
-        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
       }
-
-      .card {
-        background: rgba(17, 24, 39, 0.75);
-        border: 1px solid #1f2937;
+      .home-card {
+        display: block;
+        background: rgba(26, 26, 46, 0.7);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
         border-radius: 12px;
-        padding: 14px;
-      }
-
-      .card a {
-        color: #bfdbfe;
+        padding: 18px 16px;
+        border-top: 3px solid var(--card-color, #7c3aed);
         text-decoration: none;
-        font-weight: 600;
+        transition: background 0.2s, transform 0.15s;
+      }
+      .home-card:hover {
+        background: rgba(40, 40, 70, 0.85);
+        transform: translateY(-2px);
+      }
+      .home-card-icon {
+        font-size: 22px;
+        margin-bottom: 10px;
+        display: block;
+      }
+      .home-card-name {
+        font-weight: 700;
+        color: #ffffff;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+      .home-card-desc {
+        font-size: 12px;
+        color: #6b7280;
+        line-height: 1.5;
+      }
+      @media (max-width: 600px) {
+        .home-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
       }
     </style>
   </head>
   <body>
-    <main>
-      <h1>Spheria Wiki</h1>
-      <p class="lead">
-        Welcome to the official fan encyclopedia for the Spheria series by Cody
-        Leet. Browse lore, characters, factions, timeline events, and
-        world-building details.
-      </p>
+    <div id="nav-container"></div>
 
-      <div class="cta-row">
-        <a class="btn btn-primary" href="/overview"
-          >Start with Overview</a
-        >
+    <header>
+      <h1>Spheria Wiki</h1>
+      <p>
+        The official fan encyclopedia for the Spheria series by Cody Leet.
+        Explore books, characters, factions, timeline events, and world-building details.
+      </p>
+      <div class="home-cta">
+        <a class="btn btn-primary" href="/overview">Start with Overview</a>
         <a class="btn btn-secondary" href="/books">Browse Books</a>
       </div>
+    </header>
 
-      <section class="grid" aria-label="Spheria wiki sections">
-        <div class="card"><a href="/characters">Characters</a></div>
-        <div class="card"><a href="/polyans">Polyans</a></div>
-        <div class="card"><a href="/world">World</a></div>
-        <div class="card">
-          <a href="/flora-fauna">Flora & Fauna</a>
-        </div>
-        <div class="card"><a href="/settings">Places</a></div>
-        <div class="card"><a href="/factions">Factions</a></div>
-        <div class="card"><a href="/items">Items</a></div>
-        <div class="card"><a href="/mythos">Mythos</a></div>
-        <div class="card"><a href="/timeline">Timeline</a></div>
-      </section>
-    </main>
+    <section aria-label="Spheria wiki sections">
+      <div class="home-grid">
+        <a class="home-card" href="/books" style="--card-color:#ec4899">
+          <span class="home-card-icon">📖</span>
+          <div class="home-card-name">Books</div>
+          <div class="home-card-desc">Synopses and chapter breakdowns for every book in the series</div>
+        </a>
+        <a class="home-card" href="/characters" style="--card-color:#7c3aed">
+          <span class="home-card-icon">👤</span>
+          <div class="home-card-name">Characters</div>
+          <div class="home-card-desc">Human and Polyan characters with roles, arcs, and first appearances</div>
+        </a>
+        <a class="home-card" href="/polyans" style="--card-color:#8b5cf6">
+          <span class="home-card-icon">🔮</span>
+          <div class="home-card-name">Polyans</div>
+          <div class="home-card-desc">Biology, caste system, energy mechanics, and sensor types</div>
+        </a>
+        <a class="home-card" href="/world" style="--card-color:#0ea5e9">
+          <span class="home-card-icon">🌐</span>
+          <div class="home-card-name">World</div>
+          <div class="home-card-desc">Geography, physics laws, and the source color system</div>
+        </a>
+        <a class="home-card" href="/flora-fauna" style="--card-color:#22c55e">
+          <span class="home-card-icon">🌿</span>
+          <div class="home-card-name">Flora & Fauna</div>
+          <div class="home-card-desc">Creatures, plants, and crystals native to Spheria</div>
+        </a>
+        <a class="home-card" href="/settings" style="--card-color:#2563eb">
+          <span class="home-card-icon">📍</span>
+          <div class="home-card-name">Places</div>
+          <div class="home-card-desc">Key locations on Earth and across Spheria</div>
+        </a>
+        <a class="home-card" href="/factions" style="--card-color:#d97706">
+          <span class="home-card-icon">⚔️</span>
+          <div class="home-card-name">Factions</div>
+          <div class="home-card-desc">Organizations and groups shaping the conflict</div>
+        </a>
+        <a class="home-card" href="/items" style="--card-color:#dc2626">
+          <span class="home-card-icon">💎</span>
+          <div class="home-card-name">Items</div>
+          <div class="home-card-desc">Significant objects and artifacts from both worlds</div>
+        </a>
+        <a class="home-card" href="/mythos" style="--card-color:#f59e0b">
+          <span class="home-card-icon">✨</span>
+          <div class="home-card-name">Mythos</div>
+          <div class="home-card-desc">Gods, legends, rituals, and the Lumen tradition</div>
+        </a>
+        <a class="home-card" href="/timeline" style="--card-color:#a78bfa">
+          <span class="home-card-icon">📅</span>
+          <div class="home-card-name">Timeline</div>
+          <div class="home-card-desc">Chronological events spanning the full series</div>
+        </a>
+      </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script src="./pages/_includes/wiki-render.js"></script>
+    <script>
+      SpheriaWiki.loadNav();
+      SpheriaWiki.loadFooter();
+    </script>
   </body>
 </html>

@@ -715,7 +715,7 @@ function showLoadError(containerId, message) {
 
 function setActiveNav() {
   const pathParts = location.pathname.toLowerCase().split("/").filter(Boolean);
-  const file = pathParts[pathParts.length - 1] || "overview";
+  const file = pathParts[pathParts.length - 1] || "";
   document.querySelectorAll("nav a").forEach((a) => {
     const hrefFile =
       (a.getAttribute("href") || "")
