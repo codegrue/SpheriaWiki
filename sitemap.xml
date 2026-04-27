@@ -6,57 +6,57 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://spheria.info/pages/overview.html</loc>
+    <loc>https://spheria.info/overview</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://spheria.info/pages/books.html</loc>
+    <loc>https://spheria.info/books</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://spheria.info/pages/characters.html</loc>
+    <loc>https://spheria.info/characters</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://spheria.info/pages/factions.html</loc>
+    <loc>https://spheria.info/factions</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://spheria.info/pages/world.html</loc>
+    <loc>https://spheria.info/world</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://spheria.info/pages/polyans.html</loc>
+    <loc>https://spheria.info/polyans</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://spheria.info/pages/mythos.html</loc>
+    <loc>https://spheria.info/mythos</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://spheria.info/pages/timeline.html</loc>
+    <loc>https://spheria.info/timeline</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://spheria.info/pages/settings.html</loc>
+    <loc>https://spheria.info/settings</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://spheria.info/pages/flora-fauna.html</loc>
+    <loc>https://spheria.info/flora-fauna</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://spheria.info/pages/items.html</loc>
+    <loc>https://spheria.info/items</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

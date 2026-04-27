@@ -25,19 +25,19 @@ Open:
 
 - `http://localhost:3000/`
 
-`npm run dev` serves the project folder. The root URL (`/`) opens `index.html`, which redirects to `pages/overview.html`.
-This keeps JSON requests like `../Spheria_Wiki.json` working from files in `pages/`.
+`npm run dev` serves the project folder. The root URL (`/`) opens `index.html`.
+Primary wiki routes now use clean URLs like `/overview`, `/characters`, and `/world`.
 
 To stop the server, press `Ctrl+C` in that terminal.
 
 ## Option 2: VS Code Live Server
 
 1. Install the **Live Server** VS Code extension (`ritwickdey.LiveServer`).
-2. In VS Code, open `pages/overview.html`.
+2. In VS Code, open `overview/index.html`.
 3. Right-click in the editor and select `Open with Live Server`.
 4. Your browser should open something like:
 
-- `http://127.0.0.1:5500/pages/overview.html`
+- `http://127.0.0.1:5500/overview`
 
 ## Option 3: Python HTTP Server
 
@@ -50,7 +50,7 @@ python -m http.server 8000
 
 Then open:
 
-- `http://localhost:8000/pages/overview.html`
+- `http://localhost:8000/overview`
 
 To stop the server, press `Ctrl+C` in that terminal.
 
@@ -65,7 +65,7 @@ npx serve .
 
 Open the local URL shown in terminal (commonly `http://localhost:3000`) and navigate to:
 
-- `/pages/overview.html`
+- `/overview`
 
 To mirror npm behavior without scripts, you can run:
 
