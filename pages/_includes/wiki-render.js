@@ -1,9 +1,24 @@
 let cachedWikiData = null;
 let wikiDataPromise = null;
 
+const WIKI_CACHE_KEY = "spheria_wiki_data";
+const WIKI_CACHE_TTL = 5 * 60 * 1000; // 5 minutes
+
 async function getWikiData() {
   if (cachedWikiData) return cachedWikiData;
   if (wikiDataPromise) return wikiDataPromise;
+
+  try {
+    const stored = localStorage.getItem(WIKI_CACHE_KEY);
+    if (stored) {
+      const { ts, data } = JSON.parse(stored);
+      if (Date.now() - ts < WIKI_CACHE_TTL) {
+        cachedWikiData = data;
+        return data;
+      }
+    }
+  } catch (_) {}
+
   wikiDataPromise = fetch("../data/Spheria_Wiki.json", { cache: "default" })
     .then((r) => {
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
@@ -11,6 +26,9 @@ async function getWikiData() {
     })
     .then((data) => {
       cachedWikiData = data;
+      try {
+        localStorage.setItem(WIKI_CACHE_KEY, JSON.stringify({ ts: Date.now(), data }));
+      } catch (_) {}
       return data;
     });
   return wikiDataPromise;
