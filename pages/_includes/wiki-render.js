@@ -76,7 +76,7 @@ function renderOverview(data) {
       value: Object.keys(data.books || {}).length,
       border: "#ec4899",
       color: "#f472b6",
-      href: "/books",
+      href: "/books/",
     },
     {
       label: "Chapters",
@@ -86,14 +86,14 @@ function renderOverview(data) {
       ),
       border: "#059669",
       color: "#34d399",
-      href: "/books",
+      href: "/books/",
     },
     {
       label: "Characters",
       value: data.characters.human.length + data.characters.polyan.length,
       border: "#7c3aed",
       color: "#a78bfa",
-      href: "/characters",
+      href: "/characters/",
     },
     {
       label: "Polyan Species",
@@ -104,7 +104,7 @@ function renderOverview(data) {
         Object.keys(data.polyans?.overview || {}).length,
       border: "#8b5cf6",
       color: "#c4b5fd",
-      href: "/polyans",
+      href: "/polyans/",
     },
     {
       label: "World Facts",
@@ -114,7 +114,7 @@ function renderOverview(data) {
         (data.world?.source_colors?.length ?? 0),
       border: "#0ea5e9",
       color: "#38bdf8",
-      href: "/world",
+      href: "/world/",
     },
     {
       label: "Flora/Fauna",
@@ -124,28 +124,28 @@ function renderOverview(data) {
         (data.flora_fauna?.crystals?.length ?? 0),
       border: "#22c55e",
       color: "#4ade80",
-      href: "/flora-fauna",
+      href: "/flora-fauna/",
     },
     {
       label: "Places",
       value: data.settings.earth.length + data.settings.spheria.length,
       border: "#2563eb",
       color: "#60a5fa",
-      href: "/settings",
+      href: "/settings/",
     },
     {
       label: "Factions",
       value: data.factions.length,
       border: "#d97706",
       color: "#fbbf24",
-      href: "/factions",
+      href: "/factions/",
     },
     {
       label: "Items",
       value: data.objects.length,
       border: "#dc2626",
       color: "#f87171",
-      href: "/items",
+      href: "/items/",
     },
     {
       label: "Mythos",
@@ -161,14 +161,14 @@ function renderOverview(data) {
       ),
       border: "#f59e0b",
       color: "#fbbf24",
-      href: "/mythos",
+      href: "/mythos/",
     },
     {
       label: "Timeline Events",
       value: (data.timeline || []).length,
       border: "#a78bfa",
       color: "#c4b5fd",
-      href: "/timeline",
+      href: "/timeline/",
     },
   ];
 
