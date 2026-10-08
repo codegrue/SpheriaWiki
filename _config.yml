@@ -1,0 +1,28 @@
+# GitHub Pages runs Jekyll for this site.
+# theme: null keeps the existing HTML, CSS, and JavaScript unchanged.
+# Files and folders that start with _ or . are skipped unless listed under include.
+theme: null
+
+optional_front_matter:
+  enabled: false
+
+readme_index:
+  enabled: false
+
+include:
+  - _includes
+  - .gitignore
+  - .vscode
+
+exclude:
+  - README.md
+  - readme.md
+  - Readme.md
+  - CLAUDE.md
+  - claude.md
+  - Claude.md
+  - .claude
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - vendor
