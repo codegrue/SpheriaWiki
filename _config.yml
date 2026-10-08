@@ -15,12 +15,7 @@ include:
   - .vscode
 
 exclude:
-  - README.md
-  - readme.md
-  - Readme.md
-  - CLAUDE.md
-  - claude.md
-  - Claude.md
+  - "*.md"
   - .claude
   - node_modules
   - Gemfile
